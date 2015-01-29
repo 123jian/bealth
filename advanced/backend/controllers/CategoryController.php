@@ -79,4 +79,28 @@ class CategoryController extends \yii\web\Controller
 		}
         return $this->renderpartial('articleedit',['data'=>$arr]);
     }
+	//状态开启
+	public function actionKq()
+    {
+		//print_r($_GET);die;
+		$cat = new Category();
+		$update=$cat->updateall(['cat_status'=>1],["cat_id"=>$_GET['id']]);
+		if($update){
+			$this->redirect('index.php?r=category/articlelist');
+		}else{
+			echo "<script>alert('开启失败');location.href='./index.php?r=category/articlelist'</script>";
+		}
+    }
+	//状态开启
+	public function actionGb()
+    {
+		//print_r($_GET);die;
+		$cat = new Category();
+		$update=$cat->updateall(['cat_status'=>0],["cat_id"=>$_GET['id']]);
+		if($update){
+			$this->redirect('index.php?r=category/articlelist');
+		}else{
+			echo "<script>alert('开启失败');location.href='./index.php?r=category/articlelist'</script>";
+		}
+    }
 }

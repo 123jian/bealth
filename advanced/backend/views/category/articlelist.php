@@ -60,9 +60,9 @@ use yii\widgets\LinkPager;
             <td><?php if($v['cat_status']){ echo "已启用";}else{ echo "已关闭";}?></td>
             <td>
                   <?php if($v['cat_status']){ ?>
-					<a href="edit.html">关闭</a>&nbsp;&nbsp;
+					<a href="index.php?r=category/gb&id=<?php echo $v['cat_id']?>">关闭</a>&nbsp;&nbsp;
 				  <?php }else{ ?> 
-					<a href="edit.html">开启</a>&nbsp;&nbsp;
+					<a href="index.php?r=category/kq&id=<?php echo $v['cat_id']?>">开启</a>&nbsp;&nbsp;
 				  <?php }?>
                   <a href="index.php?r=category/articleedit&id=<?php echo $v['cat_id']?>">编辑</a>&nbsp;&nbsp;
 				  <button type="button" class="btn btn-success" id="del" onclick="del(<?php echo $v['cat_id']?>)">删除</button>
