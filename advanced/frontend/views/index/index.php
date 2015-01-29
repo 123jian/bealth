@@ -63,7 +63,34 @@
     <div class="containerWrapper">
     	<div class="container">
         	<div class="banner_wrap">
-            	<img src="images/banner.jpg" width="997" height="413" />
+                    
+
+<!--主广告位轮播start-->
+<div style="width:997px;margin:20px auto;text-align:center;">
+<!--主广告轮播start-->
+<script src="js/AC_RunActiveContent.js" type="text/javascript"></script>
+<script type="text/javascript">
+var varText = ""
+	function addInfo(title,photourl,sphotourl){
+		if(varText!=""){
+			varText+="|||";
+		}
+		varText+=title+"|_|"+photourl+"|_|"+sphotourl;
+	}
+addInfo("","image/1.jpg","image/spic1.jpg");
+addInfo("","image/2.jpg","image/spic2.jpg");
+addInfo("","image/3.jpg","image/spic3.jpg");
+//
+document.write('<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" width="997" height="338" id="01" align="middle">')
+	document.write('<param name="allowScriptAccess" value="sameDomain" />')
+	document.write('<param name="movie" value="image/main.swf?info='+varText+'" />')
+	document.write('<param name="quality" value="high" />')
+	document.write('<param name="bgcolor" value="#ffffff" /><param name="wmode" value="transparent" />')
+	document.write('<embed src="image/main.swf?info='+varText+'"" quality="high" bgcolor="#ffffff" width="997" height="338" name="01" align="middle" allowScriptAccess="sameDomain" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />')
+	document.write('</object>')
+</script>
+<!--主广告轮播end-->
+                
             </div>
             <!---->
             <div class="pro_wrap">
