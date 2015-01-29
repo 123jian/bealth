@@ -14,7 +14,9 @@
 </div>
 <div class="loginWrapper">
     <div class="login_wrap clearfix">
-    	<div class="imgWrap"></div>
+    	<div class="imgWrap">
+		<img src="./images/123.jpg" width="452px" height="370px" >
+		</div>
         <form class="loginFrm">
     		<p class="txt_r"><a class="register" href="javascript:void(0);">注册</a></p>
             <div class="frmItem mt15">
