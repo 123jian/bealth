@@ -12,15 +12,15 @@ use yii\filters\VerbFilter;
 
 class CategoryController extends \yii\web\Controller
 {
-	public function __construct($id,$mo)
+	public function actionArticlelist()
     {
-		parent::__construct($id,$mo);
-		if(1){
-			$this->redirect('index.php?r=index/index');
-		}else{
-			$this->redirect('index.php?r=index/login');
-		}
-        
+		
+        return $this->renderpartial('articlelist');
+    }
+	public function actionAddarticle()
+    {
+		
+        return $this->renderpartial('addarticle');
     }
 
 }

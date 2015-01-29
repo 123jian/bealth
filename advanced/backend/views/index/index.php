@@ -37,7 +37,7 @@
   <script type="text/javascript" src="assets/js/config-min.js"></script>
   <script>
     BUI.use('common/main',function(){
-      var config = [{id:'1',menu:[{text:'系统管理',items:[{id:'12',text:'机构管理',href:'index.php?r=node/index'},{id:'3',text:'角色管理',href:'index.php?r=role/index'},{id:'4',text:'用户管理',href:'index.php?r=user/index'},{id:'6',text:'菜单管理',href:'index.php?r=menu/index'}]}]},{id:'7',homePage : '9',menu:[{text:'商品管理',items:[{id:'9',text:'商品列表',href:'index.php?r=goods/goodslist'},{id:'12',text:'添加商品',href:'index.php?r=goods/addgoods'}]},{text:'分类管理',items:[{id:'10',text:'分类列表',href:'index.php?r=goods/articlelist'},{id:'13',text:'添加分类',href:'index.php?r=goods/addarticle'}]}]}];
+      var config = [{id:'1',menu:[{text:'系统管理',items:[{id:'12',text:'机构管理',href:'index.php?r=node/index'},{id:'3',text:'角色管理',href:'index.php?r=role/index'},{id:'4',text:'用户管理',href:'index.php?r=user/index'},{id:'6',text:'菜单管理',href:'index.php?r=menu/index'}]}]},{id:'7',homePage : '9',menu:[{text:'商品管理',items:[{id:'9',text:'商品列表',href:'index.php?r=goods/goodslist'},{id:'12',text:'添加商品',href:'index.php?r=goods/addgoods'}]},{text:'分类管理',items:[{id:'10',text:'分类列表',href:'index.php?r=category/articlelist'},{id:'13',text:'添加分类',href:'index.php?r=category/addarticle'}]}]}];
       new PageUtil.MainPage({
         modulesConfig : config
       });
