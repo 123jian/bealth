@@ -1,64 +1,54 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>后台管理系统</title>
-	<meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="./css/bootstrap.css" />
-    <link rel="stylesheet" type="text/css" href="./css/bootstrap-responsive.css" />
-    <link rel="stylesheet" type="text/css" href="./css/style.css" />
-    <script type="text/javascript" src="./Js/jquery.js"></script>
-    <script type="text/javascript" src="./Js/jquery.sorted.js"></script>
-    <script type="text/javascript" src="./Js/bootstrap.js"></script>
-    <script type="text/javascript" src="./Js/ckform.js"></script>
-    <script type="text/javascript" src="./Js/common.js"></script>
-    <style type="text/css">
-        body {
-            padding-top: 40px;
-            padding-bottom: 40px;
-            background-color: #f5f5f5;
-        }
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<HTML xmlns="http://www.w3.org/1999/xhtml"><HEAD><TITLE>用户登录</TITLE><LINK 
+href="Images/Default.css" type=text/css rel=stylesheet><LINK 
+href="Images/xtree.css" type=text/css rel=stylesheet><LINK 
+href="Images/User_Login.css" type=text/css rel=stylesheet>
+<META http-equiv=Content-Type content="text/html; charset=utf-8">
+<META content="MSHTML 6.00.6000.16674" name=GENERATOR></HEAD>
+<BODY id=userlogin_body>
+<DIV></DIV>
 
-        .form-signin {
-            max-width: 300px;
-            padding: 19px 29px 29px;
-            margin: 0 auto 20px;
-            background-color: #fff;
-            border: 1px solid #e5e5e5;
-            -webkit-border-radius: 5px;
-            -moz-border-radius: 5px;
-            border-radius: 5px;
-            -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, .05);
-            -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, .05);
-            box-shadow: 0 1px 2px rgba(0, 0, 0, .05);
-        }
+<DIV id=user_login>
+<DL>
+  <DD id=user_top>
+  <UL>
+    <LI class=user_top_l></LI>
+    <LI class=user_top_c></LI>
+    <LI class=user_top_r></LI></UL>
+  <DD id=user_main>
+  <UL>
+    <LI class=user_main_l></LI>
+    <LI class=user_main_c>
+    <DIV class=user_main_box>
+    <UL>
+      <LI class=user_main_text>用户名： </LI>
+      <LI class=user_main_input><INPUT class=TxtUserNameCssClass id=TxtUserName 
+      maxLength=20 name=TxtUserName> </LI></UL>
+    <UL>
+      <LI class=user_main_text>密 码： </LI>
+      <LI class=user_main_input><INPUT class=TxtPasswordCssClass id=TxtPassword 
+      type=password name=TxtPassword> </LI></UL>
+    <UL>
+      <LI class=user_main_text>Cookie： </LI>
+      <LI class=user_main_input><SELECT id=DropExpiration name=DropExpiration> 
+        <OPTION value=None selected>不保存</OPTION> <OPTION value=Day>保存一天</OPTION> 
+        <OPTION value=Month>保存一月</OPTION> <OPTION 
+      value=Year>保存一年</OPTION></SELECT> </LI></UL></DIV></LI>
+    <LI class=user_main_r><INPUT class=IbtnEnterCssClass id=IbtnEnter 
+    style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+    onclick='javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions("IbtnEnter", "", true, "", "", false, false))' 
+    type=image src="Images/user_botton.gif" name=IbtnEnter> </LI></UL>
+  <DD id=user_bottom>
+  <UL>
+    <LI class=user_bottom_l></LI>
+    <LI class=user_bottom_c><SPAN style="MARGIN-TOP: 40px">如果您想获得更多后台模板，请点此 <A 
+    href="http://www.mycodes.net">源码之家</A> 。</SPAN> </LI>
+    <LI class=user_bottom_r></LI></UL></DD></DL></DIV><SPAN id=ValrUserName 
+style="DISPLAY: none; COLOR: red"></SPAN><SPAN id=ValrPassword 
+style="DISPLAY: none; COLOR: red"></SPAN><SPAN id=ValrValidateCode 
+style="DISPLAY: none; COLOR: red"></SPAN>
+<DIV id=ValidationSummary1 style="DISPLAY: none; COLOR: red"></DIV>
 
-        .form-signin .form-signin-heading,
-        .form-signin .checkbox {
-            margin-bottom: 10px;
-        }
+<DIV></DIV>
 
-        .form-signin input[type="text"],
-        .form-signin input[type="password"] {
-            font-size: 16px;
-            height: auto;
-            margin-bottom: 15px;
-            padding: 7px 9px;
-        }
-
-    </style>  
-</head>
-<body>
-<div class="container">
-
-    <form class="form-signin" method="post" action="/index.html">
-        <h2 class="form-signin-heading">登录系统</h2>
-        <input type="text" name="username" class="input-block-level" placeholder="账号">
-        <input type="password" name="password" class="input-block-level" placeholder="密码">
-        <input type="text" name="verify" class="input-medium" placeholder="验证码">
-       
-        <p><button class="btn btn-large btn-primary" type="submit">登录</button></p>
-    </form>
-
-</div>
-</body>
-</html>
+</FORM></BODY></HTML>

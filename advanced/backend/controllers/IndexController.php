@@ -8,5 +8,9 @@ class IndexController extends \yii\web\Controller
     {
         return $this->renderpartial('index');
     }
+	public function actionLogin()
+    {
+        return $this->renderpartial('login');
+    }
 
 }

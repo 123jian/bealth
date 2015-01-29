@@ -18,7 +18,7 @@
             	<div class="site_con">
                 	<span>您好，欢迎来到锡盟鑫泰！</span>
                     <a href="index.php?r=login/index">【登录】</a>
-                    <a href="javascript:void(0);">【免费注册】</a>
+                    <a href="index.php?r=register/index">【免费注册】</a>
                 </div>
             </div>
             <!--顶部登录信息END-->
@@ -31,6 +31,8 @@
                     <span></span>
                 </div>
             </div>
+            
+            
             <!-- 导航 -->
             <div class="menuWrapper">
             	<div class="menu_wrap clearfix">
@@ -61,7 +63,35 @@
     <div class="containerWrapper">
     	<div class="container">
         	<div class="banner_wrap">
-            	<img src="images/banner.jpg" width="997" height="413" />
+                    
+
+<!--主广告位轮播start-->
+<div style="width:997px;text-align:center;">
+<!--主广告轮播start-->
+<script src="js/AC_RunActiveContent.js" type="text/javascript"></script>
+<script type="text/javascript">
+var varText = ""
+	function addInfo(title,photourl,sphotourl){
+		if(varText!=""){
+			varText+="|||";
+		}
+		varText+=title+"|_|"+photourl+"|_|"+sphotourl;
+	}
+addInfo("","images/1.jpg","images/spic1.jpg");
+addInfo("","images/2.jpg","images/spic2.jpg");
+addInfo("","images/3.jpg","images/spic3.jpg");
+//
+document.write('<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" width="997" height="338" id="01" align="middle">')
+	document.write('<param name="allowScriptAccess" value="sameDomain" />')
+	document.write('<param name="movie" value="images/main.swf?info='+varText+'" />')
+	document.write('<param name="quality" value="high" />')
+	document.write('<param name="bgcolor" value="#ffffff" /><param name="wmode" value="transparent" />')
+	document.write('<embed src="images/main.swf?info='+varText+'"" quality="high" bgcolor="#ffffff" width="997" height="338" name="01" align="middle" allowScriptAccess="sameDomain" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />')
+	document.write('</object>')
+</script>
+</div>
+<!--主广告轮播end-->
+                
             </div>
             <!---->
             <div class="pro_wrap">
@@ -88,7 +118,7 @@
                             <p>肤所需的活性养分，迅速输送到皮肤基底层，增强细胞活力，同时改善面部皱纹帮助肌肤重换活力，恢复光泽和弹性</p>
                         </div>
                         <div class="price">
-                        	<a class="btn" href="javascript:void(0);">去看看</a>
+                        	<a class="btn" href="index.php?r=index/mall">去看看</a>
                         	<span class="nowPrice">￥199</span>
                             <span class="oldPrice">￥340</span>
                         </div>
@@ -465,7 +495,7 @@
             <!-- 底部区域 -->
             <div class="footerWrapper">
                 <div class="footer">
-                	<p><a class="returnHome" href="javascript:void(0);">
+                	<p><a class="returnHome" href="index.php?r=index">
                     	<span class="btn_l"></span>
                     	<span class="btn_c">回首页 HOME</span>
                     	<span class="btn_r"></span>
@@ -480,19 +510,19 @@
             <!-- 底部区域END -->
             <!--跟随窗口浮动区域-->
             <div class="fixedWrap" id="fixedWrap">
-                <a href="javascript:void(0);">
+                <a href="#" onclick="history.go(0);">
                 	<div class="imgWrap">
                     	<img src="images/fix_icon_1.png" width="21" height="27" />
                     </div>
                 	<p>返回顶部</p>
                 </a>
-                <a href="javascript:void(0);">
+                <a href="index.php?r=index/shoppingcar">
                 	<div class="imgWrap">
                     	<img class="mt5" src="images/fix_icon_2.png" width="27" height="22" />
                     </div>
                 	<p>购物车</p>
                 </a>
-                <a href="javascript:void(0);">
+                <a href="index.php?r=index/shoppingcar">
                 	<div class="imgWrap">
                     	<img class="mt5" src="images/fix_icon_3.png" width="24" height="19" />
                     </div>

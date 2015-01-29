@@ -2,16 +2,13 @@
 namespace frontend\controllers;
 class IndexController extends \yii\web\Controller
 {
+    //首页
     public function actionIndex()
     {
+        $this->layout='@app/views/layouts/header.php';
         return $this->renderpartial('index');
     }
-    
-    public function actionLogin()
-    {
-        return $this->renderpartial('login');
-    }
-    
+    //商品详情
     public function actionMall()
     {
         return $this->renderpartial('mall');
@@ -32,10 +29,7 @@ class IndexController extends \yii\web\Controller
     return $this->renderpartial('protype');
     }
     
-    public function actionRegister()
-    {
-    return $this->renderpartial('register');
-    }
+    
     
     public function actionShopping()
     {
@@ -45,6 +39,11 @@ class IndexController extends \yii\web\Controller
     public function actionShoppingmsg()
     {
     return $this->renderpartial('shoppingmsg');
+    }
+    //购物车
+    public function actionShoppingcar()
+    {
+    return $this->renderpartial('shoppingcar');
     }
 
 }

@@ -90,7 +90,7 @@
                       </div>
                     </div>
                     <div class="btnWrapper">
-                    	<a href="javascript:void(0);">马上支付</a>
+                    	<a href="index.php?r=index/paymentok">马上支付</a>
                     </div>
                     </form>
                 </div>

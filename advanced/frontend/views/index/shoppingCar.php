@@ -238,7 +238,7 @@
                   </table>
                   <div class="submit_wrap">
                   	应付总额：<span class="money">￥500.00</span>元
-                    <a href="javascript:void(0);">提交订单</a>
+                    <a href="index.php?r=index/shoppingmsg">提交订单</a>
                   </div>
                 </div>
                 <!---->
@@ -344,7 +344,7 @@
                     </div>
                 	<p>购物车</p>
                 </a>
-                <a href="javascript:void(0);">
+                <a href="index.php?r=index/shoppingCar">
                 	<div class="imgWrap">
                     	<img class="mt5" src="images/fix_icon_3.png" width="24" height="19" />
                     </div>
