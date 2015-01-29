@@ -106,12 +106,16 @@ class CategoryController extends \yii\web\Controller
 	//搜索
 	public function actionSear()
     {
-		print_r($_POST);//die;
+		//print_r($_POST);//die;
 		$cat= new Category();
 		//find();
 		$cat_name=$_POST['cat_name'];
-		$data = $cat->find()->where(['like', 'cat_name', $cat_name])->all();
+		$data = $cat->find()->where(['like', 'cat_name', $cat_name]);
 		//print_R($data);die;
-		return $this->renderPartial('articlelist',['data'=>$data]);
+		$pages = new Pagination(['totalCount' =>$data->count(), 'pageSize' => '2']);
+		$model = $data->offset($pages->offset)->limit($pages->limit)->all();//'order by fina_id desc'
+		//print_r($model);die;
+		return $this->renderPartial('articlelist',['data'=>$model,'pages' => $pages]);
+		//return $this->renderPartial('articlelist',['data'=>$data]);
     }
 }
