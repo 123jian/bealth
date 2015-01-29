@@ -22,7 +22,7 @@ class CategoryController extends \yii\web\Controller
 		$data = $cat::find();
 		//print_r($data);die;
 		$pages = new Pagination(['totalCount' =>$data->count(), 'pageSize' => '2']);
-		$model = $data->offset($pages->offset)->limit($pages->limit)->all();//'order by fina_id desc'
+		$model = $data->offset($pages->offset)->limit($pages->limit)->orderBy('cat_id desc')->all();//'order by fina_id desc'
 		//print_r($model);die;
 		return $this->renderPartial('articlelist',['data'=>$model,'pages' => $pages]);
         //return $this->renderpartial('articlelist');
@@ -113,7 +113,7 @@ class CategoryController extends \yii\web\Controller
 		$data = $cat->find()->where(['like', 'cat_name', $cat_name]);
 		//print_R($data);die;
 		$pages = new Pagination(['totalCount' =>$data->count(), 'pageSize' => '2']);
-		$model = $data->offset($pages->offset)->limit($pages->limit)->all();//'order by fina_id desc'
+		$model = $data->offset($pages->offset)->limit($pages->limit)->orderBy('cat_id desc')->all();//'order by fina_id desc'
 		//print_r($model);die;
 		return $this->renderPartial('articlelist',['data'=>$model,'pages' => $pages]);
 		//return $this->renderPartial('articlelist',['data'=>$data]);
