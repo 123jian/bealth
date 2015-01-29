@@ -1,0 +1,864 @@
+2015-01-29 07:59:01 [127.0.0.1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 28951 bytes' 
+
+in D:\aa\bealth\advanced\vendor\yiisoft\yii2-debug\LogTarget.php:86
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'D:\aa\bealth\ad...', 86, Array)
+#1 D:\aa\bealth\advanced\vendor\yiisoft\yii2-debug\LogTarget.php(86): unserialize('<<<<<<< HEAD?a:...')
+#2 D:\aa\bealth\advanced\vendor\yiisoft\yii2-debug\LogTarget.php(61): yii\debug\LogTarget->updateIndexFile('D:\aa\bealth\ad...', Array)
+#3 D:\aa\bealth\advanced\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#4 D:\aa\bealth\advanced\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#5 D:\aa\bealth\advanced\vendor\yiisoft\yii2\log\Logger.php(166): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2015-01-29 07:59:01 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'index'
+]
+
+$_COOKIE = [
+    'Hm_lvt_2531171454aa43a1c0e4e7f3ec040fbf' => '1420803018,1420845965,1420961795'
+    'Hm_lvt_aedee6983d4cfc62f509129360d6bb3d' => '1420858909,1420965688,1421020031'
+    'ECS' => [
+        'visit_times' => '1'
+    ]
+    'PHPSESSID' => 'vp5uf5kh2f2fbp199nlrhlft84'
+    '_csrf' => '62d4c8c3e9b319e7795e7cc09513730b038dda2c8ad04e4a043cc520f818f750s:32:\"jIqDo_qyX0JJTEdqRaKrhZ2ZIRnVNTV6\";'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/wamp/jicheng/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/wamp/jicheng/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'www.aa.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.143 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'Hm_lvt_2531171454aa43a1c0e4e7f3ec040fbf=1420803018,1420845965,1420961795; Hm_lvt_aedee6983d4cfc62f509129360d6bb3d=1420858909,1420965688,1421020031; ECS[visit_times]=1; PHPSESSID=vp5uf5kh2f2fbp199nlrhlft84; _csrf=62d4c8c3e9b319e7795e7cc09513730b038dda2c8ad04e4a043cc520f818f750s%3A32%3A%22jIqDo_qyX0JJTEdqRaKrhZ2ZIRnVNTV6%22%3B'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\NetSarang;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\wamp\\jicheng\\PHP\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;D:\\web\\mysql\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Java\\jdk1.7.0_71\\bin;C:\\Program Files\\Java\\jdk1.7.0_71\\jre\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\ProgramData\\ComposerSetup\\bin;D:\\mysql\\mysql-5.7.4-m14-winx64\\bin;D:\\软件\\nodejs\\;C:\\Users\\Administrator\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at www.aa.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'www.aa.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/aa'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/aa'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/aa/bealth/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '60825'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=index'
+    'REQUEST_URI' => '/bealth/advanced/frontend/web/index.php?r=index'
+    'SCRIPT_NAME' => '/bealth/advanced/frontend/web/index.php'
+    'PHP_SELF' => '/bealth/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422514741.774
+    'REQUEST_TIME' => 1422514741
+]
+2015-01-29 08:00:52 [127.0.0.1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 28951 bytes' 
+
+in D:\aa\bealth\advanced\vendor\yiisoft\yii2-debug\LogTarget.php:86
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'D:\aa\bealth\ad...', 86, Array)
+#1 D:\aa\bealth\advanced\vendor\yiisoft\yii2-debug\LogTarget.php(86): unserialize('<<<<<<< HEAD?a:...')
+#2 D:\aa\bealth\advanced\vendor\yiisoft\yii2-debug\LogTarget.php(61): yii\debug\LogTarget->updateIndexFile('D:\aa\bealth\ad...', Array)
+#3 D:\aa\bealth\advanced\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#4 D:\aa\bealth\advanced\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#5 D:\aa\bealth\advanced\vendor\yiisoft\yii2\log\Logger.php(166): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2015-01-29 08:00:52 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'index/shoppingcar'
+]
+
+$_COOKIE = [
+    'Hm_lvt_2531171454aa43a1c0e4e7f3ec040fbf' => '1420803018,1420845965,1420961795'
+    'Hm_lvt_aedee6983d4cfc62f509129360d6bb3d' => '1420858909,1420965688,1421020031'
+    'ECS' => [
+        'visit_times' => '1'
+    ]
+    'PHPSESSID' => 'vp5uf5kh2f2fbp199nlrhlft84'
+    '_csrf' => '62d4c8c3e9b319e7795e7cc09513730b038dda2c8ad04e4a043cc520f818f750s:32:\"jIqDo_qyX0JJTEdqRaKrhZ2ZIRnVNTV6\";'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/wamp/jicheng/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/wamp/jicheng/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'www.aa.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.143 Safari/537.36'
+    'HTTP_REFERER' => 'http://www.aa.com/bealth/advanced/frontend/web/index.php?r=index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'Hm_lvt_2531171454aa43a1c0e4e7f3ec040fbf=1420803018,1420845965,1420961795; Hm_lvt_aedee6983d4cfc62f509129360d6bb3d=1420858909,1420965688,1421020031; ECS[visit_times]=1; PHPSESSID=vp5uf5kh2f2fbp199nlrhlft84; _csrf=62d4c8c3e9b319e7795e7cc09513730b038dda2c8ad04e4a043cc520f818f750s%3A32%3A%22jIqDo_qyX0JJTEdqRaKrhZ2ZIRnVNTV6%22%3B'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\NetSarang;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\wamp\\jicheng\\PHP\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;D:\\web\\mysql\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Java\\jdk1.7.0_71\\bin;C:\\Program Files\\Java\\jdk1.7.0_71\\jre\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\ProgramData\\ComposerSetup\\bin;D:\\mysql\\mysql-5.7.4-m14-winx64\\bin;D:\\软件\\nodejs\\;C:\\Users\\Administrator\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at www.aa.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'www.aa.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/aa'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/aa'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/aa/bealth/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '61088'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=index/shoppingcar'
+    'REQUEST_URI' => '/bealth/advanced/frontend/web/index.php?r=index/shoppingcar'
+    'SCRIPT_NAME' => '/bealth/advanced/frontend/web/index.php'
+    'PHP_SELF' => '/bealth/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422514852.614
+    'REQUEST_TIME' => 1422514852
+]
+2015-01-29 08:00:55 [127.0.0.1][][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: index/shoppingCar' in D:\aa\bealth\advanced\vendor\yiisoft\yii2\base\Controller.php:122
+Stack trace:
+#0 D:\aa\bealth\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('shoppingCar', Array)
+#1 D:\aa\bealth\advanced\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('index/shoppingC...', Array)
+#2 D:\aa\bealth\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 D:\aa\bealth\advanced\frontend\web\index.php(20): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Unable to resolve the request: index/shoppingCar' in D:\aa\bealth\advanced\vendor\yiisoft\yii2\web\Application.php:95
+Stack trace:
+#0 D:\aa\bealth\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\aa\bealth\advanced\frontend\web\index.php(20): yii\base\Application->run()
+#2 {main}
+2015-01-29 08:00:55 [127.0.0.1][][-][info][application] $_GET = [
+    'r' => 'index/shoppingCar'
+]
+
+$_COOKIE = [
+    'Hm_lvt_2531171454aa43a1c0e4e7f3ec040fbf' => '1420803018,1420845965,1420961795'
+    'Hm_lvt_aedee6983d4cfc62f509129360d6bb3d' => '1420858909,1420965688,1421020031'
+    'ECS' => [
+        'visit_times' => '1'
+    ]
+    'PHPSESSID' => 'vp5uf5kh2f2fbp199nlrhlft84'
+    '_csrf' => '62d4c8c3e9b319e7795e7cc09513730b038dda2c8ad04e4a043cc520f818f750s:32:\"jIqDo_qyX0JJTEdqRaKrhZ2ZIRnVNTV6\";'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/bealth/advanced/backend/web/index.php'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/wamp/jicheng/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/wamp/jicheng/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'www.aa.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.143 Safari/537.36'
+    'HTTP_REFERER' => 'http://www.aa.com/bealth/advanced/frontend/web/index.php?r=index/shoppingcar'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'Hm_lvt_2531171454aa43a1c0e4e7f3ec040fbf=1420803018,1420845965,1420961795; Hm_lvt_aedee6983d4cfc62f509129360d6bb3d=1420858909,1420965688,1421020031; ECS[visit_times]=1; PHPSESSID=vp5uf5kh2f2fbp199nlrhlft84; _csrf=62d4c8c3e9b319e7795e7cc09513730b038dda2c8ad04e4a043cc520f818f750s%3A32%3A%22jIqDo_qyX0JJTEdqRaKrhZ2ZIRnVNTV6%22%3B'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\NetSarang;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\wamp\\jicheng\\PHP\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;D:\\web\\mysql\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Java\\jdk1.7.0_71\\bin;C:\\Program Files\\Java\\jdk1.7.0_71\\jre\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\ProgramData\\ComposerSetup\\bin;D:\\mysql\\mysql-5.7.4-m14-winx64\\bin;D:\\软件\\nodejs\\;C:\\Users\\Administrator\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at www.aa.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'www.aa.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/aa'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/aa'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/aa/bealth/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '61098'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=index/shoppingCar'
+    'REQUEST_URI' => '/bealth/advanced/frontend/web/index.php?r=index/shoppingCar'
+    'SCRIPT_NAME' => '/bealth/advanced/frontend/web/index.php'
+    'PHP_SELF' => '/bealth/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422514855.231
+    'REQUEST_TIME' => 1422514855
+]
+2015-01-29 08:19:29 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: footer' in D:\aa\bealth\advanced\frontend\views\layouts\layout2.php:10
+Stack trace:
+#0 D:\aa\bealth\advanced\frontend\views\layouts\layout2.php(10): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', 'D:\aa\bealth\ad...', 10, Array)
+#1 D:\aa\bealth\advanced\vendor\yiisoft\yii2\base\View.php(325): require('D:\aa\bealth\ad...')
+#2 D:\aa\bealth\advanced\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('D:\aa\bealth\ad...', Array)
+#3 D:\aa\bealth\advanced\vendor\yiisoft\yii2\base\Controller.php(370): yii\base\View->renderFile('D:\aa\bealth\ad...', Array, Object(frontend\controllers\IndexController))
+#4 D:\aa\bealth\advanced\frontend\controllers\IndexController.php(9): yii\base\Controller->render('index')
+#5 [internal function]: frontend\controllers\IndexController->actionIndex()
+#6 D:\aa\bealth\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#7 D:\aa\bealth\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#8 D:\aa\bealth\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('', Array)
+#9 D:\aa\bealth\advanced\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('index', Array)
+#10 D:\aa\bealth\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 D:\aa\bealth\advanced\frontend\web\index.php(20): yii\base\Application->run()
+#12 {main}
+2015-01-29 08:19:29 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'index'
+]
+
+$_COOKIE = [
+    'Hm_lvt_2531171454aa43a1c0e4e7f3ec040fbf' => '1420803018,1420845965,1420961795'
+    'Hm_lvt_aedee6983d4cfc62f509129360d6bb3d' => '1420858909,1420965688,1421020031'
+    'ECS' => [
+        'visit_times' => '1'
+    ]
+    'PHPSESSID' => 'vp5uf5kh2f2fbp199nlrhlft84'
+    '_csrf' => '62d4c8c3e9b319e7795e7cc09513730b038dda2c8ad04e4a043cc520f818f750s:32:\"jIqDo_qyX0JJTEdqRaKrhZ2ZIRnVNTV6\";'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/wamp/jicheng/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/wamp/jicheng/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'www.aa.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.143 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'Hm_lvt_2531171454aa43a1c0e4e7f3ec040fbf=1420803018,1420845965,1420961795; Hm_lvt_aedee6983d4cfc62f509129360d6bb3d=1420858909,1420965688,1421020031; ECS[visit_times]=1; PHPSESSID=vp5uf5kh2f2fbp199nlrhlft84; _csrf=62d4c8c3e9b319e7795e7cc09513730b038dda2c8ad04e4a043cc520f818f750s%3A32%3A%22jIqDo_qyX0JJTEdqRaKrhZ2ZIRnVNTV6%22%3B'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\NetSarang;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\wamp\\jicheng\\PHP\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;D:\\web\\mysql\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Java\\jdk1.7.0_71\\bin;C:\\Program Files\\Java\\jdk1.7.0_71\\jre\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\ProgramData\\ComposerSetup\\bin;D:\\mysql\\mysql-5.7.4-m14-winx64\\bin;D:\\软件\\nodejs\\;C:\\Users\\Administrator\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at www.aa.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'www.aa.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/aa'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/aa'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/aa/bealth/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '63946'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=index'
+    'REQUEST_URI' => '/bealth/advanced/frontend/web/index.php?r=index'
+    'SCRIPT_NAME' => '/bealth/advanced/frontend/web/index.php'
+    'PHP_SELF' => '/bealth/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422515969.553
+    'REQUEST_TIME' => 1422515969
+]
+2015-01-29 08:20:38 [127.0.0.1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '?>'' in D:\aa\bealth\advanced\frontend\views\layouts\layout2.php:5
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-01-29 08:20:38 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'index'
+]
+
+$_COOKIE = [
+    'Hm_lvt_2531171454aa43a1c0e4e7f3ec040fbf' => '1420803018,1420845965,1420961795'
+    'Hm_lvt_aedee6983d4cfc62f509129360d6bb3d' => '1420858909,1420965688,1421020031'
+    'ECS' => [
+        'visit_times' => '1'
+    ]
+    'PHPSESSID' => 'vp5uf5kh2f2fbp199nlrhlft84'
+    '_csrf' => '62d4c8c3e9b319e7795e7cc09513730b038dda2c8ad04e4a043cc520f818f750s:32:\"jIqDo_qyX0JJTEdqRaKrhZ2ZIRnVNTV6\";'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/wamp/jicheng/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/wamp/jicheng/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'www.aa.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.143 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'Hm_lvt_2531171454aa43a1c0e4e7f3ec040fbf=1420803018,1420845965,1420961795; Hm_lvt_aedee6983d4cfc62f509129360d6bb3d=1420858909,1420965688,1421020031; ECS[visit_times]=1; PHPSESSID=vp5uf5kh2f2fbp199nlrhlft84; _csrf=62d4c8c3e9b319e7795e7cc09513730b038dda2c8ad04e4a043cc520f818f750s%3A32%3A%22jIqDo_qyX0JJTEdqRaKrhZ2ZIRnVNTV6%22%3B'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\NetSarang;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\wamp\\jicheng\\PHP\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;D:\\web\\mysql\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Java\\jdk1.7.0_71\\bin;C:\\Program Files\\Java\\jdk1.7.0_71\\jre\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\ProgramData\\ComposerSetup\\bin;D:\\mysql\\mysql-5.7.4-m14-winx64\\bin;D:\\软件\\nodejs\\;C:\\Users\\Administrator\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at www.aa.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'www.aa.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/aa'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/aa'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/aa/bealth/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '64115'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=index'
+    'REQUEST_URI' => '/bealth/advanced/frontend/web/index.php?r=index'
+    'SCRIPT_NAME' => '/bealth/advanced/frontend/web/index.php'
+    'PHP_SELF' => '/bealth/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422516038.299
+    'REQUEST_TIME' => 1422516038
+]
+2015-01-29 08:24:51 [127.0.0.1][-][-][error][yii\base\InvalidCallException] exception 'yii\base\InvalidCallException' with message 'Expecting end() of yii\widgets\AreaDecorator, found yii\widgets\Block' in D:\aa\bealth\advanced\vendor\yiisoft\yii2\base\Widget.php:76
+Stack trace:
+#0 D:\aa\bealth\advanced\frontend\views\layouts\layout.php(19): yii\base\Widget::end()
+#1 D:\aa\bealth\advanced\vendor\yiisoft\yii2\base\View.php(325): require('D:\aa\bealth\ad...')
+#2 D:\aa\bealth\advanced\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('D:\aa\bealth\ad...', Array)
+#3 D:\aa\bealth\advanced\vendor\yiisoft\yii2\base\Controller.php(370): yii\base\View->renderFile('D:\aa\bealth\ad...', Array, Object(frontend\controllers\IndexController))
+#4 D:\aa\bealth\advanced\frontend\controllers\IndexController.php(9): yii\base\Controller->render('index')
+#5 [internal function]: frontend\controllers\IndexController->actionIndex()
+#6 D:\aa\bealth\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#7 D:\aa\bealth\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#8 D:\aa\bealth\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('', Array)
+#9 D:\aa\bealth\advanced\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('index', Array)
+#10 D:\aa\bealth\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 D:\aa\bealth\advanced\frontend\web\index.php(20): yii\base\Application->run()
+#12 {main}
+2015-01-29 08:24:51 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'index'
+]
+
+$_COOKIE = [
+    'Hm_lvt_2531171454aa43a1c0e4e7f3ec040fbf' => '1420803018,1420845965,1420961795'
+    'Hm_lvt_aedee6983d4cfc62f509129360d6bb3d' => '1420858909,1420965688,1421020031'
+    'ECS' => [
+        'visit_times' => '1'
+    ]
+    'PHPSESSID' => 'vp5uf5kh2f2fbp199nlrhlft84'
+    '_csrf' => '62d4c8c3e9b319e7795e7cc09513730b038dda2c8ad04e4a043cc520f818f750s:32:\"jIqDo_qyX0JJTEdqRaKrhZ2ZIRnVNTV6\";'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/wamp/jicheng/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/wamp/jicheng/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'www.aa.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.143 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'Hm_lvt_2531171454aa43a1c0e4e7f3ec040fbf=1420803018,1420845965,1420961795; Hm_lvt_aedee6983d4cfc62f509129360d6bb3d=1420858909,1420965688,1421020031; ECS[visit_times]=1; PHPSESSID=vp5uf5kh2f2fbp199nlrhlft84; _csrf=62d4c8c3e9b319e7795e7cc09513730b038dda2c8ad04e4a043cc520f818f750s%3A32%3A%22jIqDo_qyX0JJTEdqRaKrhZ2ZIRnVNTV6%22%3B'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\NetSarang;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\wamp\\jicheng\\PHP\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;D:\\web\\mysql\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Java\\jdk1.7.0_71\\bin;C:\\Program Files\\Java\\jdk1.7.0_71\\jre\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\ProgramData\\ComposerSetup\\bin;D:\\mysql\\mysql-5.7.4-m14-winx64\\bin;D:\\软件\\nodejs\\;C:\\Users\\Administrator\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at www.aa.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'www.aa.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/aa'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/aa'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/aa/bealth/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '64688'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=index'
+    'REQUEST_URI' => '/bealth/advanced/frontend/web/index.php?r=index'
+    'SCRIPT_NAME' => '/bealth/advanced/frontend/web/index.php'
+    'PHP_SELF' => '/bealth/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422516291.367
+    'REQUEST_TIME' => 1422516291
+]
+2015-01-29 08:25:16 [127.0.0.1][-][-][error][yii\base\InvalidCallException] exception 'yii\base\InvalidCallException' with message 'Expecting end() of yii\widgets\AreaDecorator, found yii\widgets\Block' in D:\aa\bealth\advanced\vendor\yiisoft\yii2\base\Widget.php:76
+Stack trace:
+#0 D:\aa\bealth\advanced\frontend\views\layouts\layout.php(19): yii\base\Widget::end()
+#1 D:\aa\bealth\advanced\vendor\yiisoft\yii2\base\View.php(325): require('D:\aa\bealth\ad...')
+#2 D:\aa\bealth\advanced\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('D:\aa\bealth\ad...', Array)
+#3 D:\aa\bealth\advanced\vendor\yiisoft\yii2\base\Controller.php(370): yii\base\View->renderFile('D:\aa\bealth\ad...', Array, Object(frontend\controllers\IndexController))
+#4 D:\aa\bealth\advanced\frontend\controllers\IndexController.php(9): yii\base\Controller->render('index')
+#5 [internal function]: frontend\controllers\IndexController->actionIndex()
+#6 D:\aa\bealth\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#7 D:\aa\bealth\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#8 D:\aa\bealth\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('', Array)
+#9 D:\aa\bealth\advanced\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('index', Array)
+#10 D:\aa\bealth\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 D:\aa\bealth\advanced\frontend\web\index.php(20): yii\base\Application->run()
+#12 {main}
+2015-01-29 08:25:16 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'index'
+]
+
+$_COOKIE = [
+    'Hm_lvt_2531171454aa43a1c0e4e7f3ec040fbf' => '1420803018,1420845965,1420961795'
+    'Hm_lvt_aedee6983d4cfc62f509129360d6bb3d' => '1420858909,1420965688,1421020031'
+    'ECS' => [
+        'visit_times' => '1'
+    ]
+    'PHPSESSID' => 'vp5uf5kh2f2fbp199nlrhlft84'
+    '_csrf' => '62d4c8c3e9b319e7795e7cc09513730b038dda2c8ad04e4a043cc520f818f750s:32:\"jIqDo_qyX0JJTEdqRaKrhZ2ZIRnVNTV6\";'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/wamp/jicheng/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/wamp/jicheng/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'www.aa.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.143 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'Hm_lvt_2531171454aa43a1c0e4e7f3ec040fbf=1420803018,1420845965,1420961795; Hm_lvt_aedee6983d4cfc62f509129360d6bb3d=1420858909,1420965688,1421020031; ECS[visit_times]=1; PHPSESSID=vp5uf5kh2f2fbp199nlrhlft84; _csrf=62d4c8c3e9b319e7795e7cc09513730b038dda2c8ad04e4a043cc520f818f750s%3A32%3A%22jIqDo_qyX0JJTEdqRaKrhZ2ZIRnVNTV6%22%3B'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\NetSarang;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\wamp\\jicheng\\PHP\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;D:\\web\\mysql\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Java\\jdk1.7.0_71\\bin;C:\\Program Files\\Java\\jdk1.7.0_71\\jre\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\ProgramData\\ComposerSetup\\bin;D:\\mysql\\mysql-5.7.4-m14-winx64\\bin;D:\\软件\\nodejs\\;C:\\Users\\Administrator\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at www.aa.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'www.aa.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/aa'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/aa'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/aa/bealth/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '64749'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=index'
+    'REQUEST_URI' => '/bealth/advanced/frontend/web/index.php?r=index'
+    'SCRIPT_NAME' => '/bealth/advanced/frontend/web/index.php'
+    'PHP_SELF' => '/bealth/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422516316.532
+    'REQUEST_TIME' => 1422516316
+]
+2015-01-29 08:25:18 [127.0.0.1][-][-][error][yii\base\InvalidCallException] exception 'yii\base\InvalidCallException' with message 'Expecting end() of yii\widgets\AreaDecorator, found yii\widgets\Block' in D:\aa\bealth\advanced\vendor\yiisoft\yii2\base\Widget.php:76
+Stack trace:
+#0 D:\aa\bealth\advanced\frontend\views\layouts\layout.php(19): yii\base\Widget::end()
+#1 D:\aa\bealth\advanced\vendor\yiisoft\yii2\base\View.php(325): require('D:\aa\bealth\ad...')
+#2 D:\aa\bealth\advanced\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('D:\aa\bealth\ad...', Array)
+#3 D:\aa\bealth\advanced\vendor\yiisoft\yii2\base\Controller.php(370): yii\base\View->renderFile('D:\aa\bealth\ad...', Array, Object(frontend\controllers\IndexController))
+#4 D:\aa\bealth\advanced\frontend\controllers\IndexController.php(9): yii\base\Controller->render('index')
+#5 [internal function]: frontend\controllers\IndexController->actionIndex()
+#6 D:\aa\bealth\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#7 D:\aa\bealth\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#8 D:\aa\bealth\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('', Array)
+#9 D:\aa\bealth\advanced\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('index', Array)
+#10 D:\aa\bealth\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 D:\aa\bealth\advanced\frontend\web\index.php(20): yii\base\Application->run()
+#12 {main}
+2015-01-29 08:25:18 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'index'
+]
+
+$_COOKIE = [
+    'Hm_lvt_2531171454aa43a1c0e4e7f3ec040fbf' => '1420803018,1420845965,1420961795'
+    'Hm_lvt_aedee6983d4cfc62f509129360d6bb3d' => '1420858909,1420965688,1421020031'
+    'ECS' => [
+        'visit_times' => '1'
+    ]
+    'PHPSESSID' => 'vp5uf5kh2f2fbp199nlrhlft84'
+    '_csrf' => '62d4c8c3e9b319e7795e7cc09513730b038dda2c8ad04e4a043cc520f818f750s:32:\"jIqDo_qyX0JJTEdqRaKrhZ2ZIRnVNTV6\";'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/wamp/jicheng/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/wamp/jicheng/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'www.aa.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.143 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'Hm_lvt_2531171454aa43a1c0e4e7f3ec040fbf=1420803018,1420845965,1420961795; Hm_lvt_aedee6983d4cfc62f509129360d6bb3d=1420858909,1420965688,1421020031; ECS[visit_times]=1; PHPSESSID=vp5uf5kh2f2fbp199nlrhlft84; _csrf=62d4c8c3e9b319e7795e7cc09513730b038dda2c8ad04e4a043cc520f818f750s%3A32%3A%22jIqDo_qyX0JJTEdqRaKrhZ2ZIRnVNTV6%22%3B'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\NetSarang;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\wamp\\jicheng\\PHP\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;D:\\web\\mysql\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Java\\jdk1.7.0_71\\bin;C:\\Program Files\\Java\\jdk1.7.0_71\\jre\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\ProgramData\\ComposerSetup\\bin;D:\\mysql\\mysql-5.7.4-m14-winx64\\bin;D:\\软件\\nodejs\\;C:\\Users\\Administrator\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at www.aa.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'www.aa.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/aa'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/aa'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/aa/bealth/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '64750'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=index'
+    'REQUEST_URI' => '/bealth/advanced/frontend/web/index.php?r=index'
+    'SCRIPT_NAME' => '/bealth/advanced/frontend/web/index.php'
+    'PHP_SELF' => '/bealth/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422516318.458
+    'REQUEST_TIME' => 1422516318
+]
+2015-01-29 08:44:43 [127.0.0.1][][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "payment/shoppingcar".' in D:\aa\bealth\advanced\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 D:\aa\bealth\advanced\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('payment/shoppin...', Array)
+#1 D:\aa\bealth\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\aa\bealth\advanced\frontend\web\index.php(20): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Unable to resolve the request "payment/shoppingcar".' in D:\aa\bealth\advanced\vendor\yiisoft\yii2\web\Application.php:95
+Stack trace:
+#0 D:\aa\bealth\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\aa\bealth\advanced\frontend\web\index.php(20): yii\base\Application->run()
+#2 {main}
+2015-01-29 08:44:43 [127.0.0.1][][-][info][application] $_GET = [
+    'r' => 'payment/shoppingcar'
+]
+
+$_COOKIE = [
+    'Hm_lvt_2531171454aa43a1c0e4e7f3ec040fbf' => '1420803018,1420845965,1420961795'
+    'Hm_lvt_aedee6983d4cfc62f509129360d6bb3d' => '1420858909,1420965688,1421020031'
+    'ECS' => [
+        'visit_times' => '1'
+    ]
+    'PHPSESSID' => 'vp5uf5kh2f2fbp199nlrhlft84'
+    '_csrf' => '62d4c8c3e9b319e7795e7cc09513730b038dda2c8ad04e4a043cc520f818f750s:32:\"jIqDo_qyX0JJTEdqRaKrhZ2ZIRnVNTV6\";'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/bealth/advanced/backend/web/index.php'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/wamp/jicheng/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/wamp/jicheng/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'www.aa.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.143 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'Hm_lvt_2531171454aa43a1c0e4e7f3ec040fbf=1420803018,1420845965,1420961795; Hm_lvt_aedee6983d4cfc62f509129360d6bb3d=1420858909,1420965688,1421020031; ECS[visit_times]=1; PHPSESSID=vp5uf5kh2f2fbp199nlrhlft84; _csrf=62d4c8c3e9b319e7795e7cc09513730b038dda2c8ad04e4a043cc520f818f750s%3A32%3A%22jIqDo_qyX0JJTEdqRaKrhZ2ZIRnVNTV6%22%3B'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\NetSarang;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\wamp\\jicheng\\PHP\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;D:\\web\\mysql\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Java\\jdk1.7.0_71\\bin;C:\\Program Files\\Java\\jdk1.7.0_71\\jre\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\ProgramData\\ComposerSetup\\bin;D:\\mysql\\mysql-5.7.4-m14-winx64\\bin;D:\\软件\\nodejs\\;C:\\Users\\Administrator\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at www.aa.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'www.aa.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/aa'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/aa'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/aa/bealth/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '51296'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=payment/shoppingcar'
+    'REQUEST_URI' => '/bealth/advanced/frontend/web/index.php?r=payment/shoppingcar'
+    'SCRIPT_NAME' => '/bealth/advanced/frontend/web/index.php'
+    'PHP_SELF' => '/bealth/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422517483.078
+    'REQUEST_TIME' => 1422517483
+]
+2015-01-29 08:44:55 [127.0.0.1][][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "payment/payment".' in D:\aa\bealth\advanced\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 D:\aa\bealth\advanced\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('payment/payment', Array)
+#1 D:\aa\bealth\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\aa\bealth\advanced\frontend\web\index.php(20): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Unable to resolve the request "payment/payment".' in D:\aa\bealth\advanced\vendor\yiisoft\yii2\web\Application.php:95
+Stack trace:
+#0 D:\aa\bealth\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\aa\bealth\advanced\frontend\web\index.php(20): yii\base\Application->run()
+#2 {main}
+2015-01-29 08:44:55 [127.0.0.1][][-][info][application] $_GET = [
+    'r' => 'payment/payment'
+]
+
+$_COOKIE = [
+    'Hm_lvt_2531171454aa43a1c0e4e7f3ec040fbf' => '1420803018,1420845965,1420961795'
+    'Hm_lvt_aedee6983d4cfc62f509129360d6bb3d' => '1420858909,1420965688,1421020031'
+    'ECS' => [
+        'visit_times' => '1'
+    ]
+    'PHPSESSID' => 'vp5uf5kh2f2fbp199nlrhlft84'
+    '_csrf' => '62d4c8c3e9b319e7795e7cc09513730b038dda2c8ad04e4a043cc520f818f750s:32:\"jIqDo_qyX0JJTEdqRaKrhZ2ZIRnVNTV6\";'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/bealth/advanced/backend/web/index.php'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/wamp/jicheng/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/wamp/jicheng/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'www.aa.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.143 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'Hm_lvt_2531171454aa43a1c0e4e7f3ec040fbf=1420803018,1420845965,1420961795; Hm_lvt_aedee6983d4cfc62f509129360d6bb3d=1420858909,1420965688,1421020031; ECS[visit_times]=1; PHPSESSID=vp5uf5kh2f2fbp199nlrhlft84; _csrf=62d4c8c3e9b319e7795e7cc09513730b038dda2c8ad04e4a043cc520f818f750s%3A32%3A%22jIqDo_qyX0JJTEdqRaKrhZ2ZIRnVNTV6%22%3B'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\NetSarang;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\wamp\\jicheng\\PHP\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;D:\\web\\mysql\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Java\\jdk1.7.0_71\\bin;C:\\Program Files\\Java\\jdk1.7.0_71\\jre\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\ProgramData\\ComposerSetup\\bin;D:\\mysql\\mysql-5.7.4-m14-winx64\\bin;D:\\软件\\nodejs\\;C:\\Users\\Administrator\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at www.aa.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'www.aa.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/aa'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/aa'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/aa/bealth/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '51301'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=payment/payment'
+    'REQUEST_URI' => '/bealth/advanced/frontend/web/index.php?r=payment/payment'
+    'SCRIPT_NAME' => '/bealth/advanced/frontend/web/index.php'
+    'PHP_SELF' => '/bealth/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422517495.691
+    'REQUEST_TIME' => 1422517495
+]
+2015-01-29 08:48:25 [127.0.0.1][][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "payment/payment".' in D:\aa\bealth\advanced\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 D:\aa\bealth\advanced\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('payment/payment', Array)
+#1 D:\aa\bealth\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\aa\bealth\advanced\frontend\web\index.php(20): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Unable to resolve the request "payment/payment".' in D:\aa\bealth\advanced\vendor\yiisoft\yii2\web\Application.php:95
+Stack trace:
+#0 D:\aa\bealth\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\aa\bealth\advanced\frontend\web\index.php(20): yii\base\Application->run()
+#2 {main}
+2015-01-29 08:48:25 [127.0.0.1][][-][info][application] $_GET = [
+    'r' => 'payment/payment'
+]
+
+$_COOKIE = [
+    'Hm_lvt_2531171454aa43a1c0e4e7f3ec040fbf' => '1420803018,1420845965,1420961795'
+    'Hm_lvt_aedee6983d4cfc62f509129360d6bb3d' => '1420858909,1420965688,1421020031'
+    'ECS' => [
+        'visit_times' => '1'
+    ]
+    'PHPSESSID' => 'vp5uf5kh2f2fbp199nlrhlft84'
+    '_csrf' => '62d4c8c3e9b319e7795e7cc09513730b038dda2c8ad04e4a043cc520f818f750s:32:\"jIqDo_qyX0JJTEdqRaKrhZ2ZIRnVNTV6\";'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/bealth/advanced/backend/web/index.php'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/wamp/jicheng/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/wamp/jicheng/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'www.aa.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.143 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'Hm_lvt_2531171454aa43a1c0e4e7f3ec040fbf=1420803018,1420845965,1420961795; Hm_lvt_aedee6983d4cfc62f509129360d6bb3d=1420858909,1420965688,1421020031; ECS[visit_times]=1; PHPSESSID=vp5uf5kh2f2fbp199nlrhlft84; _csrf=62d4c8c3e9b319e7795e7cc09513730b038dda2c8ad04e4a043cc520f818f750s%3A32%3A%22jIqDo_qyX0JJTEdqRaKrhZ2ZIRnVNTV6%22%3B'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\NetSarang;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\wamp\\jicheng\\PHP\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;D:\\web\\mysql\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Java\\jdk1.7.0_71\\bin;C:\\Program Files\\Java\\jdk1.7.0_71\\jre\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\ProgramData\\ComposerSetup\\bin;D:\\mysql\\mysql-5.7.4-m14-winx64\\bin;D:\\软件\\nodejs\\;C:\\Users\\Administrator\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at www.aa.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'www.aa.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/aa'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/aa'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/aa/bealth/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '51797'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=payment/payment'
+    'REQUEST_URI' => '/bealth/advanced/frontend/web/index.php?r=payment/payment'
+    'SCRIPT_NAME' => '/bealth/advanced/frontend/web/index.php'
+    'PHP_SELF' => '/bealth/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422517705.148
+    'REQUEST_TIME' => 1422517705
+]
+2015-01-29 09:26:00 [127.0.0.1][-][-][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'The view file does not exist: D:\aa\bealth\advanced\frontend\views\index\shopping.php' in D:\aa\bealth\advanced\vendor\yiisoft\yii2\base\View.php:226
+Stack trace:
+#0 D:\aa\bealth\advanced\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('D:\aa\bealth\ad...', Array, Object(frontend\controllers\IndexController))
+#1 D:\aa\bealth\advanced\vendor\yiisoft\yii2\base\Controller.php(386): yii\base\View->render('shopping', Array, Object(frontend\controllers\IndexController))
+#2 D:\aa\bealth\advanced\frontend\controllers\IndexController.php(38): yii\base\Controller->renderPartial('shopping')
+#3 [internal function]: frontend\controllers\IndexController->actionShopping()
+#4 D:\aa\bealth\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 D:\aa\bealth\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#6 D:\aa\bealth\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('shopping', Array)
+#7 D:\aa\bealth\advanced\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('index/shopping', Array)
+#8 D:\aa\bealth\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 D:\aa\bealth\advanced\frontend\web\index.php(20): yii\base\Application->run()
+#10 {main}
+2015-01-29 09:26:00 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'index/shopping'
+]
+
+$_COOKIE = [
+    'Hm_lvt_2531171454aa43a1c0e4e7f3ec040fbf' => '1420803018,1420845965,1420961795'
+    'Hm_lvt_aedee6983d4cfc62f509129360d6bb3d' => '1420858909,1420965688,1421020031'
+    'ECS' => [
+        'visit_times' => '1'
+    ]
+    'PHPSESSID' => 'vp5uf5kh2f2fbp199nlrhlft84'
+    '_csrf' => '62d4c8c3e9b319e7795e7cc09513730b038dda2c8ad04e4a043cc520f818f750s:32:\"jIqDo_qyX0JJTEdqRaKrhZ2ZIRnVNTV6\";'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/wamp/jicheng/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/wamp/jicheng/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'www.aa.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.143 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'Hm_lvt_2531171454aa43a1c0e4e7f3ec040fbf=1420803018,1420845965,1420961795; Hm_lvt_aedee6983d4cfc62f509129360d6bb3d=1420858909,1420965688,1421020031; ECS[visit_times]=1; PHPSESSID=vp5uf5kh2f2fbp199nlrhlft84; _csrf=62d4c8c3e9b319e7795e7cc09513730b038dda2c8ad04e4a043cc520f818f750s%3A32%3A%22jIqDo_qyX0JJTEdqRaKrhZ2ZIRnVNTV6%22%3B'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\NetSarang;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\wamp\\jicheng\\PHP\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;D:\\web\\mysql\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Java\\jdk1.7.0_71\\bin;C:\\Program Files\\Java\\jdk1.7.0_71\\jre\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\ProgramData\\ComposerSetup\\bin;D:\\mysql\\mysql-5.7.4-m14-winx64\\bin;D:\\软件\\nodejs\\;C:\\Users\\Administrator\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at www.aa.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'www.aa.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/aa'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/aa'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/aa/bealth/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '57340'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=index/shopping'
+    'REQUEST_URI' => '/bealth/advanced/frontend/web/index.php?r=index/shopping'
+    'SCRIPT_NAME' => '/bealth/advanced/frontend/web/index.php'
+    'PHP_SELF' => '/bealth/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422519960.442
+    'REQUEST_TIME' => 1422519960
+]
