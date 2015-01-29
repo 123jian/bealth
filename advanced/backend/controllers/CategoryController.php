@@ -103,4 +103,15 @@ class CategoryController extends \yii\web\Controller
 			echo "<script>alert('开启失败');location.href='./index.php?r=category/articlelist'</script>";
 		}
     }
+	//搜索
+	public function actionSear()
+    {
+		print_r($_POST);//die;
+		$cat= new Category();
+		//find();
+		$cat_name=$_POST['cat_name'];
+		$data = $cat->find()->where(['like', 'cat_name', $cat_name])->all();
+		//print_R($data);die;
+		return $this->renderPartial('articlelist',['data'=>$data]);
+    }
 }
