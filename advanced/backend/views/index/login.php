@@ -1,9 +1,9 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
 <HTML xmlns="http://www.w3.org/1999/xhtml"><HEAD><TITLE>用户登录</TITLE><LINK 
-href="./image/Default.css" type=text/css rel=stylesheet><LINK 
-href="./image/xtree.css" type=text/css rel=stylesheet><LINK 
-href="./image/User_Login.css" type=text/css rel=stylesheet>
-<META http-equiv=Content-Type content="text/html; charset=gb2312">
+href="Images/Default.css" type=text/css rel=stylesheet><LINK 
+href="Images/xtree.css" type=text/css rel=stylesheet><LINK 
+href="Images/User_Login.css" type=text/css rel=stylesheet>
+<META http-equiv=Content-Type content="text/html; charset=utf-8">
 <META content="MSHTML 6.00.6000.16674" name=GENERATOR></HEAD>
 <BODY id=userlogin_body>
 <DIV></DIV>
@@ -37,7 +37,7 @@ href="./image/User_Login.css" type=text/css rel=stylesheet>
     <LI class=user_main_r><INPUT class=IbtnEnterCssClass id=IbtnEnter 
     style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
     onclick='javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions("IbtnEnter", "", true, "", "", false, false))' 
-    type=image src="image/user_botton.gif" name=IbtnEnter> </LI></UL>
+    type=image src="Images/user_botton.gif" name=IbtnEnter> </LI></UL>
   <DD id=user_bottom>
   <UL>
     <LI class=user_bottom_l></LI>
