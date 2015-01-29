@@ -1,44 +1,49 @@
 <?php
-
 namespace frontend\controllers;
-
 class IndexController extends \yii\web\Controller
 {
+    //首页
     public function actionIndex()
     {
+        $this->layout='@app/views/layouts/header.php';
         return $this->renderpartial('index');
     }
-	public function actionLogin()
-    {
-        return $this->renderpartial('login');
-    }
-	public function actionMall()
+    //商品详情
+    public function actionMall()
     {
         return $this->renderpartial('mall');
     }
-	public function actionPayment()
+    
+    public function actionPayment()
     {
-        return $this->renderpartial('payment');
+    return $this->renderpartial('payment');
     }
-	public function actionPaymentok()
+    
+    public function actionPaymentok()
     {
-        return $this->renderpartial('paymentok');
+    return $this->renderpartial('paymentok');
     }
-	public function actionProtype()
+    
+    public function actionProtype()
     {
-        return $this->renderpartial('protype');
+    return $this->renderpartial('protype');
     }
-	public function actionRegister()
+    
+    
+    
+    public function actionShopping()
     {
-        return $this->renderpartial('register');
+    return $this->renderpartial('shopping');
     }
-	public function actionShopping()
+    
+    public function actionShoppingmsg()
     {
-        return $this->renderpartial('shopping');
+    return $this->renderpartial('shoppingmsg');
     }
-	public function actionShoppingmsg()
+    //购物车
+    public function actionShoppingcar()
     {
-        return $this->renderpartial('shoppingmsg');
+    return $this->renderpartial('shoppingcar');
     }
 
 }

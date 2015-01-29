@@ -36,7 +36,7 @@
             	<div class="menu_wrap clearfix">
                 	<div class="addShopping clearfix">
                     	<span>加入购物车</span>
-                        <a href="javascript:void(0);"><span class="arrowIcon"></span></a>
+                        <a href="index.php?r=index/shoppingcar"><span class="arrowIcon"></span></a>
                     </div>
                 	<div class="allType">
                     	<p>全部分类<span class="arrowIcon"></span></p>
@@ -63,7 +63,7 @@
         	<!--内容区域-->
             <div>
             	<div class="location clearfix">
-                	<a class="go" href="javascript:void(0);">去购物车结算</a>
+                	<a class="go" href="index.php?r=index/shoppingcar">去购物车结算</a>
                     <p>
                     	<a href="javascript:void(0);">鑫泰亿联首页</a>>
                         <a href="javascript:void(0);">多肽美容</a>>
