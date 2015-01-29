@@ -1,8 +1,8 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
 <HTML xmlns="http://www.w3.org/1999/xhtml"><HEAD><TITLE>用户登录</TITLE><LINK 
-href="image/Default.css" type=text/css rel=stylesheet><LINK 
-href="image/xtree.css" type=text/css rel=stylesheet><LINK 
-href="image/User_Login.css" type=text/css rel=stylesheet>
+href="./image/Default.css" type=text/css rel=stylesheet><LINK 
+href="./image/xtree.css" type=text/css rel=stylesheet><LINK 
+href="./image/User_Login.css" type=text/css rel=stylesheet>
 <META http-equiv=Content-Type content="text/html; charset=gb2312">
 <META content="MSHTML 6.00.6000.16674" name=GENERATOR></HEAD>
 <BODY id=userlogin_body>
