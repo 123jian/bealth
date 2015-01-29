@@ -17,7 +17,7 @@
         	<div class="site_wrap">
             	<div class="site_con">
                 	<span>您好，欢迎来到锡盟鑫泰！</span>
-                    <a href="javascript:void(0);">【登录】</a>
+                    <a href="index.php?r=login/index">【登录】</a>
                     <a href="javascript:void(0);">【免费注册】</a>
                 </div>
             </div>

@@ -1,44 +1,50 @@
 <?php
-
 namespace frontend\controllers;
-
 class IndexController extends \yii\web\Controller
 {
     public function actionIndex()
     {
         return $this->renderpartial('index');
     }
-	public function actionLogin()
+    
+    public function actionLogin()
     {
         return $this->renderpartial('login');
     }
-	public function actionMall()
+    
+    public function actionMall()
     {
         return $this->renderpartial('mall');
     }
-	public function actionPayment()
+    
+    public function actionPayment()
     {
-        return $this->renderpartial('payment');
+    return $this->renderpartial('payment');
     }
-	public function actionPaymentok()
+    
+    public function actionPaymentok()
     {
-        return $this->renderpartial('paymentok');
+    return $this->renderpartial('paymentok');
     }
-	public function actionProtype()
+    
+    public function actionProtype()
     {
-        return $this->renderpartial('protype');
+    return $this->renderpartial('protype');
     }
-	public function actionRegister()
+    
+    public function actionRegister()
     {
-        return $this->renderpartial('register');
+    return $this->renderpartial('register');
     }
-	public function actionShopping()
+    
+    public function actionShopping()
     {
-        return $this->renderpartial('shopping');
+    return $this->renderpartial('shopping');
     }
-	public function actionShoppingmsg()
+    
+    public function actionShoppingmsg()
     {
-        return $this->renderpartial('shoppingmsg');
+    return $this->renderpartial('shoppingmsg');
     }
 
 }
