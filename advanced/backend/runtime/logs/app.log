@@ -3794,3 +3794,615 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1422518617.591
     'REQUEST_TIME' => 1422518617
 ]
+2015-01-29 13:58:04 [127.0.0.1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'app\models\Category' not found' in E:\jicheng\htdocs\duotaishop\advanced\backend\controllers\CategoryController.php:21
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-01-29 13:58:04 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'category/articlelist'
+]
+
+$_COOKIE = [
+    'Hm_lvt_2531171454aa43a1c0e4e7f3ec040fbf' => '1420804754,1420847253,1420963862'
+    'Hm_lvt_aedee6983d4cfc62f509129360d6bb3d' => '1420961449'
+    'pgv_pvi' => '5305690112'
+    'PHPSESSID' => 't3da8qi60g4onc3l2spp4sjhf3'
+    '_csrf' => '0d1297854df3082f2c07d828d54e68b62c56634f50e7caaff2aee507bd720576s:32:\"FsHhSGaMypFyelESOjWLlbb5-nq-nsG9\";'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'E:/jicheng/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'E:/jicheng/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:35.0) Gecko/20100101 Firefox/35.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-cn,zh;q=0.8,en-us;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/duotaishop/advanced/backend/web/index.php?r=index/index'
+    'HTTP_COOKIE' => 'Hm_lvt_2531171454aa43a1c0e4e7f3ec040fbf=1420804754,1420847253,1420963862; Hm_lvt_aedee6983d4cfc62f509129360d6bb3d=1420961449; pgv_pvi=5305690112; PHPSESSID=t3da8qi60g4onc3l2spp4sjhf3; _csrf=0d1297854df3082f2c07d828d54e68b62c56634f50e7caaff2aee507bd720576s%3A32%3A%22FsHhSGaMypFyelESOjWLlbb5-nq-nsG9%22%3B'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\NetSarang;E:\\web\\PHP\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\web\\MYSQL\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Java\\jdk1.7.0_71\\bin;C:\\Program Files\\Java\\jdk1.7.0_71\\jre\\bin;C:\\Program Files\\TortoiseGit\\bin;E:\\jicheng\\php\\php.exe;C:\\Program Files\\nodejs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/jicheng/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/jicheng/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'E:/jicheng/htdocs/duotaishop/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '61147'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=category/articlelist'
+    'REQUEST_URI' => '/duotaishop/advanced/backend/web/index.php?r=category/articlelist'
+    'SCRIPT_NAME' => '/duotaishop/advanced/backend/web/index.php'
+    'PHP_SELF' => '/duotaishop/advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422536284.253
+    'REQUEST_TIME' => 1422536284
+]
+2015-01-29 13:58:04 [127.0.0.1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 20390 bytes' 
+
+in E:\jicheng\htdocs\duotaishop\advanced\vendor\yiisoft\yii2-debug\LogTarget.php:86
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'E:\jicheng\htdo...', 86, Array)
+#1 E:\jicheng\htdocs\duotaishop\advanced\vendor\yiisoft\yii2-debug\LogTarget.php(86): unserialize('<<<<<<< HEAD?a:...')
+#2 E:\jicheng\htdocs\duotaishop\advanced\vendor\yiisoft\yii2-debug\LogTarget.php(61): yii\debug\LogTarget->updateIndexFile('E:\jicheng\htdo...', Array)
+#3 E:\jicheng\htdocs\duotaishop\advanced\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#4 E:\jicheng\htdocs\duotaishop\advanced\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#5 E:\jicheng\htdocs\duotaishop\advanced\vendor\yiisoft\yii2\log\Logger.php(166): yii\log\Dispatcher->dispatch(Array, true)
+#6 E:\jicheng\htdocs\duotaishop\advanced\vendor\yiisoft\yii2\base\ErrorHandler.php(184): yii\log\Logger->flush(true)
+#7 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#8 {main}
+2015-01-29 13:58:04 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'category/articlelist'
+]
+
+$_COOKIE = [
+    'Hm_lvt_2531171454aa43a1c0e4e7f3ec040fbf' => '1420804754,1420847253,1420963862'
+    'Hm_lvt_aedee6983d4cfc62f509129360d6bb3d' => '1420961449'
+    'pgv_pvi' => '5305690112'
+    'PHPSESSID' => 't3da8qi60g4onc3l2spp4sjhf3'
+    '_csrf' => '0d1297854df3082f2c07d828d54e68b62c56634f50e7caaff2aee507bd720576s:32:\"FsHhSGaMypFyelESOjWLlbb5-nq-nsG9\";'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'E:/jicheng/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'E:/jicheng/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:35.0) Gecko/20100101 Firefox/35.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-cn,zh;q=0.8,en-us;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/duotaishop/advanced/backend/web/index.php?r=index/index'
+    'HTTP_COOKIE' => 'Hm_lvt_2531171454aa43a1c0e4e7f3ec040fbf=1420804754,1420847253,1420963862; Hm_lvt_aedee6983d4cfc62f509129360d6bb3d=1420961449; pgv_pvi=5305690112; PHPSESSID=t3da8qi60g4onc3l2spp4sjhf3; _csrf=0d1297854df3082f2c07d828d54e68b62c56634f50e7caaff2aee507bd720576s%3A32%3A%22FsHhSGaMypFyelESOjWLlbb5-nq-nsG9%22%3B'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\NetSarang;E:\\web\\PHP\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\web\\MYSQL\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Java\\jdk1.7.0_71\\bin;C:\\Program Files\\Java\\jdk1.7.0_71\\jre\\bin;C:\\Program Files\\TortoiseGit\\bin;E:\\jicheng\\php\\php.exe;C:\\Program Files\\nodejs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/jicheng/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/jicheng/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'E:/jicheng/htdocs/duotaishop/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '61147'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=category/articlelist'
+    'REQUEST_URI' => '/duotaishop/advanced/backend/web/index.php?r=category/articlelist'
+    'SCRIPT_NAME' => '/duotaishop/advanced/backend/web/index.php'
+    'PHP_SELF' => '/duotaishop/advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422536284.253
+    'REQUEST_TIME' => 1422536284
+]
+2015-01-29 13:58:28 [127.0.0.1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 20390 bytes' 
+
+in E:\jicheng\htdocs\duotaishop\advanced\vendor\yiisoft\yii2-debug\LogTarget.php:86
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'E:\jicheng\htdo...', 86, Array)
+#1 E:\jicheng\htdocs\duotaishop\advanced\vendor\yiisoft\yii2-debug\LogTarget.php(86): unserialize('<<<<<<< HEAD?a:...')
+#2 E:\jicheng\htdocs\duotaishop\advanced\vendor\yiisoft\yii2-debug\LogTarget.php(61): yii\debug\LogTarget->updateIndexFile('E:\jicheng\htdo...', Array)
+#3 E:\jicheng\htdocs\duotaishop\advanced\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#4 E:\jicheng\htdocs\duotaishop\advanced\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#5 E:\jicheng\htdocs\duotaishop\advanced\vendor\yiisoft\yii2\log\Logger.php(166): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2015-01-29 13:58:28 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'index/'
+]
+
+$_COOKIE = [
+    'Hm_lvt_2531171454aa43a1c0e4e7f3ec040fbf' => '1420804754,1420847253,1420963862'
+    'Hm_lvt_aedee6983d4cfc62f509129360d6bb3d' => '1420961449'
+    'pgv_pvi' => '5305690112'
+    'PHPSESSID' => 't3da8qi60g4onc3l2spp4sjhf3'
+    '_csrf' => '0d1297854df3082f2c07d828d54e68b62c56634f50e7caaff2aee507bd720576s:32:\"FsHhSGaMypFyelESOjWLlbb5-nq-nsG9\";'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'E:/jicheng/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'E:/jicheng/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:35.0) Gecko/20100101 Firefox/35.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-cn,zh;q=0.8,en-us;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'Hm_lvt_2531171454aa43a1c0e4e7f3ec040fbf=1420804754,1420847253,1420963862; Hm_lvt_aedee6983d4cfc62f509129360d6bb3d=1420961449; pgv_pvi=5305690112; PHPSESSID=t3da8qi60g4onc3l2spp4sjhf3; _csrf=0d1297854df3082f2c07d828d54e68b62c56634f50e7caaff2aee507bd720576s%3A32%3A%22FsHhSGaMypFyelESOjWLlbb5-nq-nsG9%22%3B'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\NetSarang;E:\\web\\PHP\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\web\\MYSQL\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Java\\jdk1.7.0_71\\bin;C:\\Program Files\\Java\\jdk1.7.0_71\\jre\\bin;C:\\Program Files\\TortoiseGit\\bin;E:\\jicheng\\php\\php.exe;C:\\Program Files\\nodejs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/jicheng/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/jicheng/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'E:/jicheng/htdocs/duotaishop/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '61225'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=index/'
+    'REQUEST_URI' => '/duotaishop/advanced/backend/web/index.php?r=index/'
+    'SCRIPT_NAME' => '/duotaishop/advanced/backend/web/index.php'
+    'PHP_SELF' => '/duotaishop/advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422536308.685
+    'REQUEST_TIME' => 1422536308
+]
+2015-01-29 13:58:35 [127.0.0.1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 20390 bytes' 
+
+in E:\jicheng\htdocs\duotaishop\advanced\vendor\yiisoft\yii2-debug\LogTarget.php:86
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'E:\jicheng\htdo...', 86, Array)
+#1 E:\jicheng\htdocs\duotaishop\advanced\vendor\yiisoft\yii2-debug\LogTarget.php(86): unserialize('<<<<<<< HEAD?a:...')
+#2 E:\jicheng\htdocs\duotaishop\advanced\vendor\yiisoft\yii2-debug\LogTarget.php(61): yii\debug\LogTarget->updateIndexFile('E:\jicheng\htdo...', Array)
+#3 E:\jicheng\htdocs\duotaishop\advanced\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#4 E:\jicheng\htdocs\duotaishop\advanced\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#5 E:\jicheng\htdocs\duotaishop\advanced\vendor\yiisoft\yii2\log\Logger.php(166): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2015-01-29 13:58:34 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'gii'
+]
+
+$_COOKIE = [
+    'Hm_lvt_2531171454aa43a1c0e4e7f3ec040fbf' => '1420804754,1420847253,1420963862'
+    'Hm_lvt_aedee6983d4cfc62f509129360d6bb3d' => '1420961449'
+    'pgv_pvi' => '5305690112'
+    'PHPSESSID' => 't3da8qi60g4onc3l2spp4sjhf3'
+    '_csrf' => '0d1297854df3082f2c07d828d54e68b62c56634f50e7caaff2aee507bd720576s:32:\"FsHhSGaMypFyelESOjWLlbb5-nq-nsG9\";'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'E:/jicheng/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'E:/jicheng/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:35.0) Gecko/20100101 Firefox/35.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-cn,zh;q=0.8,en-us;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'Hm_lvt_2531171454aa43a1c0e4e7f3ec040fbf=1420804754,1420847253,1420963862; Hm_lvt_aedee6983d4cfc62f509129360d6bb3d=1420961449; pgv_pvi=5305690112; PHPSESSID=t3da8qi60g4onc3l2spp4sjhf3; _csrf=0d1297854df3082f2c07d828d54e68b62c56634f50e7caaff2aee507bd720576s%3A32%3A%22FsHhSGaMypFyelESOjWLlbb5-nq-nsG9%22%3B'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\NetSarang;E:\\web\\PHP\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\web\\MYSQL\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Java\\jdk1.7.0_71\\bin;C:\\Program Files\\Java\\jdk1.7.0_71\\jre\\bin;C:\\Program Files\\TortoiseGit\\bin;E:\\jicheng\\php\\php.exe;C:\\Program Files\\nodejs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/jicheng/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/jicheng/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'E:/jicheng/htdocs/duotaishop/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '61244'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=gii'
+    'REQUEST_URI' => '/duotaishop/advanced/backend/web/index.php?r=gii'
+    'SCRIPT_NAME' => '/duotaishop/advanced/backend/web/index.php'
+    'PHP_SELF' => '/duotaishop/advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422536314.847
+    'REQUEST_TIME' => 1422536314
+]
+2015-01-29 13:58:37 [127.0.0.1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 20390 bytes' 
+
+in E:\jicheng\htdocs\duotaishop\advanced\vendor\yiisoft\yii2-debug\LogTarget.php:86
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'E:\jicheng\htdo...', 86, Array)
+#1 E:\jicheng\htdocs\duotaishop\advanced\vendor\yiisoft\yii2-debug\LogTarget.php(86): unserialize('<<<<<<< HEAD?a:...')
+#2 E:\jicheng\htdocs\duotaishop\advanced\vendor\yiisoft\yii2-debug\LogTarget.php(61): yii\debug\LogTarget->updateIndexFile('E:\jicheng\htdo...', Array)
+#3 E:\jicheng\htdocs\duotaishop\advanced\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#4 E:\jicheng\htdocs\duotaishop\advanced\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#5 E:\jicheng\htdocs\duotaishop\advanced\vendor\yiisoft\yii2\log\Logger.php(166): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2015-01-29 13:58:36 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'gii/default/view'
+    'id' => 'model'
+]
+
+$_COOKIE = [
+    'Hm_lvt_2531171454aa43a1c0e4e7f3ec040fbf' => '1420804754,1420847253,1420963862'
+    'Hm_lvt_aedee6983d4cfc62f509129360d6bb3d' => '1420961449'
+    'pgv_pvi' => '5305690112'
+    'PHPSESSID' => 't3da8qi60g4onc3l2spp4sjhf3'
+    '_csrf' => '0d1297854df3082f2c07d828d54e68b62c56634f50e7caaff2aee507bd720576s:32:\"FsHhSGaMypFyelESOjWLlbb5-nq-nsG9\";'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'E:/jicheng/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'E:/jicheng/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:35.0) Gecko/20100101 Firefox/35.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-cn,zh;q=0.8,en-us;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/duotaishop/advanced/backend/web/index.php?r=gii'
+    'HTTP_COOKIE' => 'Hm_lvt_2531171454aa43a1c0e4e7f3ec040fbf=1420804754,1420847253,1420963862; Hm_lvt_aedee6983d4cfc62f509129360d6bb3d=1420961449; pgv_pvi=5305690112; PHPSESSID=t3da8qi60g4onc3l2spp4sjhf3; _csrf=0d1297854df3082f2c07d828d54e68b62c56634f50e7caaff2aee507bd720576s%3A32%3A%22FsHhSGaMypFyelESOjWLlbb5-nq-nsG9%22%3B'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\NetSarang;E:\\web\\PHP\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\web\\MYSQL\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Java\\jdk1.7.0_71\\bin;C:\\Program Files\\Java\\jdk1.7.0_71\\jre\\bin;C:\\Program Files\\TortoiseGit\\bin;E:\\jicheng\\php\\php.exe;C:\\Program Files\\nodejs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/jicheng/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/jicheng/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'E:/jicheng/htdocs/duotaishop/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '61244'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=gii%2Fdefault%2Fview&id=model'
+    'REQUEST_URI' => '/duotaishop/advanced/backend/web/index.php?r=gii%2Fdefault%2Fview&id=model'
+    'SCRIPT_NAME' => '/duotaishop/advanced/backend/web/index.php'
+    'PHP_SELF' => '/duotaishop/advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422536316.869
+    'REQUEST_TIME' => 1422536316
+]
+2015-01-29 13:58:44 [127.0.0.1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 20390 bytes' 
+
+in E:\jicheng\htdocs\duotaishop\advanced\vendor\yiisoft\yii2-debug\LogTarget.php:86
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'E:\jicheng\htdo...', 86, Array)
+#1 E:\jicheng\htdocs\duotaishop\advanced\vendor\yiisoft\yii2-debug\LogTarget.php(86): unserialize('<<<<<<< HEAD?a:...')
+#2 E:\jicheng\htdocs\duotaishop\advanced\vendor\yiisoft\yii2-debug\LogTarget.php(61): yii\debug\LogTarget->updateIndexFile('E:\jicheng\htdo...', Array)
+#3 E:\jicheng\htdocs\duotaishop\advanced\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#4 E:\jicheng\htdocs\duotaishop\advanced\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#5 E:\jicheng\htdocs\duotaishop\advanced\vendor\yiisoft\yii2\log\Logger.php(166): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2015-01-29 13:58:44 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'gii/default/view'
+    'id' => 'model'
+]
+
+$_POST = [
+    '_csrf' => 'N1lZcWo5QldxKhEZOX4jGk4pHwgPVQcEeDMOPQZbIGIaNyhcBEoFbg=='
+    'Generator' => [
+        'tableName' => 'category'
+        'modelClass' => 'Category'
+        'ns' => 'app\\models'
+        'baseClass' => 'yii\\db\\ActiveRecord'
+        'db' => 'db'
+        'useTablePrefix' => '0'
+        'generateRelations' => '1'
+        'generateLabelsFromComments' => '0'
+        'enableI18N' => '0'
+        'messageCategory' => 'app'
+        'template' => 'default'
+    ]
+    'preview' => ''
+]
+
+$_COOKIE = [
+    'Hm_lvt_2531171454aa43a1c0e4e7f3ec040fbf' => '1420804754,1420847253,1420963862'
+    'Hm_lvt_aedee6983d4cfc62f509129360d6bb3d' => '1420961449'
+    'pgv_pvi' => '5305690112'
+    'PHPSESSID' => 't3da8qi60g4onc3l2spp4sjhf3'
+    '_csrf' => '0d1297854df3082f2c07d828d54e68b62c56634f50e7caaff2aee507bd720576s:32:\"FsHhSGaMypFyelESOjWLlbb5-nq-nsG9\";'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'E:/jicheng/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'E:/jicheng/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:35.0) Gecko/20100101 Firefox/35.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-cn,zh;q=0.8,en-us;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/duotaishop/advanced/backend/web/index.php?r=gii%2Fdefault%2Fview&id=model'
+    'HTTP_COOKIE' => 'Hm_lvt_2531171454aa43a1c0e4e7f3ec040fbf=1420804754,1420847253,1420963862; Hm_lvt_aedee6983d4cfc62f509129360d6bb3d=1420961449; pgv_pvi=5305690112; PHPSESSID=t3da8qi60g4onc3l2spp4sjhf3; _csrf=0d1297854df3082f2c07d828d54e68b62c56634f50e7caaff2aee507bd720576s%3A32%3A%22FsHhSGaMypFyelESOjWLlbb5-nq-nsG9%22%3B'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '486'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\NetSarang;E:\\web\\PHP\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\web\\MYSQL\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Java\\jdk1.7.0_71\\bin;C:\\Program Files\\Java\\jdk1.7.0_71\\jre\\bin;C:\\Program Files\\TortoiseGit\\bin;E:\\jicheng\\php\\php.exe;C:\\Program Files\\nodejs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/jicheng/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/jicheng/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'E:/jicheng/htdocs/duotaishop/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '61281'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=gii%2Fdefault%2Fview&id=model'
+    'REQUEST_URI' => '/duotaishop/advanced/backend/web/index.php?r=gii%2Fdefault%2Fview&id=model'
+    'SCRIPT_NAME' => '/duotaishop/advanced/backend/web/index.php'
+    'PHP_SELF' => '/duotaishop/advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422536324.075
+    'REQUEST_TIME' => 1422536324
+]
+2015-01-29 13:58:47 [127.0.0.1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 20390 bytes' 
+
+in E:\jicheng\htdocs\duotaishop\advanced\vendor\yiisoft\yii2-debug\LogTarget.php:86
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'E:\jicheng\htdo...', 86, Array)
+#1 E:\jicheng\htdocs\duotaishop\advanced\vendor\yiisoft\yii2-debug\LogTarget.php(86): unserialize('<<<<<<< HEAD?a:...')
+#2 E:\jicheng\htdocs\duotaishop\advanced\vendor\yiisoft\yii2-debug\LogTarget.php(61): yii\debug\LogTarget->updateIndexFile('E:\jicheng\htdo...', Array)
+#3 E:\jicheng\htdocs\duotaishop\advanced\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#4 E:\jicheng\htdocs\duotaishop\advanced\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#5 E:\jicheng\htdocs\duotaishop\advanced\vendor\yiisoft\yii2\log\Logger.php(166): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2015-01-29 13:58:46 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'gii/default/view'
+    'id' => 'model'
+]
+
+$_POST = [
+    '_csrf' => 'N3hGZ0xaTmFxCw4PHx0vLE4IAB4pNgsyeBIRKyA4LFQaFjdKIikJWA=='
+    'Generator' => [
+        'tableName' => 'category'
+        'modelClass' => 'Category'
+        'ns' => 'app\\models'
+        'baseClass' => 'yii\\db\\ActiveRecord'
+        'db' => 'db'
+        'useTablePrefix' => '0'
+        'generateRelations' => '1'
+        'generateLabelsFromComments' => '0'
+        'enableI18N' => '0'
+        'messageCategory' => 'app'
+        'template' => 'default'
+    ]
+    'preview' => ''
+    'answers' => [
+        'd6b3d0e51bf8f6bbfafa8317e8b1f615' => '1'
+    ]
+]
+
+$_COOKIE = [
+    'Hm_lvt_2531171454aa43a1c0e4e7f3ec040fbf' => '1420804754,1420847253,1420963862'
+    'Hm_lvt_aedee6983d4cfc62f509129360d6bb3d' => '1420961449'
+    'pgv_pvi' => '5305690112'
+    'PHPSESSID' => 't3da8qi60g4onc3l2spp4sjhf3'
+    '_csrf' => '0d1297854df3082f2c07d828d54e68b62c56634f50e7caaff2aee507bd720576s:32:\"FsHhSGaMypFyelESOjWLlbb5-nq-nsG9\";'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'E:/jicheng/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'E:/jicheng/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:35.0) Gecko/20100101 Firefox/35.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-cn,zh;q=0.8,en-us;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/duotaishop/advanced/backend/web/index.php?r=gii%2Fdefault%2Fview&id=model'
+    'HTTP_COOKIE' => 'Hm_lvt_2531171454aa43a1c0e4e7f3ec040fbf=1420804754,1420847253,1420963862; Hm_lvt_aedee6983d4cfc62f509129360d6bb3d=1420961449; pgv_pvi=5305690112; PHPSESSID=t3da8qi60g4onc3l2spp4sjhf3; _csrf=0d1297854df3082f2c07d828d54e68b62c56634f50e7caaff2aee507bd720576s%3A32%3A%22FsHhSGaMypFyelESOjWLlbb5-nq-nsG9%22%3B'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '534'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\NetSarang;E:\\web\\PHP\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\web\\MYSQL\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Java\\jdk1.7.0_71\\bin;C:\\Program Files\\Java\\jdk1.7.0_71\\jre\\bin;C:\\Program Files\\TortoiseGit\\bin;E:\\jicheng\\php\\php.exe;C:\\Program Files\\nodejs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/jicheng/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/jicheng/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'E:/jicheng/htdocs/duotaishop/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '61287'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=gii%2Fdefault%2Fview&id=model'
+    'REQUEST_URI' => '/duotaishop/advanced/backend/web/index.php?r=gii%2Fdefault%2Fview&id=model'
+    'SCRIPT_NAME' => '/duotaishop/advanced/backend/web/index.php'
+    'PHP_SELF' => '/duotaishop/advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422536326.81
+    'REQUEST_TIME' => 1422536326
+]
+2015-01-29 13:58:51 [127.0.0.1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 20390 bytes' 
+
+in E:\jicheng\htdocs\duotaishop\advanced\vendor\yiisoft\yii2-debug\LogTarget.php:86
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'E:\jicheng\htdo...', 86, Array)
+#1 E:\jicheng\htdocs\duotaishop\advanced\vendor\yiisoft\yii2-debug\LogTarget.php(86): unserialize('<<<<<<< HEAD?a:...')
+#2 E:\jicheng\htdocs\duotaishop\advanced\vendor\yiisoft\yii2-debug\LogTarget.php(61): yii\debug\LogTarget->updateIndexFile('E:\jicheng\htdo...', Array)
+#3 E:\jicheng\htdocs\duotaishop\advanced\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#4 E:\jicheng\htdocs\duotaishop\advanced\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#5 E:\jicheng\htdocs\duotaishop\advanced\vendor\yiisoft\yii2\log\Logger.php(166): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2015-01-29 13:58:51 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'gii/default/view'
+    'id' => 'model'
+]
+
+$_POST = [
+    '_csrf' => 'd1VwNEptdGcxJjhcGSoVKg4lNk0vATE0OD8neCYPFlJaOwEZJB4zXg=='
+    'Generator' => [
+        'tableName' => 'category'
+        'modelClass' => 'Category'
+        'ns' => 'app\\models'
+        'baseClass' => 'yii\\db\\ActiveRecord'
+        'db' => 'db'
+        'useTablePrefix' => '0'
+        'generateRelations' => '1'
+        'generateLabelsFromComments' => '0'
+        'enableI18N' => '0'
+        'messageCategory' => 'app'
+        'template' => 'default'
+    ]
+    'generate' => ''
+    'answers' => [
+        'd6b3d0e51bf8f6bbfafa8317e8b1f615' => '1'
+    ]
+]
+
+$_COOKIE = [
+    'Hm_lvt_2531171454aa43a1c0e4e7f3ec040fbf' => '1420804754,1420847253,1420963862'
+    'Hm_lvt_aedee6983d4cfc62f509129360d6bb3d' => '1420961449'
+    'pgv_pvi' => '5305690112'
+    'PHPSESSID' => 't3da8qi60g4onc3l2spp4sjhf3'
+    '_csrf' => '0d1297854df3082f2c07d828d54e68b62c56634f50e7caaff2aee507bd720576s:32:\"FsHhSGaMypFyelESOjWLlbb5-nq-nsG9\";'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'E:/jicheng/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'E:/jicheng/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:35.0) Gecko/20100101 Firefox/35.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-cn,zh;q=0.8,en-us;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/duotaishop/advanced/backend/web/index.php?r=gii%2Fdefault%2Fview&id=model'
+    'HTTP_COOKIE' => 'Hm_lvt_2531171454aa43a1c0e4e7f3ec040fbf=1420804754,1420847253,1420963862; Hm_lvt_aedee6983d4cfc62f509129360d6bb3d=1420961449; pgv_pvi=5305690112; PHPSESSID=t3da8qi60g4onc3l2spp4sjhf3; _csrf=0d1297854df3082f2c07d828d54e68b62c56634f50e7caaff2aee507bd720576s%3A32%3A%22FsHhSGaMypFyelESOjWLlbb5-nq-nsG9%22%3B'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '535'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\NetSarang;E:\\web\\PHP\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\web\\MYSQL\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Java\\jdk1.7.0_71\\bin;C:\\Program Files\\Java\\jdk1.7.0_71\\jre\\bin;C:\\Program Files\\TortoiseGit\\bin;E:\\jicheng\\php\\php.exe;C:\\Program Files\\nodejs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/jicheng/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/jicheng/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'E:/jicheng/htdocs/duotaishop/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '61298'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=gii%2Fdefault%2Fview&id=model'
+    'REQUEST_URI' => '/duotaishop/advanced/backend/web/index.php?r=gii%2Fdefault%2Fview&id=model'
+    'SCRIPT_NAME' => '/duotaishop/advanced/backend/web/index.php'
+    'PHP_SELF' => '/duotaishop/advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422536331.553
+    'REQUEST_TIME' => 1422536331
+]
