@@ -1,5 +1,5 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
-<HTML xmlns="http://www.w3.org/1999/xhtml"><HEAD><TITLE>ÓÃ»§µÇÂ¼</TITLE><LINK 
+<HTML xmlns="http://www.w3.org/1999/xhtml"><HEAD><TITLE>ç”¨æˆ·ç™»å½•</TITLE><LINK 
 href="image/Default.css" type=text/css rel=stylesheet><LINK 
 href="image/xtree.css" type=text/css rel=stylesheet><LINK 
 href="image/User_Login.css" type=text/css rel=stylesheet>
@@ -21,19 +21,19 @@ href="image/User_Login.css" type=text/css rel=stylesheet>
     <LI class=user_main_c>
     <DIV class=user_main_box>
     <UL>
-      <LI class=user_main_text>ÓÃ»§Ãû£º </LI>
+      <LI class=user_main_text>ç”¨æˆ·åï¼š </LI>
       <LI class=user_main_input><INPUT class=TxtUserNameCssClass id=TxtUserName 
       maxLength=20 name=TxtUserName> </LI></UL>
     <UL>
-      <LI class=user_main_text>ÃÜ Âë£º </LI>
+      <LI class=user_main_text>å¯† ç ï¼š </LI>
       <LI class=user_main_input><INPUT class=TxtPasswordCssClass id=TxtPassword 
       type=password name=TxtPassword> </LI></UL>
     <UL>
-      <LI class=user_main_text>Cookie£º </LI>
+      <LI class=user_main_text>Cookieï¼š </LI>
       <LI class=user_main_input><SELECT id=DropExpiration name=DropExpiration> 
-        <OPTION value=None selected>²»±£´æ</OPTION> <OPTION value=Day>±£´æÒ»Ìì</OPTION> 
-        <OPTION value=Month>±£´æÒ»ÔÂ</OPTION> <OPTION 
-      value=Year>±£´æÒ»Äê</OPTION></SELECT> </LI></UL></DIV></LI>
+        <OPTION value=None selected>ä¸ä¿å­˜</OPTION> <OPTION value=Day>ä¿å­˜ä¸€å¤©</OPTION> 
+        <OPTION value=Month>ä¿å­˜ä¸€æœˆ</OPTION> <OPTION 
+      value=Year>ä¿å­˜ä¸€å¹´</OPTION></SELECT> </LI></UL></DIV></LI>
     <LI class=user_main_r><INPUT class=IbtnEnterCssClass id=IbtnEnter 
     style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
     onclick='javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions("IbtnEnter", "", true, "", "", false, false))' 
@@ -41,8 +41,8 @@ href="image/User_Login.css" type=text/css rel=stylesheet>
   <DD id=user_bottom>
   <UL>
     <LI class=user_bottom_l></LI>
-    <LI class=user_bottom_c><SPAN style="MARGIN-TOP: 40px">Èç¹ûÄúÏë»ñµÃ¸ü¶àºóÌ¨Ä£°å£¬Çëµã´Ë <A 
-    href="http://www.mycodes.net">Ô´ÂëÖ®¼Ò</A> ¡£</SPAN> </LI>
+    <LI class=user_bottom_c><SPAN style="MARGIN-TOP: 40px">å¦‚æžœæ‚¨æƒ³èŽ·å¾—æ›´å¤šåŽå°æ¨¡æ¿ï¼Œè¯·ç‚¹æ­¤ <A 
+    href="http://www.mycodes.net">æºç ä¹‹å®¶</A> ã€‚</SPAN> </LI>
     <LI class=user_bottom_r></LI></UL></DD></DL></DIV><SPAN id=ValrUserName 
 style="DISPLAY: none; COLOR: red"></SPAN><SPAN id=ValrPassword 
 style="DISPLAY: none; COLOR: red"></SPAN><SPAN id=ValrValidateCode 
