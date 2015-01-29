@@ -99,7 +99,7 @@
                         </tr>
                     </table>
                     <div class="btnWrapper">
-                    	<a href="javascript:void(0);">返回查看订单详情</a>
+                    	<a href="index.php?r=index/shoppingmsg">返回查看订单详情</a>
                     </div>
                 </div>
                 <!--END-->

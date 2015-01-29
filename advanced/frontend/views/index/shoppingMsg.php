@@ -227,7 +227,7 @@
                         </tr>
                     </table>
                     <div class="btnWrapper">
-                    	<a href="javascript:void(0);">立即提交</a>
+                    	<a href="index.php?r=index/payment">立即提交</a>
                     </div>
                 </div>
               </div>
