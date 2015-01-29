@@ -1,36 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>首页</title>
-<link rel="stylesheet" type="text/css" href="styles/common.css"/>
-<script type="text/javascript" src="scripts/jquery1.42.min.js"></script>
-<script type="text/javascript" src="scripts/jquery.superslide.2.1.1.js"></script>
-</head>
 
-<body>
-<div class="wrapper">
-	<!-- 头部区域 -->
-	<div class="headerWrapper">
-    	<div class="header">
-        	<!--顶部登录信息-->
-        	<div class="site_wrap">
-            	<div class="site_con">
-                	<span>您好，欢迎来到锡盟鑫泰！</span>
-                    <a href="index.php?r=login/index">【登录】</a>
-                    <a href="javascript:void(0);">【免费注册】</a>
-                </div>
-            </div>
-            <!--顶部登录信息END-->
-            <div class="site_title clearfix">
-            	<div class="notice_wrap">
-                	<span></span>
-                </div>
-                <div class="logo_wrap fl clearfix">
-                	<img class="fl" src="images/logo.jpg" width="49" height="37" />
-                    <span></span>
-                </div>
-            </div>
             <!-- 导航 -->
             <div class="menuWrapper">
             	<div class="menu_wrap clearfix">
@@ -88,7 +56,7 @@
                             <p>肤所需的活性养分，迅速输送到皮肤基底层，增强细胞活力，同时改善面部皱纹帮助肌肤重换活力，恢复光泽和弹性</p>
                         </div>
                         <div class="price">
-                        	<a class="btn" href="javascript:void(0);">去看看</a>
+                        	<a class="btn" href="index.php?r=index/mall">去看看</a>
                         	<span class="nowPrice">￥199</span>
                             <span class="oldPrice">￥340</span>
                         </div>
@@ -480,19 +448,19 @@
             <!-- 底部区域END -->
             <!--跟随窗口浮动区域-->
             <div class="fixedWrap" id="fixedWrap">
-                <a href="javascript:void(0);">
+                <a href="#" onclick="history.go(0);">
                 	<div class="imgWrap">
                     	<img src="images/fix_icon_1.png" width="21" height="27" />
                     </div>
                 	<p>返回顶部</p>
                 </a>
-                <a href="javascript:void(0);">
+                <a href="index.php?r=index/shoppingcar">
                 	<div class="imgWrap">
                     	<img class="mt5" src="images/fix_icon_2.png" width="27" height="22" />
                     </div>
                 	<p>购物车</p>
                 </a>
-                <a href="javascript:void(0);">
+                <a href="index.php?r=index/shoppingcar">
                 	<div class="imgWrap">
                     	<img class="mt5" src="images/fix_icon_3.png" width="24" height="19" />
                     </div>
