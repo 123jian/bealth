@@ -21,13 +21,18 @@ class GoodsController extends \yii\web\Controller
 	public $enableCsrfValidation = false;
 	public function actionIndex()
     {
-		//print_r($_GET);die;
+		//导航
+		$cat=new Category();
+		$c=$cat->find()->where(['cat_status'=>1])->all();
+		//print_r($c);die;
+		//商品信息
 		$gid=$_GET['gid'];
-		//echo $gid;die;
 		$goo= new Goods();
 		$data=$goo->find()->where(['goods_id'=>$gid])->one();
-		//$data = $goo::where(['goods_id'=>$gid])->find()->one();
-		//print_r($data);die;
-		$this->renderPartial('protype',['data'=>$data]);
+		//
+		$data1=$goo->find()->limit(2)->all();
+		//print_R($data1);die;
+		$datar=$goo->find()->limit(4)->all();
+		return $this->renderPartial('mall',['cate'=>$c,'data1'=>$data1,'datar'=>$datar,'data'=>$data,]);
     }
 }
