@@ -21,7 +21,7 @@ class CategoryController extends \yii\web\Controller
 	public $enableCsrfValidation = false;
 	public function actionIndex()
     {
-		$this->layout='@app/views/layouts/layout.php';
+		//$this->layout='@app/views/layouts/layout.php';
 		//echo 111;die;
 		/**/$goo= new goods();
 		$id=8;
@@ -33,7 +33,7 @@ class CategoryController extends \yii\web\Controller
 		$data1=$goo->find()->limit(2)->all();
 		//print_R($data1);die;
 		$datar=$goo->find()->limit(4)->all();
-		return $this->render('protype',['data'=>$model,'data1'=>$data1,'datar'=>$datar,'pages' => $pages]);
+		return $this->renderPartial('protype',['data'=>$model,'data1'=>$data1,'datar'=>$datar,'pages' => $pages]);
         //return $this->render('protype');
     }
 	
