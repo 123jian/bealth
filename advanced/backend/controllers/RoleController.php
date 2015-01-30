@@ -8,5 +8,9 @@ class RoleController extends \yii\web\Controller
     {
         return $this->renderpartial('index');
     }
+	public function actionEdit()
+    {
+        return $this->renderpartial('edit');
+    }
 
 }
