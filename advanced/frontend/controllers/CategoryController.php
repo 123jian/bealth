@@ -43,5 +43,4 @@ class CategoryController extends \yii\web\Controller
 		return $this->renderPartial('protype',['cate'=>$c,'data'=>$model,'data1'=>$data1,'datar'=>$datar,'pages' => $pages]);
         //return $this->render('protype');
     }
-	
 }

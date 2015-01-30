@@ -52,7 +52,7 @@ use yii\widgets\LinkPager;
                 	<ul class="menu_list fl clearfix">
 					<?php foreach($cate as $ck=>$cv){?>
                     	<li><a href="./index.php?r=category/index&cid=<?php echo $cv['cat_id']?>"><?php echo $cv['cat_name']?></a>|</li>
-                       <?php }?>
+                    <?php }?>
                     </ul>
                 </div>
             </div>
@@ -190,7 +190,7 @@ use yii\widgets\LinkPager;
                                         </p>
                                         <p class="clearfix">
                                         	<a class="btn fr" href="javascript:void(0);">收藏</a>
-                                            <a class="btn fl" href="javascript:void(0);">加入购物车</a>
+                                            <a class="btn fl" href="./index.php?r=cart/">加入购物车</a>
                                         </p>
                                     </li>
                                 <?php }?>
@@ -226,7 +226,7 @@ use yii\widgets\LinkPager;
             <!-- 底部区域END -->
             <!--跟随窗口浮动区域-->
             <div class="fixedWrap" id="fixedWrap">
-                <a href="javascript:void(0);">
+                <a href="javascript:scrollTo(0,0);">
                 	<div class="imgWrap">
                     	<img src="images/fix_icon_1.png" width="21" height="27" />
                     </div>
