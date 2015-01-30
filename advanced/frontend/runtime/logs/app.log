@@ -3851,3 +3851,1199 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1422589752.047
     'REQUEST_TIME' => 1422589752
 ]
+2015-01-30 04:59:46 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Use of undefined constant desc - assumed 'desc'' in E:\duotai\advanced\frontend\controllers\IndexController.php:13
+Stack trace:
+#0 E:\duotai\advanced\frontend\controllers\IndexController.php(13): yii\base\ErrorHandler->handleError(8, 'Use of undefine...', 'E:\duotai\advan...', 13, Array)
+#1 [internal function]: frontend\controllers\IndexController->actionIndex()
+#2 E:\duotai\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#3 E:\duotai\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#4 E:\duotai\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('', Array)
+#5 E:\duotai\advanced\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('index', Array)
+#6 E:\duotai\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 E:\duotai\advanced\frontend\web\index.php(20): yii\base\Application->run()
+#8 {main}
+2015-01-30 04:59:46 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'index'
+]
+
+$_COOKIE = [
+    '_csrf' => '267615cd8e90ad77c00fb65717cec2eb847a569ef310005bee79dc598a76df52s:32:\"PI7VGvevTEvF3q2REJM37T09pE1VaM7b\";'
+    'PHPSESSID' => '7cennjquqvqbonp7atqa8lmd51'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'E:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'E:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'www.duotai.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2236.0 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => '_csrf=267615cd8e90ad77c00fb65717cec2eb847a569ef310005bee79dc598a76df52s%3A32%3A%22PI7VGvevTEvF3q2REJM37T09pE1VaM7b%22%3B; PHPSESSID=7cennjquqvqbonp7atqa8lmd51'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\AMD APP\\bin\\x86;C:\\Program Files\\Common Files\\NetSarang;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\ATI Technologies\\ATI.ACE\\Core-Static;E:\\web\\TortoiseSVN\\bin;E:\\web\\TortoiseGit\\bin;E:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;E:\\web\\JDK\\bin;E:\\web\\NodeJs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at www.duotai.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'www.duotai.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/duotai/advanced'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/duotai/advanced'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'E:/duotai/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '60053'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=index'
+    'REQUEST_URI' => '/frontend/web/index.php?r=index'
+    'SCRIPT_NAME' => '/frontend/web/index.php'
+    'PHP_SELF' => '/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422590386.387
+    'REQUEST_TIME' => 1422590386
+]
+2015-01-30 05:00:29 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Use of undefined constant goods_id - assumed 'goods_id'' in E:\duotai\advanced\frontend\controllers\IndexController.php:13
+Stack trace:
+#0 E:\duotai\advanced\frontend\controllers\IndexController.php(13): yii\base\ErrorHandler->handleError(8, 'Use of undefine...', 'E:\duotai\advan...', 13, Array)
+#1 [internal function]: frontend\controllers\IndexController->actionIndex()
+#2 E:\duotai\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#3 E:\duotai\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#4 E:\duotai\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('', Array)
+#5 E:\duotai\advanced\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('index', Array)
+#6 E:\duotai\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 E:\duotai\advanced\frontend\web\index.php(20): yii\base\Application->run()
+#8 {main}
+2015-01-30 05:00:29 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'index'
+]
+
+$_COOKIE = [
+    '_csrf' => '267615cd8e90ad77c00fb65717cec2eb847a569ef310005bee79dc598a76df52s:32:\"PI7VGvevTEvF3q2REJM37T09pE1VaM7b\";'
+    'PHPSESSID' => '7cennjquqvqbonp7atqa8lmd51'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'E:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'E:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'www.duotai.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2236.0 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => '_csrf=267615cd8e90ad77c00fb65717cec2eb847a569ef310005bee79dc598a76df52s%3A32%3A%22PI7VGvevTEvF3q2REJM37T09pE1VaM7b%22%3B; PHPSESSID=7cennjquqvqbonp7atqa8lmd51'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\AMD APP\\bin\\x86;C:\\Program Files\\Common Files\\NetSarang;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\ATI Technologies\\ATI.ACE\\Core-Static;E:\\web\\TortoiseSVN\\bin;E:\\web\\TortoiseGit\\bin;E:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;E:\\web\\JDK\\bin;E:\\web\\NodeJs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at www.duotai.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'www.duotai.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/duotai/advanced'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/duotai/advanced'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'E:/duotai/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '60076'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=index'
+    'REQUEST_URI' => '/frontend/web/index.php?r=index'
+    'SCRIPT_NAME' => '/frontend/web/index.php'
+    'PHP_SELF' => '/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422590429.519
+    'REQUEST_TIME' => 1422590429
+]
+2015-01-30 05:00:45 [127.0.0.1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'order by' in 'where clause'' in E:\duotai\advanced\vendor\yiisoft\yii2\db\Command.php:819
+Stack trace:
+#0 E:\duotai\advanced\vendor\yiisoft\yii2\db\Command.php(819): PDOStatement->execute()
+#1 E:\duotai\advanced\vendor\yiisoft\yii2\db\Command.php(350): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 E:\duotai\advanced\vendor\yiisoft\yii2\db\Query.php(206): yii\db\Command->queryAll()
+#3 E:\duotai\advanced\vendor\yiisoft\yii2\db\ActiveQuery.php(130): yii\db\Query->all(NULL)
+#4 E:\duotai\advanced\frontend\controllers\IndexController.php(13): yii\db\ActiveQuery->all()
+#5 [internal function]: frontend\controllers\IndexController->actionIndex()
+#6 E:\duotai\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#7 E:\duotai\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#8 E:\duotai\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('', Array)
+#9 E:\duotai\advanced\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('index', Array)
+#10 E:\duotai\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 E:\duotai\advanced\frontend\web\index.php(20): yii\base\Application->run()
+#12 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'order by' in 'where clause'
+The SQL being executed was: SELECT * FROM `goods` WHERE (`goods_status`='1') AND (`cat_id`='8') AND (`order by`='goods_id') AND (`limit`=3)' in E:\duotai\advanced\vendor\yiisoft\yii2\db\Schema.php:532
+Stack trace:
+#0 E:\duotai\advanced\vendor\yiisoft\yii2\db\Command.php(834): yii\db\Schema->convertException(Object(PDOException), 'SELECT * FROM `...')
+#1 E:\duotai\advanced\vendor\yiisoft\yii2\db\Command.php(350): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 E:\duotai\advanced\vendor\yiisoft\yii2\db\Query.php(206): yii\db\Command->queryAll()
+#3 E:\duotai\advanced\vendor\yiisoft\yii2\db\ActiveQuery.php(130): yii\db\Query->all(NULL)
+#4 E:\duotai\advanced\frontend\controllers\IndexController.php(13): yii\db\ActiveQuery->all()
+#5 [internal function]: frontend\controllers\IndexController->actionIndex()
+#6 E:\duotai\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#7 E:\duotai\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#8 E:\duotai\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('', Array)
+#9 E:\duotai\advanced\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('index', Array)
+#10 E:\duotai\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 E:\duotai\advanced\frontend\web\index.php(20): yii\base\Application->run()
+#12 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'order by' in 'where clause'
+)
+
+2015-01-30 05:00:45 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'index'
+]
+
+$_COOKIE = [
+    '_csrf' => '267615cd8e90ad77c00fb65717cec2eb847a569ef310005bee79dc598a76df52s:32:\"PI7VGvevTEvF3q2REJM37T09pE1VaM7b\";'
+    'PHPSESSID' => '7cennjquqvqbonp7atqa8lmd51'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'E:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'E:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'www.duotai.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2236.0 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => '_csrf=267615cd8e90ad77c00fb65717cec2eb847a569ef310005bee79dc598a76df52s%3A32%3A%22PI7VGvevTEvF3q2REJM37T09pE1VaM7b%22%3B; PHPSESSID=7cennjquqvqbonp7atqa8lmd51'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\AMD APP\\bin\\x86;C:\\Program Files\\Common Files\\NetSarang;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\ATI Technologies\\ATI.ACE\\Core-Static;E:\\web\\TortoiseSVN\\bin;E:\\web\\TortoiseGit\\bin;E:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;E:\\web\\JDK\\bin;E:\\web\\NodeJs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at www.duotai.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'www.duotai.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/duotai/advanced'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/duotai/advanced'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'E:/duotai/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '60080'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=index'
+    'REQUEST_URI' => '/frontend/web/index.php?r=index'
+    'SCRIPT_NAME' => '/frontend/web/index.php'
+    'PHP_SELF' => '/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422590445.308
+    'REQUEST_TIME' => 1422590445
+]
+2015-01-30 05:01:35 [127.0.0.1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'limit' in 'where clause'' in E:\duotai\advanced\vendor\yiisoft\yii2\db\Command.php:819
+Stack trace:
+#0 E:\duotai\advanced\vendor\yiisoft\yii2\db\Command.php(819): PDOStatement->execute()
+#1 E:\duotai\advanced\vendor\yiisoft\yii2\db\Command.php(350): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 E:\duotai\advanced\vendor\yiisoft\yii2\db\Query.php(206): yii\db\Command->queryAll()
+#3 E:\duotai\advanced\vendor\yiisoft\yii2\db\ActiveQuery.php(130): yii\db\Query->all(NULL)
+#4 E:\duotai\advanced\frontend\controllers\IndexController.php(13): yii\db\ActiveQuery->all()
+#5 [internal function]: frontend\controllers\IndexController->actionIndex()
+#6 E:\duotai\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#7 E:\duotai\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#8 E:\duotai\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('', Array)
+#9 E:\duotai\advanced\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('index', Array)
+#10 E:\duotai\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 E:\duotai\advanced\frontend\web\index.php(20): yii\base\Application->run()
+#12 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'limit' in 'where clause'
+The SQL being executed was: SELECT * FROM `goods` WHERE (`goods_status`='1') AND (`cat_id`='8') AND (`limit`=3)' in E:\duotai\advanced\vendor\yiisoft\yii2\db\Schema.php:532
+Stack trace:
+#0 E:\duotai\advanced\vendor\yiisoft\yii2\db\Command.php(834): yii\db\Schema->convertException(Object(PDOException), 'SELECT * FROM `...')
+#1 E:\duotai\advanced\vendor\yiisoft\yii2\db\Command.php(350): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 E:\duotai\advanced\vendor\yiisoft\yii2\db\Query.php(206): yii\db\Command->queryAll()
+#3 E:\duotai\advanced\vendor\yiisoft\yii2\db\ActiveQuery.php(130): yii\db\Query->all(NULL)
+#4 E:\duotai\advanced\frontend\controllers\IndexController.php(13): yii\db\ActiveQuery->all()
+#5 [internal function]: frontend\controllers\IndexController->actionIndex()
+#6 E:\duotai\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#7 E:\duotai\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#8 E:\duotai\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('', Array)
+#9 E:\duotai\advanced\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('index', Array)
+#10 E:\duotai\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 E:\duotai\advanced\frontend\web\index.php(20): yii\base\Application->run()
+#12 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'limit' in 'where clause'
+)
+
+2015-01-30 05:01:35 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'index'
+]
+
+$_COOKIE = [
+    '_csrf' => '267615cd8e90ad77c00fb65717cec2eb847a569ef310005bee79dc598a76df52s:32:\"PI7VGvevTEvF3q2REJM37T09pE1VaM7b\";'
+    'PHPSESSID' => '7cennjquqvqbonp7atqa8lmd51'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'E:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'E:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'www.duotai.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2236.0 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => '_csrf=267615cd8e90ad77c00fb65717cec2eb847a569ef310005bee79dc598a76df52s%3A32%3A%22PI7VGvevTEvF3q2REJM37T09pE1VaM7b%22%3B; PHPSESSID=7cennjquqvqbonp7atqa8lmd51'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\AMD APP\\bin\\x86;C:\\Program Files\\Common Files\\NetSarang;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\ATI Technologies\\ATI.ACE\\Core-Static;E:\\web\\TortoiseSVN\\bin;E:\\web\\TortoiseGit\\bin;E:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;E:\\web\\JDK\\bin;E:\\web\\NodeJs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at www.duotai.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'www.duotai.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/duotai/advanced'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/duotai/advanced'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'E:/duotai/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '60092'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=index'
+    'REQUEST_URI' => '/frontend/web/index.php?r=index'
+    'SCRIPT_NAME' => '/frontend/web/index.php'
+    'PHP_SELF' => '/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422590495.791
+    'REQUEST_TIME' => 1422590495
+]
+2015-01-30 05:12:52 [127.0.0.1][-][-][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'Cannot modify header information - headers already sent by (output started at E:\duotai\advanced\frontend\controllers\IndexController.php:16)' in E:\duotai\advanced\frontend\views\layouts\layout.php:7
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'Cannot modify h...', 'E:\duotai\advan...', 7, Array)
+#1 E:\duotai\advanced\frontend\views\layouts\layout.php(7): header('content-type:te...')
+#2 E:\duotai\advanced\vendor\yiisoft\yii2\base\View.php(325): require('E:\duotai\advan...')
+#3 E:\duotai\advanced\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('E:\duotai\advan...', Array)
+#4 E:\duotai\advanced\vendor\yiisoft\yii2\base\Controller.php(370): yii\base\View->renderFile('E:\duotai\advan...', Array, Object(frontend\controllers\IndexController))
+#5 E:\duotai\advanced\frontend\controllers\IndexController.php(17): yii\base\Controller->render('index', Array)
+#6 [internal function]: frontend\controllers\IndexController->actionIndex()
+#7 E:\duotai\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#8 E:\duotai\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 E:\duotai\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('', Array)
+#10 E:\duotai\advanced\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('index', Array)
+#11 E:\duotai\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 E:\duotai\advanced\frontend\web\index.php(20): yii\base\Application->run()
+#13 {main}
+2015-01-30 05:12:52 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'index'
+]
+
+$_COOKIE = [
+    '_csrf' => '267615cd8e90ad77c00fb65717cec2eb847a569ef310005bee79dc598a76df52s:32:\"PI7VGvevTEvF3q2REJM37T09pE1VaM7b\";'
+    'PHPSESSID' => '7cennjquqvqbonp7atqa8lmd51'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'E:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'E:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'www.duotai.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2236.0 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => '_csrf=267615cd8e90ad77c00fb65717cec2eb847a569ef310005bee79dc598a76df52s%3A32%3A%22PI7VGvevTEvF3q2REJM37T09pE1VaM7b%22%3B; PHPSESSID=7cennjquqvqbonp7atqa8lmd51'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\AMD APP\\bin\\x86;C:\\Program Files\\Common Files\\NetSarang;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\ATI Technologies\\ATI.ACE\\Core-Static;E:\\web\\TortoiseSVN\\bin;E:\\web\\TortoiseGit\\bin;E:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;E:\\web\\JDK\\bin;E:\\web\\NodeJs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at www.duotai.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'www.duotai.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/duotai/advanced'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/duotai/advanced'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'E:/duotai/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '60334'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=index'
+    'REQUEST_URI' => '/frontend/web/index.php?r=index'
+    'SCRIPT_NAME' => '/frontend/web/index.php'
+    'PHP_SELF' => '/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422591172.732
+    'REQUEST_TIME' => 1422591172
+]
+2015-01-30 05:14:27 [127.0.0.1][-][-][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'Cannot modify header information - headers already sent by (output started at E:\duotai\advanced\frontend\controllers\IndexController.php:16)' in E:\duotai\advanced\frontend\views\layouts\layout.php:7
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'Cannot modify h...', 'E:\duotai\advan...', 7, Array)
+#1 E:\duotai\advanced\frontend\views\layouts\layout.php(7): header('content-type:te...')
+#2 E:\duotai\advanced\vendor\yiisoft\yii2\base\View.php(325): require('E:\duotai\advan...')
+#3 E:\duotai\advanced\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('E:\duotai\advan...', Array)
+#4 E:\duotai\advanced\vendor\yiisoft\yii2\base\Controller.php(370): yii\base\View->renderFile('E:\duotai\advan...', Array, Object(frontend\controllers\IndexController))
+#5 E:\duotai\advanced\frontend\controllers\IndexController.php(17): yii\base\Controller->render('index', Array)
+#6 [internal function]: frontend\controllers\IndexController->actionIndex()
+#7 E:\duotai\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#8 E:\duotai\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 E:\duotai\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('', Array)
+#10 E:\duotai\advanced\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('index', Array)
+#11 E:\duotai\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 E:\duotai\advanced\frontend\web\index.php(20): yii\base\Application->run()
+#13 {main}
+2015-01-30 05:14:27 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'index'
+]
+
+$_COOKIE = [
+    '_csrf' => '267615cd8e90ad77c00fb65717cec2eb847a569ef310005bee79dc598a76df52s:32:\"PI7VGvevTEvF3q2REJM37T09pE1VaM7b\";'
+    'PHPSESSID' => '7cennjquqvqbonp7atqa8lmd51'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'E:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'E:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'www.duotai.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2236.0 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => '_csrf=267615cd8e90ad77c00fb65717cec2eb847a569ef310005bee79dc598a76df52s%3A32%3A%22PI7VGvevTEvF3q2REJM37T09pE1VaM7b%22%3B; PHPSESSID=7cennjquqvqbonp7atqa8lmd51'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\AMD APP\\bin\\x86;C:\\Program Files\\Common Files\\NetSarang;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\ATI Technologies\\ATI.ACE\\Core-Static;E:\\web\\TortoiseSVN\\bin;E:\\web\\TortoiseGit\\bin;E:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;E:\\web\\JDK\\bin;E:\\web\\NodeJs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at www.duotai.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'www.duotai.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/duotai/advanced'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/duotai/advanced'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'E:/duotai/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '60375'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=index'
+    'REQUEST_URI' => '/frontend/web/index.php?r=index'
+    'SCRIPT_NAME' => '/frontend/web/index.php'
+    'PHP_SELF' => '/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422591267.621
+    'REQUEST_TIME' => 1422591267
+]
+2015-01-30 05:17:30 [127.0.0.1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'order by' in 'where clause'' in E:\duotai\advanced\vendor\yiisoft\yii2\db\Command.php:819
+Stack trace:
+#0 E:\duotai\advanced\vendor\yiisoft\yii2\db\Command.php(819): PDOStatement->execute()
+#1 E:\duotai\advanced\vendor\yiisoft\yii2\db\Command.php(350): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 E:\duotai\advanced\vendor\yiisoft\yii2\db\Query.php(206): yii\db\Command->queryAll()
+#3 E:\duotai\advanced\vendor\yiisoft\yii2\db\ActiveQuery.php(130): yii\db\Query->all(NULL)
+#4 E:\duotai\advanced\frontend\controllers\IndexController.php(14): yii\db\ActiveQuery->all()
+#5 [internal function]: frontend\controllers\IndexController->actionIndex()
+#6 E:\duotai\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#7 E:\duotai\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#8 E:\duotai\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('', Array)
+#9 E:\duotai\advanced\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('index', Array)
+#10 E:\duotai\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 E:\duotai\advanced\frontend\web\index.php(20): yii\base\Application->run()
+#12 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'order by' in 'where clause'
+The SQL being executed was: SELECT * FROM `goods` WHERE (`goods_status`='1') AND (`cat_id`='8') AND (`order by`='goods_id') AND (`limit`=3)' in E:\duotai\advanced\vendor\yiisoft\yii2\db\Schema.php:532
+Stack trace:
+#0 E:\duotai\advanced\vendor\yiisoft\yii2\db\Command.php(834): yii\db\Schema->convertException(Object(PDOException), 'SELECT * FROM `...')
+#1 E:\duotai\advanced\vendor\yiisoft\yii2\db\Command.php(350): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 E:\duotai\advanced\vendor\yiisoft\yii2\db\Query.php(206): yii\db\Command->queryAll()
+#3 E:\duotai\advanced\vendor\yiisoft\yii2\db\ActiveQuery.php(130): yii\db\Query->all(NULL)
+#4 E:\duotai\advanced\frontend\controllers\IndexController.php(14): yii\db\ActiveQuery->all()
+#5 [internal function]: frontend\controllers\IndexController->actionIndex()
+#6 E:\duotai\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#7 E:\duotai\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#8 E:\duotai\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('', Array)
+#9 E:\duotai\advanced\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('index', Array)
+#10 E:\duotai\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 E:\duotai\advanced\frontend\web\index.php(20): yii\base\Application->run()
+#12 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'order by' in 'where clause'
+)
+
+2015-01-30 05:17:30 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'index'
+]
+
+$_COOKIE = [
+    '_csrf' => '267615cd8e90ad77c00fb65717cec2eb847a569ef310005bee79dc598a76df52s:32:\"PI7VGvevTEvF3q2REJM37T09pE1VaM7b\";'
+    'PHPSESSID' => '7cennjquqvqbonp7atqa8lmd51'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'E:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'E:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'www.duotai.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2236.0 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => '_csrf=267615cd8e90ad77c00fb65717cec2eb847a569ef310005bee79dc598a76df52s%3A32%3A%22PI7VGvevTEvF3q2REJM37T09pE1VaM7b%22%3B; PHPSESSID=7cennjquqvqbonp7atqa8lmd51'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\AMD APP\\bin\\x86;C:\\Program Files\\Common Files\\NetSarang;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\ATI Technologies\\ATI.ACE\\Core-Static;E:\\web\\TortoiseSVN\\bin;E:\\web\\TortoiseGit\\bin;E:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;E:\\web\\JDK\\bin;E:\\web\\NodeJs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at www.duotai.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'www.duotai.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/duotai/advanced'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/duotai/advanced'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'E:/duotai/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '60458'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=index'
+    'REQUEST_URI' => '/frontend/web/index.php?r=index'
+    'SCRIPT_NAME' => '/frontend/web/index.php'
+    'PHP_SELF' => '/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422591450.458
+    'REQUEST_TIME' => 1422591450
+]
+2015-01-30 06:45:21 [127.0.0.1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'order by' in 'where clause'' in E:\duotai\advanced\vendor\yiisoft\yii2\db\Command.php:819
+Stack trace:
+#0 E:\duotai\advanced\vendor\yiisoft\yii2\db\Command.php(819): PDOStatement->execute()
+#1 E:\duotai\advanced\vendor\yiisoft\yii2\db\Command.php(350): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 E:\duotai\advanced\vendor\yiisoft\yii2\db\Query.php(206): yii\db\Command->queryAll()
+#3 E:\duotai\advanced\vendor\yiisoft\yii2\db\ActiveQuery.php(130): yii\db\Query->all(NULL)
+#4 E:\duotai\advanced\frontend\controllers\IndexController.php(14): yii\db\ActiveQuery->all()
+#5 [internal function]: frontend\controllers\IndexController->actionIndex()
+#6 E:\duotai\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#7 E:\duotai\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#8 E:\duotai\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('', Array)
+#9 E:\duotai\advanced\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('index', Array)
+#10 E:\duotai\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 E:\duotai\advanced\frontend\web\index.php(20): yii\base\Application->run()
+#12 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'order by' in 'where clause'
+The SQL being executed was: SELECT * FROM `goods` WHERE (`goods_status`='1') AND (`cat_id`='8') AND (`order by`='addtime') AND (`limit`=3)' in E:\duotai\advanced\vendor\yiisoft\yii2\db\Schema.php:532
+Stack trace:
+#0 E:\duotai\advanced\vendor\yiisoft\yii2\db\Command.php(834): yii\db\Schema->convertException(Object(PDOException), 'SELECT * FROM `...')
+#1 E:\duotai\advanced\vendor\yiisoft\yii2\db\Command.php(350): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 E:\duotai\advanced\vendor\yiisoft\yii2\db\Query.php(206): yii\db\Command->queryAll()
+#3 E:\duotai\advanced\vendor\yiisoft\yii2\db\ActiveQuery.php(130): yii\db\Query->all(NULL)
+#4 E:\duotai\advanced\frontend\controllers\IndexController.php(14): yii\db\ActiveQuery->all()
+#5 [internal function]: frontend\controllers\IndexController->actionIndex()
+#6 E:\duotai\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#7 E:\duotai\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#8 E:\duotai\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('', Array)
+#9 E:\duotai\advanced\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('index', Array)
+#10 E:\duotai\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 E:\duotai\advanced\frontend\web\index.php(20): yii\base\Application->run()
+#12 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'order by' in 'where clause'
+)
+
+2015-01-30 06:45:21 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'index'
+]
+
+$_COOKIE = [
+    '_csrf' => '267615cd8e90ad77c00fb65717cec2eb847a569ef310005bee79dc598a76df52s:32:\"PI7VGvevTEvF3q2REJM37T09pE1VaM7b\";'
+    'PHPSESSID' => '7cennjquqvqbonp7atqa8lmd51'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'E:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'E:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'www.duotai.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2236.0 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => '_csrf=267615cd8e90ad77c00fb65717cec2eb847a569ef310005bee79dc598a76df52s%3A32%3A%22PI7VGvevTEvF3q2REJM37T09pE1VaM7b%22%3B; PHPSESSID=7cennjquqvqbonp7atqa8lmd51'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\AMD APP\\bin\\x86;C:\\Program Files\\Common Files\\NetSarang;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\ATI Technologies\\ATI.ACE\\Core-Static;E:\\web\\TortoiseSVN\\bin;E:\\web\\TortoiseGit\\bin;E:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;E:\\web\\JDK\\bin;E:\\web\\NodeJs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at www.duotai.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'www.duotai.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/duotai/advanced'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/duotai/advanced'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'E:/duotai/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '62942'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=index'
+    'REQUEST_URI' => '/frontend/web/index.php?r=index'
+    'SCRIPT_NAME' => '/frontend/web/index.php'
+    'PHP_SELF' => '/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422596721.029
+    'REQUEST_TIME' => 1422596721
+]
+2015-01-30 06:46:29 [127.0.0.1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'desc' in 'where clause'' in E:\duotai\advanced\vendor\yiisoft\yii2\db\Command.php:819
+Stack trace:
+#0 E:\duotai\advanced\vendor\yiisoft\yii2\db\Command.php(819): PDOStatement->execute()
+#1 E:\duotai\advanced\vendor\yiisoft\yii2\db\Command.php(350): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 E:\duotai\advanced\vendor\yiisoft\yii2\db\Query.php(206): yii\db\Command->queryAll()
+#3 E:\duotai\advanced\vendor\yiisoft\yii2\db\ActiveQuery.php(130): yii\db\Query->all(NULL)
+#4 E:\duotai\advanced\frontend\controllers\IndexController.php(14): yii\db\ActiveQuery->all()
+#5 [internal function]: frontend\controllers\IndexController->actionIndex()
+#6 E:\duotai\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#7 E:\duotai\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#8 E:\duotai\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('', Array)
+#9 E:\duotai\advanced\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('index', Array)
+#10 E:\duotai\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 E:\duotai\advanced\frontend\web\index.php(20): yii\base\Application->run()
+#12 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'desc' in 'where clause'
+The SQL being executed was: SELECT * FROM `goods` WHERE (`goods_status`='1') AND (`cat_id`='8') AND (`desc`='addtime') AND (`limit`=4)' in E:\duotai\advanced\vendor\yiisoft\yii2\db\Schema.php:532
+Stack trace:
+#0 E:\duotai\advanced\vendor\yiisoft\yii2\db\Command.php(834): yii\db\Schema->convertException(Object(PDOException), 'SELECT * FROM `...')
+#1 E:\duotai\advanced\vendor\yiisoft\yii2\db\Command.php(350): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 E:\duotai\advanced\vendor\yiisoft\yii2\db\Query.php(206): yii\db\Command->queryAll()
+#3 E:\duotai\advanced\vendor\yiisoft\yii2\db\ActiveQuery.php(130): yii\db\Query->all(NULL)
+#4 E:\duotai\advanced\frontend\controllers\IndexController.php(14): yii\db\ActiveQuery->all()
+#5 [internal function]: frontend\controllers\IndexController->actionIndex()
+#6 E:\duotai\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#7 E:\duotai\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#8 E:\duotai\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('', Array)
+#9 E:\duotai\advanced\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('index', Array)
+#10 E:\duotai\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 E:\duotai\advanced\frontend\web\index.php(20): yii\base\Application->run()
+#12 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'desc' in 'where clause'
+)
+
+2015-01-30 06:46:29 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'index'
+]
+
+$_COOKIE = [
+    '_csrf' => '267615cd8e90ad77c00fb65717cec2eb847a569ef310005bee79dc598a76df52s:32:\"PI7VGvevTEvF3q2REJM37T09pE1VaM7b\";'
+    'PHPSESSID' => '7cennjquqvqbonp7atqa8lmd51'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'E:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'E:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'www.duotai.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2236.0 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => '_csrf=267615cd8e90ad77c00fb65717cec2eb847a569ef310005bee79dc598a76df52s%3A32%3A%22PI7VGvevTEvF3q2REJM37T09pE1VaM7b%22%3B; PHPSESSID=7cennjquqvqbonp7atqa8lmd51'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\AMD APP\\bin\\x86;C:\\Program Files\\Common Files\\NetSarang;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\ATI Technologies\\ATI.ACE\\Core-Static;E:\\web\\TortoiseSVN\\bin;E:\\web\\TortoiseGit\\bin;E:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;E:\\web\\JDK\\bin;E:\\web\\NodeJs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at www.duotai.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'www.duotai.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/duotai/advanced'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/duotai/advanced'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'E:/duotai/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '62964'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=index'
+    'REQUEST_URI' => '/frontend/web/index.php?r=index'
+    'SCRIPT_NAME' => '/frontend/web/index.php'
+    'PHP_SELF' => '/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422596789.173
+    'REQUEST_TIME' => 1422596789
+]
+2015-01-30 06:47:04 [127.0.0.1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'order by desc' in 'where clause'' in E:\duotai\advanced\vendor\yiisoft\yii2\db\Command.php:819
+Stack trace:
+#0 E:\duotai\advanced\vendor\yiisoft\yii2\db\Command.php(819): PDOStatement->execute()
+#1 E:\duotai\advanced\vendor\yiisoft\yii2\db\Command.php(350): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 E:\duotai\advanced\vendor\yiisoft\yii2\db\Query.php(206): yii\db\Command->queryAll()
+#3 E:\duotai\advanced\vendor\yiisoft\yii2\db\ActiveQuery.php(130): yii\db\Query->all(NULL)
+#4 E:\duotai\advanced\frontend\controllers\IndexController.php(14): yii\db\ActiveQuery->all()
+#5 [internal function]: frontend\controllers\IndexController->actionIndex()
+#6 E:\duotai\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#7 E:\duotai\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#8 E:\duotai\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('', Array)
+#9 E:\duotai\advanced\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('index', Array)
+#10 E:\duotai\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 E:\duotai\advanced\frontend\web\index.php(20): yii\base\Application->run()
+#12 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'order by desc' in 'where clause'
+The SQL being executed was: SELECT * FROM `goods` WHERE (`goods_status`='1') AND (`cat_id`='8') AND (`order by desc`='addtime') AND (`limit`=4)' in E:\duotai\advanced\vendor\yiisoft\yii2\db\Schema.php:532
+Stack trace:
+#0 E:\duotai\advanced\vendor\yiisoft\yii2\db\Command.php(834): yii\db\Schema->convertException(Object(PDOException), 'SELECT * FROM `...')
+#1 E:\duotai\advanced\vendor\yiisoft\yii2\db\Command.php(350): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 E:\duotai\advanced\vendor\yiisoft\yii2\db\Query.php(206): yii\db\Command->queryAll()
+#3 E:\duotai\advanced\vendor\yiisoft\yii2\db\ActiveQuery.php(130): yii\db\Query->all(NULL)
+#4 E:\duotai\advanced\frontend\controllers\IndexController.php(14): yii\db\ActiveQuery->all()
+#5 [internal function]: frontend\controllers\IndexController->actionIndex()
+#6 E:\duotai\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#7 E:\duotai\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#8 E:\duotai\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('', Array)
+#9 E:\duotai\advanced\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('index', Array)
+#10 E:\duotai\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 E:\duotai\advanced\frontend\web\index.php(20): yii\base\Application->run()
+#12 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'order by desc' in 'where clause'
+)
+
+2015-01-30 06:47:04 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'index'
+]
+
+$_COOKIE = [
+    '_csrf' => '267615cd8e90ad77c00fb65717cec2eb847a569ef310005bee79dc598a76df52s:32:\"PI7VGvevTEvF3q2REJM37T09pE1VaM7b\";'
+    'PHPSESSID' => '7cennjquqvqbonp7atqa8lmd51'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'E:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'E:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'www.duotai.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2236.0 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => '_csrf=267615cd8e90ad77c00fb65717cec2eb847a569ef310005bee79dc598a76df52s%3A32%3A%22PI7VGvevTEvF3q2REJM37T09pE1VaM7b%22%3B; PHPSESSID=7cennjquqvqbonp7atqa8lmd51'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\AMD APP\\bin\\x86;C:\\Program Files\\Common Files\\NetSarang;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\ATI Technologies\\ATI.ACE\\Core-Static;E:\\web\\TortoiseSVN\\bin;E:\\web\\TortoiseGit\\bin;E:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;E:\\web\\JDK\\bin;E:\\web\\NodeJs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at www.duotai.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'www.duotai.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/duotai/advanced'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/duotai/advanced'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'E:/duotai/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '62977'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=index'
+    'REQUEST_URI' => '/frontend/web/index.php?r=index'
+    'SCRIPT_NAME' => '/frontend/web/index.php'
+    'PHP_SELF' => '/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422596824.113
+    'REQUEST_TIME' => 1422596824
+]
+2015-01-30 06:47:27 [127.0.0.1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'order by desc' in 'where clause'' in E:\duotai\advanced\vendor\yiisoft\yii2\db\Command.php:819
+Stack trace:
+#0 E:\duotai\advanced\vendor\yiisoft\yii2\db\Command.php(819): PDOStatement->execute()
+#1 E:\duotai\advanced\vendor\yiisoft\yii2\db\Command.php(350): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 E:\duotai\advanced\vendor\yiisoft\yii2\db\Query.php(206): yii\db\Command->queryAll()
+#3 E:\duotai\advanced\vendor\yiisoft\yii2\db\ActiveQuery.php(130): yii\db\Query->all(NULL)
+#4 E:\duotai\advanced\frontend\controllers\IndexController.php(14): yii\db\ActiveQuery->all()
+#5 [internal function]: frontend\controllers\IndexController->actionIndex()
+#6 E:\duotai\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#7 E:\duotai\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#8 E:\duotai\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('', Array)
+#9 E:\duotai\advanced\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('index', Array)
+#10 E:\duotai\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 E:\duotai\advanced\frontend\web\index.php(20): yii\base\Application->run()
+#12 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'order by desc' in 'where clause'
+The SQL being executed was: SELECT * FROM `goods` WHERE (`goods_status`='1') AND (`cat_id`='8') AND (`order by desc`='goods_addtime') AND (`limit`=4)' in E:\duotai\advanced\vendor\yiisoft\yii2\db\Schema.php:532
+Stack trace:
+#0 E:\duotai\advanced\vendor\yiisoft\yii2\db\Command.php(834): yii\db\Schema->convertException(Object(PDOException), 'SELECT * FROM `...')
+#1 E:\duotai\advanced\vendor\yiisoft\yii2\db\Command.php(350): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 E:\duotai\advanced\vendor\yiisoft\yii2\db\Query.php(206): yii\db\Command->queryAll()
+#3 E:\duotai\advanced\vendor\yiisoft\yii2\db\ActiveQuery.php(130): yii\db\Query->all(NULL)
+#4 E:\duotai\advanced\frontend\controllers\IndexController.php(14): yii\db\ActiveQuery->all()
+#5 [internal function]: frontend\controllers\IndexController->actionIndex()
+#6 E:\duotai\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#7 E:\duotai\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#8 E:\duotai\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('', Array)
+#9 E:\duotai\advanced\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('index', Array)
+#10 E:\duotai\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 E:\duotai\advanced\frontend\web\index.php(20): yii\base\Application->run()
+#12 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'order by desc' in 'where clause'
+)
+
+2015-01-30 06:47:27 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'index'
+]
+
+$_COOKIE = [
+    '_csrf' => '267615cd8e90ad77c00fb65717cec2eb847a569ef310005bee79dc598a76df52s:32:\"PI7VGvevTEvF3q2REJM37T09pE1VaM7b\";'
+    'PHPSESSID' => '7cennjquqvqbonp7atqa8lmd51'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'E:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'E:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'www.duotai.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2236.0 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => '_csrf=267615cd8e90ad77c00fb65717cec2eb847a569ef310005bee79dc598a76df52s%3A32%3A%22PI7VGvevTEvF3q2REJM37T09pE1VaM7b%22%3B; PHPSESSID=7cennjquqvqbonp7atqa8lmd51'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\AMD APP\\bin\\x86;C:\\Program Files\\Common Files\\NetSarang;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\ATI Technologies\\ATI.ACE\\Core-Static;E:\\web\\TortoiseSVN\\bin;E:\\web\\TortoiseGit\\bin;E:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;E:\\web\\JDK\\bin;E:\\web\\NodeJs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at www.duotai.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'www.duotai.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/duotai/advanced'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/duotai/advanced'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'E:/duotai/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '62992'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=index'
+    'REQUEST_URI' => '/frontend/web/index.php?r=index'
+    'SCRIPT_NAME' => '/frontend/web/index.php'
+    'PHP_SELF' => '/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422596847.883
+    'REQUEST_TIME' => 1422596847
+]
+2015-01-30 06:47:31 [127.0.0.1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'order by desc' in 'where clause'' in E:\duotai\advanced\vendor\yiisoft\yii2\db\Command.php:819
+Stack trace:
+#0 E:\duotai\advanced\vendor\yiisoft\yii2\db\Command.php(819): PDOStatement->execute()
+#1 E:\duotai\advanced\vendor\yiisoft\yii2\db\Command.php(350): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 E:\duotai\advanced\vendor\yiisoft\yii2\db\Query.php(206): yii\db\Command->queryAll()
+#3 E:\duotai\advanced\vendor\yiisoft\yii2\db\ActiveQuery.php(130): yii\db\Query->all(NULL)
+#4 E:\duotai\advanced\frontend\controllers\IndexController.php(14): yii\db\ActiveQuery->all()
+#5 [internal function]: frontend\controllers\IndexController->actionIndex()
+#6 E:\duotai\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#7 E:\duotai\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#8 E:\duotai\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('', Array)
+#9 E:\duotai\advanced\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('index', Array)
+#10 E:\duotai\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 E:\duotai\advanced\frontend\web\index.php(20): yii\base\Application->run()
+#12 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'order by desc' in 'where clause'
+The SQL being executed was: SELECT * FROM `goods` WHERE (`goods_status`='1') AND (`cat_id`='8') AND (`order by desc`='goods_addtime') AND (`limit`=4)' in E:\duotai\advanced\vendor\yiisoft\yii2\db\Schema.php:532
+Stack trace:
+#0 E:\duotai\advanced\vendor\yiisoft\yii2\db\Command.php(834): yii\db\Schema->convertException(Object(PDOException), 'SELECT * FROM `...')
+#1 E:\duotai\advanced\vendor\yiisoft\yii2\db\Command.php(350): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 E:\duotai\advanced\vendor\yiisoft\yii2\db\Query.php(206): yii\db\Command->queryAll()
+#3 E:\duotai\advanced\vendor\yiisoft\yii2\db\ActiveQuery.php(130): yii\db\Query->all(NULL)
+#4 E:\duotai\advanced\frontend\controllers\IndexController.php(14): yii\db\ActiveQuery->all()
+#5 [internal function]: frontend\controllers\IndexController->actionIndex()
+#6 E:\duotai\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#7 E:\duotai\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#8 E:\duotai\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('', Array)
+#9 E:\duotai\advanced\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('index', Array)
+#10 E:\duotai\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 E:\duotai\advanced\frontend\web\index.php(20): yii\base\Application->run()
+#12 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'order by desc' in 'where clause'
+)
+
+2015-01-30 06:47:31 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'index'
+]
+
+$_COOKIE = [
+    '_csrf' => '267615cd8e90ad77c00fb65717cec2eb847a569ef310005bee79dc598a76df52s:32:\"PI7VGvevTEvF3q2REJM37T09pE1VaM7b\";'
+    'PHPSESSID' => '7cennjquqvqbonp7atqa8lmd51'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'E:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'E:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'www.duotai.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2236.0 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => '_csrf=267615cd8e90ad77c00fb65717cec2eb847a569ef310005bee79dc598a76df52s%3A32%3A%22PI7VGvevTEvF3q2REJM37T09pE1VaM7b%22%3B; PHPSESSID=7cennjquqvqbonp7atqa8lmd51'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\AMD APP\\bin\\x86;C:\\Program Files\\Common Files\\NetSarang;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\ATI Technologies\\ATI.ACE\\Core-Static;E:\\web\\TortoiseSVN\\bin;E:\\web\\TortoiseGit\\bin;E:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;E:\\web\\JDK\\bin;E:\\web\\NodeJs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at www.duotai.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'www.duotai.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/duotai/advanced'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/duotai/advanced'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'E:/duotai/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '62993'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=index'
+    'REQUEST_URI' => '/frontend/web/index.php?r=index'
+    'SCRIPT_NAME' => '/frontend/web/index.php'
+    'PHP_SELF' => '/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422596851.025
+    'REQUEST_TIME' => 1422596851
+]
+2015-01-30 06:47:48 [127.0.0.1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'order by ' in 'where clause'' in E:\duotai\advanced\vendor\yiisoft\yii2\db\Command.php:819
+Stack trace:
+#0 E:\duotai\advanced\vendor\yiisoft\yii2\db\Command.php(819): PDOStatement->execute()
+#1 E:\duotai\advanced\vendor\yiisoft\yii2\db\Command.php(350): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 E:\duotai\advanced\vendor\yiisoft\yii2\db\Query.php(206): yii\db\Command->queryAll()
+#3 E:\duotai\advanced\vendor\yiisoft\yii2\db\ActiveQuery.php(130): yii\db\Query->all(NULL)
+#4 E:\duotai\advanced\frontend\controllers\IndexController.php(14): yii\db\ActiveQuery->all()
+#5 [internal function]: frontend\controllers\IndexController->actionIndex()
+#6 E:\duotai\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#7 E:\duotai\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#8 E:\duotai\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('', Array)
+#9 E:\duotai\advanced\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('index', Array)
+#10 E:\duotai\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 E:\duotai\advanced\frontend\web\index.php(20): yii\base\Application->run()
+#12 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'order by ' in 'where clause'
+The SQL being executed was: SELECT * FROM `goods` WHERE (`goods_status`='1') AND (`cat_id`='8') AND (`order by `='goods_addtime') AND (`limit`=4)' in E:\duotai\advanced\vendor\yiisoft\yii2\db\Schema.php:532
+Stack trace:
+#0 E:\duotai\advanced\vendor\yiisoft\yii2\db\Command.php(834): yii\db\Schema->convertException(Object(PDOException), 'SELECT * FROM `...')
+#1 E:\duotai\advanced\vendor\yiisoft\yii2\db\Command.php(350): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 E:\duotai\advanced\vendor\yiisoft\yii2\db\Query.php(206): yii\db\Command->queryAll()
+#3 E:\duotai\advanced\vendor\yiisoft\yii2\db\ActiveQuery.php(130): yii\db\Query->all(NULL)
+#4 E:\duotai\advanced\frontend\controllers\IndexController.php(14): yii\db\ActiveQuery->all()
+#5 [internal function]: frontend\controllers\IndexController->actionIndex()
+#6 E:\duotai\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#7 E:\duotai\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#8 E:\duotai\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('', Array)
+#9 E:\duotai\advanced\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('index', Array)
+#10 E:\duotai\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 E:\duotai\advanced\frontend\web\index.php(20): yii\base\Application->run()
+#12 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'order by ' in 'where clause'
+)
+
+2015-01-30 06:47:48 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'index'
+]
+
+$_COOKIE = [
+    '_csrf' => '267615cd8e90ad77c00fb65717cec2eb847a569ef310005bee79dc598a76df52s:32:\"PI7VGvevTEvF3q2REJM37T09pE1VaM7b\";'
+    'PHPSESSID' => '7cennjquqvqbonp7atqa8lmd51'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'E:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'E:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'www.duotai.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2236.0 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => '_csrf=267615cd8e90ad77c00fb65717cec2eb847a569ef310005bee79dc598a76df52s%3A32%3A%22PI7VGvevTEvF3q2REJM37T09pE1VaM7b%22%3B; PHPSESSID=7cennjquqvqbonp7atqa8lmd51'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\AMD APP\\bin\\x86;C:\\Program Files\\Common Files\\NetSarang;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\ATI Technologies\\ATI.ACE\\Core-Static;E:\\web\\TortoiseSVN\\bin;E:\\web\\TortoiseGit\\bin;E:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;E:\\web\\JDK\\bin;E:\\web\\NodeJs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at www.duotai.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'www.duotai.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/duotai/advanced'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/duotai/advanced'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'E:/duotai/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '63005'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=index'
+    'REQUEST_URI' => '/frontend/web/index.php?r=index'
+    'SCRIPT_NAME' => '/frontend/web/index.php'
+    'PHP_SELF' => '/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422596868.491
+    'REQUEST_TIME' => 1422596868
+]
+2015-01-30 06:48:03 [127.0.0.1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'limit' in 'where clause'' in E:\duotai\advanced\vendor\yiisoft\yii2\db\Command.php:819
+Stack trace:
+#0 E:\duotai\advanced\vendor\yiisoft\yii2\db\Command.php(819): PDOStatement->execute()
+#1 E:\duotai\advanced\vendor\yiisoft\yii2\db\Command.php(350): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 E:\duotai\advanced\vendor\yiisoft\yii2\db\Query.php(206): yii\db\Command->queryAll()
+#3 E:\duotai\advanced\vendor\yiisoft\yii2\db\ActiveQuery.php(130): yii\db\Query->all(NULL)
+#4 E:\duotai\advanced\frontend\controllers\IndexController.php(14): yii\db\ActiveQuery->all()
+#5 [internal function]: frontend\controllers\IndexController->actionIndex()
+#6 E:\duotai\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#7 E:\duotai\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#8 E:\duotai\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('', Array)
+#9 E:\duotai\advanced\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('index', Array)
+#10 E:\duotai\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 E:\duotai\advanced\frontend\web\index.php(20): yii\base\Application->run()
+#12 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'limit' in 'where clause'
+The SQL being executed was: SELECT * FROM `goods` WHERE (`goods_status`='1') AND (`cat_id`='8') AND (`limit`=4)' in E:\duotai\advanced\vendor\yiisoft\yii2\db\Schema.php:532
+Stack trace:
+#0 E:\duotai\advanced\vendor\yiisoft\yii2\db\Command.php(834): yii\db\Schema->convertException(Object(PDOException), 'SELECT * FROM `...')
+#1 E:\duotai\advanced\vendor\yiisoft\yii2\db\Command.php(350): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 E:\duotai\advanced\vendor\yiisoft\yii2\db\Query.php(206): yii\db\Command->queryAll()
+#3 E:\duotai\advanced\vendor\yiisoft\yii2\db\ActiveQuery.php(130): yii\db\Query->all(NULL)
+#4 E:\duotai\advanced\frontend\controllers\IndexController.php(14): yii\db\ActiveQuery->all()
+#5 [internal function]: frontend\controllers\IndexController->actionIndex()
+#6 E:\duotai\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#7 E:\duotai\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#8 E:\duotai\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('', Array)
+#9 E:\duotai\advanced\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('index', Array)
+#10 E:\duotai\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 E:\duotai\advanced\frontend\web\index.php(20): yii\base\Application->run()
+#12 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'limit' in 'where clause'
+)
+
+2015-01-30 06:48:03 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'index'
+]
+
+$_COOKIE = [
+    '_csrf' => '267615cd8e90ad77c00fb65717cec2eb847a569ef310005bee79dc598a76df52s:32:\"PI7VGvevTEvF3q2REJM37T09pE1VaM7b\";'
+    'PHPSESSID' => '7cennjquqvqbonp7atqa8lmd51'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'E:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'E:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'www.duotai.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2236.0 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => '_csrf=267615cd8e90ad77c00fb65717cec2eb847a569ef310005bee79dc598a76df52s%3A32%3A%22PI7VGvevTEvF3q2REJM37T09pE1VaM7b%22%3B; PHPSESSID=7cennjquqvqbonp7atqa8lmd51'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\AMD APP\\bin\\x86;C:\\Program Files\\Common Files\\NetSarang;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\ATI Technologies\\ATI.ACE\\Core-Static;E:\\web\\TortoiseSVN\\bin;E:\\web\\TortoiseGit\\bin;E:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;E:\\web\\JDK\\bin;E:\\web\\NodeJs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at www.duotai.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'www.duotai.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/duotai/advanced'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/duotai/advanced'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'E:/duotai/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '63014'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=index'
+    'REQUEST_URI' => '/frontend/web/index.php?r=index'
+    'SCRIPT_NAME' => '/frontend/web/index.php'
+    'PHP_SELF' => '/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422596883.4
+    'REQUEST_TIME' => 1422596883
+]

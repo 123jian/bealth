@@ -216,7 +216,7 @@ document.write('<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" cod
                 </div>
             </div>
             <!--END-->
-            <!---->
+            <!--多肽美容start-->
             <div class="con">
             	<div class="con_head">
                 	<a href="javascript:void(0);">查看更多>></a>
@@ -227,130 +227,28 @@ document.write('<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" cod
                 </div>
                 <div class="flowWrapper">
                 	<ul class="clearfix">
+<?php foreach($result as $val){ ?>                            
                     	<li>
                             <div class="pro_img">
-                                <a href="javascript:void(0);"><img src="images/pic_04.jpg" /></a>
+                                <a href="javascript:void(0);"><img src="<?php echo 'http://'.$_SERVER['HTTP_HOST'].'/backend/web/'.$val['goods_img'];?>" width="475" height="385"/></a>
                             </div>
                             <div class="pro_introduce clearfix">
                                 <div class="price fr">
-                                    ￥<span class="newPrice">199</span>
+                                    ￥<span class="newPrice"><?php echo $val['goods_price'];?></span>
                                     <span class="oldPrice">￥300</span>
                                 </div>
                                 <div class="pro_con fl">
-                                    <a href="javascript:void(0);" class="proName">嗅到的爱情香水团</a>
-                                    <p>费洛蒙结合的爱情香水</p>
+                                    <a href="javascript:void(0);" class="proName"><?php echo $val['goods_name'];?></a>
+                                    <p><?php echo $val['goods_desc'];?></p>
                                 </div>
                             </div>
                         </li>
-                        <li>
-                            <div class="pro_img">
-                                <a href="javascript:void(0);"><img src="images/pic_04.jpg" /></a>
-                            </div>
-                            <div class="pro_introduce clearfix">
-                                <div class="price fr">
-                                    ￥<span class="newPrice">199</span>
-                                    <span class="oldPrice">￥300</span>
-                                </div>
-                                <div class="pro_con fl">
-                                    <a href="javascript:void(0);" class="proName">嗅到的爱情香水团</a>
-                                    <p>费洛蒙结合的爱情香水</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="pro_img">
-                                <a href="javascript:void(0);"><img src="images/pic_04.jpg" /></a>
-                            </div>
-                            <div class="pro_introduce clearfix">
-                                <div class="price fr">
-                                    ￥<span class="newPrice">199</span>
-                                    <span class="oldPrice">￥300</span>
-                                </div>
-                                <div class="pro_con fl">
-                                    <a href="javascript:void(0);" class="proName">嗅到的爱情香水团</a>
-                                    <p>费洛蒙结合的爱情香水</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="pro_img">
-                                <a href="javascript:void(0);"><img src="images/pic_04.jpg" /></a>
-                            </div>
-                            <div class="pro_introduce clearfix">
-                                <div class="price fr">
-                                    ￥<span class="newPrice">199</span>
-                                    <span class="oldPrice">￥300</span>
-                                </div>
-                                <div class="pro_con fl">
-                                    <a href="javascript:void(0);" class="proName">嗅到的爱情香水团</a>
-                                    <p>费洛蒙结合的爱情香水</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="pro_img">
-                                <a href="javascript:void(0);"><img src="images/pic_04.jpg" /></a>
-                            </div>
-                            <div class="pro_introduce clearfix">
-                                <div class="price fr">
-                                    ￥<span class="newPrice">199</span>
-                                    <span class="oldPrice">￥300</span>
-                                </div>
-                                <div class="pro_con fl">
-                                    <a href="javascript:void(0);" class="proName">嗅到的爱情香水团</a>
-                                    <p>费洛蒙结合的爱情香水</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="pro_img">
-                                <a href="javascript:void(0);"><img src="images/pic_04.jpg" /></a>
-                            </div>
-                            <div class="pro_introduce clearfix">
-                                <div class="price fr">
-                                    ￥<span class="newPrice">199</span>
-                                    <span class="oldPrice">￥300</span>
-                                </div>
-                                <div class="pro_con fl">
-                                    <a href="javascript:void(0);" class="proName">嗅到的爱情香水团</a>
-                                    <p>费洛蒙结合的爱情香水</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="pro_img">
-                                <a href="javascript:void(0);"><img src="images/pic_04.jpg" /></a>
-                            </div>
-                            <div class="pro_introduce clearfix">
-                                <div class="price fr">
-                                    ￥<span class="newPrice">199</span>
-                                    <span class="oldPrice">￥300</span>
-                                </div>
-                                <div class="pro_con fl">
-                                    <a href="javascript:void(0);" class="proName">嗅到的爱情香水团</a>
-                                    <p>费洛蒙结合的爱情香水</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="pro_img">
-                                <a href="javascript:void(0);"><img src="images/pic_04.jpg" /></a>
-                            </div>
-                            <div class="pro_introduce clearfix">
-                                <div class="price fr">
-                                    ￥<span class="newPrice">199</span>
-                                    <span class="oldPrice">￥300</span>
-                                </div>
-                                <div class="pro_con fl">
-                                    <a href="javascript:void(0);" class="proName">嗅到的爱情香水团</a>
-                                    <p>费洛蒙结合的爱情香水</p>
-                                </div>
-                            </div>
-                        </li>
+<?php }?>                        
                     </ul>
+                  </div>
                 </div>
             </div>
-            <!--END-->
+            <!--多肽美容END-->
             <!---->
             <div class="con">
             	<div class="pro_con">
@@ -363,36 +261,23 @@ document.write('<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" cod
                   </div>
                   <div class="flowWrapper">
                 	<ul class="clearfix">
+<?php foreach($result2 as $val2){ ?>                            
                     	<li>
                             <div class="pro_img">
-                                <a href="javascript:void(0);"><img src="images/pic_04.jpg" /></a>
+                                <a href="javascript:void(0);"><img src="<?php echo 'http://'.$_SERVER['HTTP_HOST'].'/backend/web/'.$val2['goods_img'];?>" /></a>
                             </div>
                             <div class="pro_introduce clearfix">
                                 <div class="price fr">
-                                    ￥<span class="newPrice">199</span>
+                                    ￥<span class="newPrice"><?php echo $val2['goods_price'];?></span>
                                     <span class="oldPrice">￥300</span>
                                 </div>
                                 <div class="pro_con fl">
-                                    <a href="javascript:void(0);" class="proName">嗅到的爱情香水团</a>
-                                    <p>费洛蒙结合的爱情香水</p>
+                                    <a href="javascript:void(0);" class="proName"><?php echo $val2['goods_name'];?></a>
+                                    <p><?php echo $val2['goods_desc'];?></p>
                                 </div>
                             </div>
                         </li>
-                        <li>
-                            <div class="pro_img">
-                                <a href="javascript:void(0);"><img src="images/pic_04.jpg" /></a>
-                            </div>
-                            <div class="pro_introduce clearfix">
-                                <div class="price fr">
-                                    ￥<span class="newPrice">199</span>
-                                    <span class="oldPrice">￥300</span>
-                                </div>
-                                <div class="pro_con fl">
-                                    <a href="javascript:void(0);" class="proName">嗅到的爱情香水团</a>
-                                    <p>费洛蒙结合的爱情香水</p>
-                                </div>
-                            </div>
-                        </li>
+<?php }?>                        
                     </ul>
                   </div>
                 </div>

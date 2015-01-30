@@ -19322,3 +19322,203 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1422588928.64
     'REQUEST_TIME' => 1422588928
 ]
+2015-01-30 05:05:07 [127.0.0.1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Call to a member function count() on a non-object' in E:\duotai\advanced\backend\controllers\GoodsController.php:125
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-01-30 05:05:07 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'goods/search'
+]
+
+$_POST = [
+    'rolename' => '健力宝'
+]
+
+$_COOKIE = [
+    'name' => 'yl'
+    '_csrf' => '267615cd8e90ad77c00fb65717cec2eb847a569ef310005bee79dc598a76df52s:32:\"PI7VGvevTEvF3q2REJM37T09pE1VaM7b\";'
+    'PHPSESSID' => '7cennjquqvqbonp7atqa8lmd51'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'E:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'E:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'www.duotai.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '36'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://www.duotai.com'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2236.0 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_REFERER' => 'http://www.duotai.com/backend/web/index.php?r=goods/goodslist'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'name=yl; _csrf=267615cd8e90ad77c00fb65717cec2eb847a569ef310005bee79dc598a76df52s%3A32%3A%22PI7VGvevTEvF3q2REJM37T09pE1VaM7b%22%3B; PHPSESSID=7cennjquqvqbonp7atqa8lmd51'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\AMD APP\\bin\\x86;C:\\Program Files\\Common Files\\NetSarang;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\ATI Technologies\\ATI.ACE\\Core-Static;E:\\web\\TortoiseSVN\\bin;E:\\web\\TortoiseGit\\bin;E:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;E:\\web\\JDK\\bin;E:\\web\\NodeJs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at www.duotai.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'www.duotai.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/duotai/advanced'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/duotai/advanced'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'E:/duotai/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '60175'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=goods/search'
+    'REQUEST_URI' => '/backend/web/index.php?r=goods/search'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422590707.332
+    'REQUEST_TIME' => 1422590707
+]
+2015-01-30 05:06:06 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: rolename' in E:\duotai\advanced\backend\controllers\GoodsController.php:122
+Stack trace:
+#0 E:\duotai\advanced\backend\controllers\GoodsController.php(122): yii\base\ErrorHandler->handleError(8, 'Undefined index...', 'E:\duotai\advan...', 122, Array)
+#1 [internal function]: backend\controllers\GoodsController->actionSearch()
+#2 E:\duotai\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#3 E:\duotai\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#4 E:\duotai\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('search', Array)
+#5 E:\duotai\advanced\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('goods/search', Array)
+#6 E:\duotai\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 E:\duotai\advanced\backend\web\index.php(20): yii\base\Application->run()
+#8 {main}
+2015-01-30 05:06:06 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'goods/search'
+    'page' => '2'
+    'per-page' => '1'
+]
+
+$_COOKIE = [
+    'name' => 'yl'
+    '_csrf' => '267615cd8e90ad77c00fb65717cec2eb847a569ef310005bee79dc598a76df52s:32:\"PI7VGvevTEvF3q2REJM37T09pE1VaM7b\";'
+    'PHPSESSID' => '7cennjquqvqbonp7atqa8lmd51'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'E:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'E:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'www.duotai.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2236.0 Safari/537.36'
+    'HTTP_REFERER' => 'http://www.duotai.com/backend/web/index.php?r=goods/search'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'name=yl; _csrf=267615cd8e90ad77c00fb65717cec2eb847a569ef310005bee79dc598a76df52s%3A32%3A%22PI7VGvevTEvF3q2REJM37T09pE1VaM7b%22%3B; PHPSESSID=7cennjquqvqbonp7atqa8lmd51'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\AMD APP\\bin\\x86;C:\\Program Files\\Common Files\\NetSarang;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\ATI Technologies\\ATI.ACE\\Core-Static;E:\\web\\TortoiseSVN\\bin;E:\\web\\TortoiseGit\\bin;E:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;E:\\web\\JDK\\bin;E:\\web\\NodeJs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at www.duotai.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'www.duotai.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/duotai/advanced'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/duotai/advanced'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'E:/duotai/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '60207'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=goods%2Fsearch&page=2&per-page=1'
+    'REQUEST_URI' => '/backend/web/index.php?r=goods%2Fsearch&page=2&per-page=1'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422590766.808
+    'REQUEST_TIME' => 1422590766
+]
+2015-01-30 05:06:12 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: rolename' in E:\duotai\advanced\backend\controllers\GoodsController.php:122
+Stack trace:
+#0 E:\duotai\advanced\backend\controllers\GoodsController.php(122): yii\base\ErrorHandler->handleError(8, 'Undefined index...', 'E:\duotai\advan...', 122, Array)
+#1 [internal function]: backend\controllers\GoodsController->actionSearch()
+#2 E:\duotai\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#3 E:\duotai\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#4 E:\duotai\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('search', Array)
+#5 E:\duotai\advanced\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('goods/search', Array)
+#6 E:\duotai\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 E:\duotai\advanced\backend\web\index.php(20): yii\base\Application->run()
+#8 {main}
+2015-01-30 05:06:12 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'goods/search'
+    'page' => '2'
+    'per-page' => '1'
+]
+
+$_COOKIE = [
+    'name' => 'yl'
+    '_csrf' => '267615cd8e90ad77c00fb65717cec2eb847a569ef310005bee79dc598a76df52s:32:\"PI7VGvevTEvF3q2REJM37T09pE1VaM7b\";'
+    'PHPSESSID' => '7cennjquqvqbonp7atqa8lmd51'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'E:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'E:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'www.duotai.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2236.0 Safari/537.36'
+    'HTTP_REFERER' => 'http://www.duotai.com/backend/web/index.php?r=goods/search'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'name=yl; _csrf=267615cd8e90ad77c00fb65717cec2eb847a569ef310005bee79dc598a76df52s%3A32%3A%22PI7VGvevTEvF3q2REJM37T09pE1VaM7b%22%3B; PHPSESSID=7cennjquqvqbonp7atqa8lmd51'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\AMD APP\\bin\\x86;C:\\Program Files\\Common Files\\NetSarang;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\ATI Technologies\\ATI.ACE\\Core-Static;E:\\web\\TortoiseSVN\\bin;E:\\web\\TortoiseGit\\bin;E:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;E:\\web\\JDK\\bin;E:\\web\\NodeJs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at www.duotai.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'www.duotai.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/duotai/advanced'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/duotai/advanced'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'E:/duotai/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '60212'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=goods%2Fsearch&page=2&per-page=1'
+    'REQUEST_URI' => '/backend/web/index.php?r=goods%2Fsearch&page=2&per-page=1'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422590772.346
+    'REQUEST_TIME' => 1422590772
+]
