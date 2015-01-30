@@ -16,7 +16,12 @@
        <!--<img src="/chinapost/Public/assets/img/top.png">-->
       </div>
 
-    <div class="dl-log">欢迎您，<span class="dl-log-user">root</span><a href="/chinapost/index.php?m=Public&a=logout" title="退出系统" class="dl-log-quit">[退出]</a>
+    <div class="dl-log">欢迎您，<span class="dl-log-user"><?php
+	use yii\web\Session;
+	$session = new Session;
+	echo $session->get('name');
+	
+	?></span><a href="index.php?r=index/logout" title="退出系统" class="dl-log-quit">[退出]</a>
     </div>
   </div>
    <div class="content">
