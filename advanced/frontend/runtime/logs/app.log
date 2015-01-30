@@ -3656,3 +3656,76 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1422580212.373
     'REQUEST_TIME' => 1422580212
 ]
+2015-01-30 04:42:09 [127.0.0.1][][use0k3qf2hu6la0frf5r19u3j7][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: register/yanname' in D:\aa\bealth\advanced\vendor\yiisoft\yii2\base\Controller.php:122
+Stack trace:
+#0 D:\aa\bealth\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('yanname', Array)
+#1 D:\aa\bealth\advanced\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('register/yannam...', Array)
+#2 D:\aa\bealth\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 D:\aa\bealth\advanced\frontend\web\index.php(20): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Unable to resolve the request: register/yanname' in D:\aa\bealth\advanced\vendor\yiisoft\yii2\web\Application.php:95
+Stack trace:
+#0 D:\aa\bealth\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\aa\bealth\advanced\frontend\web\index.php(20): yii\base\Application->run()
+#2 {main}
+2015-01-30 04:42:09 [127.0.0.1][][use0k3qf2hu6la0frf5r19u3j7][info][application] $_GET = [
+    'r' => 'register/yanname'
+]
+
+$_COOKIE = [
+    'yzm' => '977e'
+    'Hm_lvt_2531171454aa43a1c0e4e7f3ec040fbf' => '1420803018,1420845965,1420961795'
+    'Hm_lvt_aedee6983d4cfc62f509129360d6bb3d' => '1420858909,1420965688,1421020031'
+    'ECS' => [
+        'visit_times' => '1'
+    ]
+    'PHPSESSID' => 'use0k3qf2hu6la0frf5r19u3j7'
+    '_csrf' => 'aef60d8fd9c526b5801bcb51c9c5826292c45c926717613792057d00fe3c037es:32:\"28h-WfG7H1_CrnGW6-XWQmuHQZQXJidS\";'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/wamp/jicheng/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/wamp/jicheng/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'www.aa.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.143 Safari/537.36'
+    'HTTP_REFERER' => 'http://www.aa.com/bealth/advanced/frontend/web/index.php?r=register/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'yzm=977e; Hm_lvt_2531171454aa43a1c0e4e7f3ec040fbf=1420803018,1420845965,1420961795; Hm_lvt_aedee6983d4cfc62f509129360d6bb3d=1420858909,1420965688,1421020031; ECS[visit_times]=1; PHPSESSID=use0k3qf2hu6la0frf5r19u3j7; _csrf=aef60d8fd9c526b5801bcb51c9c5826292c45c926717613792057d00fe3c037es%3A32%3A%2228h-WfG7H1_CrnGW6-XWQmuHQZQXJidS%22%3B'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\NetSarang;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\wamp\\jicheng\\PHP\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;D:\\web\\mysql\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Java\\jdk1.7.0_71\\bin;C:\\Program Files\\Java\\jdk1.7.0_71\\jre\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\ProgramData\\ComposerSetup\\bin;D:\\mysql\\mysql-5.7.4-m14-winx64\\bin;D:\\软件\\nodejs\\;C:\\Users\\Administrator\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at www.aa.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'www.aa.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/aa'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/aa'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/aa/bealth/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '62154'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=register/yanname'
+    'REQUEST_URI' => '/bealth/advanced/frontend/web/index.php?r=register/yanname'
+    'SCRIPT_NAME' => '/bealth/advanced/frontend/web/index.php'
+    'PHP_SELF' => '/bealth/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422589329.526
+    'REQUEST_TIME' => 1422589329
+]

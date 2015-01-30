@@ -35,42 +35,40 @@
     </style>
 </head>
 <body>
-<form action="{:U('User/edit')}" method="post" class="definewidth m20">
-<input type="hidden" name="id" value="{$user.id}" />
+<form action="index.php?r=user/edit_pro" method="post" class="definewidth m20">
+<input type="hidden" name="uid" value="<?php echo $arr['uid']?>" />
     <table class="table table-bordered table-hover definewidth m10">
         <tr>
             <td width="10%" class="tableleft">登录名</td>
-            <td><input type="text" name="username" value="{$user.username}"/></td>
+            <td><input type="text" name="username" value="<?php echo $arr['username']?>"/></td>
         </tr>
         <tr>
             <td class="tableleft">密码</td>
-            <td><input type="password" name="password"/></td>
+            <td><input type="password" name="password" value="<?php echo $arr['password']?>"/></td>
         </tr>
         <tr>
             <td class="tableleft">真实姓名</td>
-            <td><input type="text" name="realname" value="{$user.realname}"/></td>
-        </tr>
-        <tr>
-            <td class="tableleft">邮箱</td>
-            <td><input type="text" name="email" value="{$user.email}"/></td>
-        </tr>
-        <tr>
-            <td class="tableleft">状态</td>
-            <td>
-                <input type="radio" name="status" value="0"
-                    <eq name="user.status" value='0'>checked</eq> /> 启用
-              <input type="radio" name="status" value="1"
-                    <eq name="user.status" value='1'>checked</eq> /> 禁用
-            </td>
+            <td><input type="text" name="real_name" value="<?php echo $arr['real_name']?>"/></td>
         </tr>
         <tr>
             <td class="tableleft">角色</td>
-            <td>{$role_checkbox}</td>
+            <td>
+			<select name="role">
+			<?php foreach($data as $v){?>
+			    <?php if($v['id']==$arr['role']){?>
+				<option value="<?php echo $v['id']?>" selected><?php echo $v['rname']?>
+				<?php }else{?>
+				<option value="<?php echo $v['id']?>"><?php echo $v['rname']?>
+				<?php }?>
+			<?php }?>
+			</select>
+			</td>
         </tr>
         <tr>
             <td class="tableleft"></td>
             <td>
-                <button type="submit" class="btn btn-primary" type="button">保存</button>				 &nbsp;&nbsp;<button type="button" class="btn btn-success" name="backid" id="backid">返回列表</button>
+                <button type="submit" class="btn btn-primary" type="button">保存</button> &nbsp;&nbsp;
+				<a href="index.php?r=user/index" class="btn btn-success" name="backid" id="backid">返回列表</a>
             </td>
         </tr>
     </table>

@@ -33,10 +33,11 @@
     </style>
 </head>
 <body>
-<form class="form-inline definewidth m20" action="index.html" method="get">  
+<form class="form-inline definewidth m20" action="index.php?r=role/index" method="post">  
     角色名称：
     <input type="text" name="rolename" id="rolename"class="abc input-default" placeholder="" value="">&nbsp;&nbsp;  
-    <button type="submit" class="btn btn-primary">查询</button>&nbsp;&nbsp; <button type="button" class="btn btn-success" id="addnew">新增角色</button>
+    <button type="submit" class="btn btn-primary">查询</button>&nbsp;&nbsp;
+	<a href="index.php?r=role/add" class="btn btn-success" id="addnew">新增角色</a>
 </form>
 <table class="table table-bordered table-hover definewidth m10" >
     <thead>
@@ -47,16 +48,19 @@
         <th>操作</th>
     </tr>
     </thead>
+	<?php foreach($arr as $v){?>
 	     <tr>
-            <td>5</td>
-            <td>管理员</td>
-            <td>1</td>
+            <td><?php echo $v['id']?></td>
+            <td><?php echo $v['rname']?></td>
+            <td><?php echo $v['status']?></td>
             <td>
-                  <a href="index.php?r=role/edit">编辑</a>
-				  <a href="index.php?r=role/del&id=''">删除</a>
+                  <a href="index.php?r=role/edit&id=<?php echo $v['id']?>">编辑</a>
+				  <a href="index.php?r=role/del&id=<?php echo $v['id']?>">删除</a>
                   
             </td>
-        </tr></table>
+        </tr>
+	<?php }?>
+		</table>
 		</body>
 		</html>
 

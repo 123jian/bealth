@@ -11,6 +11,29 @@ class GoodsController extends \yii\web\Controller
     //商品列表
     public function actionGoodslist()
     {	
+		$url='http://'.$_SERVER['SERVER_NAME'].$_SERVER["REQUEST_URI"]; 
+		$url=dirname($url);
+
+
+		$id=$_COOKIE['uid'];
+		$connection = \Yii::$app->db;
+		$command = $connection->createCommand('SELECT role FROM admin_user WHERE uid='.$id);
+		$post = $command->queryOne();
+		
+
+		$command = $connection->createCommand('SELECT * FROM role WHERE id='.$post['role']);
+		$role = $command->queryOne();
+		//print_r($role);
+
+
+		$u=substr(strrchr($url,"="),1);
+		foreach($role as $k=>$v){
+			if(strpos($k,$u)){
+				if($role[$k]!=1){
+					echo "<script>alert('对不起，您的权限不够。无法访问');location.href='./index.php?r=index/norole'</script>";
+				}
+			}
+		}
         $model=new Goods();
         $result=$model->find()->all();    //返回所有数据
         return $this->renderpartial('goodslist',['result'=>$result]);
@@ -84,15 +107,5 @@ class GoodsController extends \yii\web\Controller
         
     }
     
-    public function actionArticlelist()
-    {
-		
-        return $this->renderpartial('articlelist');
-    }
-	public function actionAddarticle()
-    {
-		
-        return $this->renderpartial('addarticle');
-    }
 
 }

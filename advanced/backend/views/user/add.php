@@ -35,7 +35,7 @@
     </style>
 </head>
 <body>
-<form action="index.html" method="post" class="definewidth m20">
+<form action="index.php?r=user/add_pro" method="post" class="definewidth m20">
 <table class="table table-bordered table-hover definewidth m10">
     <tr>
         <td width="10%" class="tableleft">登录名</td>
@@ -47,12 +47,9 @@
     </tr>
     <tr>
         <td class="tableleft">真实姓名</td>
-        <td><input type="text" name="realname"/></td>
+        <td><input type="text" name="real_name"/></td>
     </tr>
-    <tr>
-        <td class="tableleft">邮箱</td>
-        <td><input type="text" name="email"/></td>
-    </tr>
+
     <tr>
         <td class="tableleft">状态</td>
         <td>
@@ -62,12 +59,19 @@
     </tr>
     <tr>
         <td class="tableleft">角色</td>
-        <td>{$role_checkbox}</td>
+        <td>
+		<select name="role">
+		<?php foreach($arr as $v){?>
+			<option value="<?php echo $v['id']?>"><?php echo $v['rname']?>
+		<?php }?>
+		</select>
+		</td>
     </tr>
     <tr>
         <td class="tableleft"></td>
         <td>
-            <button type="submit" class="btn btn-primary" type="button">保存</button> &nbsp;&nbsp;<button type="button" class="btn btn-success" name="backid" id="backid">返回列表</button>
+            <button type="submit" class="btn btn-primary" type="button">保存</button> &nbsp;&nbsp;
+				<a href="index.php?r=user/index" class="btn btn-success" name="backid" id="backid">返回列表</a>
         </td>
     </tr>
 </table>
