@@ -876,9 +876,11 @@ table {
 	padding: 10px;
 	text-align: right;
 }
-.result_wrap .pageWrap a {
+.fuck a {
 	padding: 3px 8px;
 	margin-left: 5px;
+	
+	float:left;
 	border: 1px solid #c6c6c6;
 	color: #787878;
 }

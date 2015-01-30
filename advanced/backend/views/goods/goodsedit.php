@@ -84,13 +84,18 @@ $this->registerJsFile('@web/public/ueditor/lang/zh-cn/zh-cn.js');
     <tr>
         <td width="10%" class="tableleft">商品名称</td>
         <td><input type="text" name="goods_name" value="<?php echo $result['goods_name']?>"/></td>
+        <input type="hidden" name="h_id" value="<?php echo $result['goods_id']?>"/>
     </tr>
     <tr>
         <td class="tableleft">商品分类</td>
         <td>
             <select name="category">
-       <?php foreach($category as $val){?>
-                <option value="<?php if($val['cat_id']==$result['cat_id']){echo $val['cat_id'];}?>"><?php echo $val['cat_name']?></option>
+       <?php foreach($category as $val){ 
+			if($val['cat_id']==$result['cat_id']){
+				echo "<option value=".$val['cat_id']." selected>".$val['cat_name']."</option>";
+			}else{
+				echo "<option value=".$val['cat_id'].">".$val['cat_name']."</option>";
+			}?>
        <?php }?> 
             </select>
         </td>

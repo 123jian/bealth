@@ -45,21 +45,21 @@ document.write('<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" cod
                     </ul>
                 </div>
                 <!-- 限时秒杀 -->
+<?php foreach($result4 as $val4){ ?>                
                 <div class="secKill_wrap clearfix">
                 	<div class="imgWrap">
-                    	<img src="images/pic_07.jpg" width="614" height="292" />
+                    	<img src="<?php echo 'http://'.$_SERVER['HTTP_HOST'].'/backend/web/'.$val4['goods_img'];?>" width="614" height="292" />
                     </div>
                     <div class="pro_detail">
                     	<div class="time">
-                        	<span>颐宁馨肽 保湿眼霜</span>
+                        	<span><?php echo $val4['goods_name'];?></span>
                         </div>
                         <div class="pro_msg">
-                        	<p>本品通过高科技渗透工艺——微脂囊，将高效的补水成分及皮 </p>
-                            <p>肤所需的活性养分，迅速输送到皮肤基底层，增强细胞活力，同时改善面部皱纹帮助肌肤重换活力，恢复光泽和弹性</p>
+                        	<p><?php echo $val4['goods_desc'];?></p>
                         </div>
                         <div class="price">
                         	<a class="btn" href="index.php?r=index/mall">去看看</a>
-                        	<span class="nowPrice">￥199</span>
+                        	<span class="nowPrice">￥<?php echo $val4['goods_price'];?></span>
                             <span class="oldPrice">￥340</span>
                         </div>
                         <div class="appraise_wrap clearfix">
@@ -76,6 +76,7 @@ document.write('<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" cod
                         </div>
                     </div>
                 </div>
+<?php } ?>                
                 <!-- 限时秒杀END -->
             </div>
             <!-- END -->
@@ -104,28 +105,29 @@ document.write('<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" cod
                   <div class="slideBox">
                       <div class="hd">
                           <ul class="clearfix">
-                          	<li><a href="javascript:void(0);">颐宁多肽冲剂礼品盒</a></li>
-                            <li><a href="javascript:void(0);">颐宁多肽冲剂简装盒</a></li>
-                            <li><a href="javascript:void(0);">颐宁多肽冲剂推荐组合</a></li>
+<?php foreach($result3 as $val3){ ?>                              
+                          	<li><a href="javascript:void(0);"><?php echo $val3['goods_name'];?></a></li>
+<?php } ?>                            
                           </ul>
                       </div>
                       <div class="bd">
                           <ul>
+<?php foreach($result3 as $val3){ ?>                              
                               <li>
                               	<div class="clearfix">
                                     <div class="imgWrap">
-                                        <img src="images/pic_02.jpg" width="540" height="331" />
+                                        <img src="<?php echo 'http://'.$_SERVER['HTTP_HOST'].'/backend/web/'.$val3['goods_img'];?>" width="540" height="331" />
                                     </div>
                                     <div class="pro_detail">
                                     	<div class="time">
-                                        	<span>颐宁多肽冲剂 礼品装</span>
+                                        	<span><?php echo $val3['goods_name'];?></span>
                                         </div>
                                         <div class="pro_msg">
-                                            <p>主要功能:抑制细胞变性，提高人体免疫力。激活细胞活性，保证人体各器官功能正常。修复受损细胞，维护细胞功能与功能正常。促进细胞新陈代谢，有效清除对人体有害的自由基。</p>
+                                            <p><?php echo $val3['goods_desc'];?></p>
                                         </div>
                                         <div class="price">
                                             <a class="btn" href="javascript:void(0);">去看看</a>
-                                            <span class="nowPrice">￥199</span>
+                                            <span class="nowPrice">￥<?php echo $val3['goods_price'];?></span>
                                             <span class="oldPrice">￥340</span>
                                         </div>
                                         <div class="appraise_wrap clearfix">
@@ -143,6 +145,7 @@ document.write('<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" cod
                                     </div>
                                 </div>
                               </li>
+<?php } ?>                              
                               <li>
                               	<div class="clearfix">
                                     <div class="imgWrap">
@@ -216,7 +219,7 @@ document.write('<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" cod
                 </div>
             </div>
             <!--END-->
-            <!---->
+            <!--多肽美容start-->
             <div class="con">
             	<div class="con_head">
                 	<a href="javascript:void(0);">查看更多>></a>
@@ -227,130 +230,28 @@ document.write('<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" cod
                 </div>
                 <div class="flowWrapper">
                 	<ul class="clearfix">
+<?php foreach($result as $val){ ?>                            
                     	<li>
                             <div class="pro_img">
-                                <a href="javascript:void(0);"><img src="images/pic_04.jpg" /></a>
+                                <a href="javascript:void(0);"><img src="<?php echo 'http://'.$_SERVER['HTTP_HOST'].'/backend/web/'.$val['goods_img'];?>" width="475" height="385"/></a>
                             </div>
                             <div class="pro_introduce clearfix">
                                 <div class="price fr">
-                                    ￥<span class="newPrice">199</span>
+                                    ￥<span class="newPrice"><?php echo $val['goods_price'];?></span>
                                     <span class="oldPrice">￥300</span>
                                 </div>
                                 <div class="pro_con fl">
-                                    <a href="javascript:void(0);" class="proName">嗅到的爱情香水团</a>
-                                    <p>费洛蒙结合的爱情香水</p>
+                                    <a href="javascript:void(0);" class="proName"><?php echo $val['goods_name'];?></a>
+                                    <p><?php echo $val['goods_desc'];?></p>
                                 </div>
                             </div>
                         </li>
-                        <li>
-                            <div class="pro_img">
-                                <a href="javascript:void(0);"><img src="images/pic_04.jpg" /></a>
-                            </div>
-                            <div class="pro_introduce clearfix">
-                                <div class="price fr">
-                                    ￥<span class="newPrice">199</span>
-                                    <span class="oldPrice">￥300</span>
-                                </div>
-                                <div class="pro_con fl">
-                                    <a href="javascript:void(0);" class="proName">嗅到的爱情香水团</a>
-                                    <p>费洛蒙结合的爱情香水</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="pro_img">
-                                <a href="javascript:void(0);"><img src="images/pic_04.jpg" /></a>
-                            </div>
-                            <div class="pro_introduce clearfix">
-                                <div class="price fr">
-                                    ￥<span class="newPrice">199</span>
-                                    <span class="oldPrice">￥300</span>
-                                </div>
-                                <div class="pro_con fl">
-                                    <a href="javascript:void(0);" class="proName">嗅到的爱情香水团</a>
-                                    <p>费洛蒙结合的爱情香水</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="pro_img">
-                                <a href="javascript:void(0);"><img src="images/pic_04.jpg" /></a>
-                            </div>
-                            <div class="pro_introduce clearfix">
-                                <div class="price fr">
-                                    ￥<span class="newPrice">199</span>
-                                    <span class="oldPrice">￥300</span>
-                                </div>
-                                <div class="pro_con fl">
-                                    <a href="javascript:void(0);" class="proName">嗅到的爱情香水团</a>
-                                    <p>费洛蒙结合的爱情香水</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="pro_img">
-                                <a href="javascript:void(0);"><img src="images/pic_04.jpg" /></a>
-                            </div>
-                            <div class="pro_introduce clearfix">
-                                <div class="price fr">
-                                    ￥<span class="newPrice">199</span>
-                                    <span class="oldPrice">￥300</span>
-                                </div>
-                                <div class="pro_con fl">
-                                    <a href="javascript:void(0);" class="proName">嗅到的爱情香水团</a>
-                                    <p>费洛蒙结合的爱情香水</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="pro_img">
-                                <a href="javascript:void(0);"><img src="images/pic_04.jpg" /></a>
-                            </div>
-                            <div class="pro_introduce clearfix">
-                                <div class="price fr">
-                                    ￥<span class="newPrice">199</span>
-                                    <span class="oldPrice">￥300</span>
-                                </div>
-                                <div class="pro_con fl">
-                                    <a href="javascript:void(0);" class="proName">嗅到的爱情香水团</a>
-                                    <p>费洛蒙结合的爱情香水</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="pro_img">
-                                <a href="javascript:void(0);"><img src="images/pic_04.jpg" /></a>
-                            </div>
-                            <div class="pro_introduce clearfix">
-                                <div class="price fr">
-                                    ￥<span class="newPrice">199</span>
-                                    <span class="oldPrice">￥300</span>
-                                </div>
-                                <div class="pro_con fl">
-                                    <a href="javascript:void(0);" class="proName">嗅到的爱情香水团</a>
-                                    <p>费洛蒙结合的爱情香水</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="pro_img">
-                                <a href="javascript:void(0);"><img src="images/pic_04.jpg" /></a>
-                            </div>
-                            <div class="pro_introduce clearfix">
-                                <div class="price fr">
-                                    ￥<span class="newPrice">199</span>
-                                    <span class="oldPrice">￥300</span>
-                                </div>
-                                <div class="pro_con fl">
-                                    <a href="javascript:void(0);" class="proName">嗅到的爱情香水团</a>
-                                    <p>费洛蒙结合的爱情香水</p>
-                                </div>
-                            </div>
-                        </li>
+<?php }?>                        
                     </ul>
+                  </div>
                 </div>
             </div>
-            <!--END-->
+            <!--多肽美容END-->
             <!---->
             <div class="con">
             	<div class="pro_con">
@@ -363,36 +264,23 @@ document.write('<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" cod
                   </div>
                   <div class="flowWrapper">
                 	<ul class="clearfix">
+<?php foreach($result2 as $val2){ ?>                            
                     	<li>
                             <div class="pro_img">
-                                <a href="javascript:void(0);"><img src="images/pic_04.jpg" /></a>
+                                <a href="javascript:void(0);"><img src="<?php echo 'http://'.$_SERVER['HTTP_HOST'].'/backend/web/'.$val2['goods_img'];?>" /></a>
                             </div>
                             <div class="pro_introduce clearfix">
                                 <div class="price fr">
-                                    ￥<span class="newPrice">199</span>
+                                    ￥<span class="newPrice"><?php echo $val2['goods_price'];?></span>
                                     <span class="oldPrice">￥300</span>
                                 </div>
                                 <div class="pro_con fl">
-                                    <a href="javascript:void(0);" class="proName">嗅到的爱情香水团</a>
-                                    <p>费洛蒙结合的爱情香水</p>
+                                    <a href="javascript:void(0);" class="proName"><?php echo $val2['goods_name'];?></a>
+                                    <p><?php echo $val2['goods_desc'];?></p>
                                 </div>
                             </div>
                         </li>
-                        <li>
-                            <div class="pro_img">
-                                <a href="javascript:void(0);"><img src="images/pic_04.jpg" /></a>
-                            </div>
-                            <div class="pro_introduce clearfix">
-                                <div class="price fr">
-                                    ￥<span class="newPrice">199</span>
-                                    <span class="oldPrice">￥300</span>
-                                </div>
-                                <div class="pro_con fl">
-                                    <a href="javascript:void(0);" class="proName">嗅到的爱情香水团</a>
-                                    <p>费洛蒙结合的爱情香水</p>
-                                </div>
-                            </div>
-                        </li>
+<?php }?>                        
                     </ul>
                   </div>
                 </div>
@@ -409,24 +297,14 @@ document.write('<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" cod
                   </div>
                   <div class="recommendWrapper">
                 	<ul class="clearfix">
+<?php foreach($result3 as $val3){ ?>                            
                     	<li>
                             <div class="pro_img">
-                                <a href="javascript:void(0);"><img src="images/pic_05.jpg" /></a>
-                                <a href="javascript:void(0);" class="pro_commend"></a>
+                                 <a href="javascript:void(0);"><img src="<?php echo 'http://'.$_SERVER['HTTP_HOST'].'/backend/web/'.$val3['goods_img'];?>" /></a>
+
                             </div>
                         </li>
-                        <li>
-                            <div class="pro_img">
-                                <a href="javascript:void(0);"><img src="images/pic_05.jpg" /></a>
-                                <a href="javascript:void(0);" class="pro_commend"></a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="pro_img">
-                                <a href="javascript:void(0);"><img src="images/pic_05.jpg" /></a>
-                                <a href="javascript:void(0);" class="pro_commend"></a>
-                            </div>
-                        </li>
+<?php }?>                            
                     </ul>
                   </div>
                 </div>

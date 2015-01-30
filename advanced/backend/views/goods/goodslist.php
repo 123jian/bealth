@@ -1,3 +1,6 @@
+<?php
+use yii\widgets\LinkPager;
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -28,15 +31,18 @@
                 padding-right: 5px;
             }
         }
+        .page{float:right;}
+	.page li{float:left;}
+	li {list-style-type:none;}
 
 
     </style>
 </head>
 <body>
-<form class="form-inline definewidth m20" action="index.html" method="get">  
+<form class="form-inline definewidth m20" action="index.php?r=goods/search" method="post">  
     机构名称：
-    <input type="text" name="rolename" id="rolename"class="abc input-default" placeholder="" value="">&nbsp;&nbsp;  
-    <button type="submit" class="btn btn-primary">查询</button>&nbsp;&nbsp; <button type="button" class="btn btn-success" id="addnew">新增机构</button>
+    <input type="text" name="rolename" id="rolename" class="abc input-default" placeholder="" value="">&nbsp;&nbsp;  
+    <button type="submit" class="btn btn-primary">查询</button>&nbsp;&nbsp; <a href="index.php?r=goods/addgoods" type="button" class="btn btn-success" id="addnew">添加商品</a>
 </form>
 <table class="table table-bordered table-hover definewidth m10" >
     <thead>
@@ -61,13 +67,14 @@
         <td><?php echo $val['goods_price'];?></td>
         <td><img src="<?php echo 'http://'.$_SERVER['HTTP_HOST'].'/backend/web/'.$val['goods_img'];?>" width="100" height="100"></td>
         <td><?php echo $val['goods_status'];?></td>
-        <td><?php echo $val['goods_desc'];?></td>
+        <td><?php echo substr($val['goods_desc'],0,10);?></td>
         <td><a href="index.php?r=goods/edit&id=<?php echo $val['goods_id'];?>">编辑</a>||<a href="index.php?r=goods/del&id=<?php echo $val['goods_id'];?>">删除</a></td>
     </tr>
 <?php }?>    
 </table>
 <div class="inline pull-right page">
-         10122 条记录 1/507 页  <a href='#'>下一页</a>     <span class='current'>1</span><a href='#'>2</a><a href='/chinapost/index.php?m=Label&a=index&p=3'>3</a><a href='#'>4</a><a href='#'>5</a>  <a href='#' >下5页</a> <a href='#' >最后一页</a>    </div>
+         <?= LinkPager::widget(['pagination' => $pages]); ?>
+</div>
 </body>
 </html>
 <script>

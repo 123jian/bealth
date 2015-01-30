@@ -2,6 +2,7 @@
 namespace backend\controllers;
 use app\models\Goods;
 use app\models\Category;
+use yii\data\Pagination;
 
 class GoodsController extends \yii\web\Controller
 {
@@ -35,8 +36,12 @@ class GoodsController extends \yii\web\Controller
 			}
 		}
         $model=new Goods();
-        $result=$model->find()->all();    //返回所有数据
-        return $this->renderpartial('goodslist',['result'=>$result]);
+        $result=$model->find();    //返回所有数据
+        $pages = new Pagination(['totalCount' =>$result->count(), 'pageSize' => '3']);
+	$arr = $result->offset($pages->offset)->limit($pages->limit)->orderBy('goods_id desc')->all();//'order by fina_id desc'
+	//print_r($model);die;
+		
+        return $this->renderpartial('goodslist',['result'=>$arr,'pages' => $pages]);
     }
     //商品列表--删除
     public function actionDel()
@@ -57,15 +62,43 @@ class GoodsController extends \yii\web\Controller
         $model=new Goods();
         $result=$model->findOne($id);//删除主键为 $id变量值的数据库；
         $Category=new Category();
-        $arr=$Category->find()->all();    //返回所有数据
+        $arr=$Category->find()->where(['cat_status'=>'1'])->all();    //返回所有数据
         return $this->renderpartial('goodsedit',['result'=>$result,'category'=>$arr]);       
+    }
+    //处理--编辑商品
+    public function actionEditpro()
+    {	
+        //echo "<pre>";
+        //var_dump($_POST);
+        //var_dump($_FILES);//die;
+        $id=$_POST['h_id'];
+        $model=new Goods();
+  /**/  //$url=$_SERVER['HTTP_HOST'];
+        define('FILE_UPLOAD_DIR',"uploads/");//文件上选路径,当前目录的uploads下 
+        $url=FILE_UPLOAD_DIR.time().'.jpg';
+        $img=move_uploaded_file($_FILES['goods_img']['tmp_name'],$url);
+        //var_dump($url);die;
+        if($img){
+            $arr=['cat_id'=>$_POST['category'],'goods_name'=>$_POST['goods_name'],'goods_number'=>$_POST['goods_number'],'goods_price'=>$_POST['goods_price'],'goods_desc'=>$_POST['content1'],'goods_img'=>$url,'goods_status'=>$_POST['goods_status']];
+            $result=$model->updateall($arr,['goods_id'=>$id]);
+            //var_dump($result);die;
+            if($result){
+                //修改成功到列表页面 
+                echo "<script>location.href='index.php?r=goods/goodslist';</script>";     
+            }else{
+              echo "<script>alert('修改失败');history.go(-1);</script>";
+            }
+        }else{
+            echo "<script>alert('图片上传失败');history.go(-1);</script>";
+        }      
+        
     }
     //添加商品页面
     public function actionAddgoods()
     {	
         //echo $_SERVER['HTTP_HOST'];
         $model=new Category();
-        $result=$model->find()->all();    //返回所有数据
+        $result=$model->find()->where(['cat_status'=>'1'])->all();    //返回所有数据
         return $this->renderpartial('addgoods',['result'=>$result]);
     }
     //处理--添加商品
@@ -106,6 +139,19 @@ class GoodsController extends \yii\web\Controller
         }      
         
     }
+    //搜索
+    public function actionSearch()
+    {
+	$rolename=$_POST['rolename'];
+        $model=new Goods();
+        $result=$model->find()->where(['goods_name'=>$rolename]);//返回所有数据
+        $pages = new Pagination(['totalCount' =>$result->count(), 'pageSize' => '3']);
+	$arr = $result->offset($pages->offset)->limit($pages->limit)->orderBy('goods_id asc')->all();//'order by fina_id desc'
+	//print_r($model);die;
+		
+        return $this->renderpartial('goodslist',['result'=>$arr,'pages' => $pages]);
+    }
+    
     
 
 }
