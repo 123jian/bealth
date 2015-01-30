@@ -14833,3 +14833,660 @@ $_SERVER = [
     'REQUEST_TIME' => 1422539358
 >>>>>>> 5f34b9ef59e87e28a8cf98b2a127b92f9450df17
 ]
+2015-01-30 02:21:44 [127.0.0.1][][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: category/' in E:\jicheng\htdocs\duotaishop\advanced\vendor\yiisoft\yii2\base\Controller.php:122
+Stack trace:
+#0 E:\jicheng\htdocs\duotaishop\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('', Array)
+#1 E:\jicheng\htdocs\duotaishop\advanced\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('category', Array)
+#2 E:\jicheng\htdocs\duotaishop\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 E:\jicheng\htdocs\duotaishop\advanced\backend\web\index.php(20): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Unable to resolve the request: category/' in E:\jicheng\htdocs\duotaishop\advanced\vendor\yiisoft\yii2\web\Application.php:95
+Stack trace:
+#0 E:\jicheng\htdocs\duotaishop\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 E:\jicheng\htdocs\duotaishop\advanced\backend\web\index.php(20): yii\base\Application->run()
+#2 {main}
+2015-01-30 02:21:44 [127.0.0.1][][-][info][application] $_GET = [
+    'r' => 'category'
+]
+
+$_COOKIE = [
+    'Hm_lvt_2531171454aa43a1c0e4e7f3ec040fbf' => '1420804754,1420847253,1420963862'
+    'Hm_lvt_aedee6983d4cfc62f509129360d6bb3d' => '1420961449'
+    'pgv_pvi' => '5305690112'
+    'PHPSESSID' => 's80nseuarhs42ol9e1ocea9ut7'
+    '_csrf' => '3dfc0975675e536169eb94badb2d1b92cea192612faf18791f4d8f2faf9ae0f1s:32:\"oYQM6yeJY_DLxtNQM5_V4m336Rajo6iv\";'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/duotaishop/advanced/backend/web/index.php?r='
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'E:/jicheng/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'E:/jicheng/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:35.0) Gecko/20100101 Firefox/35.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-cn,zh;q=0.8,en-us;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'Hm_lvt_2531171454aa43a1c0e4e7f3ec040fbf=1420804754,1420847253,1420963862; Hm_lvt_aedee6983d4cfc62f509129360d6bb3d=1420961449; pgv_pvi=5305690112; PHPSESSID=s80nseuarhs42ol9e1ocea9ut7; _csrf=3dfc0975675e536169eb94badb2d1b92cea192612faf18791f4d8f2faf9ae0f1s%3A32%3A%22oYQM6yeJY_DLxtNQM5_V4m336Rajo6iv%22%3B'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\NetSarang;E:\\web\\PHP\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\web\\MYSQL\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Java\\jdk1.7.0_71\\bin;C:\\Program Files\\Java\\jdk1.7.0_71\\jre\\bin;C:\\Program Files\\TortoiseGit\\bin;E:\\jicheng\\php\\php.exe;C:\\Program Files\\nodejs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/jicheng/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/jicheng/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'E:/jicheng/htdocs/duotaishop/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '65320'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=category'
+    'REQUEST_URI' => '/duotaishop/advanced/backend/web/index.php?r=category'
+    'SCRIPT_NAME' => '/duotaishop/advanced/backend/web/index.php'
+    'PHP_SELF' => '/duotaishop/advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422580904.559
+    'REQUEST_TIME' => 1422580904
+]
+2015-01-30 02:21:51 [127.0.0.1][][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: category/index' in E:\jicheng\htdocs\duotaishop\advanced\vendor\yiisoft\yii2\base\Controller.php:122
+Stack trace:
+#0 E:\jicheng\htdocs\duotaishop\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('index', Array)
+#1 E:\jicheng\htdocs\duotaishop\advanced\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('category/index', Array)
+#2 E:\jicheng\htdocs\duotaishop\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 E:\jicheng\htdocs\duotaishop\advanced\backend\web\index.php(20): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Unable to resolve the request: category/index' in E:\jicheng\htdocs\duotaishop\advanced\vendor\yiisoft\yii2\web\Application.php:95
+Stack trace:
+#0 E:\jicheng\htdocs\duotaishop\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 E:\jicheng\htdocs\duotaishop\advanced\backend\web\index.php(20): yii\base\Application->run()
+#2 {main}
+2015-01-30 02:21:51 [127.0.0.1][][-][info][application] $_GET = [
+    'r' => 'category/index'
+]
+
+$_COOKIE = [
+    'Hm_lvt_2531171454aa43a1c0e4e7f3ec040fbf' => '1420804754,1420847253,1420963862'
+    'Hm_lvt_aedee6983d4cfc62f509129360d6bb3d' => '1420961449'
+    'pgv_pvi' => '5305690112'
+    'PHPSESSID' => 's80nseuarhs42ol9e1ocea9ut7'
+    '_csrf' => '3dfc0975675e536169eb94badb2d1b92cea192612faf18791f4d8f2faf9ae0f1s:32:\"oYQM6yeJY_DLxtNQM5_V4m336Rajo6iv\";'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/duotaishop/advanced/backend/web/index.php?r='
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'E:/jicheng/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'E:/jicheng/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:35.0) Gecko/20100101 Firefox/35.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-cn,zh;q=0.8,en-us;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'Hm_lvt_2531171454aa43a1c0e4e7f3ec040fbf=1420804754,1420847253,1420963862; Hm_lvt_aedee6983d4cfc62f509129360d6bb3d=1420961449; pgv_pvi=5305690112; PHPSESSID=s80nseuarhs42ol9e1ocea9ut7; _csrf=3dfc0975675e536169eb94badb2d1b92cea192612faf18791f4d8f2faf9ae0f1s%3A32%3A%22oYQM6yeJY_DLxtNQM5_V4m336Rajo6iv%22%3B'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\NetSarang;E:\\web\\PHP\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\web\\MYSQL\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Java\\jdk1.7.0_71\\bin;C:\\Program Files\\Java\\jdk1.7.0_71\\jre\\bin;C:\\Program Files\\TortoiseGit\\bin;E:\\jicheng\\php\\php.exe;C:\\Program Files\\nodejs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/jicheng/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/jicheng/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'E:/jicheng/htdocs/duotaishop/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '65337'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=category/index'
+    'REQUEST_URI' => '/duotaishop/advanced/backend/web/index.php?r=category/index'
+    'SCRIPT_NAME' => '/duotaishop/advanced/backend/web/index.php'
+    'PHP_SELF' => '/duotaishop/advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422580911.439
+    'REQUEST_TIME' => 1422580911
+]
+2015-01-30 02:22:55 [127.0.0.1][][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: category/' in E:\jicheng\htdocs\duotaishop\advanced\vendor\yiisoft\yii2\base\Controller.php:122
+Stack trace:
+#0 E:\jicheng\htdocs\duotaishop\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('', Array)
+#1 E:\jicheng\htdocs\duotaishop\advanced\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('category', Array)
+#2 E:\jicheng\htdocs\duotaishop\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 E:\jicheng\htdocs\duotaishop\advanced\backend\web\index.php(20): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Unable to resolve the request: category/' in E:\jicheng\htdocs\duotaishop\advanced\vendor\yiisoft\yii2\web\Application.php:95
+Stack trace:
+#0 E:\jicheng\htdocs\duotaishop\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 E:\jicheng\htdocs\duotaishop\advanced\backend\web\index.php(20): yii\base\Application->run()
+#2 {main}
+2015-01-30 02:22:55 [127.0.0.1][][-][info][application] $_GET = [
+    'r' => 'category'
+]
+
+$_COOKIE = [
+    'Hm_lvt_2531171454aa43a1c0e4e7f3ec040fbf' => '1420804754,1420847253,1420963862'
+    'Hm_lvt_aedee6983d4cfc62f509129360d6bb3d' => '1420961449'
+    'pgv_pvi' => '5305690112'
+    'PHPSESSID' => 's80nseuarhs42ol9e1ocea9ut7'
+    '_csrf' => '3dfc0975675e536169eb94badb2d1b92cea192612faf18791f4d8f2faf9ae0f1s:32:\"oYQM6yeJY_DLxtNQM5_V4m336Rajo6iv\";'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/duotaishop/advanced/backend/web/index.php?r='
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'E:/jicheng/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'E:/jicheng/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:35.0) Gecko/20100101 Firefox/35.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-cn,zh;q=0.8,en-us;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'Hm_lvt_2531171454aa43a1c0e4e7f3ec040fbf=1420804754,1420847253,1420963862; Hm_lvt_aedee6983d4cfc62f509129360d6bb3d=1420961449; pgv_pvi=5305690112; PHPSESSID=s80nseuarhs42ol9e1ocea9ut7; _csrf=3dfc0975675e536169eb94badb2d1b92cea192612faf18791f4d8f2faf9ae0f1s%3A32%3A%22oYQM6yeJY_DLxtNQM5_V4m336Rajo6iv%22%3B'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\NetSarang;E:\\web\\PHP\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\web\\MYSQL\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Java\\jdk1.7.0_71\\bin;C:\\Program Files\\Java\\jdk1.7.0_71\\jre\\bin;C:\\Program Files\\TortoiseGit\\bin;E:\\jicheng\\php\\php.exe;C:\\Program Files\\nodejs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/jicheng/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/jicheng/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'E:/jicheng/htdocs/duotaishop/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '65503'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=category'
+    'REQUEST_URI' => '/duotaishop/advanced/backend/web/index.php?r=category'
+    'SCRIPT_NAME' => '/duotaishop/advanced/backend/web/index.php'
+    'PHP_SELF' => '/duotaishop/advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422580975.499
+    'REQUEST_TIME' => 1422580975
+]
+2015-01-30 02:23:35 [127.0.0.1][][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: category/Articlelist' in E:\jicheng\htdocs\duotaishop\advanced\vendor\yiisoft\yii2\base\Controller.php:122
+Stack trace:
+#0 E:\jicheng\htdocs\duotaishop\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('Articlelist', Array)
+#1 E:\jicheng\htdocs\duotaishop\advanced\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('category/Articl...', Array)
+#2 E:\jicheng\htdocs\duotaishop\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 E:\jicheng\htdocs\duotaishop\advanced\backend\web\index.php(20): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Unable to resolve the request: category/Articlelist' in E:\jicheng\htdocs\duotaishop\advanced\vendor\yiisoft\yii2\web\Application.php:95
+Stack trace:
+#0 E:\jicheng\htdocs\duotaishop\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 E:\jicheng\htdocs\duotaishop\advanced\backend\web\index.php(20): yii\base\Application->run()
+#2 {main}
+2015-01-30 02:23:35 [127.0.0.1][][-][info][application] $_GET = [
+    'r' => 'category/Articlelist'
+]
+
+$_COOKIE = [
+    'Hm_lvt_2531171454aa43a1c0e4e7f3ec040fbf' => '1420804754,1420847253,1420963862'
+    'Hm_lvt_aedee6983d4cfc62f509129360d6bb3d' => '1420961449'
+    'pgv_pvi' => '5305690112'
+    'PHPSESSID' => 's80nseuarhs42ol9e1ocea9ut7'
+    '_csrf' => '3dfc0975675e536169eb94badb2d1b92cea192612faf18791f4d8f2faf9ae0f1s:32:\"oYQM6yeJY_DLxtNQM5_V4m336Rajo6iv\";'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/duotaishop/advanced/backend/web/index.php?r='
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'E:/jicheng/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'E:/jicheng/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:35.0) Gecko/20100101 Firefox/35.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-cn,zh;q=0.8,en-us;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'Hm_lvt_2531171454aa43a1c0e4e7f3ec040fbf=1420804754,1420847253,1420963862; Hm_lvt_aedee6983d4cfc62f509129360d6bb3d=1420961449; pgv_pvi=5305690112; PHPSESSID=s80nseuarhs42ol9e1ocea9ut7; _csrf=3dfc0975675e536169eb94badb2d1b92cea192612faf18791f4d8f2faf9ae0f1s%3A32%3A%22oYQM6yeJY_DLxtNQM5_V4m336Rajo6iv%22%3B'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\NetSarang;E:\\web\\PHP\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\web\\MYSQL\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Java\\jdk1.7.0_71\\bin;C:\\Program Files\\Java\\jdk1.7.0_71\\jre\\bin;C:\\Program Files\\TortoiseGit\\bin;E:\\jicheng\\php\\php.exe;C:\\Program Files\\nodejs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/jicheng/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/jicheng/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'E:/jicheng/htdocs/duotaishop/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '49235'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=category/Articlelist'
+    'REQUEST_URI' => '/duotaishop/advanced/backend/web/index.php?r=category/Articlelist'
+    'SCRIPT_NAME' => '/duotaishop/advanced/backend/web/index.php'
+    'PHP_SELF' => '/duotaishop/advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422581015.42
+    'REQUEST_TIME' => 1422581015
+]
+2015-01-30 02:25:35 [127.0.0.1][][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: category/' in E:\jicheng\htdocs\duotaishop\advanced\vendor\yiisoft\yii2\base\Controller.php:122
+Stack trace:
+#0 E:\jicheng\htdocs\duotaishop\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('', Array)
+#1 E:\jicheng\htdocs\duotaishop\advanced\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('category', Array)
+#2 E:\jicheng\htdocs\duotaishop\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 E:\jicheng\htdocs\duotaishop\advanced\backend\web\index.php(20): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Unable to resolve the request: category/' in E:\jicheng\htdocs\duotaishop\advanced\vendor\yiisoft\yii2\web\Application.php:95
+Stack trace:
+#0 E:\jicheng\htdocs\duotaishop\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 E:\jicheng\htdocs\duotaishop\advanced\backend\web\index.php(20): yii\base\Application->run()
+#2 {main}
+2015-01-30 02:25:35 [127.0.0.1][][-][info][application] $_GET = [
+    'r' => 'category'
+]
+
+$_COOKIE = [
+    'Hm_lvt_2531171454aa43a1c0e4e7f3ec040fbf' => '1420804754,1420847253,1420963862'
+    'Hm_lvt_aedee6983d4cfc62f509129360d6bb3d' => '1420961449'
+    'pgv_pvi' => '5305690112'
+    'PHPSESSID' => 's80nseuarhs42ol9e1ocea9ut7'
+    '_csrf' => '3dfc0975675e536169eb94badb2d1b92cea192612faf18791f4d8f2faf9ae0f1s:32:\"oYQM6yeJY_DLxtNQM5_V4m336Rajo6iv\";'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/duotaishop/advanced/backend/web/index.php?r='
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'E:/jicheng/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'E:/jicheng/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:35.0) Gecko/20100101 Firefox/35.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-cn,zh;q=0.8,en-us;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'Hm_lvt_2531171454aa43a1c0e4e7f3ec040fbf=1420804754,1420847253,1420963862; Hm_lvt_aedee6983d4cfc62f509129360d6bb3d=1420961449; pgv_pvi=5305690112; PHPSESSID=s80nseuarhs42ol9e1ocea9ut7; _csrf=3dfc0975675e536169eb94badb2d1b92cea192612faf18791f4d8f2faf9ae0f1s%3A32%3A%22oYQM6yeJY_DLxtNQM5_V4m336Rajo6iv%22%3B'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\NetSarang;E:\\web\\PHP\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\web\\MYSQL\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Java\\jdk1.7.0_71\\bin;C:\\Program Files\\Java\\jdk1.7.0_71\\jre\\bin;C:\\Program Files\\TortoiseGit\\bin;E:\\jicheng\\php\\php.exe;C:\\Program Files\\nodejs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/jicheng/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/jicheng/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'E:/jicheng/htdocs/duotaishop/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '49564'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=category'
+    'REQUEST_URI' => '/duotaishop/advanced/backend/web/index.php?r=category'
+    'SCRIPT_NAME' => '/duotaishop/advanced/backend/web/index.php'
+    'PHP_SELF' => '/duotaishop/advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422581135.155
+    'REQUEST_TIME' => 1422581135
+]
+2015-01-30 02:25:37 [127.0.0.1][][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: category/index' in E:\jicheng\htdocs\duotaishop\advanced\vendor\yiisoft\yii2\base\Controller.php:122
+Stack trace:
+#0 E:\jicheng\htdocs\duotaishop\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('index', Array)
+#1 E:\jicheng\htdocs\duotaishop\advanced\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('category/index', Array)
+#2 E:\jicheng\htdocs\duotaishop\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 E:\jicheng\htdocs\duotaishop\advanced\backend\web\index.php(20): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Unable to resolve the request: category/index' in E:\jicheng\htdocs\duotaishop\advanced\vendor\yiisoft\yii2\web\Application.php:95
+Stack trace:
+#0 E:\jicheng\htdocs\duotaishop\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 E:\jicheng\htdocs\duotaishop\advanced\backend\web\index.php(20): yii\base\Application->run()
+#2 {main}
+2015-01-30 02:25:37 [127.0.0.1][][-][info][application] $_GET = [
+    'r' => 'category/index'
+]
+
+$_COOKIE = [
+    'Hm_lvt_2531171454aa43a1c0e4e7f3ec040fbf' => '1420804754,1420847253,1420963862'
+    'Hm_lvt_aedee6983d4cfc62f509129360d6bb3d' => '1420961449'
+    'pgv_pvi' => '5305690112'
+    'PHPSESSID' => 's80nseuarhs42ol9e1ocea9ut7'
+    '_csrf' => '3dfc0975675e536169eb94badb2d1b92cea192612faf18791f4d8f2faf9ae0f1s:32:\"oYQM6yeJY_DLxtNQM5_V4m336Rajo6iv\";'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/duotaishop/advanced/backend/web/index.php?r='
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'E:/jicheng/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'E:/jicheng/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:35.0) Gecko/20100101 Firefox/35.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-cn,zh;q=0.8,en-us;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'Hm_lvt_2531171454aa43a1c0e4e7f3ec040fbf=1420804754,1420847253,1420963862; Hm_lvt_aedee6983d4cfc62f509129360d6bb3d=1420961449; pgv_pvi=5305690112; PHPSESSID=s80nseuarhs42ol9e1ocea9ut7; _csrf=3dfc0975675e536169eb94badb2d1b92cea192612faf18791f4d8f2faf9ae0f1s%3A32%3A%22oYQM6yeJY_DLxtNQM5_V4m336Rajo6iv%22%3B'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\NetSarang;E:\\web\\PHP\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\web\\MYSQL\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Java\\jdk1.7.0_71\\bin;C:\\Program Files\\Java\\jdk1.7.0_71\\jre\\bin;C:\\Program Files\\TortoiseGit\\bin;E:\\jicheng\\php\\php.exe;C:\\Program Files\\nodejs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/jicheng/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/jicheng/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'E:/jicheng/htdocs/duotaishop/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '49564'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=category/index'
+    'REQUEST_URI' => '/duotaishop/advanced/backend/web/index.php?r=category/index'
+    'SCRIPT_NAME' => '/duotaishop/advanced/backend/web/index.php'
+    'PHP_SELF' => '/duotaishop/advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422581137.495
+    'REQUEST_TIME' => 1422581137
+]
+2015-01-30 02:26:03 [127.0.0.1][][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: category/' in E:\jicheng\htdocs\duotaishop\advanced\vendor\yiisoft\yii2\base\Controller.php:122
+Stack trace:
+#0 E:\jicheng\htdocs\duotaishop\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('', Array)
+#1 E:\jicheng\htdocs\duotaishop\advanced\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('category', Array)
+#2 E:\jicheng\htdocs\duotaishop\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 E:\jicheng\htdocs\duotaishop\advanced\backend\web\index.php(20): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Unable to resolve the request: category/' in E:\jicheng\htdocs\duotaishop\advanced\vendor\yiisoft\yii2\web\Application.php:95
+Stack trace:
+#0 E:\jicheng\htdocs\duotaishop\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 E:\jicheng\htdocs\duotaishop\advanced\backend\web\index.php(20): yii\base\Application->run()
+#2 {main}
+2015-01-30 02:26:03 [127.0.0.1][][-][info][application] $_GET = [
+    'r' => 'category'
+]
+
+$_COOKIE = [
+    'Hm_lvt_2531171454aa43a1c0e4e7f3ec040fbf' => '1420804754,1420847253,1420963862'
+    'Hm_lvt_aedee6983d4cfc62f509129360d6bb3d' => '1420961449'
+    'pgv_pvi' => '5305690112'
+    'PHPSESSID' => 's80nseuarhs42ol9e1ocea9ut7'
+    '_csrf' => '3dfc0975675e536169eb94badb2d1b92cea192612faf18791f4d8f2faf9ae0f1s:32:\"oYQM6yeJY_DLxtNQM5_V4m336Rajo6iv\";'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/duotaishop/advanced/backend/web/index.php?r='
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'E:/jicheng/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'E:/jicheng/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:35.0) Gecko/20100101 Firefox/35.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-cn,zh;q=0.8,en-us;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'Hm_lvt_2531171454aa43a1c0e4e7f3ec040fbf=1420804754,1420847253,1420963862; Hm_lvt_aedee6983d4cfc62f509129360d6bb3d=1420961449; pgv_pvi=5305690112; PHPSESSID=s80nseuarhs42ol9e1ocea9ut7; _csrf=3dfc0975675e536169eb94badb2d1b92cea192612faf18791f4d8f2faf9ae0f1s%3A32%3A%22oYQM6yeJY_DLxtNQM5_V4m336Rajo6iv%22%3B'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\NetSarang;E:\\web\\PHP\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\web\\MYSQL\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Java\\jdk1.7.0_71\\bin;C:\\Program Files\\Java\\jdk1.7.0_71\\jre\\bin;C:\\Program Files\\TortoiseGit\\bin;E:\\jicheng\\php\\php.exe;C:\\Program Files\\nodejs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/jicheng/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/jicheng/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'E:/jicheng/htdocs/duotaishop/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '49652'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=category'
+    'REQUEST_URI' => '/duotaishop/advanced/backend/web/index.php?r=category'
+    'SCRIPT_NAME' => '/duotaishop/advanced/backend/web/index.php'
+    'PHP_SELF' => '/duotaishop/advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422581163.305
+    'REQUEST_TIME' => 1422581163
+]
+2015-01-30 02:26:08 [127.0.0.1][][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: goods/' in E:\jicheng\htdocs\duotaishop\advanced\vendor\yiisoft\yii2\base\Controller.php:122
+Stack trace:
+#0 E:\jicheng\htdocs\duotaishop\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('', Array)
+#1 E:\jicheng\htdocs\duotaishop\advanced\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('goods', Array)
+#2 E:\jicheng\htdocs\duotaishop\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 E:\jicheng\htdocs\duotaishop\advanced\backend\web\index.php(20): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Unable to resolve the request: goods/' in E:\jicheng\htdocs\duotaishop\advanced\vendor\yiisoft\yii2\web\Application.php:95
+Stack trace:
+#0 E:\jicheng\htdocs\duotaishop\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 E:\jicheng\htdocs\duotaishop\advanced\backend\web\index.php(20): yii\base\Application->run()
+#2 {main}
+2015-01-30 02:26:08 [127.0.0.1][][-][info][application] $_GET = [
+    'r' => 'goods'
+]
+
+$_COOKIE = [
+    'Hm_lvt_2531171454aa43a1c0e4e7f3ec040fbf' => '1420804754,1420847253,1420963862'
+    'Hm_lvt_aedee6983d4cfc62f509129360d6bb3d' => '1420961449'
+    'pgv_pvi' => '5305690112'
+    'PHPSESSID' => 's80nseuarhs42ol9e1ocea9ut7'
+    '_csrf' => '3dfc0975675e536169eb94badb2d1b92cea192612faf18791f4d8f2faf9ae0f1s:32:\"oYQM6yeJY_DLxtNQM5_V4m336Rajo6iv\";'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/duotaishop/advanced/backend/web/index.php?r='
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'E:/jicheng/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'E:/jicheng/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:35.0) Gecko/20100101 Firefox/35.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-cn,zh;q=0.8,en-us;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'Hm_lvt_2531171454aa43a1c0e4e7f3ec040fbf=1420804754,1420847253,1420963862; Hm_lvt_aedee6983d4cfc62f509129360d6bb3d=1420961449; pgv_pvi=5305690112; PHPSESSID=s80nseuarhs42ol9e1ocea9ut7; _csrf=3dfc0975675e536169eb94badb2d1b92cea192612faf18791f4d8f2faf9ae0f1s%3A32%3A%22oYQM6yeJY_DLxtNQM5_V4m336Rajo6iv%22%3B'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\NetSarang;E:\\web\\PHP\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\web\\MYSQL\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Java\\jdk1.7.0_71\\bin;C:\\Program Files\\Java\\jdk1.7.0_71\\jre\\bin;C:\\Program Files\\TortoiseGit\\bin;E:\\jicheng\\php\\php.exe;C:\\Program Files\\nodejs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/jicheng/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/jicheng/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'E:/jicheng/htdocs/duotaishop/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '49652'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=goods'
+    'REQUEST_URI' => '/duotaishop/advanced/backend/web/index.php?r=goods'
+    'SCRIPT_NAME' => '/duotaishop/advanced/backend/web/index.php'
+    'PHP_SELF' => '/duotaishop/advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422581168.115
+    'REQUEST_TIME' => 1422581168
+]
+2015-01-30 02:42:15 [127.0.0.1][][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: category/' in E:\jicheng\htdocs\duotaishop\advanced\vendor\yiisoft\yii2\base\Controller.php:122
+Stack trace:
+#0 E:\jicheng\htdocs\duotaishop\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('', Array)
+#1 E:\jicheng\htdocs\duotaishop\advanced\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('category', Array)
+#2 E:\jicheng\htdocs\duotaishop\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 E:\jicheng\htdocs\duotaishop\advanced\backend\web\index.php(20): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Unable to resolve the request: category/' in E:\jicheng\htdocs\duotaishop\advanced\vendor\yiisoft\yii2\web\Application.php:95
+Stack trace:
+#0 E:\jicheng\htdocs\duotaishop\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 E:\jicheng\htdocs\duotaishop\advanced\backend\web\index.php(20): yii\base\Application->run()
+#2 {main}
+2015-01-30 02:42:15 [127.0.0.1][][-][info][application] $_GET = [
+    'r' => 'category'
+]
+
+$_COOKIE = [
+    'Hm_lvt_2531171454aa43a1c0e4e7f3ec040fbf' => '1420804754,1420847253,1420963862'
+    'Hm_lvt_aedee6983d4cfc62f509129360d6bb3d' => '1420961449'
+    'pgv_pvi' => '5305690112'
+    'PHPSESSID' => 's80nseuarhs42ol9e1ocea9ut7'
+    '_csrf' => '3dfc0975675e536169eb94badb2d1b92cea192612faf18791f4d8f2faf9ae0f1s:32:\"oYQM6yeJY_DLxtNQM5_V4m336Rajo6iv\";'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/duotaishop/advanced/backend/web/index.php?r='
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'E:/jicheng/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'E:/jicheng/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:35.0) Gecko/20100101 Firefox/35.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-cn,zh;q=0.8,en-us;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'Hm_lvt_2531171454aa43a1c0e4e7f3ec040fbf=1420804754,1420847253,1420963862; Hm_lvt_aedee6983d4cfc62f509129360d6bb3d=1420961449; pgv_pvi=5305690112; PHPSESSID=s80nseuarhs42ol9e1ocea9ut7; _csrf=3dfc0975675e536169eb94badb2d1b92cea192612faf18791f4d8f2faf9ae0f1s%3A32%3A%22oYQM6yeJY_DLxtNQM5_V4m336Rajo6iv%22%3B'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\NetSarang;E:\\web\\PHP\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\web\\MYSQL\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Java\\jdk1.7.0_71\\bin;C:\\Program Files\\Java\\jdk1.7.0_71\\jre\\bin;C:\\Program Files\\TortoiseGit\\bin;E:\\jicheng\\php\\php.exe;C:\\Program Files\\nodejs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/jicheng/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/jicheng/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'E:/jicheng/htdocs/duotaishop/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '52437'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=category'
+    'REQUEST_URI' => '/duotaishop/advanced/backend/web/index.php?r=category'
+    'SCRIPT_NAME' => '/duotaishop/advanced/backend/web/index.php'
+    'PHP_SELF' => '/duotaishop/advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422582135.399
+    'REQUEST_TIME' => 1422582135
+]
