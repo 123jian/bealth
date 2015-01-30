@@ -30,11 +30,16 @@ class GoodsController extends \yii\web\Controller
 		$gid=$_GET['gid'];
 		$goo= new Goods();
 		$data=$goo->find()->where(['goods_id'=>$gid])->one();
-		//
+		//浏览记录
 		$data1=$goo->find()->limit(2)->all();
 		//print_R($data1);die;
+		//热卖产品
 		$datar=$goo->find()->limit(4)->all();
-		return $this->renderPartial('mall',['cate'=>$c,'data1'=>$data1,'datar'=>$datar,'data'=>$data,]);
+		//评论
+		$com=new Comment();
+		$pin=$com->find()->where(['goods_id'=>$gid])->all();
+		//print_r($pin);die;
+		return $this->renderPartial('mall',['cate'=>$c,'pin'=>$pin,'data1'=>$data1,'datar'=>$datar,'data'=>$data,]);
     }
 	//评论
 	public function actionPinglun()

@@ -315,12 +315,15 @@
                             <!-- 商品评价 -->
                             <div class="pro_review">
                                 <p class="title2">商品评价</p>
+								<?php if(!empty($pin)){
+										foreach($pin as $pk=>$pv){
+								?>
                                 <div class="p15">
                                 	<div class="reviewItem clearfix">
                                     	<div class="userMsg">
                                         	<div class="imgWrap"></div>
-                                            <p>123456789</p>
-                                            <p class="level">超级会员</p>
+                                            <p><?php echo $pv['uname']?></p>
+                                            <!--<p class="level">超级会员</p>-->
                                         </div>
                                         <div class="reviewMsg">
                                         	<span class="arrowIcon"></span>
@@ -333,24 +336,36 @@
                                             </div>
                                             <div class="review clearfix">
                                             	<span class="reviewTitle">评&nbsp;&nbsp;&nbsp;&nbsp;价：</span>
-                                                <p class="review_msg">效果好效果好效果好效果好效果好效果好效果好效果好效果好效果好效果好效果好效果好效果好效果好效果好效果好效果好效果好效果好效果好</p>
+                                                <p class="review_msg"><?php echo $pv['content']?></p>
                                             </div>
                                             <div class="review clearfix">
                                             	<span class="reviewTitle">购买日期：</span>
                                                 <p class="review_msg">
                                                 	<a href="javascript:void(0);">回复</a>
                                                     <a href="javascript:void(0);">赞</a>
-                                                	<span>2014-05-28</span>
+                                                	<span>
+													<?php echo date("Y-m-d h:i:s",$pv['com_time'])?>
+													</span>
                                                 </p>
                                             </div>
 											
                                         </div>
 										<div>
-                                        <input type="button" value="评价" class="carIcon" onclick="pinglun()">
+										
+                                        
                                     </div>
+									</div>
+									
                                    <!--评论框-->
+								   
+
+                                    </div><?php 
+											}
+										}else{}
+										?>
+									<input type="button" value="发表评论" class="carIcon" onclick="pinglun()">
                                    <div style="display:none" id="pin">
-                                        <span class="reviewTitle">评&nbsp;&nbsp;&nbsp;&nbsp;价：</span>
+                                        <span class="reviewTitle">发表评论：</span>
                                         <p class="review_msg">
                                             <input type="hidden" name="uname" id="uid" value="<?php
 											if(!empty(@$session->get('name'))){
@@ -360,11 +375,9 @@
 											}
 											 ?>">
                                             <input type="hidden" name="gid" id="gid" value="<?php echo @$data['goods_id'];?>">
-                                            <textarea rows="4px" cols="50px" id="lun" name="lun">欢迎您来评论！！</textarea>
+                                            <textarea rows="4px" cols="50px" id="lun" name="lun">欢迎您来评论！</textarea>
                                             <br><input type="button"  class="carIcon" value="评论" onclick="tijiao()">
                                         </p>
-                                    </div>
-
                                     </div>
                                 </div>
                             </div>

@@ -16900,3 +16900,215 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1422624825.824
     'REQUEST_TIME' => 1422624825
 ]
+2015-01-30 14:53:25 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: uname' in E:\jicheng\htdocs\duotaishop\advanced\frontend\views\goods\mall.php:325
+Stack trace:
+#0 E:\jicheng\htdocs\duotaishop\advanced\frontend\views\goods\mall.php(325): yii\base\ErrorHandler->handleError(8, 'Undefined index...', 'E:\jicheng\htdo...', 325, Array)
+#1 E:\jicheng\htdocs\duotaishop\advanced\vendor\yiisoft\yii2\base\View.php(325): require('E:\jicheng\htdo...')
+#2 E:\jicheng\htdocs\duotaishop\advanced\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('E:\jicheng\htdo...', Array)
+#3 E:\jicheng\htdocs\duotaishop\advanced\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('E:\jicheng\htdo...', Array, Object(frontend\controllers\GoodsController))
+#4 E:\jicheng\htdocs\duotaishop\advanced\vendor\yiisoft\yii2\base\Controller.php(386): yii\base\View->render('mall', Array, Object(frontend\controllers\GoodsController))
+#5 E:\jicheng\htdocs\duotaishop\advanced\frontend\controllers\GoodsController.php(42): yii\base\Controller->renderPartial('mall', Array)
+#6 [internal function]: frontend\controllers\GoodsController->actionIndex()
+#7 E:\jicheng\htdocs\duotaishop\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#8 E:\jicheng\htdocs\duotaishop\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 E:\jicheng\htdocs\duotaishop\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('index', Array)
+#10 E:\jicheng\htdocs\duotaishop\advanced\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('goods/index', Array)
+#11 E:\jicheng\htdocs\duotaishop\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 E:\jicheng\htdocs\duotaishop\advanced\frontend\web\index.php(20): yii\base\Application->run()
+#13 {main}
+2015-01-30 14:53:25 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'goods/index'
+    'gid' => '13'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'qd36bc4p8iehueq2e07ke5vh32'
+    '_csrf' => '95cd322b339eac486266ec122e889afc04d1c16f9638a01dddfd02ab07a24553s:32:\"FVrVo-C9z3z_i4iq4yJFv0chYOYFlHOa\";'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'name' => 'bin'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'E:/jicheng/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'E:/jicheng/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'www.duotaishop.com'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:35.0) Gecko/20100101 Firefox/35.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-cn,zh;q=0.8,en-us;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://www.duotaishop.com/frontend/web/index.php?r=category/index&cid=8'
+    'HTTP_COOKIE' => 'PHPSESSID=qd36bc4p8iehueq2e07ke5vh32; _csrf=95cd322b339eac486266ec122e889afc04d1c16f9638a01dddfd02ab07a24553s%3A32%3A%22FVrVo-C9z3z_i4iq4yJFv0chYOYFlHOa%22%3B'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\NetSarang;E:\\web\\PHP\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\web\\MYSQL\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Java\\jdk1.7.0_71\\bin;C:\\Program Files\\Java\\jdk1.7.0_71\\jre\\bin;C:\\Program Files\\TortoiseGit\\bin;E:\\jicheng\\php\\php.exe;C:\\Program Files\\nodejs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at www.duotaishop.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'www.duotaishop.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/jicheng/htdocs/duotaishop/advanced'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/jicheng/htdocs/duotaishop/advanced'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'E:/jicheng/htdocs/duotaishop/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '53725'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=goods/index&gid=13'
+    'REQUEST_URI' => '/frontend/web/index.php?r=goods/index&gid=13'
+    'SCRIPT_NAME' => '/frontend/web/index.php'
+    'PHP_SELF' => '/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422626005.427
+    'REQUEST_TIME' => 1422626005
+]
+2015-01-30 14:58:19 [127.0.0.1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '$'' in E:\jicheng\htdocs\duotaishop\advanced\frontend\views\goods\mall.php:346
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-01-30 14:58:18 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'goods/index'
+    'gid' => '13'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'qd36bc4p8iehueq2e07ke5vh32'
+    '_csrf' => '95cd322b339eac486266ec122e889afc04d1c16f9638a01dddfd02ab07a24553s:32:\"FVrVo-C9z3z_i4iq4yJFv0chYOYFlHOa\";'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'E:/jicheng/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'E:/jicheng/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'www.duotaishop.com'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:35.0) Gecko/20100101 Firefox/35.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-cn,zh;q=0.8,en-us;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://www.duotaishop.com/frontend/web/index.php?r=category/index&cid=8'
+    'HTTP_COOKIE' => 'PHPSESSID=qd36bc4p8iehueq2e07ke5vh32; _csrf=95cd322b339eac486266ec122e889afc04d1c16f9638a01dddfd02ab07a24553s%3A32%3A%22FVrVo-C9z3z_i4iq4yJFv0chYOYFlHOa%22%3B'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\NetSarang;E:\\web\\PHP\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\web\\MYSQL\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Java\\jdk1.7.0_71\\bin;C:\\Program Files\\Java\\jdk1.7.0_71\\jre\\bin;C:\\Program Files\\TortoiseGit\\bin;E:\\jicheng\\php\\php.exe;C:\\Program Files\\nodejs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at www.duotaishop.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'www.duotaishop.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/jicheng/htdocs/duotaishop/advanced'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/jicheng/htdocs/duotaishop/advanced'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'E:/jicheng/htdocs/duotaishop/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '54490'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=goods/index&gid=13'
+    'REQUEST_URI' => '/frontend/web/index.php?r=goods/index&gid=13'
+    'SCRIPT_NAME' => '/frontend/web/index.php'
+    'PHP_SELF' => '/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422626298.926
+    'REQUEST_TIME' => 1422626298
+]
+2015-01-30 14:58:28 [127.0.0.1][-][-][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'date() expects parameter 2 to be long, string given' in E:\jicheng\htdocs\duotaishop\advanced\frontend\views\goods\mall.php:346
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'date() expects ...', 'E:\jicheng\htdo...', 346, Array)
+#1 E:\jicheng\htdocs\duotaishop\advanced\frontend\views\goods\mall.php(346): date('1422624850', 'Y-m-d h:m:s')
+#2 E:\jicheng\htdocs\duotaishop\advanced\vendor\yiisoft\yii2\base\View.php(325): require('E:\jicheng\htdo...')
+#3 E:\jicheng\htdocs\duotaishop\advanced\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('E:\jicheng\htdo...', Array)
+#4 E:\jicheng\htdocs\duotaishop\advanced\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('E:\jicheng\htdo...', Array, Object(frontend\controllers\GoodsController))
+#5 E:\jicheng\htdocs\duotaishop\advanced\vendor\yiisoft\yii2\base\Controller.php(386): yii\base\View->render('mall', Array, Object(frontend\controllers\GoodsController))
+#6 E:\jicheng\htdocs\duotaishop\advanced\frontend\controllers\GoodsController.php(42): yii\base\Controller->renderPartial('mall', Array)
+#7 [internal function]: frontend\controllers\GoodsController->actionIndex()
+#8 E:\jicheng\htdocs\duotaishop\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#9 E:\jicheng\htdocs\duotaishop\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#10 E:\jicheng\htdocs\duotaishop\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('index', Array)
+#11 E:\jicheng\htdocs\duotaishop\advanced\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('goods/index', Array)
+#12 E:\jicheng\htdocs\duotaishop\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 E:\jicheng\htdocs\duotaishop\advanced\frontend\web\index.php(20): yii\base\Application->run()
+#14 {main}
+2015-01-30 14:58:28 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'goods/index'
+    'gid' => '13'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'qd36bc4p8iehueq2e07ke5vh32'
+    '_csrf' => '95cd322b339eac486266ec122e889afc04d1c16f9638a01dddfd02ab07a24553s:32:\"FVrVo-C9z3z_i4iq4yJFv0chYOYFlHOa\";'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'name' => 'bin'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'E:/jicheng/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'E:/jicheng/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'www.duotaishop.com'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:35.0) Gecko/20100101 Firefox/35.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-cn,zh;q=0.8,en-us;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://www.duotaishop.com/frontend/web/index.php?r=category/index&cid=8'
+    'HTTP_COOKIE' => 'PHPSESSID=qd36bc4p8iehueq2e07ke5vh32; _csrf=95cd322b339eac486266ec122e889afc04d1c16f9638a01dddfd02ab07a24553s%3A32%3A%22FVrVo-C9z3z_i4iq4yJFv0chYOYFlHOa%22%3B'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\NetSarang;E:\\web\\PHP\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\web\\MYSQL\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Java\\jdk1.7.0_71\\bin;C:\\Program Files\\Java\\jdk1.7.0_71\\jre\\bin;C:\\Program Files\\TortoiseGit\\bin;E:\\jicheng\\php\\php.exe;C:\\Program Files\\nodejs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at www.duotaishop.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'www.duotaishop.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/jicheng/htdocs/duotaishop/advanced'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/jicheng/htdocs/duotaishop/advanced'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'E:/jicheng/htdocs/duotaishop/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '54515'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=goods/index&gid=13'
+    'REQUEST_URI' => '/frontend/web/index.php?r=goods/index&gid=13'
+    'SCRIPT_NAME' => '/frontend/web/index.php'
+    'PHP_SELF' => '/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422626308.14
+    'REQUEST_TIME' => 1422626308
+]
