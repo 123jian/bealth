@@ -23,6 +23,11 @@ class IndexController extends \yii\web\Controller
 		return $this->renderpartial('login');
 			
     }
+	public function actionNorole()
+    {
+		return $this->renderpartial('norole');
+			
+    }
 	public function actionLogin_pro(){
 
 
@@ -34,14 +39,18 @@ class IndexController extends \yii\web\Controller
             if($a){
 				if($_POST['DropExpiration']=="day"){
 					setcookie("name",$name,time()+3600*24);
+					setcookie("uid",$a['uid'],time()+3600*24);
 				}else
 				if($_POST['DropExpiration']=="month"){
 					setcookie("name",$name,time()+3600*24*30);
+					setcookie("uid",$a['uid'],time()+3600*24*30);
 				}else
 				if($_POST['DropExpiration']=="year"){
 					setcookie("name",$name,time()+3600*24*365);
+					setcookie("uid",$a['uid'],time()+3600*24*365);
 				}else if($_POST['DropExpiration']=="none"){
 					setcookie("name",$name);
+					setcookie("uid",$a['uid']);
 				}
 				   echo "<script>alert('登陆成功');location.href='./index.php?r=index/index'</script>";
                     

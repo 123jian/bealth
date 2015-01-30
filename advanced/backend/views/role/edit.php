@@ -33,28 +33,39 @@
     </style>
 </head>
 <body>
-<form action="index.html" method="post" class="definewidth m20" >
-<input type="hidden" name="id" value="{$role.id}" />
+<form action="index.php?r=role/edit_pro" method="post" class="definewidth m20" >
+<input type="hidden" name="id" value="<?php echo $arr['id']?>" />
 <table class="table table-bordered table-hover definewidth m10">
     <tr>
         <td width="10%" class="tableleft">标题</td>
-        <td><input type="text" name="title" value=""/></td>
+        <td><input type="text" name="rname" value="<?php echo $arr['rname']?>"/></td>
     </tr>
     <tr>
         <td class="tableleft">状态</td>
         <td>
-            <input type="radio" name="status" value="1" checked /> 启用
-           <input type="radio" name="status" value="0"  /> 禁用
+            <input type="radio" name="status" value="1" <?php if($arr['status']==1){ echo "checked";}?>/> 启用
+           <input type="radio" name="status" value="0"  <?php if($arr['status']==0){ echo "checked";}?> /> 禁用
         </td>
     </tr>
     <tr>
         <td class="tableleft">权限</td>
-        <td><ul><li><label class='checkbox inline'><input type='checkbox' name='group[]' value='' />权限</label><ul><li><label class='checkbox inline'><input type='checkbox' name='node[]' value='1' checked/>权限列表</label><li><label class='checkbox inline'><input type='checkbox' name='node[]' value='2' checked/>权限添加</label><li><label class='checkbox inline'><input type='checkbox' name='node[]' value='3' checked/>权限编辑</label><li><label class='checkbox inline'><input type='checkbox' name='node[]' value='4' checked/>权限删除</label></ul></li><li><label class='checkbox inline'><input type='checkbox' name='group[]' value='' />用户</label><ul><li><label class='checkbox inline'><input type='checkbox' name='node[]' value='9' checked/>用户列表</label><li><label class='checkbox inline'><input type='checkbox' name='node[]' value='10' checked/>用户添加</label><li><label class='checkbox inline'><input type='checkbox' name='node[]' value='11' checked/>用户编辑</label><li><label class='checkbox inline'><input type='checkbox' name='node[]' value='12' checked/>用户删除</label></ul></li><li><label class='checkbox inline'><input type='checkbox' name='group[]' value='' />角色</label><ul><li><label class='checkbox inline'><input type='checkbox' name='node[]' value='5' checked/>角色列表</label><li><label class='checkbox inline'><input type='checkbox' name='node[]' value='6' checked/>角色添加</label><li><label class='checkbox inline'><input type='checkbox' name='node[]' value='7' checked/>角色编辑</label><li><label class='checkbox inline'><input type='checkbox' name='node[]' value='8' checked/>角色删除</label></ul></li></ul></td>
+        <td>
+		<ul>
+		<li>
+		<label class='checkbox inline'>权限</label>
+		<ul>
+		<li><label class='checkbox inline'><input type='checkbox' name='node_goods' value='1'<?php if($arr['node_goods']==1){ echo "checked";}?>/>商品管理</label><li>
+		<label class='checkbox inline'><input type='checkbox' name='node_category' value='1'  <?php if($arr['node_category']==1){ echo "checked";}?>/>分类管理</label>
+		<li><label class='checkbox inline'><input type='checkbox' name='node_user' value='1' <?php if($arr['node_user']==1){ echo "checked";}?>/>会员管理</label>
+		<li><label class='checkbox inline'><input type='checkbox' name='node_role' value='1'  <?php if($arr['node_role']==1){ echo "checked";}?>/>角色管理</label>
+		</ul>
+		</li>
+		</ul></td>
     </tr>
     <tr>
         <td class="tableleft"></td>
         <td>
-            <button type="submit" class="btn btn-primary" type="button">保存</button> &nbsp;&nbsp;<button type="button" class="btn btn-success" name="backid" id="backid">返回列表</button>
+            <button type="submit" class="btn btn-primary" type="button">保存</button> &nbsp;&nbsp;<a href="index.php?r=role/index" class="btn btn-success" name="backid" id="backid">返回列表</a>
         </td>
     </tr>
 </table>

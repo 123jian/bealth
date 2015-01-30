@@ -35,10 +35,11 @@
     </style>
 </head>
 <body>
-<form class="form-inline definewidth m20" action="index.html" method="get">    
+<form class="form-inline definewidth m20" action="index.php?r=user/index" method="post">    
     用户名称：
     <input type="text" name="username" id="username"class="abc input-default" placeholder="" value="">&nbsp;&nbsp;  
-    <button type="submit" class="btn btn-primary">查询</button>&nbsp;&nbsp; <button type="button" class="btn btn-success" id="addnew">新增用户</button>
+    <button type="submit" class="btn btn-primary">查询</button>&nbsp;&nbsp;
+	<a href="index.php?r=user/add" class="btn btn-success" id="addnew">新增用户</a>
 </form>
 <table class="table table-bordered table-hover definewidth m10">
     <thead>
@@ -46,19 +47,20 @@
         <th>用户id</th>
         <th>用户名称</th>
         <th>真实姓名</th>
-        <th>最后登录时间</th>
         <th>操作</th>
     </tr>
     </thead>
+	<?php foreach($data as $v){?>
 	     <tr>
-            <td>2</td>
-            <td>admin</td>
-            <td>管理员</td>
-            <td></td>
+            <td><?php echo $v['uid']?></td>
+            <td><?php echo $v['username']?></td>
+            <td><?php echo $v['rname']?></td>
             <td>
-                <a href="edit.html">编辑</a>                
+                 <a href="index.php?r=user/edit&id=<?php echo $v['uid']?>">编辑</a>
+				 <a href="index.php?r=user/del&id=<?php echo $v['uid']?>">删除</a>                
             </td>
         </tr>	
+		<?php }?>
 </table>
 </body>
 </html>
