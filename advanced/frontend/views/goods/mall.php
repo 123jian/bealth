@@ -181,7 +181,7 @@
                                     <a href="javascript:void(0);">+</a>
                                 </div>
                                 <div>
-                                	<a class="buyBtn" href="javascript:void(0);"><span class="carIcon"></span>立即抢购</a>
+                                	<a class="buyBtn" href="#" onclick='shopcar()'><span class="carIcon"></span>立即抢购</a>
                                 </div>
                                 </form>
                             </div>
