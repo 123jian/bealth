@@ -1,4 +1,6 @@
-
+<?php
+use yii\widgets\LinkPager;
+?>
     <!-- 内容区域 -->
     <div class="containerWrapper">
     	<div class="container">
@@ -36,34 +38,15 @@
                         <div class="sl_con mt10">
                         	<p class="title">热卖产品</p>
                         	<ul class="sl_list">
-                            	<li>
-                                	<a href="javascript:void(0);">
-                                		<div class="imgWrap"></div>
-                                        <p>鑫泰亿联鑫泰亿联鑫泰亿联鑫泰亿联鑫泰亿联鑫泰亿联</p>
-                                        <p class="price"><span>￥2555.00</span></p>
-                                    </a>
-                                </li>
+                            	<?php foreach($data as $k=>$v){?>
                                 <li>
                                 	<a href="javascript:void(0);">
-                                		<div class="imgWrap"></div>
-                                        <p>鑫泰亿联鑫泰亿联鑫泰亿联鑫泰亿联鑫泰亿联鑫泰亿联</p>
-                                        <p class="price"><span>￥2555.00</span></p>
+                                		<div class="imgWrap"><img src="<?php echo 'http://'.$_SERVER['HTTP_HOST'].'/backend/web/'.$v['goods_img'];?>" width="150" height="150"></div>
+                                        <p class="price"><?php echo $v['goods_name']?></p>
+                                        <p class="price"><span>￥<?php echo $v['goods_price']?></span></p>
                                     </a>
                                 </li>
-                                <li>
-                                	<a href="javascript:void(0);">
-                                		<div class="imgWrap"></div>
-                                        <p>鑫泰亿联鑫泰亿联鑫泰亿联鑫泰亿联鑫泰亿联鑫泰亿联</p>
-                                        <p class="price"><span>￥2555.00</span></p>
-                                    </a>
-                                </li>
-                                <li>
-                                	<a href="javascript:void(0);">
-                                		<div class="imgWrap"></div>
-                                        <p>鑫泰亿联鑫泰亿联鑫泰亿联鑫泰亿联鑫泰亿联鑫泰亿联</p>
-                                        <p class="price"><span>￥2555.00</span></p>
-                                    </a>
-                                </li>
+								<?php }?>
                             </ul>
                         </div>
                         <!--END-->
