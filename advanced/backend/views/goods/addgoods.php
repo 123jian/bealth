@@ -113,6 +113,10 @@ $this->registerJsFile('@web/public/ueditor/lang/zh-cn/zh-cn.js');
         <td>
             <input type="radio" name="goods_status" value="1" checked/> 上架
             <input type="radio" name="goods_status" value="0"/> 下架
+			<input type="radio" name="goods_status" value="2"/> 限时秒杀
+			<input type="radio" name="goods_status" value="3"/> 人气单品
+			<input type="radio" name="goods_status" value="4"/> 镇店之宝
+			<input type="radio" name="goods_status" value="5"/> 付邮试用
         </td>
     </tr>
     <tr>
