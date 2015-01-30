@@ -2,6 +2,7 @@
 namespace backend\controllers;
 use app\models\Goods;
 use app\models\Category;
+use yii\data\Pagination;
 
 class GoodsController extends \yii\web\Controller
 {
@@ -12,8 +13,12 @@ class GoodsController extends \yii\web\Controller
     public function actionGoodslist()
     {	
         $model=new Goods();
-        $result=$model->find()->all();    //返回所有数据
-        return $this->renderpartial('goodslist',['result'=>$result]);
+        $result=$model->find();    //返回所有数据
+        $pages = new Pagination(['totalCount' =>$result->count(), 'pageSize' => '3']);
+	$arr = $result->offset($pages->offset)->limit($pages->limit)->orderBy('goods_id asc')->all();//'order by fina_id desc'
+	//print_r($model);die;
+		
+        return $this->renderpartial('goodslist',['result'=>$arr,'pages' => $pages]);
     }
     //商品列表--删除
     public function actionDel()
@@ -34,7 +39,7 @@ class GoodsController extends \yii\web\Controller
         $model=new Goods();
         $result=$model->findOne($id);//删除主键为 $id变量值的数据库；
         $Category=new Category();
-        $arr=$Category->find()->all();    //返回所有数据
+        $arr=$Category->find()->where(['cat_status'=>'1'])->all();    //返回所有数据
         return $this->renderpartial('goodsedit',['result'=>$result,'category'=>$arr]);       
     }
     //添加商品页面
@@ -42,7 +47,7 @@ class GoodsController extends \yii\web\Controller
     {	
         //echo $_SERVER['HTTP_HOST'];
         $model=new Category();
-        $result=$model->find()->all();    //返回所有数据
+        $result=$model->find()->where(['cat_status'=>'1'])->all();    //返回所有数据
         return $this->renderpartial('addgoods',['result'=>$result]);
     }
     //处理--添加商品
