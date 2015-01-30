@@ -33,7 +33,9 @@ class GoodsController extends \yii\web\Controller
         $id=$_GET['id'];
         $model=new Goods();
         $result=$model->findOne($id);//删除主键为 $id变量值的数据库；
-        return $this->renderpartial('goodsedit',['result'=>$result]);       
+        $Category=new Category();
+        $arr=$Category->find()->all();    //返回所有数据
+        return $this->renderpartial('goodsedit',['result'=>$result,'category'=>$arr]);       
     }
     //添加商品页面
     public function actionAddgoods()
