@@ -52,7 +52,7 @@ use yii\widgets\LinkPager;
                 	<ul class="menu_list fl clearfix">
 					<?php foreach($cate as $ck=>$cv){?>
                     	<li><a href="./index.php?r=category/index&cid=<?php echo $cv['cat_id']?>"><?php echo $cv['cat_name']?></a>|</li>
-                       <?php }?>
+                    <?php }?>
                     </ul>
                 </div>
             </div>
@@ -102,7 +102,7 @@ use yii\widgets\LinkPager;
                         	<ul class="sl_list">
                             	<?php foreach($datar as $k=>$vr){?>
                                 <li>
-                                	<a href="javascript:void(0);">
+                                	<a href="./index.php?r=goods/index&gid=<?php echo $vr['goods_id']?>">
                                 		<div class="imgWrap"><img src="<?php echo 'http://'.$_SERVER['HTTP_HOST'].'/backend/web/'.$vr['goods_img'];?>" width="130" height="130"></div>
                                         <p class="price"><?php echo $vr['goods_name']?></p>
                                         <p class="price"><span>￥<?php echo $vr['goods_price']?></span></p>
@@ -118,7 +118,7 @@ use yii\widgets\LinkPager;
                         	<ul class="sl_list">
 								<?php foreach($data1 as $k1=>$v1){?>
                             	<li>
-                                	<a href="javascript:void(0);">
+                                	<a href="./index.php?r=goods/index&gid=<?php echo $v1['goods_id']?>">
                                 		<div class="imgWrap"><img src="<?php echo 'http://'.$_SERVER['HTTP_HOST'].'/backend/web/'.$v1['goods_img'];?>" width="130" height="130"></div>
                                         <p class="price"><?php echo $v1['goods_name']?></p>
                                         <p class="price"><span>￥<?php echo $v1['goods_price']?></span></p>
@@ -148,7 +148,7 @@ use yii\widgets\LinkPager;
                                               <div class="pro">
                                                   <p class="proName"><?php echo $vv['goods_name']?></p>
                                                   <p class="price">特价：<span class="redSpan">￥<?php echo $vv['goods_price']?></span></p>
-                                                  <a class="btn" href="javascript:void(0);">立即抢购</a>
+                                                  <a class="btn" href="./index.php?r=goods/index&gid=<?php echo $vv['goods_id']?>">立即抢购</a>
                                               </div>
                                           </div>
                                       </li>
@@ -184,13 +184,13 @@ use yii\widgets\LinkPager;
 								<?php foreach($data as $k=>$v){?>
                                 	<li>
                                     	<div class="imgWrap"><img src="<?php echo 'http://'.$_SERVER['HTTP_HOST'].'/backend/web/'.$v['goods_img'];?>" width="232" height="232"></div>
-                                        <p class="proName"><a href="javascript:void(0);"><?php echo $v['goods_name']?></a></p>
+                                        <p class="proName"><a href="./index.php?r=goods/index&gid=<?php echo $v['goods_id']?>"><?php echo $v['goods_name']?></a></p>
                                         <p><span class="appraise">已有120人评价</span>
                                         	<span class="price">￥<?php echo $v['goods_price']?></span>
                                         </p>
                                         <p class="clearfix">
                                         	<a class="btn fr" href="javascript:void(0);">收藏</a>
-                                            <a class="btn fl" href="javascript:void(0);">加入购物车</a>
+                                            <a class="btn fl" href="./index.php?r=cart/">加入购物车</a>
                                         </p>
                                     </li>
                                 <?php }?>
@@ -226,7 +226,7 @@ use yii\widgets\LinkPager;
             <!-- 底部区域END -->
             <!--跟随窗口浮动区域-->
             <div class="fixedWrap" id="fixedWrap">
-                <a href="javascript:void(0);">
+                <a href="javascript:scrollTo(0,0);">
                 	<div class="imgWrap">
                     	<img src="images/fix_icon_1.png" width="21" height="27" />
                     </div>
