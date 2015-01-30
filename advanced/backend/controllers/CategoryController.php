@@ -36,6 +36,9 @@ class CategoryController extends \yii\web\Controller
     {
 		//print_r($_POST);die;
 		$cat = new Category();
+		if($_POST['cat_name']==""){
+			echo "<script>alert('分类名称不能为空');location.href='./index.php?r=category/addarticle'</script>";
+		}
 		$cat->cat_name = $_POST['cat_name'];
 		$cat->cat_status = $_POST['cat_status'];
 		$in=$cat->insert();
@@ -59,6 +62,9 @@ class CategoryController extends \yii\web\Controller
     {
 		//print_r($_POST);die;
 		$cat = new Category();
+		if($_POST['cat_name']==""){
+			echo "<script>alert('分类名称不能为空');location.href='./index.php?r=category/articlelist'</script>";
+		}
 		$update=$cat->updateall($_POST,["cat_id"=>$_POST['cat_id']]);
 		if($update){
 			$this->redirect('index.php?r=category/articlelist');
