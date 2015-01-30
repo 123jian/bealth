@@ -1,7 +1,9 @@
 <?php
 namespace frontend\controllers;
+use yii;
 use app\models\Goods;
 use app\models\Category;
+use yii\caching\MemCache;
 
 class IndexController extends \yii\web\Controller
 {
@@ -10,12 +12,17 @@ class IndexController extends \yii\web\Controller
     {
         $this->layout='@app/views/layouts/layout.php';
         $model=new Goods();
-        //$result=$model->find()->where(['goods_status'=>'1','cat_id'=>'8','order by'=>'goods_id','limit'=>3]);//返回所有数据
-        $result=$model->find()->where(['goods_status'=>'1','cat_id'=>'8'])->orderBy('goods_addtime')->limit(2)->all();
-        $result2=$model->find()->where(['goods_status'=>'1','cat_id'=>'9'])->orderBy('goods_addtime')->limit(2)->all();
-        $result3=$model->find()->where(['goods_status'=>'1'])->orderBy('goods_addtime','desc')->limit(3)->all();
-        $result4=$model->find()->where(['goods_status'=>'0'])->orderBy('goods_addtime','desc')->limit(1)->all();
+        $category=new Category();//导航栏
+        $view = Yii::$app->view;
+        $view->params['layoutData']=$category->find()->where(['cat_status'=>1])->all();
+  
+        
+        $result=$model->find()->where(['goods_status'=>'1','cat_id'=>'8'])->orderBy('goods_addtime','desc')->limit(2)->all();
+        $result2=$model->find()->where(['goods_status'=>'1','cat_id'=>'9'])->orderBy('goods_addtime','desc')->limit(2)->all();
+        $result3=$model->find()->where(['goods_status'=>'1','cat_id'=>'10'])->orderBy('goods_addtime','desc')->limit(3)->all();
+        $result4=$model->find()->where(['goods_status'=>'0','cat_id'=>'5'])->orderBy('goods_addtime','desc')->limit(1)->all();
         //echo '<pre>';
+<<<<<<< HEAD
         //var_dump($result);
 		
 		$time=date("Y-m-d",time());
@@ -36,6 +43,9 @@ class IndexController extends \yii\web\Controller
 		
 
 
+=======
+        //var_dump($nav); die;      
+>>>>>>> d31782ee1186c8ebeeddecd14c2c26df6f33dc63
         return $this->render('index',['result'=>$result,'result2'=>$result2,'result3'=>$result3,'result4'=>$result4]);
     }
     //商品详情
@@ -47,7 +57,7 @@ class IndexController extends \yii\web\Controller
     //支付页面
     public function actionPayment()
     {
-		$this->layout='@app/views/layouts/layout.php';
+    $this->layout='@app/views/layouts/layout.php';
     return $this->render('payment');
     }
     //支付完成
@@ -58,15 +68,16 @@ class IndexController extends \yii\web\Controller
     //商品列表
     public function actionProtype()
     {
-		$this->layout='@app/views/layouts/layout.php';
-    return $this->render('protype');
+	$this->layout='@app/views/layouts/layout.php';
+        return $this->render('protype');
     }
-    
+   
     
     
     //订单地址
     public function actionShoppingmsg()
     {
+<<<<<<< HEAD
 		$this->layout='@app/views/layouts/layout.php';
 
 		$connection = \Yii::$app->db;
@@ -82,12 +93,20 @@ class IndexController extends \yii\web\Controller
 		$command = $connection->createCommand("select * from region where parent_id=".$_GET['id']);
 		$posts = $command->queryAll();
 		echo json_encode($posts);
+=======
+	$this->layout='@app/views/layouts/layout.php';
+        return $this->render('shoppingmsg');
+>>>>>>> d31782ee1186c8ebeeddecd14c2c26df6f33dc63
     }
     //购物车
     public function actionShoppingcar()
     {
-		$this->layout='@app/views/layouts/layout.php';
-    return $this->render('shoppingcar');
+        //echo 123;die;
+        $this->layout='@app/views/layouts/layout.php';
+        $category=new Category();//导航栏
+        $view = Yii::$app->view;
+        $view->params['layoutData']=$category->find()->where(['cat_status'=>1])->all();
+        return $this->render('shoppingcar');
     }
 
 }

@@ -41,15 +41,15 @@
                 	<div class="allType">
                     	<p>全部分类<span class="arrowIcon"></span></p>
                         <ul class="type_list none">
-                        	<li><a href="javascript:void(0);">多肽保健</a></li>
-                            <li><a href="javascript:void(0);">多肽美容</a></li>
-                            <li class="noBorder"><a href="javascript:void(0);">多肽食品</a></li>
+                        	<?php foreach($cate as $ck=>$cv){?>
+                    	<li><a href="./index.php?r=category/index&cid=<?php echo $cv['cat_id']?>"><?php echo $cv['cat_name']?></a></li>
+                       <?php }?>
                         </ul>
                     </div>
                 	<ul class="menu_list fl clearfix">
-                    	<li><a href="javascript:void(0);">多肽保健</a>|</li>
-                        <li><a href="javascript:void(0);">多肽美容</a>|</li>
-                        <li><a href="javascript:void(0);">多肽食品</a>|</li>
+                    	<?php foreach($cate as $ck=>$cv){?>
+                    	<li><a href="./index.php?r=category/index&cid=<?php echo $cv['cat_id']?>"><?php echo $cv['cat_name']?></a>|</li>
+                    <?php }?>
                     </ul>
                 </div>
             </div>
@@ -72,7 +72,7 @@
                 </div>
                 <div class="clearfix">
                 	<div class="sub_left">
-                    	<div class="sl_con">
+                    	<!--<div class="sl_con">
                         	<ul class="firstList">
                             	<li class="current"><a href="javascript:void(0);"><span class="arrowIcon"></span>类型</a>
                                 	<ul class="secList">
@@ -90,38 +90,19 @@
                                 <li><a href="javascript:void(0);"><span class="arrowIcon"></span>适用人</a></li>
                             </ul>
                         </div>
-                        <!---->
+                        -->
                         <div class="sl_con mt10">
                         	<p class="title">热卖产品</p>
                         	<ul class="sl_list">
-                            	<li>
-                                	<a href="javascript:void(0);">
-                                		<div class="imgWrap"></div>
-                                        <p>鑫泰亿联鑫泰亿联鑫泰亿联鑫泰亿联鑫泰亿联鑫泰亿联</p>
-                                        <p class="price"><span>￥2555.00</span></p>
-                                    </a>
-                                </li>
+                            	<?php foreach($datar as $k=>$vr){?>
                                 <li>
-                                	<a href="javascript:void(0);">
-                                		<div class="imgWrap"></div>
-                                        <p>鑫泰亿联鑫泰亿联鑫泰亿联鑫泰亿联鑫泰亿联鑫泰亿联</p>
-                                        <p class="price"><span>￥2555.00</span></p>
+                                	<a href="./index.php?r=goods/index&gid=<?php echo $vr['goods_id']?>">
+                                		<div class="imgWrap"><img src="<?php echo 'http://'.$_SERVER['HTTP_HOST'].'/backend/web/'.$vr['goods_img'];?>" width="130" height="130"></div>
+                                        <p class="price"><?php echo $vr['goods_name']?></p>
+                                        <p class="price"><span>￥<?php echo $vr['goods_price']?></span></p>
                                     </a>
                                 </li>
-                                <li>
-                                	<a href="javascript:void(0);">
-                                		<div class="imgWrap"></div>
-                                        <p>鑫泰亿联鑫泰亿联鑫泰亿联鑫泰亿联鑫泰亿联鑫泰亿联</p>
-                                        <p class="price"><span>￥2555.00</span></p>
-                                    </a>
-                                </li>
-                                <li>
-                                	<a href="javascript:void(0);">
-                                		<div class="imgWrap"></div>
-                                        <p>鑫泰亿联鑫泰亿联鑫泰亿联鑫泰亿联鑫泰亿联鑫泰亿联</p>
-                                        <p class="price"><span>￥2555.00</span></p>
-                                    </a>
-                                </li>
+								<?php }?>
                             </ul>
                         </div>
                         <!--END-->
@@ -129,20 +110,15 @@
                         <div class="sl_con mt10">
                         	<p class="title">浏览记录</p>
                         	<ul class="sl_list">
+                            	<?php foreach($data1 as $k1=>$v1){?>
                             	<li>
-                                	<a href="javascript:void(0);">
-                                		<div class="imgWrap"></div>
-                                        <p>鑫泰亿联鑫泰亿联鑫泰亿联鑫泰亿联鑫泰亿联鑫泰亿联</p>
-                                        <p class="price"><span>￥2555.00</span></p>
+                                	<a href="./index.php?r=goods/index&gid=<?php echo $v1['goods_id']?>">
+                                		<div class="imgWrap"><img src="<?php echo 'http://'.$_SERVER['HTTP_HOST'].'/backend/web/'.$v1['goods_img'];?>" width="130" height="130"></div>
+                                        <p class="price"><?php echo $v1['goods_name']?></p>
+                                        <p class="price"><span>￥<?php echo $v1['goods_price']?></span></p>
                                     </a>
                                 </li>
-                                <li>
-                                	<a href="javascript:void(0);">
-                                		<div class="imgWrap"></div>
-                                        <p>鑫泰亿联鑫泰亿联鑫泰亿联鑫泰亿联鑫泰亿联鑫泰亿联</p>
-                                        <p class="price"><span>￥2555.00</span></p>
-                                    </a>
-                                </li>
+                                <?php }?>
                             </ul>
                         </div>
                         <!--END-->
@@ -152,7 +128,7 @@
                     	<!---->
                         <div class="detail_wrap clearfix">
                         	<div class="proImg">
-                            	<div class="imgWrap"></div>
+                            	<div class="imgWrap"><img src="<?php echo 'http://'.$_SERVER['HTTP_HOST'].'/backend/web/'.$data['goods_img'];?>" width="325" height="325"></div>
                                 <div class="imgList">
                                   <!-- 图片轮播效果 -->
                                   <div class="picScroll">
@@ -161,10 +137,9 @@
                                       </div>
                                       <div class="bd">
                                           <ul class="proImgList clearfix">
-                                            <li><a href="javascript:void(0);"></a></li>
-                                            <li><a href="javascript:void(0);"></a></li>
-                                            <li><a href="javascript:void(0);"></a></li>
-                                            <li><a href="javascript:void(0);"></a></li>
+										  <?php for($i=0;$i<4;$i++){?>
+                                            <li><a href="javascript:void(0);"><img src="<?php echo 'http://'.$_SERVER['HTTP_HOST'].'/backend/web/'.$data['goods_img'];?>" width="87" height="87"></a></li>
+                                            <?php }?>
                                           </ul>
                                       </div> 
                                       <a href="javascript:void(0);" class="prev" id="idPre"></a>
@@ -182,13 +157,13 @@
                             </div>
                             <div class="proIntroduce">
                             	<form>
-                            	<p class="proName">鑫泰亿联鑫泰亿联鑫泰亿联鑫泰亿联鑫泰亿联鑫泰亿联鑫泰亿联鑫泰亿联鑫泰亿联鑫泰亿联鑫泰亿联鑫泰亿联</p>
+                            	<p class="proName"><?php echo $data['goods_name']?></p>
                                 <div class="price_wrap clearfix">
-                                	<span class="price">￥288.00</span>
-                                    <div class="price_msg">
+                                	<span class="price">￥<?php echo $data['goods_price']?></span>
+                                    <!--<div class="price_msg">
                                     	<p><span class="discount">4.1折</span>为您节省￥410.00</p>
                                         <p>(市场价：￥698.00)</p>
-                                    </div>
+                                    </div>-->
                                     <div class="time_msg">
                                     	<p>02:20:05:17.6</p>
                                         <p><a href="javascript:void(0);">包邮</a></p>
@@ -294,45 +269,18 @@
                                 	<tr>
                                     	<td>
                                         	<span class="title">商品名称：</span>
-                                            <span class="pro_msg">颐宁多肽</span>
-                                        </td>
-                                        <td>
-                                        	<span class="title">商品名称：</span>
-                                            <span class="pro_msg">颐宁多肽</span>
-                                        </td>
-                                        <td>
-                                        	<span class="title">商品名称：</span>
-                                            <span class="pro_msg">颐宁多肽</span>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                    	<td>
-                                        	<span class="title">上架时间：</span>
-                                            <span class="pro_msg">2014-05-28</span>
+                                            <span class="pro_msg"><?php echo $data['goods_name']?></span>
                                         </td>
                                         <td>
                                         	<span class="title">上架时间：</span>
-                                            <span class="pro_msg">2014-05-28</span>
+                                            <span class="pro_msg"><?php echo date("Y-m-d h:i:s",$data['goods_addtime'])?></span>
                                         </td>
                                         <td>
-                                        	<span class="title">上架时间：</span>
-                                            <span class="pro_msg">2014-05-28</span>
+                                        	<span class="title">商品产地：</span>
+                                            <span class="pro_msg">颐宁多肽</span>
                                         </td>
                                     </tr>
-                                    <tr>
-                                    	<td>
-                                        	<span class="title">商品产地：</span>
-                                            <span class="pro_msg"></span>
-                                        </td>
-                                        <td>
-                                        	<span class="title">商品产地：</span>
-                                            <span class="pro_msg"></span>
-                                        </td>
-                                        <td>
-                                        	<span class="title">商品产地：</span>
-                                            <span class="pro_msg"></span>
-                                        </td>
-                                    </tr>
+                                    
                                 </table>
                             </div>
                         </div>
@@ -346,9 +294,9 @@
                             </div>
                             <!-- 商品详情 -->
                             <div class="pro_intr clearfix">
-                            	<div class="imgWrap"></div>
+                            	<div class="imgWrap"><img src="<?php echo 'http://'.$_SERVER['HTTP_HOST'].'/backend/web/'.$data['goods_img'];?>" width="192" height="192"></div>
                                 <div class="pro_msg">
-                                	<p>文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字字文字文字文字文字文字文字字文字文字文字文字文字文字字文字文字文字文字文字文字字文字文字文字文字文字文字字文字文字文字文字文字文字字文字文字文字文字文字文字</p>
+                                	<p><?php echo $data['goods_desc']?></p>
                                 </div>
                             </div>
                             <!-- 商品详情END -->
