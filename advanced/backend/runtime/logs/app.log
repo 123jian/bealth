@@ -17022,3 +17022,2303 @@ $_SERVER = [
     'REQUEST_TIME' => 1422585292
 >>>>>>> 477be5f3e652a792d2d3408178657930c4b2813f
 ]
+2015-01-30 03:53:08 [127.0.0.1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 19236 bytes' 
+
+in E:\duotai\advanced\vendor\yiisoft\yii2-debug\LogTarget.php:86
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'E:\duotai\advan...', 86, Array)
+#1 E:\duotai\advanced\vendor\yiisoft\yii2-debug\LogTarget.php(86): unserialize('<<<<<<< HEAD?a:...')
+#2 E:\duotai\advanced\vendor\yiisoft\yii2-debug\LogTarget.php(61): yii\debug\LogTarget->updateIndexFile('E:\duotai\advan...', Array)
+#3 E:\duotai\advanced\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#4 E:\duotai\advanced\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#5 E:\duotai\advanced\vendor\yiisoft\yii2\log\Logger.php(166): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2015-01-30 03:53:08 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'goods/goodslist'
+]
+
+$_COOKIE = [
+    'name' => 'yl'
+    'PHPSESSID' => '7cennjquqvqbonp7atqa8lmd51'
+    '_csrf' => '1b927e139faf6ce07ad417439db695f5d37f1d9e977f13e6fb1756c075fb600ds:32:\"tiRtebMQum5EQQjqYFstBa72oANbQiI4\";'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'E:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'E:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'www.duotai.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2236.0 Safari/537.36'
+    'HTTP_REFERER' => 'http://www.duotai.com/backend/web/index.php?r=index/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'name=yl; PHPSESSID=7cennjquqvqbonp7atqa8lmd51; _csrf=1b927e139faf6ce07ad417439db695f5d37f1d9e977f13e6fb1756c075fb600ds%3A32%3A%22tiRtebMQum5EQQjqYFstBa72oANbQiI4%22%3B'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\AMD APP\\bin\\x86;C:\\Program Files\\Common Files\\NetSarang;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\ATI Technologies\\ATI.ACE\\Core-Static;E:\\web\\TortoiseSVN\\bin;E:\\web\\TortoiseGit\\bin;E:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;E:\\web\\JDK\\bin;E:\\web\\NodeJs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at www.duotai.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'www.duotai.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/duotai/advanced'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/duotai/advanced'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'E:/duotai/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '58116'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=goods/goodslist'
+    'REQUEST_URI' => '/backend/web/index.php?r=goods/goodslist'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422586388.202
+    'REQUEST_TIME' => 1422586388
+]
+2015-01-30 03:53:11 [127.0.0.1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 19236 bytes' 
+
+in E:\duotai\advanced\vendor\yiisoft\yii2-debug\LogTarget.php:86
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'E:\duotai\advan...', 86, Array)
+#1 E:\duotai\advanced\vendor\yiisoft\yii2-debug\LogTarget.php(86): unserialize('<<<<<<< HEAD?a:...')
+#2 E:\duotai\advanced\vendor\yiisoft\yii2-debug\LogTarget.php(61): yii\debug\LogTarget->updateIndexFile('E:\duotai\advan...', Array)
+#3 E:\duotai\advanced\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#4 E:\duotai\advanced\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#5 E:\duotai\advanced\vendor\yiisoft\yii2\log\Logger.php(166): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2015-01-30 03:53:11 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'goods/goodslist'
+    'page' => '2'
+    'per-page' => '3'
+]
+
+$_COOKIE = [
+    'name' => 'yl'
+    'PHPSESSID' => '7cennjquqvqbonp7atqa8lmd51'
+    '_csrf' => '1b927e139faf6ce07ad417439db695f5d37f1d9e977f13e6fb1756c075fb600ds:32:\"tiRtebMQum5EQQjqYFstBa72oANbQiI4\";'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'E:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'E:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'www.duotai.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2236.0 Safari/537.36'
+    'HTTP_REFERER' => 'http://www.duotai.com/backend/web/index.php?r=goods/goodslist'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'name=yl; PHPSESSID=7cennjquqvqbonp7atqa8lmd51; _csrf=1b927e139faf6ce07ad417439db695f5d37f1d9e977f13e6fb1756c075fb600ds%3A32%3A%22tiRtebMQum5EQQjqYFstBa72oANbQiI4%22%3B'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\AMD APP\\bin\\x86;C:\\Program Files\\Common Files\\NetSarang;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\ATI Technologies\\ATI.ACE\\Core-Static;E:\\web\\TortoiseSVN\\bin;E:\\web\\TortoiseGit\\bin;E:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;E:\\web\\JDK\\bin;E:\\web\\NodeJs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at www.duotai.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'www.duotai.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/duotai/advanced'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/duotai/advanced'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'E:/duotai/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '58118'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=goods%2Fgoodslist&page=2&per-page=3'
+    'REQUEST_URI' => '/backend/web/index.php?r=goods%2Fgoodslist&page=2&per-page=3'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422586391.511
+    'REQUEST_TIME' => 1422586391
+]
+2015-01-30 03:53:14 [127.0.0.1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 19236 bytes' 
+
+in E:\duotai\advanced\vendor\yiisoft\yii2-debug\LogTarget.php:86
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'E:\duotai\advan...', 86, Array)
+#1 E:\duotai\advanced\vendor\yiisoft\yii2-debug\LogTarget.php(86): unserialize('<<<<<<< HEAD?a:...')
+#2 E:\duotai\advanced\vendor\yiisoft\yii2-debug\LogTarget.php(61): yii\debug\LogTarget->updateIndexFile('E:\duotai\advan...', Array)
+#3 E:\duotai\advanced\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#4 E:\duotai\advanced\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#5 E:\duotai\advanced\vendor\yiisoft\yii2\log\Logger.php(166): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2015-01-30 03:53:14 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'goods/goodslist'
+    'page' => '3'
+    'per-page' => '3'
+]
+
+$_COOKIE = [
+    'name' => 'yl'
+    'PHPSESSID' => '7cennjquqvqbonp7atqa8lmd51'
+    '_csrf' => '1b927e139faf6ce07ad417439db695f5d37f1d9e977f13e6fb1756c075fb600ds:32:\"tiRtebMQum5EQQjqYFstBa72oANbQiI4\";'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'E:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'E:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'www.duotai.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2236.0 Safari/537.36'
+    'HTTP_REFERER' => 'http://www.duotai.com/backend/web/index.php?r=goods%2Fgoodslist&page=2&per-page=3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'name=yl; PHPSESSID=7cennjquqvqbonp7atqa8lmd51; _csrf=1b927e139faf6ce07ad417439db695f5d37f1d9e977f13e6fb1756c075fb600ds%3A32%3A%22tiRtebMQum5EQQjqYFstBa72oANbQiI4%22%3B'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\AMD APP\\bin\\x86;C:\\Program Files\\Common Files\\NetSarang;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\ATI Technologies\\ATI.ACE\\Core-Static;E:\\web\\TortoiseSVN\\bin;E:\\web\\TortoiseGit\\bin;E:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;E:\\web\\JDK\\bin;E:\\web\\NodeJs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at www.duotai.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'www.duotai.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/duotai/advanced'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/duotai/advanced'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'E:/duotai/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '58116'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=goods%2Fgoodslist&page=3&per-page=3'
+    'REQUEST_URI' => '/backend/web/index.php?r=goods%2Fgoodslist&page=3&per-page=3'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422586394.037
+    'REQUEST_TIME' => 1422586394
+]
+2015-01-30 03:53:18 [127.0.0.1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 19236 bytes' 
+
+in E:\duotai\advanced\vendor\yiisoft\yii2-debug\LogTarget.php:86
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'E:\duotai\advan...', 86, Array)
+#1 E:\duotai\advanced\vendor\yiisoft\yii2-debug\LogTarget.php(86): unserialize('<<<<<<< HEAD?a:...')
+#2 E:\duotai\advanced\vendor\yiisoft\yii2-debug\LogTarget.php(61): yii\debug\LogTarget->updateIndexFile('E:\duotai\advan...', Array)
+#3 E:\duotai\advanced\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#4 E:\duotai\advanced\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#5 E:\duotai\advanced\vendor\yiisoft\yii2\log\Logger.php(166): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2015-01-30 03:53:18 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'goods/edit'
+    'id' => '17'
+]
+
+$_COOKIE = [
+    'name' => 'yl'
+    'PHPSESSID' => '7cennjquqvqbonp7atqa8lmd51'
+    '_csrf' => '1b927e139faf6ce07ad417439db695f5d37f1d9e977f13e6fb1756c075fb600ds:32:\"tiRtebMQum5EQQjqYFstBa72oANbQiI4\";'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'E:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'E:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'www.duotai.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2236.0 Safari/537.36'
+    'HTTP_REFERER' => 'http://www.duotai.com/backend/web/index.php?r=goods%2Fgoodslist&page=3&per-page=3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'name=yl; PHPSESSID=7cennjquqvqbonp7atqa8lmd51; _csrf=1b927e139faf6ce07ad417439db695f5d37f1d9e977f13e6fb1756c075fb600ds%3A32%3A%22tiRtebMQum5EQQjqYFstBa72oANbQiI4%22%3B'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\AMD APP\\bin\\x86;C:\\Program Files\\Common Files\\NetSarang;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\ATI Technologies\\ATI.ACE\\Core-Static;E:\\web\\TortoiseSVN\\bin;E:\\web\\TortoiseGit\\bin;E:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;E:\\web\\JDK\\bin;E:\\web\\NodeJs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at www.duotai.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'www.duotai.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/duotai/advanced'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/duotai/advanced'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'E:/duotai/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '58117'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=goods/edit&id=17'
+    'REQUEST_URI' => '/backend/web/index.php?r=goods/edit&id=17'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422586398.644
+    'REQUEST_TIME' => 1422586398
+]
+2015-01-30 03:53:48 [127.0.0.1][][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: goods/editpro' in E:\duotai\advanced\vendor\yiisoft\yii2\base\Controller.php:122
+Stack trace:
+#0 E:\duotai\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('editpro', Array)
+#1 E:\duotai\advanced\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('goods/editpro', Array)
+#2 E:\duotai\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 E:\duotai\advanced\backend\web\index.php(20): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Unable to resolve the request: goods/editpro' in E:\duotai\advanced\vendor\yiisoft\yii2\web\Application.php:95
+Stack trace:
+#0 E:\duotai\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 E:\duotai\advanced\backend\web\index.php(20): yii\base\Application->run()
+#2 {main}
+2015-01-30 03:53:48 [127.0.0.1][][-][info][application] $_GET = [
+    'r' => 'goods/editpro'
+]
+
+$_POST = [
+    'goods_name' => '王老吉'
+    'category' => '10'
+    'goods_number' => '6554'
+    'goods_price' => '68'
+    'goods_status' => '1'
+    'content1' => '即买即减20元】！即刻畅享！￥68<br />
+<br />'
+]
+
+$_FILES = [
+    'goods_img' => [
+        'name' => '7.jpg'
+        'type' => 'image/jpeg'
+        'tmp_name' => 'E:\\xampp\\tmp\\phpBC22.tmp'
+        'error' => 0
+        'size' => 31228
+    ]
+]
+
+$_COOKIE = [
+    'name' => 'yl'
+    'PHPSESSID' => '7cennjquqvqbonp7atqa8lmd51'
+    '_csrf' => '1b927e139faf6ce07ad417439db695f5d37f1d9e977f13e6fb1756c075fb600ds:32:\"tiRtebMQum5EQQjqYFstBa72oANbQiI4\";'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/backend/web/index.php'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'E:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'E:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'www.duotai.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '32070'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://www.duotai.com'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2236.0 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryThcaPqAPM6XXbA6z'
+    'HTTP_REFERER' => 'http://www.duotai.com/backend/web/index.php?r=goods/edit&id=17'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'name=yl; PHPSESSID=7cennjquqvqbonp7atqa8lmd51; _csrf=1b927e139faf6ce07ad417439db695f5d37f1d9e977f13e6fb1756c075fb600ds%3A32%3A%22tiRtebMQum5EQQjqYFstBa72oANbQiI4%22%3B'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\AMD APP\\bin\\x86;C:\\Program Files\\Common Files\\NetSarang;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\ATI Technologies\\ATI.ACE\\Core-Static;E:\\web\\TortoiseSVN\\bin;E:\\web\\TortoiseGit\\bin;E:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;E:\\web\\JDK\\bin;E:\\web\\NodeJs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at www.duotai.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'www.duotai.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/duotai/advanced'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/duotai/advanced'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'E:/duotai/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '58135'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=goods/editpro'
+    'REQUEST_URI' => '/backend/web/index.php?r=goods/editpro'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422586428.231
+    'REQUEST_TIME' => 1422586428
+]
+2015-01-30 03:58:03 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: h_id' in E:\duotai\advanced\backend\controllers\GoodsController.php:51
+Stack trace:
+#0 E:\duotai\advanced\backend\controllers\GoodsController.php(51): yii\base\ErrorHandler->handleError(8, 'Undefined index...', 'E:\duotai\advan...', 51, Array)
+#1 [internal function]: backend\controllers\GoodsController->actionEditpro()
+#2 E:\duotai\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#3 E:\duotai\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#4 E:\duotai\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('editpro', Array)
+#5 E:\duotai\advanced\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('goods/editpro', Array)
+#6 E:\duotai\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 E:\duotai\advanced\backend\web\index.php(20): yii\base\Application->run()
+#8 {main}
+2015-01-30 03:58:03 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'goods/editpro'
+]
+
+$_POST = [
+    'goods_name' => '王老吉'
+    'category' => '10'
+    'goods_number' => '6554'
+    'goods_price' => '68'
+    'goods_status' => '1'
+    'content1' => '即买即减20元】！即刻畅享！￥68<br />
+<br />'
+]
+
+$_FILES = [
+    'goods_img' => [
+        'name' => '7.jpg'
+        'type' => 'image/jpeg'
+        'tmp_name' => 'E:\\xampp\\tmp\\php9F50.tmp'
+        'error' => 0
+        'size' => 31228
+    ]
+]
+
+$_COOKIE = [
+    'name' => 'yl'
+    'PHPSESSID' => '7cennjquqvqbonp7atqa8lmd51'
+    '_csrf' => '267615cd8e90ad77c00fb65717cec2eb847a569ef310005bee79dc598a76df52s:32:\"PI7VGvevTEvF3q2REJM37T09pE1VaM7b\";'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'E:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'E:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'www.duotai.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '32070'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://www.duotai.com'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2236.0 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryThcaPqAPM6XXbA6z'
+    'HTTP_REFERER' => 'http://www.duotai.com/backend/web/index.php?r=goods/edit&id=17'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'name=yl; PHPSESSID=7cennjquqvqbonp7atqa8lmd51; _csrf=267615cd8e90ad77c00fb65717cec2eb847a569ef310005bee79dc598a76df52s%3A32%3A%22PI7VGvevTEvF3q2REJM37T09pE1VaM7b%22%3B'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\AMD APP\\bin\\x86;C:\\Program Files\\Common Files\\NetSarang;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\ATI Technologies\\ATI.ACE\\Core-Static;E:\\web\\TortoiseSVN\\bin;E:\\web\\TortoiseGit\\bin;E:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;E:\\web\\JDK\\bin;E:\\web\\NodeJs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at www.duotai.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'www.duotai.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/duotai/advanced'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/duotai/advanced'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'E:/duotai/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '58239'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=goods/editpro'
+    'REQUEST_URI' => '/backend/web/index.php?r=goods/editpro'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422586683.02
+    'REQUEST_TIME' => 1422586683
+]
+2015-01-30 03:58:09 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: h_id' in E:\duotai\advanced\backend\controllers\GoodsController.php:51
+Stack trace:
+#0 E:\duotai\advanced\backend\controllers\GoodsController.php(51): yii\base\ErrorHandler->handleError(8, 'Undefined index...', 'E:\duotai\advan...', 51, Array)
+#1 [internal function]: backend\controllers\GoodsController->actionEditpro()
+#2 E:\duotai\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#3 E:\duotai\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#4 E:\duotai\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('editpro', Array)
+#5 E:\duotai\advanced\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('goods/editpro', Array)
+#6 E:\duotai\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 E:\duotai\advanced\backend\web\index.php(20): yii\base\Application->run()
+#8 {main}
+2015-01-30 03:58:09 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'goods/editpro'
+]
+
+$_POST = [
+    'goods_name' => '王老吉'
+    'category' => '10'
+    'goods_number' => '6554'
+    'goods_price' => '68'
+    'goods_status' => '1'
+    'content1' => '即买即减20元】！即刻畅享！￥68<br />
+<br />'
+]
+
+$_FILES = [
+    'goods_img' => [
+        'name' => '7.jpg'
+        'type' => 'image/jpeg'
+        'tmp_name' => 'E:\\xampp\\tmp\\phpB7C1.tmp'
+        'error' => 0
+        'size' => 31228
+    ]
+]
+
+$_COOKIE = [
+    'name' => 'yl'
+    'PHPSESSID' => '7cennjquqvqbonp7atqa8lmd51'
+    '_csrf' => '267615cd8e90ad77c00fb65717cec2eb847a569ef310005bee79dc598a76df52s:32:\"PI7VGvevTEvF3q2REJM37T09pE1VaM7b\";'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'E:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'E:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'www.duotai.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '32070'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://www.duotai.com'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2236.0 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryThcaPqAPM6XXbA6z'
+    'HTTP_REFERER' => 'http://www.duotai.com/backend/web/index.php?r=goods/edit&id=17'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'name=yl; PHPSESSID=7cennjquqvqbonp7atqa8lmd51; _csrf=267615cd8e90ad77c00fb65717cec2eb847a569ef310005bee79dc598a76df52s%3A32%3A%22PI7VGvevTEvF3q2REJM37T09pE1VaM7b%22%3B'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\AMD APP\\bin\\x86;C:\\Program Files\\Common Files\\NetSarang;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\ATI Technologies\\ATI.ACE\\Core-Static;E:\\web\\TortoiseSVN\\bin;E:\\web\\TortoiseGit\\bin;E:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;E:\\web\\JDK\\bin;E:\\web\\NodeJs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at www.duotai.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'www.duotai.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/duotai/advanced'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/duotai/advanced'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'E:/duotai/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '58241'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=goods/editpro'
+    'REQUEST_URI' => '/backend/web/index.php?r=goods/editpro'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422586689.283
+    'REQUEST_TIME' => 1422586689
+]
+2015-01-30 04:05:16 [127.0.0.1][-][-][error][yii\db\IntegrityException] exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '9' for key 'PRIMARY'' in E:\duotai\advanced\vendor\yiisoft\yii2\db\Command.php:768
+Stack trace:
+#0 E:\duotai\advanced\vendor\yiisoft\yii2\db\Command.php(768): PDOStatement->execute()
+#1 E:\duotai\advanced\vendor\yiisoft\yii2\db\ActiveRecord.php(202): yii\db\Command->execute()
+#2 E:\duotai\advanced\backend\controllers\GoodsController.php(69): yii\db\ActiveRecord::updateAll(Array)
+#3 [internal function]: backend\controllers\GoodsController->actionEditpro()
+#4 E:\duotai\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 E:\duotai\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#6 E:\duotai\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('editpro', Array)
+#7 E:\duotai\advanced\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('goods/editpro', Array)
+#8 E:\duotai\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 E:\duotai\advanced\backend\web\index.php(20): yii\base\Application->run()
+#10 {main}
+
+Next exception 'yii\db\IntegrityException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '9' for key 'PRIMARY'
+The SQL being executed was: UPDATE `goods` SET `goods_id`=9' in E:\duotai\advanced\vendor\yiisoft\yii2\db\Schema.php:532
+Stack trace:
+#0 E:\duotai\advanced\vendor\yiisoft\yii2\db\Command.php(776): yii\db\Schema->convertException(Object(PDOException), 'UPDATE `goods` ...')
+#1 E:\duotai\advanced\vendor\yiisoft\yii2\db\ActiveRecord.php(202): yii\db\Command->execute()
+#2 E:\duotai\advanced\backend\controllers\GoodsController.php(69): yii\db\ActiveRecord::updateAll(Array)
+#3 [internal function]: backend\controllers\GoodsController->actionEditpro()
+#4 E:\duotai\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 E:\duotai\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#6 E:\duotai\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('editpro', Array)
+#7 E:\duotai\advanced\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('goods/editpro', Array)
+#8 E:\duotai\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 E:\duotai\advanced\backend\web\index.php(20): yii\base\Application->run()
+#10 {main}
+Additional Information:
+Array
+(
+    [0] => 23000
+    [1] => 1062
+    [2] => Duplicate entry '9' for key 'PRIMARY'
+)
+
+2015-01-30 04:05:16 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'goods/editpro'
+]
+
+$_POST = [
+    'goods_name' => ' 商品名称'
+    'h_id' => '9'
+    'category' => '5'
+    'goods_number' => '12'
+    'goods_price' => '213'
+    'goods_status' => '1'
+    'content1' => '<div style=\"text-align:center;\">
+	<span style=\"line-height:1.5;\"><u><em><strong><span style=\"font-size:18px;background-color:#FF9900;\">哥哥啊房东说分手大师大师</span></strong></em></u><u><em><strong><span style=\"font-size:18px;background-color:#FF9900;\"></span></strong></em></u></span> 
+</div>'
+]
+
+$_FILES = [
+    'goods_img' => [
+        'name' => '6.jpg'
+        'type' => 'image/jpeg'
+        'tmp_name' => 'E:\\xampp\\tmp\\php3C8F.tmp'
+        'error' => 0
+        'size' => 26277
+    ]
+]
+
+$_COOKIE = [
+    'name' => 'yl'
+    'PHPSESSID' => '7cennjquqvqbonp7atqa8lmd51'
+    '_csrf' => '267615cd8e90ad77c00fb65717cec2eb847a569ef310005bee79dc598a76df52s:32:\"PI7VGvevTEvF3q2REJM37T09pE1VaM7b\";'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'E:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'E:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'www.duotai.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '27464'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://www.duotai.com'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2236.0 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryN5gLzhRKqfIXqylB'
+    'HTTP_REFERER' => 'http://www.duotai.com/backend/web/index.php?r=goods/edit&id=9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'name=yl; PHPSESSID=7cennjquqvqbonp7atqa8lmd51; _csrf=267615cd8e90ad77c00fb65717cec2eb847a569ef310005bee79dc598a76df52s%3A32%3A%22PI7VGvevTEvF3q2REJM37T09pE1VaM7b%22%3B'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\AMD APP\\bin\\x86;C:\\Program Files\\Common Files\\NetSarang;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\ATI Technologies\\ATI.ACE\\Core-Static;E:\\web\\TortoiseSVN\\bin;E:\\web\\TortoiseGit\\bin;E:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;E:\\web\\JDK\\bin;E:\\web\\NodeJs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at www.duotai.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'www.duotai.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/duotai/advanced'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/duotai/advanced'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'E:/duotai/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '58412'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=goods/editpro'
+    'REQUEST_URI' => '/backend/web/index.php?r=goods/editpro'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422587116.489
+    'REQUEST_TIME' => 1422587116
+]
+2015-01-30 04:05:49 [127.0.0.1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: app\models\Goods::updateall' in E:\duotai\advanced\vendor\yiisoft\yii2\base\Component.php:143
+Stack trace:
+#0 E:\duotai\advanced\vendor\yiisoft\yii2\db\BaseActiveRecord.php(246): yii\base\Component->__get('updateall')
+#1 E:\duotai\advanced\backend\controllers\GoodsController.php(69): yii\db\BaseActiveRecord->__get('updateall')
+#2 [internal function]: backend\controllers\GoodsController->actionEditpro()
+#3 E:\duotai\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#4 E:\duotai\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#5 E:\duotai\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('editpro', Array)
+#6 E:\duotai\advanced\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('goods/editpro', Array)
+#7 E:\duotai\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 E:\duotai\advanced\backend\web\index.php(20): yii\base\Application->run()
+#9 {main}
+2015-01-30 04:05:49 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'goods/editpro'
+]
+
+$_POST = [
+    'goods_name' => ' 商品名称'
+    'h_id' => '9'
+    'category' => '5'
+    'goods_number' => '12'
+    'goods_price' => '213'
+    'goods_status' => '1'
+    'content1' => '<div style=\"text-align:center;\">
+	<span style=\"line-height:1.5;\"><u><em><strong><span style=\"font-size:18px;background-color:#FF9900;\">哥哥啊房东说分手大师大师</span></strong></em></u><u><em><strong><span style=\"font-size:18px;background-color:#FF9900;\"></span></strong></em></u></span> 
+</div>'
+]
+
+$_FILES = [
+    'goods_img' => [
+        'name' => '6.jpg'
+        'type' => 'image/jpeg'
+        'tmp_name' => 'E:\\xampp\\tmp\\phpBEF9.tmp'
+        'error' => 0
+        'size' => 26277
+    ]
+]
+
+$_COOKIE = [
+    'name' => 'yl'
+    'PHPSESSID' => '7cennjquqvqbonp7atqa8lmd51'
+    '_csrf' => '267615cd8e90ad77c00fb65717cec2eb847a569ef310005bee79dc598a76df52s:32:\"PI7VGvevTEvF3q2REJM37T09pE1VaM7b\";'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'E:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'E:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'www.duotai.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '27464'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://www.duotai.com'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2236.0 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryN5gLzhRKqfIXqylB'
+    'HTTP_REFERER' => 'http://www.duotai.com/backend/web/index.php?r=goods/edit&id=9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'name=yl; PHPSESSID=7cennjquqvqbonp7atqa8lmd51; _csrf=267615cd8e90ad77c00fb65717cec2eb847a569ef310005bee79dc598a76df52s%3A32%3A%22PI7VGvevTEvF3q2REJM37T09pE1VaM7b%22%3B'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\AMD APP\\bin\\x86;C:\\Program Files\\Common Files\\NetSarang;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\ATI Technologies\\ATI.ACE\\Core-Static;E:\\web\\TortoiseSVN\\bin;E:\\web\\TortoiseGit\\bin;E:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;E:\\web\\JDK\\bin;E:\\web\\NodeJs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at www.duotai.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'www.duotai.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/duotai/advanced'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/duotai/advanced'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'E:/duotai/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '58434'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=goods/editpro'
+    'REQUEST_URI' => '/backend/web/index.php?r=goods/editpro'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422587149.878
+    'REQUEST_TIME' => 1422587149
+]
+2015-01-30 04:05:58 [127.0.0.1][-][-][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'Missing argument 1 for yii\db\ActiveRecord::updateAll(), called in E:\duotai\advanced\backend\controllers\GoodsController.php on line 69 and defined' in E:\duotai\advanced\vendor\yiisoft\yii2\db\ActiveRecord.php:197
+Stack trace:
+#0 E:\duotai\advanced\vendor\yiisoft\yii2\db\ActiveRecord.php(197): yii\base\ErrorHandler->handleError(2, 'Missing argumen...', 'E:\duotai\advan...', 197, Array)
+#1 E:\duotai\advanced\backend\controllers\GoodsController.php(69): yii\db\ActiveRecord::updateAll()
+#2 [internal function]: backend\controllers\GoodsController->actionEditpro()
+#3 E:\duotai\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#4 E:\duotai\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#5 E:\duotai\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('editpro', Array)
+#6 E:\duotai\advanced\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('goods/editpro', Array)
+#7 E:\duotai\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 E:\duotai\advanced\backend\web\index.php(20): yii\base\Application->run()
+#9 {main}
+2015-01-30 04:05:58 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'goods/editpro'
+]
+
+$_POST = [
+    'goods_name' => ' 商品名称'
+    'h_id' => '9'
+    'category' => '5'
+    'goods_number' => '12'
+    'goods_price' => '213'
+    'goods_status' => '1'
+    'content1' => '<div style=\"text-align:center;\">
+	<span style=\"line-height:1.5;\"><u><em><strong><span style=\"font-size:18px;background-color:#FF9900;\">哥哥啊房东说分手大师大师</span></strong></em></u><u><em><strong><span style=\"font-size:18px;background-color:#FF9900;\"></span></strong></em></u></span> 
+</div>'
+]
+
+$_FILES = [
+    'goods_img' => [
+        'name' => '6.jpg'
+        'type' => 'image/jpeg'
+        'tmp_name' => 'E:\\xampp\\tmp\\phpE0FA.tmp'
+        'error' => 0
+        'size' => 26277
+    ]
+]
+
+$_COOKIE = [
+    'name' => 'yl'
+    'PHPSESSID' => '7cennjquqvqbonp7atqa8lmd51'
+    '_csrf' => '267615cd8e90ad77c00fb65717cec2eb847a569ef310005bee79dc598a76df52s:32:\"PI7VGvevTEvF3q2REJM37T09pE1VaM7b\";'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'E:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'E:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'www.duotai.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '27464'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://www.duotai.com'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2236.0 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryN5gLzhRKqfIXqylB'
+    'HTTP_REFERER' => 'http://www.duotai.com/backend/web/index.php?r=goods/edit&id=9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'name=yl; PHPSESSID=7cennjquqvqbonp7atqa8lmd51; _csrf=267615cd8e90ad77c00fb65717cec2eb847a569ef310005bee79dc598a76df52s%3A32%3A%22PI7VGvevTEvF3q2REJM37T09pE1VaM7b%22%3B'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\AMD APP\\bin\\x86;C:\\Program Files\\Common Files\\NetSarang;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\ATI Technologies\\ATI.ACE\\Core-Static;E:\\web\\TortoiseSVN\\bin;E:\\web\\TortoiseGit\\bin;E:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;E:\\web\\JDK\\bin;E:\\web\\NodeJs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at www.duotai.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'www.duotai.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/duotai/advanced'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/duotai/advanced'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'E:/duotai/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '58448'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=goods/editpro'
+    'REQUEST_URI' => '/backend/web/index.php?r=goods/editpro'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422587158.585
+    'REQUEST_TIME' => 1422587158
+]
+2015-01-30 04:06:10 [127.0.0.1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Call to a member function where() on a non-object' in E:\duotai\advanced\backend\controllers\GoodsController.php:69
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-01-30 04:06:10 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'goods/editpro'
+]
+
+$_POST = [
+    'goods_name' => ' 商品名称'
+    'h_id' => '9'
+    'category' => '5'
+    'goods_number' => '12'
+    'goods_price' => '213'
+    'goods_status' => '1'
+    'content1' => '<div style=\"text-align:center;\">
+	<span style=\"line-height:1.5;\"><u><em><strong><span style=\"font-size:18px;background-color:#FF9900;\">哥哥啊房东说分手大师大师</span></strong></em></u><u><em><strong><span style=\"font-size:18px;background-color:#FF9900;\"></span></strong></em></u></span> 
+</div>'
+]
+
+$_FILES = [
+    'goods_img' => [
+        'name' => '6.jpg'
+        'type' => 'image/jpeg'
+        'tmp_name' => 'E:\\xampp\\tmp\\phpDF4.tmp'
+        'error' => 0
+        'size' => 26277
+    ]
+]
+
+$_COOKIE = [
+    'name' => 'yl'
+    'PHPSESSID' => '7cennjquqvqbonp7atqa8lmd51'
+    '_csrf' => '267615cd8e90ad77c00fb65717cec2eb847a569ef310005bee79dc598a76df52s:32:\"PI7VGvevTEvF3q2REJM37T09pE1VaM7b\";'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'E:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'E:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'www.duotai.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '27464'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://www.duotai.com'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2236.0 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryN5gLzhRKqfIXqylB'
+    'HTTP_REFERER' => 'http://www.duotai.com/backend/web/index.php?r=goods/edit&id=9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'name=yl; PHPSESSID=7cennjquqvqbonp7atqa8lmd51; _csrf=267615cd8e90ad77c00fb65717cec2eb847a569ef310005bee79dc598a76df52s%3A32%3A%22PI7VGvevTEvF3q2REJM37T09pE1VaM7b%22%3B'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\AMD APP\\bin\\x86;C:\\Program Files\\Common Files\\NetSarang;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\ATI Technologies\\ATI.ACE\\Core-Static;E:\\web\\TortoiseSVN\\bin;E:\\web\\TortoiseGit\\bin;E:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;E:\\web\\JDK\\bin;E:\\web\\NodeJs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at www.duotai.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'www.duotai.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/duotai/advanced'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/duotai/advanced'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'E:/duotai/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '58476'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=goods/editpro'
+    'REQUEST_URI' => '/backend/web/index.php?r=goods/editpro'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422587170.087
+    'REQUEST_TIME' => 1422587170
+]
+2015-01-30 04:13:02 [127.0.0.1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'h_id' in 'field list'' in E:\duotai\advanced\vendor\yiisoft\yii2\db\Command.php:768
+Stack trace:
+#0 E:\duotai\advanced\vendor\yiisoft\yii2\db\Command.php(768): PDOStatement->execute()
+#1 E:\duotai\advanced\vendor\yiisoft\yii2\db\ActiveRecord.php(202): yii\db\Command->execute()
+#2 E:\duotai\advanced\backend\controllers\GoodsController.php(71): yii\db\ActiveRecord::updateAll(Array, Array)
+#3 [internal function]: backend\controllers\GoodsController->actionEditpro()
+#4 E:\duotai\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 E:\duotai\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#6 E:\duotai\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('editpro', Array)
+#7 E:\duotai\advanced\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('goods/editpro', Array)
+#8 E:\duotai\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 E:\duotai\advanced\backend\web\index.php(20): yii\base\Application->run()
+#10 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'h_id' in 'field list'
+The SQL being executed was: UPDATE `goods` SET `goods_name`=' 商品名称', `h_id`='9', `category`='5', `goods_number`=12, `goods_price`=213, `goods_status`=1, `content1`='<div style=\"text-align:center;\">\r\n	<span style=\"line-height:1.5;\"><u><em><strong><span style=\"font-size:18px;background-color:#FF9900;\">哥哥啊房东说分手大师大师</span></strong></em></u><u><em><strong><span style=\"font-size:18px;background-color:#FF9900;\"></span></strong></em></u></span> \r\n</div>', `url`='uploads/1422587582.jpg', `times`=1422587582 WHERE `goods_id`='9'' in E:\duotai\advanced\vendor\yiisoft\yii2\db\Schema.php:532
+Stack trace:
+#0 E:\duotai\advanced\vendor\yiisoft\yii2\db\Command.php(776): yii\db\Schema->convertException(Object(PDOException), 'UPDATE `goods` ...')
+#1 E:\duotai\advanced\vendor\yiisoft\yii2\db\ActiveRecord.php(202): yii\db\Command->execute()
+#2 E:\duotai\advanced\backend\controllers\GoodsController.php(71): yii\db\ActiveRecord::updateAll(Array, Array)
+#3 [internal function]: backend\controllers\GoodsController->actionEditpro()
+#4 E:\duotai\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 E:\duotai\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#6 E:\duotai\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('editpro', Array)
+#7 E:\duotai\advanced\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('goods/editpro', Array)
+#8 E:\duotai\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 E:\duotai\advanced\backend\web\index.php(20): yii\base\Application->run()
+#10 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'h_id' in 'field list'
+)
+
+2015-01-30 04:13:02 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'goods/editpro'
+]
+
+$_POST = [
+    'goods_name' => ' 商品名称'
+    'h_id' => '9'
+    'category' => '5'
+    'goods_number' => '12'
+    'goods_price' => '213'
+    'goods_status' => '1'
+    'content1' => '<div style=\"text-align:center;\">
+	<span style=\"line-height:1.5;\"><u><em><strong><span style=\"font-size:18px;background-color:#FF9900;\">哥哥啊房东说分手大师大师</span></strong></em></u><u><em><strong><span style=\"font-size:18px;background-color:#FF9900;\"></span></strong></em></u></span> 
+</div>'
+    'url' => 'uploads/1422587582.jpg'
+    'times' => 1422587582
+]
+
+$_FILES = [
+    'goods_img' => [
+        'name' => '6.jpg'
+        'type' => 'image/jpeg'
+        'tmp_name' => 'E:\\xampp\\tmp\\php581F.tmp'
+        'error' => 0
+        'size' => 26277
+    ]
+]
+
+$_COOKIE = [
+    'name' => 'yl'
+    'PHPSESSID' => '7cennjquqvqbonp7atqa8lmd51'
+    '_csrf' => '267615cd8e90ad77c00fb65717cec2eb847a569ef310005bee79dc598a76df52s:32:\"PI7VGvevTEvF3q2REJM37T09pE1VaM7b\";'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'E:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'E:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'www.duotai.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '27464'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://www.duotai.com'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2236.0 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryN5gLzhRKqfIXqylB'
+    'HTTP_REFERER' => 'http://www.duotai.com/backend/web/index.php?r=goods/edit&id=9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'name=yl; PHPSESSID=7cennjquqvqbonp7atqa8lmd51; _csrf=267615cd8e90ad77c00fb65717cec2eb847a569ef310005bee79dc598a76df52s%3A32%3A%22PI7VGvevTEvF3q2REJM37T09pE1VaM7b%22%3B'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\AMD APP\\bin\\x86;C:\\Program Files\\Common Files\\NetSarang;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\ATI Technologies\\ATI.ACE\\Core-Static;E:\\web\\TortoiseSVN\\bin;E:\\web\\TortoiseGit\\bin;E:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;E:\\web\\JDK\\bin;E:\\web\\NodeJs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at www.duotai.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'www.duotai.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/duotai/advanced'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/duotai/advanced'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'E:/duotai/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '58690'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=goods/editpro'
+    'REQUEST_URI' => '/backend/web/index.php?r=goods/editpro'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422587582.293
+    'REQUEST_TIME' => 1422587582
+]
+2015-01-30 04:13:14 [127.0.0.1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'h_id' in 'field list'' in E:\duotai\advanced\vendor\yiisoft\yii2\db\Command.php:768
+Stack trace:
+#0 E:\duotai\advanced\vendor\yiisoft\yii2\db\Command.php(768): PDOStatement->execute()
+#1 E:\duotai\advanced\vendor\yiisoft\yii2\db\ActiveRecord.php(202): yii\db\Command->execute()
+#2 E:\duotai\advanced\backend\controllers\GoodsController.php(71): yii\db\ActiveRecord::updateAll(Array, Array)
+#3 [internal function]: backend\controllers\GoodsController->actionEditpro()
+#4 E:\duotai\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 E:\duotai\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#6 E:\duotai\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('editpro', Array)
+#7 E:\duotai\advanced\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('goods/editpro', Array)
+#8 E:\duotai\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 E:\duotai\advanced\backend\web\index.php(20): yii\base\Application->run()
+#10 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'h_id' in 'field list'
+The SQL being executed was: UPDATE `goods` SET `goods_name`=' 商品名称', `h_id`='9', `category`='5', `goods_number`=12, `goods_price`=213, `goods_status`=1, `content1`='<div style=\"text-align:center;\">\r\n	<span style=\"line-height:1.5;\"><u><em><strong><span style=\"font-size:18px;background-color:#FF9900;\">哥哥啊分撒旦法撒旦法士大夫</span></strong></em></u><u><em><strong><span style=\"font-size:18px;background-color:#FF9900;\"></span></strong></em></u></span>\r\n</div>', `url`='uploads/1422587594.jpg', `times`=1422587594 WHERE `goods_id`='9'' in E:\duotai\advanced\vendor\yiisoft\yii2\db\Schema.php:532
+Stack trace:
+#0 E:\duotai\advanced\vendor\yiisoft\yii2\db\Command.php(776): yii\db\Schema->convertException(Object(PDOException), 'UPDATE `goods` ...')
+#1 E:\duotai\advanced\vendor\yiisoft\yii2\db\ActiveRecord.php(202): yii\db\Command->execute()
+#2 E:\duotai\advanced\backend\controllers\GoodsController.php(71): yii\db\ActiveRecord::updateAll(Array, Array)
+#3 [internal function]: backend\controllers\GoodsController->actionEditpro()
+#4 E:\duotai\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 E:\duotai\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#6 E:\duotai\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('editpro', Array)
+#7 E:\duotai\advanced\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('goods/editpro', Array)
+#8 E:\duotai\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 E:\duotai\advanced\backend\web\index.php(20): yii\base\Application->run()
+#10 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'h_id' in 'field list'
+)
+
+2015-01-30 04:13:14 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'goods/editpro'
+]
+
+$_POST = [
+    'goods_name' => ' 商品名称'
+    'h_id' => '9'
+    'category' => '5'
+    'goods_number' => '12'
+    'goods_price' => '213'
+    'goods_status' => '1'
+    'content1' => '<div style=\"text-align:center;\">
+	<span style=\"line-height:1.5;\"><u><em><strong><span style=\"font-size:18px;background-color:#FF9900;\">哥哥啊分撒旦法撒旦法士大夫</span></strong></em></u><u><em><strong><span style=\"font-size:18px;background-color:#FF9900;\"></span></strong></em></u></span>
+</div>'
+    'url' => 'uploads/1422587594.jpg'
+    'times' => 1422587594
+]
+
+$_FILES = [
+    'goods_img' => [
+        'name' => '6.jpg'
+        'type' => 'image/jpeg'
+        'tmp_name' => 'E:\\xampp\\tmp\\php894D.tmp'
+        'error' => 0
+        'size' => 26277
+    ]
+]
+
+$_COOKIE = [
+    'name' => 'yl'
+    'PHPSESSID' => '7cennjquqvqbonp7atqa8lmd51'
+    '_csrf' => '267615cd8e90ad77c00fb65717cec2eb847a569ef310005bee79dc598a76df52s:32:\"PI7VGvevTEvF3q2REJM37T09pE1VaM7b\";'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'E:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'E:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'www.duotai.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '27466'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://www.duotai.com'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2236.0 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryTUuGALemhSIQPBYp'
+    'HTTP_REFERER' => 'http://www.duotai.com/backend/web/index.php?r=goods/edit&id=9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'name=yl; PHPSESSID=7cennjquqvqbonp7atqa8lmd51; _csrf=267615cd8e90ad77c00fb65717cec2eb847a569ef310005bee79dc598a76df52s%3A32%3A%22PI7VGvevTEvF3q2REJM37T09pE1VaM7b%22%3B'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\AMD APP\\bin\\x86;C:\\Program Files\\Common Files\\NetSarang;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\ATI Technologies\\ATI.ACE\\Core-Static;E:\\web\\TortoiseSVN\\bin;E:\\web\\TortoiseGit\\bin;E:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;E:\\web\\JDK\\bin;E:\\web\\NodeJs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at www.duotai.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'www.duotai.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/duotai/advanced'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/duotai/advanced'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'E:/duotai/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '58704'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=goods/editpro'
+    'REQUEST_URI' => '/backend/web/index.php?r=goods/editpro'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422587594.892
+    'REQUEST_TIME' => 1422587594
+]
+2015-01-30 04:19:02 [127.0.0.1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'h_id' in 'field list'' in E:\duotai\advanced\vendor\yiisoft\yii2\db\Command.php:768
+Stack trace:
+#0 E:\duotai\advanced\vendor\yiisoft\yii2\db\Command.php(768): PDOStatement->execute()
+#1 E:\duotai\advanced\vendor\yiisoft\yii2\db\ActiveRecord.php(202): yii\db\Command->execute()
+#2 E:\duotai\advanced\backend\controllers\GoodsController.php(71): yii\db\ActiveRecord::updateAll(Array, Array)
+#3 [internal function]: backend\controllers\GoodsController->actionEditpro()
+#4 E:\duotai\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 E:\duotai\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#6 E:\duotai\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('editpro', Array)
+#7 E:\duotai\advanced\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('goods/editpro', Array)
+#8 E:\duotai\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 E:\duotai\advanced\backend\web\index.php(20): yii\base\Application->run()
+#10 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'h_id' in 'field list'
+The SQL being executed was: UPDATE `goods` SET `goods_name`=' 商品名称', `h_id`='9', `category`='5', `goods_number`=12, `goods_price`=213, `goods_status`=1, `content1`='<div style=\"text-align:center;\">\r\n	<span style=\"line-height:1.5;\"><u><em><strong><span style=\"font-size:18px;background-color:#FF9900;\">哥哥啊分撒旦法撒旦法士大夫</span></strong></em></u><u><em><strong><span style=\"font-size:18px;background-color:#FF9900;\"></span></strong></em></u></span>\r\n</div>', `url`='uploads/1422587942.jpg', `times`=1422587942 WHERE `goods_id`='9'' in E:\duotai\advanced\vendor\yiisoft\yii2\db\Schema.php:532
+Stack trace:
+#0 E:\duotai\advanced\vendor\yiisoft\yii2\db\Command.php(776): yii\db\Schema->convertException(Object(PDOException), 'UPDATE `goods` ...')
+#1 E:\duotai\advanced\vendor\yiisoft\yii2\db\ActiveRecord.php(202): yii\db\Command->execute()
+#2 E:\duotai\advanced\backend\controllers\GoodsController.php(71): yii\db\ActiveRecord::updateAll(Array, Array)
+#3 [internal function]: backend\controllers\GoodsController->actionEditpro()
+#4 E:\duotai\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 E:\duotai\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#6 E:\duotai\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('editpro', Array)
+#7 E:\duotai\advanced\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('goods/editpro', Array)
+#8 E:\duotai\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 E:\duotai\advanced\backend\web\index.php(20): yii\base\Application->run()
+#10 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'h_id' in 'field list'
+)
+
+2015-01-30 04:19:02 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'goods/editpro'
+]
+
+$_POST = [
+    'goods_name' => ' 商品名称'
+    'h_id' => '9'
+    'category' => '5'
+    'goods_number' => '12'
+    'goods_price' => '213'
+    'goods_status' => '1'
+    'content1' => '<div style=\"text-align:center;\">
+	<span style=\"line-height:1.5;\"><u><em><strong><span style=\"font-size:18px;background-color:#FF9900;\">哥哥啊分撒旦法撒旦法士大夫</span></strong></em></u><u><em><strong><span style=\"font-size:18px;background-color:#FF9900;\"></span></strong></em></u></span>
+</div>'
+    'url' => 'uploads/1422587942.jpg'
+    'times' => 1422587942
+]
+
+$_FILES = [
+    'goods_img' => [
+        'name' => '6.jpg'
+        'type' => 'image/jpeg'
+        'tmp_name' => 'E:\\xampp\\tmp\\phpD867.tmp'
+        'error' => 0
+        'size' => 26277
+    ]
+]
+
+$_COOKIE = [
+    'name' => 'yl'
+    'PHPSESSID' => '7cennjquqvqbonp7atqa8lmd51'
+    '_csrf' => '267615cd8e90ad77c00fb65717cec2eb847a569ef310005bee79dc598a76df52s:32:\"PI7VGvevTEvF3q2REJM37T09pE1VaM7b\";'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'E:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'E:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'www.duotai.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '27466'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://www.duotai.com'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2236.0 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryTUuGALemhSIQPBYp'
+    'HTTP_REFERER' => 'http://www.duotai.com/backend/web/index.php?r=goods/edit&id=9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'name=yl; PHPSESSID=7cennjquqvqbonp7atqa8lmd51; _csrf=267615cd8e90ad77c00fb65717cec2eb847a569ef310005bee79dc598a76df52s%3A32%3A%22PI7VGvevTEvF3q2REJM37T09pE1VaM7b%22%3B'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\AMD APP\\bin\\x86;C:\\Program Files\\Common Files\\NetSarang;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\ATI Technologies\\ATI.ACE\\Core-Static;E:\\web\\TortoiseSVN\\bin;E:\\web\\TortoiseGit\\bin;E:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;E:\\web\\JDK\\bin;E:\\web\\NodeJs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at www.duotai.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'www.duotai.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/duotai/advanced'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/duotai/advanced'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'E:/duotai/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '59145'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=goods/editpro'
+    'REQUEST_URI' => '/backend/web/index.php?r=goods/editpro'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422587942.816
+    'REQUEST_TIME' => 1422587942
+]
+2015-01-30 04:19:19 [127.0.0.1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'h_id' in 'field list'' in E:\duotai\advanced\vendor\yiisoft\yii2\db\Command.php:768
+Stack trace:
+#0 E:\duotai\advanced\vendor\yiisoft\yii2\db\Command.php(768): PDOStatement->execute()
+#1 E:\duotai\advanced\vendor\yiisoft\yii2\db\ActiveRecord.php(202): yii\db\Command->execute()
+#2 E:\duotai\advanced\backend\controllers\GoodsController.php(71): yii\db\ActiveRecord::updateAll(Array, Array)
+#3 [internal function]: backend\controllers\GoodsController->actionEditpro()
+#4 E:\duotai\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 E:\duotai\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#6 E:\duotai\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('editpro', Array)
+#7 E:\duotai\advanced\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('goods/editpro', Array)
+#8 E:\duotai\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 E:\duotai\advanced\backend\web\index.php(20): yii\base\Application->run()
+#10 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'h_id' in 'field list'
+The SQL being executed was: UPDATE `goods` SET `goods_name`=' 商品名称', `h_id`='9', `category`='5', `goods_number`=12, `goods_price`=213, `goods_status`=1, `content1`='<div style=\"text-align:center;\">\r\n	<span style=\"line-height:1.5;\"><u><em><strong><span style=\"font-size:18px;background-color:#FF9900;\">哥哥啊78978698789</span></strong></em></u><u><em><strong><span style=\"font-size:18px;background-color:#FF9900;\"></span></strong></em></u></span>\r\n</div>', `url`='uploads/1422587959.jpg', `times`=1422587959 WHERE `goods_id`='9'' in E:\duotai\advanced\vendor\yiisoft\yii2\db\Schema.php:532
+Stack trace:
+#0 E:\duotai\advanced\vendor\yiisoft\yii2\db\Command.php(776): yii\db\Schema->convertException(Object(PDOException), 'UPDATE `goods` ...')
+#1 E:\duotai\advanced\vendor\yiisoft\yii2\db\ActiveRecord.php(202): yii\db\Command->execute()
+#2 E:\duotai\advanced\backend\controllers\GoodsController.php(71): yii\db\ActiveRecord::updateAll(Array, Array)
+#3 [internal function]: backend\controllers\GoodsController->actionEditpro()
+#4 E:\duotai\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 E:\duotai\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#6 E:\duotai\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('editpro', Array)
+#7 E:\duotai\advanced\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('goods/editpro', Array)
+#8 E:\duotai\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 E:\duotai\advanced\backend\web\index.php(20): yii\base\Application->run()
+#10 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'h_id' in 'field list'
+)
+
+2015-01-30 04:19:19 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'goods/editpro'
+]
+
+$_POST = [
+    'goods_name' => ' 商品名称'
+    'h_id' => '9'
+    'category' => '5'
+    'goods_number' => '12'
+    'goods_price' => '213'
+    'goods_status' => '1'
+    'content1' => '<div style=\"text-align:center;\">
+	<span style=\"line-height:1.5;\"><u><em><strong><span style=\"font-size:18px;background-color:#FF9900;\">哥哥啊78978698789</span></strong></em></u><u><em><strong><span style=\"font-size:18px;background-color:#FF9900;\"></span></strong></em></u></span>
+</div>'
+    'url' => 'uploads/1422587959.jpg'
+    'times' => 1422587959
+]
+
+$_FILES = [
+    'goods_img' => [
+        'name' => '6.jpg'
+        'type' => 'image/jpeg'
+        'tmp_name' => 'E:\\xampp\\tmp\\php1799.tmp'
+        'error' => 0
+        'size' => 26277
+    ]
+]
+
+$_COOKIE = [
+    'name' => 'yl'
+    'PHPSESSID' => '7cennjquqvqbonp7atqa8lmd51'
+    '_csrf' => '267615cd8e90ad77c00fb65717cec2eb847a569ef310005bee79dc598a76df52s:32:\"PI7VGvevTEvF3q2REJM37T09pE1VaM7b\";'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'E:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'E:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'www.duotai.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '27447'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://www.duotai.com'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2236.0 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryZWQwMewEob0MjYLV'
+    'HTTP_REFERER' => 'http://www.duotai.com/backend/web/index.php?r=goods/edit&id=9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'name=yl; PHPSESSID=7cennjquqvqbonp7atqa8lmd51; _csrf=267615cd8e90ad77c00fb65717cec2eb847a569ef310005bee79dc598a76df52s%3A32%3A%22PI7VGvevTEvF3q2REJM37T09pE1VaM7b%22%3B'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\AMD APP\\bin\\x86;C:\\Program Files\\Common Files\\NetSarang;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\ATI Technologies\\ATI.ACE\\Core-Static;E:\\web\\TortoiseSVN\\bin;E:\\web\\TortoiseGit\\bin;E:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;E:\\web\\JDK\\bin;E:\\web\\NodeJs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at www.duotai.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'www.duotai.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/duotai/advanced'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/duotai/advanced'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'E:/duotai/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '59166'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=goods/editpro'
+    'REQUEST_URI' => '/backend/web/index.php?r=goods/editpro'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422587958.989
+    'REQUEST_TIME' => 1422587958
+]
+2015-01-30 04:21:44 [127.0.0.1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'h_id' in 'field list'' in E:\duotai\advanced\vendor\yiisoft\yii2\db\Command.php:768
+Stack trace:
+#0 E:\duotai\advanced\vendor\yiisoft\yii2\db\Command.php(768): PDOStatement->execute()
+#1 E:\duotai\advanced\vendor\yiisoft\yii2\db\ActiveRecord.php(202): yii\db\Command->execute()
+#2 E:\duotai\advanced\backend\controllers\GoodsController.php(71): yii\db\ActiveRecord::updateAll(Array, Array)
+#3 [internal function]: backend\controllers\GoodsController->actionEditpro()
+#4 E:\duotai\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 E:\duotai\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#6 E:\duotai\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('editpro', Array)
+#7 E:\duotai\advanced\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('goods/editpro', Array)
+#8 E:\duotai\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 E:\duotai\advanced\backend\web\index.php(20): yii\base\Application->run()
+#10 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'h_id' in 'field list'
+The SQL being executed was: UPDATE `goods` SET `goods_name`=' 商品名称', `h_id`='9', `category`='5', `goods_number`=12, `goods_price`=213, `goods_status`=1, `content1`='<div style=\"text-align:center;\">\r\n	<span style=\"line-height:1.5;\"><u><em><strong><span style=\"font-size:18px;background-color:#FF9900;\">哥哥啊78978698789</span></strong></em></u><u><em><strong><span style=\"font-size:18px;background-color:#FF9900;\"></span></strong></em></u></span>\r\n</div>', `url`='uploads/1422588104.jpg', `times`=1422588104 WHERE `goods_id`='9'' in E:\duotai\advanced\vendor\yiisoft\yii2\db\Schema.php:532
+Stack trace:
+#0 E:\duotai\advanced\vendor\yiisoft\yii2\db\Command.php(776): yii\db\Schema->convertException(Object(PDOException), 'UPDATE `goods` ...')
+#1 E:\duotai\advanced\vendor\yiisoft\yii2\db\ActiveRecord.php(202): yii\db\Command->execute()
+#2 E:\duotai\advanced\backend\controllers\GoodsController.php(71): yii\db\ActiveRecord::updateAll(Array, Array)
+#3 [internal function]: backend\controllers\GoodsController->actionEditpro()
+#4 E:\duotai\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 E:\duotai\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#6 E:\duotai\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('editpro', Array)
+#7 E:\duotai\advanced\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('goods/editpro', Array)
+#8 E:\duotai\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 E:\duotai\advanced\backend\web\index.php(20): yii\base\Application->run()
+#10 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'h_id' in 'field list'
+)
+
+2015-01-30 04:21:44 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'goods/editpro'
+]
+
+$_POST = [
+    'goods_name' => ' 商品名称'
+    'h_id' => '9'
+    'category' => '5'
+    'goods_number' => '12'
+    'goods_price' => '213'
+    'goods_status' => '1'
+    'content1' => '<div style=\"text-align:center;\">
+	<span style=\"line-height:1.5;\"><u><em><strong><span style=\"font-size:18px;background-color:#FF9900;\">哥哥啊78978698789</span></strong></em></u><u><em><strong><span style=\"font-size:18px;background-color:#FF9900;\"></span></strong></em></u></span>
+</div>'
+    'url' => 'uploads/1422588104.jpg'
+    'times' => 1422588104
+]
+
+$_FILES = [
+    'goods_img' => [
+        'name' => '6.jpg'
+        'type' => 'image/jpeg'
+        'tmp_name' => 'E:\\xampp\\tmp\\php5102.tmp'
+        'error' => 0
+        'size' => 26277
+    ]
+]
+
+$_COOKIE = [
+    'name' => 'yl'
+    'PHPSESSID' => '7cennjquqvqbonp7atqa8lmd51'
+    '_csrf' => '267615cd8e90ad77c00fb65717cec2eb847a569ef310005bee79dc598a76df52s:32:\"PI7VGvevTEvF3q2REJM37T09pE1VaM7b\";'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'E:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'E:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'www.duotai.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '27447'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://www.duotai.com'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2236.0 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryZWQwMewEob0MjYLV'
+    'HTTP_REFERER' => 'http://www.duotai.com/backend/web/index.php?r=goods/edit&id=9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'name=yl; PHPSESSID=7cennjquqvqbonp7atqa8lmd51; _csrf=267615cd8e90ad77c00fb65717cec2eb847a569ef310005bee79dc598a76df52s%3A32%3A%22PI7VGvevTEvF3q2REJM37T09pE1VaM7b%22%3B'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\AMD APP\\bin\\x86;C:\\Program Files\\Common Files\\NetSarang;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\ATI Technologies\\ATI.ACE\\Core-Static;E:\\web\\TortoiseSVN\\bin;E:\\web\\TortoiseGit\\bin;E:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;E:\\web\\JDK\\bin;E:\\web\\NodeJs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at www.duotai.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'www.duotai.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/duotai/advanced'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/duotai/advanced'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'E:/duotai/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '59232'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=goods/editpro'
+    'REQUEST_URI' => '/backend/web/index.php?r=goods/editpro'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422588104.762
+    'REQUEST_TIME' => 1422588104
+]
+2015-01-30 04:24:51 [127.0.0.1][-][-][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'Missing argument 1 for yii\db\ActiveRecord::updateAll(), called in E:\duotai\advanced\backend\controllers\GoodsController.php on line 70 and defined' in E:\duotai\advanced\vendor\yiisoft\yii2\db\ActiveRecord.php:197
+Stack trace:
+#0 E:\duotai\advanced\vendor\yiisoft\yii2\db\ActiveRecord.php(197): yii\base\ErrorHandler->handleError(2, 'Missing argumen...', 'E:\duotai\advan...', 197, Array)
+#1 E:\duotai\advanced\backend\controllers\GoodsController.php(70): yii\db\ActiveRecord::updateAll()
+#2 [internal function]: backend\controllers\GoodsController->actionEditpro()
+#3 E:\duotai\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#4 E:\duotai\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#5 E:\duotai\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('editpro', Array)
+#6 E:\duotai\advanced\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('goods/editpro', Array)
+#7 E:\duotai\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 E:\duotai\advanced\backend\web\index.php(20): yii\base\Application->run()
+#9 {main}
+2015-01-30 04:24:51 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'goods/editpro'
+]
+
+$_POST = [
+    'goods_name' => ' 商品名称'
+    'h_id' => '9'
+    'category' => '5'
+    'goods_number' => '12'
+    'goods_price' => '213'
+    'goods_status' => '1'
+    'content1' => '<div style=\"text-align:center;\">
+	<span style=\"line-height:1.5;\"><u><em><strong><span style=\"font-size:18px;background-color:#FF9900;\">哥哥啊78978698789</span></strong></em></u><u><em><strong><span style=\"font-size:18px;background-color:#FF9900;\"></span></strong></em></u></span>
+</div>'
+    'url' => 'uploads/1422588291.jpg'
+    'times' => 1422588291
+]
+
+$_FILES = [
+    'goods_img' => [
+        'name' => '6.jpg'
+        'type' => 'image/jpeg'
+        'tmp_name' => 'E:\\xampp\\tmp\\php2976.tmp'
+        'error' => 0
+        'size' => 26277
+    ]
+]
+
+$_COOKIE = [
+    'name' => 'yl'
+    'PHPSESSID' => '7cennjquqvqbonp7atqa8lmd51'
+    '_csrf' => '267615cd8e90ad77c00fb65717cec2eb847a569ef310005bee79dc598a76df52s:32:\"PI7VGvevTEvF3q2REJM37T09pE1VaM7b\";'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'E:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'E:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'www.duotai.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '27447'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://www.duotai.com'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2236.0 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryZWQwMewEob0MjYLV'
+    'HTTP_REFERER' => 'http://www.duotai.com/backend/web/index.php?r=goods/edit&id=9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'name=yl; PHPSESSID=7cennjquqvqbonp7atqa8lmd51; _csrf=267615cd8e90ad77c00fb65717cec2eb847a569ef310005bee79dc598a76df52s%3A32%3A%22PI7VGvevTEvF3q2REJM37T09pE1VaM7b%22%3B'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\AMD APP\\bin\\x86;C:\\Program Files\\Common Files\\NetSarang;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\ATI Technologies\\ATI.ACE\\Core-Static;E:\\web\\TortoiseSVN\\bin;E:\\web\\TortoiseGit\\bin;E:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;E:\\web\\JDK\\bin;E:\\web\\NodeJs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at www.duotai.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'www.duotai.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/duotai/advanced'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/duotai/advanced'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'E:/duotai/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '59403'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=goods/editpro'
+    'REQUEST_URI' => '/backend/web/index.php?r=goods/editpro'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422588291.243
+    'REQUEST_TIME' => 1422588291
+]
+2015-01-30 04:25:20 [127.0.0.1][-][-][error][yii\db\IntegrityException] exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '9' for key 'PRIMARY'' in E:\duotai\advanced\vendor\yiisoft\yii2\db\Command.php:768
+Stack trace:
+#0 E:\duotai\advanced\vendor\yiisoft\yii2\db\Command.php(768): PDOStatement->execute()
+#1 E:\duotai\advanced\vendor\yiisoft\yii2\db\ActiveRecord.php(202): yii\db\Command->execute()
+#2 E:\duotai\advanced\backend\controllers\GoodsController.php(70): yii\db\ActiveRecord::updateAll(Array)
+#3 [internal function]: backend\controllers\GoodsController->actionEditpro()
+#4 E:\duotai\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 E:\duotai\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#6 E:\duotai\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('editpro', Array)
+#7 E:\duotai\advanced\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('goods/editpro', Array)
+#8 E:\duotai\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 E:\duotai\advanced\backend\web\index.php(20): yii\base\Application->run()
+#10 {main}
+
+Next exception 'yii\db\IntegrityException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '9' for key 'PRIMARY'
+The SQL being executed was: UPDATE `goods` SET `goods_id`=9' in E:\duotai\advanced\vendor\yiisoft\yii2\db\Schema.php:532
+Stack trace:
+#0 E:\duotai\advanced\vendor\yiisoft\yii2\db\Command.php(776): yii\db\Schema->convertException(Object(PDOException), 'UPDATE `goods` ...')
+#1 E:\duotai\advanced\vendor\yiisoft\yii2\db\ActiveRecord.php(202): yii\db\Command->execute()
+#2 E:\duotai\advanced\backend\controllers\GoodsController.php(70): yii\db\ActiveRecord::updateAll(Array)
+#3 [internal function]: backend\controllers\GoodsController->actionEditpro()
+#4 E:\duotai\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 E:\duotai\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#6 E:\duotai\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('editpro', Array)
+#7 E:\duotai\advanced\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('goods/editpro', Array)
+#8 E:\duotai\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 E:\duotai\advanced\backend\web\index.php(20): yii\base\Application->run()
+#10 {main}
+Additional Information:
+Array
+(
+    [0] => 23000
+    [1] => 1062
+    [2] => Duplicate entry '9' for key 'PRIMARY'
+)
+
+2015-01-30 04:25:19 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'goods/editpro'
+]
+
+$_POST = [
+    'goods_name' => ' 商品名称'
+    'h_id' => '9'
+    'category' => '5'
+    'goods_number' => '12'
+    'goods_price' => '213'
+    'goods_status' => '1'
+    'content1' => '<div style=\"text-align:center;\">
+	<span style=\"line-height:1.5;\"><u><em><strong><span style=\"font-size:18px;background-color:#FF9900;\">哥哥啊78978698789</span></strong></em></u><u><em><strong><span style=\"font-size:18px;background-color:#FF9900;\"></span></strong></em></u></span>
+</div>'
+    'url' => 'uploads/1422588319.jpg'
+    'times' => 1422588319
+]
+
+$_FILES = [
+    'goods_img' => [
+        'name' => '6.jpg'
+        'type' => 'image/jpeg'
+        'tmp_name' => 'E:\\xampp\\tmp\\php9978.tmp'
+        'error' => 0
+        'size' => 26277
+    ]
+]
+
+$_COOKIE = [
+    'name' => 'yl'
+    'PHPSESSID' => '7cennjquqvqbonp7atqa8lmd51'
+    '_csrf' => '267615cd8e90ad77c00fb65717cec2eb847a569ef310005bee79dc598a76df52s:32:\"PI7VGvevTEvF3q2REJM37T09pE1VaM7b\";'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'E:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'E:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'www.duotai.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '27447'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://www.duotai.com'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2236.0 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryZWQwMewEob0MjYLV'
+    'HTTP_REFERER' => 'http://www.duotai.com/backend/web/index.php?r=goods/edit&id=9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'name=yl; PHPSESSID=7cennjquqvqbonp7atqa8lmd51; _csrf=267615cd8e90ad77c00fb65717cec2eb847a569ef310005bee79dc598a76df52s%3A32%3A%22PI7VGvevTEvF3q2REJM37T09pE1VaM7b%22%3B'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\AMD APP\\bin\\x86;C:\\Program Files\\Common Files\\NetSarang;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\ATI Technologies\\ATI.ACE\\Core-Static;E:\\web\\TortoiseSVN\\bin;E:\\web\\TortoiseGit\\bin;E:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;E:\\web\\JDK\\bin;E:\\web\\NodeJs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at www.duotai.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'www.duotai.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/duotai/advanced'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/duotai/advanced'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'E:/duotai/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '59413'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=goods/editpro'
+    'REQUEST_URI' => '/backend/web/index.php?r=goods/editpro'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422588319.914
+    'REQUEST_TIME' => 1422588319
+]
+2015-01-30 04:25:56 [127.0.0.1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'h_id' in 'field list'' in E:\duotai\advanced\vendor\yiisoft\yii2\db\Command.php:768
+Stack trace:
+#0 E:\duotai\advanced\vendor\yiisoft\yii2\db\Command.php(768): PDOStatement->execute()
+#1 E:\duotai\advanced\vendor\yiisoft\yii2\db\ActiveRecord.php(202): yii\db\Command->execute()
+#2 E:\duotai\advanced\backend\controllers\GoodsController.php(70): yii\db\ActiveRecord::updateAll(Array, Array)
+#3 [internal function]: backend\controllers\GoodsController->actionEditpro()
+#4 E:\duotai\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 E:\duotai\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#6 E:\duotai\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('editpro', Array)
+#7 E:\duotai\advanced\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('goods/editpro', Array)
+#8 E:\duotai\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 E:\duotai\advanced\backend\web\index.php(20): yii\base\Application->run()
+#10 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'h_id' in 'field list'
+The SQL being executed was: UPDATE `goods` SET `goods_name`=' 商品名称', `h_id`='9', `category`='5', `goods_number`=12, `goods_price`=213, `goods_status`=1, `content1`='<div style=\"text-align:center;\">\r\n	<span style=\"line-height:1.5;\"><u><em><strong><span style=\"font-size:18px;background-color:#FF9900;\">哥哥啊78978698789</span></strong></em></u><u><em><strong><span style=\"font-size:18px;background-color:#FF9900;\"></span></strong></em></u></span>\r\n</div>', `url`='uploads/1422588356.jpg', `times`=1422588356 WHERE `goods_id`='9'' in E:\duotai\advanced\vendor\yiisoft\yii2\db\Schema.php:532
+Stack trace:
+#0 E:\duotai\advanced\vendor\yiisoft\yii2\db\Command.php(776): yii\db\Schema->convertException(Object(PDOException), 'UPDATE `goods` ...')
+#1 E:\duotai\advanced\vendor\yiisoft\yii2\db\ActiveRecord.php(202): yii\db\Command->execute()
+#2 E:\duotai\advanced\backend\controllers\GoodsController.php(70): yii\db\ActiveRecord::updateAll(Array, Array)
+#3 [internal function]: backend\controllers\GoodsController->actionEditpro()
+#4 E:\duotai\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 E:\duotai\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#6 E:\duotai\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('editpro', Array)
+#7 E:\duotai\advanced\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('goods/editpro', Array)
+#8 E:\duotai\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 E:\duotai\advanced\backend\web\index.php(20): yii\base\Application->run()
+#10 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'h_id' in 'field list'
+)
+
+2015-01-30 04:25:55 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'goods/editpro'
+]
+
+$_POST = [
+    'goods_name' => ' 商品名称'
+    'h_id' => '9'
+    'category' => '5'
+    'goods_number' => '12'
+    'goods_price' => '213'
+    'goods_status' => '1'
+    'content1' => '<div style=\"text-align:center;\">
+	<span style=\"line-height:1.5;\"><u><em><strong><span style=\"font-size:18px;background-color:#FF9900;\">哥哥啊78978698789</span></strong></em></u><u><em><strong><span style=\"font-size:18px;background-color:#FF9900;\"></span></strong></em></u></span>
+</div>'
+    'url' => 'uploads/1422588356.jpg'
+    'times' => 1422588356
+]
+
+$_FILES = [
+    'goods_img' => [
+        'name' => '6.jpg'
+        'type' => 'image/jpeg'
+        'tmp_name' => 'E:\\xampp\\tmp\\php262E.tmp'
+        'error' => 0
+        'size' => 26277
+    ]
+]
+
+$_COOKIE = [
+    'name' => 'yl'
+    'PHPSESSID' => '7cennjquqvqbonp7atqa8lmd51'
+    '_csrf' => '267615cd8e90ad77c00fb65717cec2eb847a569ef310005bee79dc598a76df52s:32:\"PI7VGvevTEvF3q2REJM37T09pE1VaM7b\";'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'E:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'E:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'www.duotai.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '27447'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://www.duotai.com'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2236.0 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryZWQwMewEob0MjYLV'
+    'HTTP_REFERER' => 'http://www.duotai.com/backend/web/index.php?r=goods/edit&id=9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'name=yl; PHPSESSID=7cennjquqvqbonp7atqa8lmd51; _csrf=267615cd8e90ad77c00fb65717cec2eb847a569ef310005bee79dc598a76df52s%3A32%3A%22PI7VGvevTEvF3q2REJM37T09pE1VaM7b%22%3B'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\AMD APP\\bin\\x86;C:\\Program Files\\Common Files\\NetSarang;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\ATI Technologies\\ATI.ACE\\Core-Static;E:\\web\\TortoiseSVN\\bin;E:\\web\\TortoiseGit\\bin;E:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;E:\\web\\JDK\\bin;E:\\web\\NodeJs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at www.duotai.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'www.duotai.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/duotai/advanced'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/duotai/advanced'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'E:/duotai/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '59423'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=goods/editpro'
+    'REQUEST_URI' => '/backend/web/index.php?r=goods/editpro'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422588355.94
+    'REQUEST_TIME' => 1422588355
+]
+2015-01-30 04:27:03 [127.0.0.1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'h_id' in 'field list'' in E:\duotai\advanced\vendor\yiisoft\yii2\db\Command.php:768
+Stack trace:
+#0 E:\duotai\advanced\vendor\yiisoft\yii2\db\Command.php(768): PDOStatement->execute()
+#1 E:\duotai\advanced\vendor\yiisoft\yii2\db\ActiveRecord.php(202): yii\db\Command->execute()
+#2 E:\duotai\advanced\backend\controllers\GoodsController.php(71): yii\db\ActiveRecord::updateAll(Array, Array)
+#3 [internal function]: backend\controllers\GoodsController->actionEditpro()
+#4 E:\duotai\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 E:\duotai\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#6 E:\duotai\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('editpro', Array)
+#7 E:\duotai\advanced\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('goods/editpro', Array)
+#8 E:\duotai\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 E:\duotai\advanced\backend\web\index.php(20): yii\base\Application->run()
+#10 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'h_id' in 'field list'
+The SQL being executed was: UPDATE `goods` SET `goods_name`=' 商品名称', `h_id`='9', `category`='5', `goods_number`=12, `goods_price`=213, `goods_status`=1, `content1`='<div style=\"text-align:center;\">\r\n	<span style=\"line-height:1.5;\"><u><em><strong><span style=\"font-size:18px;background-color:#FF9900;\">哥哥啊78978698789</span></strong></em></u><u><em><strong><span style=\"font-size:18px;background-color:#FF9900;\"></span></strong></em></u></span>\r\n</div>', `url`='uploads/1422588423.jpg', `times`=1422588423 WHERE `goods_id`='9'' in E:\duotai\advanced\vendor\yiisoft\yii2\db\Schema.php:532
+Stack trace:
+#0 E:\duotai\advanced\vendor\yiisoft\yii2\db\Command.php(776): yii\db\Schema->convertException(Object(PDOException), 'UPDATE `goods` ...')
+#1 E:\duotai\advanced\vendor\yiisoft\yii2\db\ActiveRecord.php(202): yii\db\Command->execute()
+#2 E:\duotai\advanced\backend\controllers\GoodsController.php(71): yii\db\ActiveRecord::updateAll(Array, Array)
+#3 [internal function]: backend\controllers\GoodsController->actionEditpro()
+#4 E:\duotai\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 E:\duotai\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#6 E:\duotai\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('editpro', Array)
+#7 E:\duotai\advanced\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('goods/editpro', Array)
+#8 E:\duotai\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 E:\duotai\advanced\backend\web\index.php(20): yii\base\Application->run()
+#10 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'h_id' in 'field list'
+)
+
+2015-01-30 04:27:03 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'goods/editpro'
+]
+
+$_POST = [
+    'goods_name' => ' 商品名称'
+    'h_id' => '9'
+    'category' => '5'
+    'goods_number' => '12'
+    'goods_price' => '213'
+    'goods_status' => '1'
+    'content1' => '<div style=\"text-align:center;\">
+	<span style=\"line-height:1.5;\"><u><em><strong><span style=\"font-size:18px;background-color:#FF9900;\">哥哥啊78978698789</span></strong></em></u><u><em><strong><span style=\"font-size:18px;background-color:#FF9900;\"></span></strong></em></u></span>
+</div>'
+    'url' => 'uploads/1422588423.jpg'
+    'times' => 1422588423
+]
+
+$_FILES = [
+    'goods_img' => [
+        'name' => '6.jpg'
+        'type' => 'image/jpeg'
+        'tmp_name' => 'E:\\xampp\\tmp\\php2F24.tmp'
+        'error' => 0
+        'size' => 26277
+    ]
+]
+
+$_COOKIE = [
+    'name' => 'yl'
+    'PHPSESSID' => '7cennjquqvqbonp7atqa8lmd51'
+    '_csrf' => '267615cd8e90ad77c00fb65717cec2eb847a569ef310005bee79dc598a76df52s:32:\"PI7VGvevTEvF3q2REJM37T09pE1VaM7b\";'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'E:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'E:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'www.duotai.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '27447'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://www.duotai.com'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2236.0 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryZWQwMewEob0MjYLV'
+    'HTTP_REFERER' => 'http://www.duotai.com/backend/web/index.php?r=goods/edit&id=9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'name=yl; PHPSESSID=7cennjquqvqbonp7atqa8lmd51; _csrf=267615cd8e90ad77c00fb65717cec2eb847a569ef310005bee79dc598a76df52s%3A32%3A%22PI7VGvevTEvF3q2REJM37T09pE1VaM7b%22%3B'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\AMD APP\\bin\\x86;C:\\Program Files\\Common Files\\NetSarang;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\ATI Technologies\\ATI.ACE\\Core-Static;E:\\web\\TortoiseSVN\\bin;E:\\web\\TortoiseGit\\bin;E:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;E:\\web\\JDK\\bin;E:\\web\\NodeJs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at www.duotai.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'www.duotai.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/duotai/advanced'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/duotai/advanced'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'E:/duotai/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '59439'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=goods/editpro'
+    'REQUEST_URI' => '/backend/web/index.php?r=goods/editpro'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422588423.767
+    'REQUEST_TIME' => 1422588423
+]
+2015-01-30 04:28:22 [127.0.0.1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'h_id' in 'field list'' in E:\duotai\advanced\vendor\yiisoft\yii2\db\Command.php:768
+Stack trace:
+#0 E:\duotai\advanced\vendor\yiisoft\yii2\db\Command.php(768): PDOStatement->execute()
+#1 E:\duotai\advanced\vendor\yiisoft\yii2\db\ActiveRecord.php(202): yii\db\Command->execute()
+#2 E:\duotai\advanced\backend\controllers\GoodsController.php(73): yii\db\ActiveRecord::updateAll(Array, Array)
+#3 [internal function]: backend\controllers\GoodsController->actionEditpro()
+#4 E:\duotai\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 E:\duotai\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#6 E:\duotai\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('editpro', Array)
+#7 E:\duotai\advanced\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('goods/editpro', Array)
+#8 E:\duotai\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 E:\duotai\advanced\backend\web\index.php(20): yii\base\Application->run()
+#10 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'h_id' in 'field list'
+The SQL being executed was: UPDATE `goods` SET `goods_name`=' 商品名称', `h_id`='9', `category`='5', `goods_number`=12, `goods_price`=213, `goods_status`=1, `content1`='<div style=\"text-align:center;\">\r\n	<span style=\"line-height:1.5;\"><u><em><strong><span style=\"font-size:18px;background-color:#FF9900;\">哥哥啊78978698789</span></strong></em></u><u><em><strong><span style=\"font-size:18px;background-color:#FF9900;\"></span></strong></em></u></span>\r\n</div>', `url`='uploads/1422588502.jpg', `times`=1422588502, `cat_id`=5, `goods_id`=9 WHERE `goods_id`='9'' in E:\duotai\advanced\vendor\yiisoft\yii2\db\Schema.php:532
+Stack trace:
+#0 E:\duotai\advanced\vendor\yiisoft\yii2\db\Command.php(776): yii\db\Schema->convertException(Object(PDOException), 'UPDATE `goods` ...')
+#1 E:\duotai\advanced\vendor\yiisoft\yii2\db\ActiveRecord.php(202): yii\db\Command->execute()
+#2 E:\duotai\advanced\backend\controllers\GoodsController.php(73): yii\db\ActiveRecord::updateAll(Array, Array)
+#3 [internal function]: backend\controllers\GoodsController->actionEditpro()
+#4 E:\duotai\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 E:\duotai\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#6 E:\duotai\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('editpro', Array)
+#7 E:\duotai\advanced\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('goods/editpro', Array)
+#8 E:\duotai\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 E:\duotai\advanced\backend\web\index.php(20): yii\base\Application->run()
+#10 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'h_id' in 'field list'
+)
+
+2015-01-30 04:28:22 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'goods/editpro'
+]
+
+$_POST = [
+    'goods_name' => ' 商品名称'
+    'h_id' => '9'
+    'category' => '5'
+    'goods_number' => '12'
+    'goods_price' => '213'
+    'goods_status' => '1'
+    'content1' => '<div style=\"text-align:center;\">
+	<span style=\"line-height:1.5;\"><u><em><strong><span style=\"font-size:18px;background-color:#FF9900;\">哥哥啊78978698789</span></strong></em></u><u><em><strong><span style=\"font-size:18px;background-color:#FF9900;\"></span></strong></em></u></span>
+</div>'
+    'url' => 'uploads/1422588502.jpg'
+    'times' => 1422588502
+    'cat_id' => '5'
+    'goods_id' => '9'
+]
+
+$_FILES = [
+    'goods_img' => [
+        'name' => '6.jpg'
+        'type' => 'image/jpeg'
+        'tmp_name' => 'E:\\xampp\\tmp\\php640A.tmp'
+        'error' => 0
+        'size' => 26277
+    ]
+]
+
+$_COOKIE = [
+    'name' => 'yl'
+    'PHPSESSID' => '7cennjquqvqbonp7atqa8lmd51'
+    '_csrf' => '267615cd8e90ad77c00fb65717cec2eb847a569ef310005bee79dc598a76df52s:32:\"PI7VGvevTEvF3q2REJM37T09pE1VaM7b\";'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'E:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'E:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'www.duotai.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '27447'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://www.duotai.com'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2236.0 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryZWQwMewEob0MjYLV'
+    'HTTP_REFERER' => 'http://www.duotai.com/backend/web/index.php?r=goods/edit&id=9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'name=yl; PHPSESSID=7cennjquqvqbonp7atqa8lmd51; _csrf=267615cd8e90ad77c00fb65717cec2eb847a569ef310005bee79dc598a76df52s%3A32%3A%22PI7VGvevTEvF3q2REJM37T09pE1VaM7b%22%3B'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\AMD APP\\bin\\x86;C:\\Program Files\\Common Files\\NetSarang;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\ATI Technologies\\ATI.ACE\\Core-Static;E:\\web\\TortoiseSVN\\bin;E:\\web\\TortoiseGit\\bin;E:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;E:\\web\\JDK\\bin;E:\\web\\NodeJs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at www.duotai.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'www.duotai.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/duotai/advanced'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/duotai/advanced'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'E:/duotai/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '59457'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=goods/editpro'
+    'REQUEST_URI' => '/backend/web/index.php?r=goods/editpro'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422588502.835
+    'REQUEST_TIME' => 1422588502
+]
+2015-01-30 04:28:24 [127.0.0.1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'h_id' in 'field list'' in E:\duotai\advanced\vendor\yiisoft\yii2\db\Command.php:768
+Stack trace:
+#0 E:\duotai\advanced\vendor\yiisoft\yii2\db\Command.php(768): PDOStatement->execute()
+#1 E:\duotai\advanced\vendor\yiisoft\yii2\db\ActiveRecord.php(202): yii\db\Command->execute()
+#2 E:\duotai\advanced\backend\controllers\GoodsController.php(73): yii\db\ActiveRecord::updateAll(Array, Array)
+#3 [internal function]: backend\controllers\GoodsController->actionEditpro()
+#4 E:\duotai\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 E:\duotai\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#6 E:\duotai\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('editpro', Array)
+#7 E:\duotai\advanced\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('goods/editpro', Array)
+#8 E:\duotai\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 E:\duotai\advanced\backend\web\index.php(20): yii\base\Application->run()
+#10 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'h_id' in 'field list'
+The SQL being executed was: UPDATE `goods` SET `goods_name`=' 商品名称', `h_id`='9', `category`='5', `goods_number`=12, `goods_price`=213, `goods_status`=1, `content1`='<div style=\"text-align:center;\">\r\n	<span style=\"line-height:1.5;\"><u><em><strong><span style=\"font-size:18px;background-color:#FF9900;\">哥哥啊78978698789</span></strong></em></u><u><em><strong><span style=\"font-size:18px;background-color:#FF9900;\"></span></strong></em></u></span>\r\n</div>', `url`='uploads/1422588504.jpg', `times`=1422588504, `cat_id`=5, `goods_id`=9 WHERE `goods_id`='9'' in E:\duotai\advanced\vendor\yiisoft\yii2\db\Schema.php:532
+Stack trace:
+#0 E:\duotai\advanced\vendor\yiisoft\yii2\db\Command.php(776): yii\db\Schema->convertException(Object(PDOException), 'UPDATE `goods` ...')
+#1 E:\duotai\advanced\vendor\yiisoft\yii2\db\ActiveRecord.php(202): yii\db\Command->execute()
+#2 E:\duotai\advanced\backend\controllers\GoodsController.php(73): yii\db\ActiveRecord::updateAll(Array, Array)
+#3 [internal function]: backend\controllers\GoodsController->actionEditpro()
+#4 E:\duotai\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 E:\duotai\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#6 E:\duotai\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('editpro', Array)
+#7 E:\duotai\advanced\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('goods/editpro', Array)
+#8 E:\duotai\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 E:\duotai\advanced\backend\web\index.php(20): yii\base\Application->run()
+#10 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'h_id' in 'field list'
+)
+
+2015-01-30 04:28:24 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'goods/editpro'
+]
+
+$_POST = [
+    'goods_name' => ' 商品名称'
+    'h_id' => '9'
+    'category' => '5'
+    'goods_number' => '12'
+    'goods_price' => '213'
+    'goods_status' => '1'
+    'content1' => '<div style=\"text-align:center;\">
+	<span style=\"line-height:1.5;\"><u><em><strong><span style=\"font-size:18px;background-color:#FF9900;\">哥哥啊78978698789</span></strong></em></u><u><em><strong><span style=\"font-size:18px;background-color:#FF9900;\"></span></strong></em></u></span>
+</div>'
+    'url' => 'uploads/1422588504.jpg'
+    'times' => 1422588504
+    'cat_id' => '5'
+    'goods_id' => '9'
+]
+
+$_FILES = [
+    'goods_img' => [
+        'name' => '6.jpg'
+        'type' => 'image/jpeg'
+        'tmp_name' => 'E:\\xampp\\tmp\\php6B7A.tmp'
+        'error' => 0
+        'size' => 26277
+    ]
+]
+
+$_COOKIE = [
+    'name' => 'yl'
+    'PHPSESSID' => '7cennjquqvqbonp7atqa8lmd51'
+    '_csrf' => '267615cd8e90ad77c00fb65717cec2eb847a569ef310005bee79dc598a76df52s:32:\"PI7VGvevTEvF3q2REJM37T09pE1VaM7b\";'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'E:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'E:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'www.duotai.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '27447'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://www.duotai.com'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2236.0 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryZWQwMewEob0MjYLV'
+    'HTTP_REFERER' => 'http://www.duotai.com/backend/web/index.php?r=goods/edit&id=9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'name=yl; PHPSESSID=7cennjquqvqbonp7atqa8lmd51; _csrf=267615cd8e90ad77c00fb65717cec2eb847a569ef310005bee79dc598a76df52s%3A32%3A%22PI7VGvevTEvF3q2REJM37T09pE1VaM7b%22%3B'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\AMD APP\\bin\\x86;C:\\Program Files\\Common Files\\NetSarang;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\ATI Technologies\\ATI.ACE\\Core-Static;E:\\web\\TortoiseSVN\\bin;E:\\web\\TortoiseGit\\bin;E:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;E:\\web\\JDK\\bin;E:\\web\\NodeJs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at www.duotai.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'www.duotai.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/duotai/advanced'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/duotai/advanced'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'E:/duotai/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '59459'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=goods/editpro'
+    'REQUEST_URI' => '/backend/web/index.php?r=goods/editpro'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422588504.739
+    'REQUEST_TIME' => 1422588504
+]
+2015-01-30 04:35:28 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: goods_desc' in E:\duotai\advanced\backend\controllers\GoodsController.php:69
+Stack trace:
+#0 E:\duotai\advanced\backend\controllers\GoodsController.php(69): yii\base\ErrorHandler->handleError(8, 'Undefined index...', 'E:\duotai\advan...', 69, Array)
+#1 [internal function]: backend\controllers\GoodsController->actionEditpro()
+#2 E:\duotai\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#3 E:\duotai\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#4 E:\duotai\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('editpro', Array)
+#5 E:\duotai\advanced\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('goods/editpro', Array)
+#6 E:\duotai\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 E:\duotai\advanced\backend\web\index.php(20): yii\base\Application->run()
+#8 {main}
+2015-01-30 04:35:28 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'goods/editpro'
+]
+
+$_POST = [
+    'goods_name' => ' 商品名称'
+    'h_id' => '9'
+    'category' => '5'
+    'goods_number' => '12'
+    'goods_price' => '213'
+    'goods_status' => '1'
+    'content1' => '<div style=\"text-align:center;\">
+	<span style=\"line-height:1.5;\"><u><em><strong><span style=\"font-size:18px;background-color:#FF9900;\">哥哥啊78978698789</span></strong></em></u><u><em><strong><span style=\"font-size:18px;background-color:#FF9900;\"></span></strong></em></u></span>
+</div>'
+]
+
+$_FILES = [
+    'goods_img' => [
+        'name' => '6.jpg'
+        'type' => 'image/jpeg'
+        'tmp_name' => 'E:\\xampp\\tmp\\phpE359.tmp'
+        'error' => 0
+        'size' => 26277
+    ]
+]
+
+$_COOKIE = [
+    'name' => 'yl'
+    'PHPSESSID' => '7cennjquqvqbonp7atqa8lmd51'
+    '_csrf' => '267615cd8e90ad77c00fb65717cec2eb847a569ef310005bee79dc598a76df52s:32:\"PI7VGvevTEvF3q2REJM37T09pE1VaM7b\";'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'E:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'E:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'www.duotai.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '27447'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://www.duotai.com'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2236.0 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryZWQwMewEob0MjYLV'
+    'HTTP_REFERER' => 'http://www.duotai.com/backend/web/index.php?r=goods/edit&id=9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'name=yl; PHPSESSID=7cennjquqvqbonp7atqa8lmd51; _csrf=267615cd8e90ad77c00fb65717cec2eb847a569ef310005bee79dc598a76df52s%3A32%3A%22PI7VGvevTEvF3q2REJM37T09pE1VaM7b%22%3B'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\AMD APP\\bin\\x86;C:\\Program Files\\Common Files\\NetSarang;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\ATI Technologies\\ATI.ACE\\Core-Static;E:\\web\\TortoiseSVN\\bin;E:\\web\\TortoiseGit\\bin;E:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;E:\\web\\JDK\\bin;E:\\web\\NodeJs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at www.duotai.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'www.duotai.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/duotai/advanced'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/duotai/advanced'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'E:/duotai/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '59555'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=goods/editpro'
+    'REQUEST_URI' => '/backend/web/index.php?r=goods/editpro'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422588928.64
+    'REQUEST_TIME' => 1422588928
+]

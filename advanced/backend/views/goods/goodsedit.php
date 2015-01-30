@@ -84,6 +84,7 @@ $this->registerJsFile('@web/public/ueditor/lang/zh-cn/zh-cn.js');
     <tr>
         <td width="10%" class="tableleft">商品名称</td>
         <td><input type="text" name="goods_name" value="<?php echo $result['goods_name']?>"/></td>
+        <input type="hidden" name="h_id" value="<?php echo $result['goods_id']?>"/>
     </tr>
     <tr>
         <td class="tableleft">商品分类</td>
