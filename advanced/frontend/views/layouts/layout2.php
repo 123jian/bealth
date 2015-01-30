@@ -49,19 +49,19 @@
             	<div class="menu_wrap clearfix">
                 	<div class="addShopping clearfix">
                     	<span>加入购物车</span>
-                        <a href="javascript:void(0);"><span class="arrowIcon"></span></a>
+                        <a href="index.php?r=index/shoppingcar"><span class="arrowIcon"></span></a>
                     </div>
                 	<div class="allType">
                     	<p>全部分类<span class="arrowIcon"></span></p>
                         <ul class="type_list none">
                         	<li><a href="javascript:void(0);">多肽保健</a></li>
-                            <li><a href="javascript:void(0);">多肽美容</a></li>
+                            <li><a href="index.php?r=category">多肽美容</a></li>
                             <li class="noBorder"><a href="javascript:void(0);">多肽食品</a></li>
                         </ul>
                     </div>
                 	<ul class="menu_list fl clearfix">
                     	<li><a href="javascript:void(0);">多肽保健</a>|</li>
-                        <li><a href="javascript:void(0);">多肽美容</a>|</li>
+                        <li><a href="index.php?r=category">多肽美容</a>|</li>
                         <li><a href="javascript:void(0);">多肽食品</a>|</li>
                     </ul>
                 </div>
