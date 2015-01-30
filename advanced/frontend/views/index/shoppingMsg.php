@@ -23,15 +23,76 @@
                     </div>
                     <div class="frmItem">
                     	<label class="lbl"><span class="redSpan2">*</span>所在地区：</label>
-                        <select>
-                        	<option>请选择</option>
-                        </select>
-                        <select>
-                        	<option>请选择</option>
-                        </select>
-                        <select>
-                        	<option>请选择</option>
-                        </select>
+
+
+                        <select name="country" onchange="getregion(this)" id="country">
+							<option>选择国家</option>
+							<?php
+								foreach($data as $v){
+							?>
+							<option value="<?php echo $v["region_id"]?>"><?php echo $v["region_name"]?></option>
+
+							<?php
+								}
+							?>
+						</select>
+
+						<select name="province" onchange="getregion(this)"  id="province">
+							<option>选择省</option>
+						</select>
+
+						<select name="city" onchange="getregion(this)"  id="city">
+							<option>选择市</option>
+						</select>
+
+						<select name="directory" id="desc">
+							<option>选择县/区</option>
+						</select>
+
+
+<script src="./jq.js"></script>
+<script type="text/javascript">
+function getregion(obj){
+
+
+	var parent_id = $(obj).val();
+	//alert(parent_id)
+	$.ajax({
+			url:"index.php?r=index/region&id="+parent_id,
+			type:"get",
+			dataType:"json",
+			success:function(msg){
+				//alert(msg)
+				
+				if(msg[0]["region_type"] == 1){
+
+					var str = "<option>请选择省</option>";
+					var dd = "province";
+				}
+
+				if(msg[0]["region_type"] == 2){
+
+					var str = "<option>请选择市</option>";
+					var dd = "city";
+				}
+
+				if(msg[0]["region_type"] == 3){
+
+					var str = "<option>请选择县</option>";
+					var dd = "desc";
+				}
+				
+				for(a in msg){
+					str += "<option value='"+msg[a]["region_id"]+"'>"+msg[a]['region_name']+"</option>";	
+				}
+				$("#"+dd).html(str);
+				
+			}
+		})
+
+}
+
+</script>
                     </div>
                     <div class="frmItem">
                     	<label class="lbl"><span class="redSpan2">*</span>详细地址：</label>
