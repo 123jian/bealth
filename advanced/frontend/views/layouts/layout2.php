@@ -18,15 +18,18 @@
         	<!--顶部登录信息-->
         	<div class="site_wrap">
             	<div class="site_con">
-                	<span>您好，欢迎<span style="color:#ff0000"><?php 
+                	
+					<?php 
 					use yii\web\Session;
 					$session = new Session;
-					echo $session->get('name');
-					?></span>来到锡盟鑫泰！</span>
-					<?php if(empty($session->get('name'))){?>
+					if(empty($session->get('name'))){?>
 					<a href="index.php?r=login/index">【登录】</a>
                     <a href="index.php?r=register/index">【免费注册】</a>
 					<?php }else{?>
+					<span>您好，欢迎<span style="color:#ff0000"><?php 
+					
+					echo $session->get('name');
+					?></span>来到锡盟鑫泰！</span>
 					<a href="index.php?r=register/loginout">退出</a>
 					<?php }?>
                     

@@ -357,7 +357,7 @@
             <!-- 底部区域 -->
             <div class="footerWrapper">
                 <div class="footer">
-                	<p><a class="returnHome" href="javascript:void(0);">
+                	<p><a class="returnHome" href="./index.php?r=index/index">
                     	<span class="btn_l"></span>
                     	<span class="btn_c">回首页 HOME</span>
                     	<span class="btn_r"></span>
