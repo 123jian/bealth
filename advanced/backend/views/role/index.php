@@ -52,7 +52,8 @@
             <td>管理员</td>
             <td>1</td>
             <td>
-                  <a href="edit.html">编辑</a>
+                  <a href="index.php?r=role/edit">编辑</a>
+				  <a href="index.php?r=role/del&id=''">删除</a>
                   
             </td>
         </tr></table>
@@ -70,21 +71,4 @@
 
     });
 
-	function del(id)
-	{
-		
-		
-		if(confirm("确定要删除吗？"))
-		{
-		
-			var url = "index.html";
-			
-			window.location.href=url;		
-		
-		}
-	
-	
-	
-	
-	}
 </script>
