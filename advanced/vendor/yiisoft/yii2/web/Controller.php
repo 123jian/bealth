@@ -11,6 +11,7 @@ use Yii;
 use yii\base\InlineAction;
 use yii\helpers\Url;
 
+
 /**
  * Controller is the base class of web controllers.
  *
@@ -18,9 +19,7 @@ use yii\helpers\Url;
  * @since 2.0
  */
 class Controller extends \yii\base\Controller
-{
-    
-   
+{   
     /**
      * @var boolean whether to enable CSRF validation for the actions in this controller.
      * CSRF validation is enabled only when both this property and [[Request::enableCsrfValidation]] are true.

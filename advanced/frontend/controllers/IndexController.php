@@ -33,7 +33,7 @@ class IndexController extends \yii\web\Controller
     //支付页面
     public function actionPayment()
     {
-		$this->layout='@app/views/layouts/layout.php';
+    $this->layout='@app/views/layouts/layout.php';
     return $this->render('payment');
     }
     //支付完成
@@ -44,23 +44,27 @@ class IndexController extends \yii\web\Controller
     //商品列表
     public function actionProtype()
     {
-		$this->layout='@app/views/layouts/layout.php';
-    return $this->render('protype');
+	$this->layout='@app/views/layouts/layout.php';
+        return $this->render('protype');
     }
-    
+   
     
     
     //订单地址
     public function actionShoppingmsg()
     {
-		$this->layout='@app/views/layouts/layout.php';
-    return $this->render('shoppingmsg');
+	$this->layout='@app/views/layouts/layout.php';
+        return $this->render('shoppingmsg');
     }
     //购物车
     public function actionShoppingcar()
     {
-		$this->layout='@app/views/layouts/layout.php';
-    return $this->render('shoppingcar');
+        //echo 123;die;
+        $this->layout='@app/views/layouts/layout.php';
+        $category=new Category();//导航栏
+        $view = Yii::$app->view;
+        $view->params['layoutData']=$category->find()->where(['cat_status'=>1])->all();
+        return $this->render('shoppingcar');
     }
 
 }
