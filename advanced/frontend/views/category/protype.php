@@ -44,15 +44,15 @@ use yii\widgets\LinkPager;
                 	<div class="allType">
                     	<p>全部分类<span class="arrowIcon"></span></p>
                         <ul class="type_list none">
-                        	<li><a href="javascript:void(0);">多肽保健</a></li>
-                            <li><a href="javascript:void(0);">多肽美容</a></li>
-                            <li class="noBorder"><a href="javascript:void(0);">多肽食品</a></li>
+                        	<?php foreach($cate as $ck=>$cv){?>
+                    	<li><a href="./index.php?r=category/index&cid=<?php echo $cv['cat_id']?>"><?php echo $cv['cat_name']?></a></li>
+                       <?php }?>
                         </ul>
                     </div>
                 	<ul class="menu_list fl clearfix">
-                    	<li><a href="javascript:void(0);">多肽保健</a>|</li>
-                        <li><a href="javascript:void(0);">多肽美容</a>|</li>
-                        <li><a href="javascript:void(0);">多肽食品</a>|</li>
+					<?php foreach($cate as $ck=>$cv){?>
+                    	<li><a href="./index.php?r=category/index&cid=<?php echo $cv['cat_id']?>"><?php echo $cv['cat_name']?></a>|</li>
+                       <?php }?>
                     </ul>
                 </div>
             </div>
@@ -141,36 +141,18 @@ use yii\widgets\LinkPager;
                                 </div>
                                 <div class="bd">
                                   <ul class="hotWrap clearfix">
+                                      <?php foreach($datar as $kk=>$vv){?>
                                       <li>
                                           <div class="clearfix">
-                                              <div class="imgWrap"></div>
+                                              <div class="imgWrap"><img src="<?php echo 'http://'.$_SERVER['HTTP_HOST'].'/backend/web/'.$vv['goods_img'];?>" width="145" height="145"></div>
                                               <div class="pro">
-                                                  <p class="proName">多肽每日保湿霜</p>
-                                                  <p class="price">特价：<span class="redSpan">￥199.00</span></p>
+                                                  <p class="proName"><?php echo $vv['goods_name']?></p>
+                                                  <p class="price">特价：<span class="redSpan">￥<?php echo $vv['goods_price']?></span></p>
                                                   <a class="btn" href="javascript:void(0);">立即抢购</a>
                                               </div>
                                           </div>
                                       </li>
-                                      <li>
-                                          <div class="clearfix">
-                                              <div class="imgWrap"></div>
-                                              <div class="pro">
-                                                  <p class="proName">多肽每日保湿霜</p>
-                                                  <p class="price">特价：<span class="redSpan">￥199.00</span></p>
-                                                  <a class="btn" href="javascript:void(0);">立即抢购</a>
-                                              </div>
-                                          </div>
-                                      </li>
-                                      <li>
-                                          <div class="clearfix">
-                                              <div class="imgWrap"></div>
-                                              <div class="pro">
-                                                  <p class="proName">多肽每日保湿霜</p>
-                                                  <p class="price">特价：<span class="redSpan">￥199.00</span></p>
-                                                  <a class="btn" href="javascript:void(0);">立即抢购</a>
-                                              </div>
-                                          </div>
-                                      </li>
+									  <?php }?>
                                   </ul>
                                 </div> 
                                 <a href="javascript:void(0);" class="prev" id="idPre"></a>
@@ -229,7 +211,7 @@ use yii\widgets\LinkPager;
    <!-- 底部区域 -->
             <div class="footerWrapper">
                 <div class="footer">
-                	<p><a class="returnHome" href="javascript:void(0);">
+                	<p><a class="returnHome" href="./index.php?r=index">
                     	<span class="btn_l"></span>
                     	<span class="btn_c">回首页 HOME</span>
                     	<span class="btn_r"></span>
