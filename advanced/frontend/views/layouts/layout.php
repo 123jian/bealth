@@ -36,7 +36,7 @@ AreaDecorator::begin(['viewFile'=>'@app/views/layouts/layout2.php'])?>
   <?php Block::begin(['id' =>'right']);?>
             <!--跟随窗口浮动区域-->
             <div class="fixedWrap" id="fixedWrap">
-                <a href="#" onclick="history.go(0);">
+                <a href="javascript:scrollTo(0,0);">
                 	<div class="imgWrap">
                     	<img src="images/fix_icon_1.png" width="21" height="27" />
                     </div>
