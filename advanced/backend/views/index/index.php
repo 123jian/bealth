@@ -17,10 +17,12 @@
       </div>
 
     <div class="dl-log">欢迎您，<span class="dl-log-user"><?php
-	use yii\web\Session;
+	
+	/*use yii\web\Session;
 	$session = new Session;
 	echo $session->get('name');
-	
+	*/
+	echo $_COOKIE['name'];
 	?></span><a href="index.php?r=index/logout" title="退出系统" class="dl-log-quit">[退出]</a>
     </div>
   </div>
