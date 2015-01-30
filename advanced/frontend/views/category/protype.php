@@ -2,6 +2,9 @@
 use yii\widgets\LinkPager;
 ?>
     <!-- 内容区域 -->
+	<style type="text/css">
+	
+    </style>
     <div class="containerWrapper">
     	<div class="container">
         	<!--内容区域-->
@@ -38,12 +41,12 @@ use yii\widgets\LinkPager;
                         <div class="sl_con mt10">
                         	<p class="title">热卖产品</p>
                         	<ul class="sl_list">
-                            	<?php foreach($data as $k=>$v){?>
+                            	<?php foreach($datar as $k=>$vr){?>
                                 <li>
                                 	<a href="javascript:void(0);">
-                                		<div class="imgWrap"><img src="<?php echo 'http://'.$_SERVER['HTTP_HOST'].'/backend/web/'.$v['goods_img'];?>" width="150" height="150"></div>
-                                        <p class="price"><?php echo $v['goods_name']?></p>
-                                        <p class="price"><span>￥<?php echo $v['goods_price']?></span></p>
+                                		<div class="imgWrap"><img src="<?php echo 'http://'.$_SERVER['HTTP_HOST'].'/backend/web/'.$vr['goods_img'];?>" width="130" height="130"></div>
+                                        <p class="price"><?php echo $vr['goods_name']?></p>
+                                        <p class="price"><span>￥<?php echo $vr['goods_price']?></span></p>
                                     </a>
                                 </li>
 								<?php }?>
@@ -54,20 +57,15 @@ use yii\widgets\LinkPager;
                         <div class="sl_con mt10">
                         	<p class="title">浏览记录</p>
                         	<ul class="sl_list">
+								<?php foreach($data1 as $k1=>$v1){?>
                             	<li>
                                 	<a href="javascript:void(0);">
-                                		<div class="imgWrap"></div>
-                                        <p>鑫泰亿联鑫泰亿联鑫泰亿联鑫泰亿联鑫泰亿联鑫泰亿联</p>
-                                        <p class="price"><span>￥2555.00</span></p>
+                                		<div class="imgWrap"><img src="<?php echo 'http://'.$_SERVER['HTTP_HOST'].'/backend/web/'.$v1['goods_img'];?>" width="130" height="130"></div>
+                                        <p class="price"><?php echo $v1['goods_name']?></p>
+                                        <p class="price"><span>￥<?php echo $v1['goods_price']?></span></p>
                                     </a>
                                 </li>
-                                <li>
-                                	<a href="javascript:void(0);">
-                                		<div class="imgWrap"></div>
-                                        <p>鑫泰亿联鑫泰亿联鑫泰亿联鑫泰亿联鑫泰亿联鑫泰亿联</p>
-                                        <p class="price"><span>￥2555.00</span></p>
-                                    </a>
-                                </li>
+                                <?php }?>
                             </ul>
                         </div>
                         <!--END-->
@@ -120,32 +118,10 @@ use yii\widgets\LinkPager;
                                 <a href="javascript:void(0);" class="next" id="idNext"></a>                           
                               </div>
                             </div>
-                            <!--<div class="scroll_wrap">
-                            	<ul class="hotWrap clearfix">
-                                	<li>
-                                    	<div class="clearfix">
-                                        	<div class="imgWrap"></div>
-                                            <div class="pro">
-                                            	<p class="proName">多肽每日保湿霜</p>
-                                                <p class="price">特价：<span class="redSpan">￥199.00</span></p>
-                                                <a class="btn" href="javascript:void(0);">立即抢购</a>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                    	<div class="clearfix">
-                                        	<div class="imgWrap"></div>
-                                            <div class="pro">
-                                            	<p class="proName">多肽每日保湿霜</p>
-                                                <p class="price">特价：<span class="redSpan">￥199.00</span></p>
-                                                <a class="btn" href="javascript:void(0);">立即抢购</a>
-                                            </div>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
+                            
                             <!--轮播效果END-->
                             <p class="title">补水霜>商品筛选</p>
+
                             <!---->
                             <div class="search_wrap">
                               <div class="searchMsg clearfix">
@@ -164,113 +140,25 @@ use yii\widgets\LinkPager;
                               </div>
                               <div class="result_wrap">
                               	<ul class="clearfix">
+								<?php foreach($data as $k=>$v){?>
                                 	<li>
-                                    	<div class="imgWrap"></div>
-                                        <p class="proName"><a href="javascript:void(0);">鑫泰亿联鑫泰亿联鑫泰亿联鑫泰亿联鑫泰亿联鑫泰亿联鑫泰亿联鑫泰亿联</a></p>
+                                    	<div class="imgWrap"><img src="<?php echo 'http://'.$_SERVER['HTTP_HOST'].'/backend/web/'.$v['goods_img'];?>" width="232" height="232"></div>
+                                        <p class="proName"><a href="javascript:void(0);"><?php echo $v['goods_name']?></a></p>
                                         <p><span class="appraise">已有120人评价</span>
-                                        	<span class="price">￥2555.00</span>
+                                        	<span class="price">￥<?php echo $v['goods_price']?></span>
                                         </p>
                                         <p class="clearfix">
                                         	<a class="btn fr" href="javascript:void(0);">收藏</a>
                                             <a class="btn fl" href="javascript:void(0);">加入购物车</a>
                                         </p>
                                     </li>
-                                    <li>
-                                    	<div class="imgWrap"></div>
-                                        <p class="proName"><a href="javascript:void(0);">鑫泰亿联鑫泰亿联鑫泰亿联鑫泰亿联鑫泰亿联鑫泰亿联鑫泰亿联鑫泰亿联</a></p>
-                                        <p><span class="appraise">已有120人评价</span>
-                                        	<span class="price">￥2555.00</span>
-                                        </p>
-                                        <p class="clearfix">
-                                        	<a class="btn fr" href="javascript:void(0);">收藏</a>
-                                            <a class="btn fl" href="javascript:void(0);">加入购物车</a>
-                                        </p>
-                                    </li>
-                                    <li>
-                                    	<div class="imgWrap"></div>
-                                        <p class="proName"><a href="javascript:void(0);">鑫泰亿联鑫泰亿联鑫泰亿联鑫泰亿联鑫泰亿联鑫泰亿联鑫泰亿联鑫泰亿联</a></p>
-                                        <p><span class="appraise">已有120人评价</span>
-                                        	<span class="price">￥2555.00</span>
-                                        </p>
-                                        <p class="clearfix">
-                                        	<a class="btn fr" href="javascript:void(0);">收藏</a>
-                                            <a class="btn fl" href="javascript:void(0);">加入购物车</a>
-                                        </p>
-                                    </li>
-                                    <li>
-                                    	<div class="imgWrap"></div>
-                                        <p class="proName"><a href="javascript:void(0);">鑫泰亿联鑫泰亿联鑫泰亿联鑫泰亿联鑫泰亿联鑫泰亿联鑫泰亿联鑫泰亿联</a></p>
-                                        <p><span class="appraise">已有120人评价</span>
-                                        	<span class="price">￥2555.00</span>
-                                        </p>
-                                        <p class="clearfix">
-                                        	<a class="btn fr" href="javascript:void(0);">收藏</a>
-                                            <a class="btn fl" href="javascript:void(0);">加入购物车</a>
-                                        </p>
-                                    </li>
-                                    <li>
-                                    	<div class="imgWrap"></div>
-                                        <p class="proName"><a href="javascript:void(0);">鑫泰亿联鑫泰亿联鑫泰亿联鑫泰亿联鑫泰亿联鑫泰亿联鑫泰亿联鑫泰亿联</a></p>
-                                        <p><span class="appraise">已有120人评价</span>
-                                        	<span class="price">￥2555.00</span>
-                                        </p>
-                                        <p class="clearfix">
-                                        	<a class="btn fr" href="javascript:void(0);">收藏</a>
-                                            <a class="btn fl" href="javascript:void(0);">加入购物车</a>
-                                        </p>
-                                    </li>
-                                    <li>
-                                    	<div class="imgWrap"></div>
-                                        <p class="proName"><a href="javascript:void(0);">鑫泰亿联鑫泰亿联鑫泰亿联鑫泰亿联鑫泰亿联鑫泰亿联鑫泰亿联鑫泰亿联</a></p>
-                                        <p><span class="appraise">已有120人评价</span>
-                                        	<span class="price">￥2555.00</span>
-                                        </p>
-                                        <p class="clearfix">
-                                        	<a class="btn fr" href="javascript:void(0);">收藏</a>
-                                            <a class="btn fl" href="javascript:void(0);">加入购物车</a>
-                                        </p>
-                                    </li>
-                                    <li>
-                                    	<div class="imgWrap"></div>
-                                        <p class="proName"><a href="javascript:void(0);">鑫泰亿联鑫泰亿联鑫泰亿联鑫泰亿联鑫泰亿联鑫泰亿联鑫泰亿联鑫泰亿联</a></p>
-                                        <p><span class="appraise">已有120人评价</span>
-                                        	<span class="price">￥2555.00</span>
-                                        </p>
-                                        <p class="clearfix">
-                                        	<a class="btn fr" href="javascript:void(0);">收藏</a>
-                                            <a class="btn fl" href="javascript:void(0);">加入购物车</a>
-                                        </p>
-                                    </li>
-                                    <li>
-                                    	<div class="imgWrap"></div>
-                                        <p class="proName"><a href="javascript:void(0);">鑫泰亿联鑫泰亿联鑫泰亿联鑫泰亿联鑫泰亿联鑫泰亿联鑫泰亿联鑫泰亿联</a></p>
-                                        <p><span class="appraise">已有120人评价</span>
-                                        	<span class="price">￥2555.00</span>
-                                        </p>
-                                        <p class="clearfix">
-                                        	<a class="btn fr" href="javascript:void(0);">收藏</a>
-                                            <a class="btn fl" href="javascript:void(0);">加入购物车</a>
-                                        </p>
-                                    </li>
-                                    <li>
-                                    	<div class="imgWrap"></div>
-                                        <p class="proName"><a href="javascript:void(0);">鑫泰亿联鑫泰亿联鑫泰亿联鑫泰亿联鑫泰亿联鑫泰亿联鑫泰亿联鑫泰亿联</a></p>
-                                        <p><span class="appraise">已有120人评价</span>
-                                        	<span class="price">￥2555.00</span>
-                                        </p>
-                                        <p class="clearfix">
-                                        	<a class="btn fr" href="javascript:void(0);">收藏</a>
-                                            <a class="btn fl" href="javascript:void(0);">加入购物车</a>
-                                        </p>
-                                    </li>
+                                <?php }?>
+                                    
                                 </ul>
-                                <div class="pageWrap">
-                                  共<span class="redSpan">1000</span>个产品<span class="d4ColorTxt"> | </span>
-                                  <span class="redSpan">1</span>/5页
-                                  <a href="javascript:void(0);">上一页</a>
-                                  <a href="javascript:void(0);">下一页</a>
-                                </div>
+                                
                               </div>
+							  <div class="fuck"><?= LinkPager::widget(['pagination' => $pages]); ?>
+                                </div>
                             </div>
                             <!--END-->
                         </div>

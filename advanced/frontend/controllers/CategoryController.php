@@ -30,7 +30,10 @@ class CategoryController extends \yii\web\Controller
 		$pages = new Pagination(['totalCount' =>$data->count(), 'pageSize' => '6']);
 		$model = $data->offset($pages->offset)->limit($pages->limit)->orderBy('goods_id desc')->all();//'order by fina_id desc'
 		//print_r($model);die;
-		return $this->render('protype',['data'=>$model,'pages' => $pages]);
+		$data1=$goo->find()->limit(2)->all();
+		//print_R($data1);die;
+		$datar=$goo->find()->limit(4)->all();
+		return $this->render('protype',['data'=>$model,'data1'=>$data1,'datar'=>$datar,'pages' => $pages]);
         //return $this->render('protype');
     }
 	
