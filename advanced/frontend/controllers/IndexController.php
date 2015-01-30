@@ -1,12 +1,18 @@
 <?php
 namespace frontend\controllers;
+use app\models\Goods;
+use app\models\Category;
+
 class IndexController extends \yii\web\Controller
 {
     //首页
     public function actionIndex()
     {
         $this->layout='@app/views/layouts/layout.php';
-        return $this->render('index');
+        $model=new Goods();
+        $result=$model->find()->where(['goods_status'=>'1','cat_id'=>'8','order by'=>desc,'limit'=>3])->all();//返回所有数据
+        var_dump($result);
+        return $this->render('index',['result'=>$result]);
     }
     //商品详情
     public function actionMall()

@@ -39,10 +39,10 @@ use yii\widgets\LinkPager;
     </style>
 </head>
 <body>
-<form class="form-inline definewidth m20" action="index.html" method="get">  
+<form class="form-inline definewidth m20" action="index.php?r=goods/search" method="get">  
     机构名称：
-    <input type="text" name="rolename" id="rolename"class="abc input-default" placeholder="" value="">&nbsp;&nbsp;  
-    <button type="submit" class="btn btn-primary">查询</button>&nbsp;&nbsp; <button type="button" class="btn btn-success" id="addnew">新增机构</button>
+    <input type="text" name="rolename" id="rolename" class="abc input-default" placeholder="" value="">&nbsp;&nbsp;  
+    <button type="submit" class="btn btn-primary">查询</button>&nbsp;&nbsp; <a href="index.php?r=goods/addgoods" type="button" class="btn btn-success" id="addnew">添加商品</a>
 </form>
 <table class="table table-bordered table-hover definewidth m10" >
     <thead>
