@@ -11,11 +11,13 @@ class IndexController extends \yii\web\Controller
         $this->layout='@app/views/layouts/layout.php';
         $model=new Goods();
         //$result=$model->find()->where(['goods_status'=>'1','cat_id'=>'8','order by'=>'goods_id','limit'=>3]);//返回所有数据
-        $result=$model->find()->where(['goods_status'=>'1','cat_id'=>'8'])->all();
-        $result2=$model->find()->where(['goods_status'=>'1','cat_id'=>'9'])->all();
+        $result=$model->find()->where(['goods_status'=>'1','cat_id'=>'8'])->orderBy('goods_addtime')->limit(2)->all();
+        $result2=$model->find()->where(['goods_status'=>'1','cat_id'=>'9'])->orderBy('goods_addtime')->limit(2)->all();
+        $result3=$model->find()->where(['goods_status'=>'1'])->orderBy('goods_addtime','desc')->limit(3)->all();
+        $result4=$model->find()->where(['goods_status'=>'0'])->orderBy('goods_addtime','desc')->limit(1)->all();
         //echo '<pre>';
         //var_dump($result);
-        return $this->render('index',['result'=>$result,'result2'=>$result2]);
+        return $this->render('index',['result'=>$result,'result2'=>$result2,'result3'=>$result3,'result4'=>$result4]);
     }
     //商品详情
     public function actionMall()
