@@ -22,8 +22,7 @@ class IndexController extends \yii\web\Controller
         $result3=$model->find()->where(['goods_status'=>'1','cat_id'=>'10'])->orderBy('goods_addtime','desc')->limit(3)->all();
         $result4=$model->find()->where(['goods_status'=>'0','cat_id'=>'5'])->orderBy('goods_addtime','desc')->limit(1)->all();
         //echo '<pre>';
-<<<<<<< HEAD
-        //var_dump($result);
+
 		
 		$time=date("Y-m-d",time());
 		$connection = \Yii::$app->db;
@@ -43,9 +42,7 @@ class IndexController extends \yii\web\Controller
 		
 
 
-=======
-        //var_dump($nav); die;      
->>>>>>> d31782ee1186c8ebeeddecd14c2c26df6f33dc63
+
         return $this->render('index',['result'=>$result,'result2'=>$result2,'result3'=>$result3,'result4'=>$result4]);
     }
     //商品详情
@@ -77,7 +74,7 @@ class IndexController extends \yii\web\Controller
     //订单地址
     public function actionShoppingmsg()
     {
-<<<<<<< HEAD
+
 		$this->layout='@app/views/layouts/layout.php';
 
 		$connection = \Yii::$app->db;
@@ -93,10 +90,10 @@ class IndexController extends \yii\web\Controller
 		$command = $connection->createCommand("select * from region where parent_id=".$_GET['id']);
 		$posts = $command->queryAll();
 		echo json_encode($posts);
-=======
+
 	$this->layout='@app/views/layouts/layout.php';
         return $this->render('shoppingmsg');
->>>>>>> d31782ee1186c8ebeeddecd14c2c26df6f33dc63
+
     }
     //购物车
     public function actionShoppingcar()
