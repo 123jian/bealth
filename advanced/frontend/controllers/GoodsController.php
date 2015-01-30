@@ -14,6 +14,7 @@ use app\models\Classs;
 use common\models\LoginForm;
 use yii\data\Pagination;
 use app\models\Category;
+use app\models\Comment;
 use yii\db\Query;
 
 class GoodsController extends \yii\web\Controller
@@ -35,4 +36,27 @@ class GoodsController extends \yii\web\Controller
 		$datar=$goo->find()->limit(4)->all();
 		return $this->renderPartial('mall',['cate'=>$c,'data1'=>$data1,'datar'=>$datar,'data'=>$data,]);
     }
+	//评论
+	public function actionPinglun()
+	{
+		//print_r($_GET);die;
+		$uname=@$_GET['uname'];
+		$goods_id=@$_GET['goods_id'];
+		$content=@$_GET['content'];
+	
+		$model=new Comment();
+
+		$model->content="$content";
+    	$model->uname="$uname";
+    	$model->goods_id="$goods_id";
+		$model->com_time=time();
+    	$row=$model->save();
+    	if($row)
+    	{
+    		exit(json_encode(1));
+    	}else
+    	{
+    		exit(json_encode(0));
+    	}/**/
+	}
 }

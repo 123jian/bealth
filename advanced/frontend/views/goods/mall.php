@@ -16,9 +16,21 @@
         	<!--顶部登录信息-->
         	<div class="site_wrap">
             	<div class="site_con">
-                	<span>您好，欢迎来到锡盟鑫泰！</span>
-                    <a href="javascript:void(0);">【登录】</a>
-                    <a href="javascript:void(0);">【免费注册】</a>
+                	
+					<?php 
+					use yii\web\Session;
+					$session = new Session;
+					if(empty($session->get('name'))){?>
+					<a href="index.php?r=login/index">【登录】</a>
+                    <a href="index.php?r=register/index">【免费注册】</a>
+					<?php }else{?>
+					<span>您好，欢迎<span style="color:#ff0000"><?php 
+					
+					echo $session->get('name');
+					?></span>来到锡盟鑫泰！</span>
+					<a href="index.php?r=register/loginout">退出</a>
+					<?php }?>
+                    
                 </div>
             </div>
             <!--顶部登录信息END-->
@@ -331,7 +343,28 @@
                                                 	<span>2014-05-28</span>
                                                 </p>
                                             </div>
+											
                                         </div>
+										<div>
+                                        <input type="button" value="评价" class="carIcon" onclick="pinglun()">
+                                    </div>
+                                   <!--评论框-->
+                                   <div style="display:none" id="pin">
+                                        <span class="reviewTitle">评&nbsp;&nbsp;&nbsp;&nbsp;价：</span>
+                                        <p class="review_msg">
+                                            <input type="hidden" name="uname" id="uid" value="<?php
+											if(!empty(@$session->get('name'))){
+												echo @$session->get('name');
+											}else{
+												echo "游客";
+											}
+											 ?>">
+                                            <input type="hidden" name="gid" id="gid" value="<?php echo @$data['goods_id'];?>">
+                                            <textarea rows="4px" cols="50px" id="lun" name="lun">欢迎您来评论！！</textarea>
+                                            <br><input type="button"  class="carIcon" value="评论" onclick="tijiao()">
+                                        </p>
+                                    </div>
+
                                     </div>
                                 </div>
                             </div>
@@ -372,7 +405,7 @@
             <!-- 底部区域END -->
             <!--跟随窗口浮动区域-->
             <div class="fixedWrap" id="fixedWrap">
-                <a href="javascript:void(0);">
+                <a href="javascript:scrollTo(0,0);">
                 	<div class="imgWrap">
                     	<img src="images/fix_icon_1.png" width="21" height="27" />
                     </div>
@@ -405,6 +438,42 @@
 </div>
 <script type="text/javascript" src="scripts/common.js"></script>
 <script type="text/javascript">
+function pinglun()
+    {
+        //alert($);
+        $("#pin").slideToggle();
+        //$("#pin").show();
+    }
+function tijiao()
+    {
+        con=$("#lun").val();
+        uname=$("#uid").val();
+        gid=$("#gid").val();
+        //alert(con);
+        $.ajax({
+                url:"index.php?r=goods/pinglun",
+                type:"get",
+                dataType:"json",
+                data:{"content":con,"goods_id":gid,"uname":uname},
+                success:function(msg)
+                {
+					//alert(msg)
+                    if(msg==1)
+                    {
+                        alert("评论成功");
+                        //$("#pin").hide();
+                        history.go(0);
+                    }else
+                    {
+                        alert("评论失败");
+                    }/**/
+                },
+                error:function(msg){
+                    alert("no");
+                }
+            });/**/
+    }
+
 	if($(".proImgList li").size()>3){
 		$(".picScroll").slide({mainCell:".bd ul",effect:"leftLoop",vis:3});
 	}
