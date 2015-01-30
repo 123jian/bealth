@@ -16,7 +16,14 @@
        <!--<img src="/chinapost/Public/assets/img/top.png">-->
       </div>
 
-    <div class="dl-log">欢迎您，<span class="dl-log-user">root</span><a href="/chinapost/index.php?m=Public&a=logout" title="退出系统" class="dl-log-quit">[退出]</a>
+    <div class="dl-log">欢迎您，<span class="dl-log-user"><?php
+	
+	/*use yii\web\Session;
+	$session = new Session;
+	echo $session->get('name');
+	*/
+	echo $_COOKIE['name'];
+	?></span><a href="index.php?r=index/logout" title="退出系统" class="dl-log-quit">[退出]</a>
     </div>
   </div>
    <div class="content">
@@ -37,7 +44,7 @@
   <script type="text/javascript" src="assets/js/config-min.js"></script>
   <script>
     BUI.use('common/main',function(){
-      var config = [{id:'1',menu:[{text:'系统管理',items:[{id:'12',text:'机构管理',href:'index.php?r=node/index'},{id:'3',text:'角色管理',href:'index.php?r=role/index'},{id:'4',text:'用户管理',href:'index.php?r=user/index'},{id:'6',text:'菜单管理',href:'index.php?r=menu/index'}]}]},{id:'7',homePage : '9',menu:[{text:'商品管理',items:[{id:'9',text:'商品列表',href:'index.php?r=goods/goodslist'},{id:'12',text:'添加商品',href:'index.php?r=goods/addgoods'}]},{text:'分类管理',items:[{id:'10',text:'分类列表',href:'index.php?r=goods/articlelist'},{id:'13',text:'添加分类',href:'index.php?r=goods/addarticle'}]}]}];
+      var config = [{id:'1',menu:[{text:'系统管理',items:[{id:'12',text:'机构管理',href:'index.php?r=node/index'},{id:'3',text:'角色管理',href:'index.php?r=role/index'},{id:'4',text:'用户管理',href:'index.php?r=user/index'},{id:'6',text:'菜单管理',href:'index.php?r=menu/index'}]}]},{id:'7',homePage : '9',menu:[{text:'商品管理',items:[{id:'9',text:'商品列表',href:'index.php?r=goods/goodslist'},{id:'12',text:'添加商品',href:'index.php?r=goods/addgoods'}]},{text:'分类管理',items:[{id:'10',text:'分类列表',href:'index.php?r=category/articlelist'},{id:'13',text:'添加分类',href:'index.php?r=category/addarticle'}]}]}];
       new PageUtil.MainPage({
         modulesConfig : config
       });

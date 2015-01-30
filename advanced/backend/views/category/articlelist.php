@@ -1,3 +1,6 @@
+<?php
+use yii\widgets\LinkPager;
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -29,35 +32,48 @@
             }
         }
 
-
+		.page{float:right;}
+		.page li{float:left;}
+		li {list-style-type:none;}
     </style>
 </head>
+
 <body>
-<form class="form-inline definewidth m20" action="index.html" method="get">  
-    机构名称：
-    <input type="text" name="rolename" id="rolename"class="abc input-default" placeholder="" value="">&nbsp;&nbsp;  
+<form class="form-inline definewidth m20" action="index.php?r=category/sear" method="post">  
+    分类名称：
+    <input type="text" name="cat_name" id="rolename"class="abc input-default" placeholder="" value="">&nbsp;&nbsp;  
     <button type="submit" class="btn btn-primary">查询</button>&nbsp;&nbsp; <button type="button" class="btn btn-success" id="addnew">新增机构</button>
 </form>
 <table class="table table-bordered table-hover definewidth m10" >
     <thead>
     <tr>
-        <th>机构编号</th>
-        <th>机构名称</th>
+        <th>分类编号</th>
+        <th>分类名称</th>
         <th>状态</th>
         <th>管理操作</th>
     </tr>
     </thead>
+	<?php foreach($data as $k=>$v){?>
 	     <tr>
-            <td>5</td>
-            <td>管理员</td>
-            <td>1</td>
+            <td><?php echo $v['cat_id']?></td>
+            <td><?php echo $v['cat_name']?></td>
+            <td><?php if($v['cat_status']){ echo "已启用";}else{ echo "已关闭";}?></td>
             <td>
-                  <a href="edit.html">编辑</a>
-                  
+                  <?php if($v['cat_status']){ ?>
+					<a href="index.php?r=category/gb&id=<?php echo $v['cat_id']?>">关闭</a>&nbsp;&nbsp;
+				  <?php }else{ ?> 
+					<a href="index.php?r=category/kq&id=<?php echo $v['cat_id']?>">开启</a>&nbsp;&nbsp;
+				  <?php }?>
+                  <a href="index.php?r=category/articleedit&id=<?php echo $v['cat_id']?>">编辑</a>&nbsp;&nbsp;
+				  <button type="button" class="btn btn-success" id="del" onclick="del(<?php echo $v['cat_id']?>)">删除</button>
+				  <a href="index.php?r=category/del&id=<?php echo $v['cat_id']?>"></a>&nbsp;&nbsp;
             </td>
-        </tr></table>
+        </tr>
+	<?php }?>
+	</table>
 <div class="inline pull-right page">
-         10122 条记录 1/507 页  <a href='#'>下一页</a>     <span class='current'>1</span><a href='#'>2</a><a href='/chinapost/index.php?m=Label&a=index&p=3'>3</a><a href='#'>4</a><a href='#'>5</a>  <a href='#' >下5页</a> <a href='#' >最后一页</a>    </div>
+        <?= LinkPager::widget(['pagination' => $pages]); ?></div>
+
 </body>
 </html>
 <script>
@@ -65,7 +81,7 @@
         
 		$('#addnew').click(function(){
 
-				window.location.href="add.html";
+				window.location.href="index.php?r=category/addarticle";
 		 });
 
 
@@ -78,7 +94,7 @@
 		if(confirm("确定要删除吗？"))
 		{
 		
-			var url = "index.html";
+			var url = "index.php?r=category/del&id="+id;
 			
 			window.location.href=url;		
 		

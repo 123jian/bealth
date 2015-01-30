@@ -5,45 +5,45 @@ class IndexController extends \yii\web\Controller
     //首页
     public function actionIndex()
     {
-        $this->layout='@app/views/layouts/header.php';
-        return $this->renderpartial('index');
+        $this->layout='@app/views/layouts/layout.php';
+        return $this->render('index');
     }
     //商品详情
     public function actionMall()
     {
         return $this->renderpartial('mall');
     }
-    
+    //支付页面
     public function actionPayment()
     {
-    return $this->renderpartial('payment');
+		$this->layout='@app/views/layouts/layout.php';
+    return $this->render('payment');
     }
-    
+    //支付完成
     public function actionPaymentok()
     {
     return $this->renderpartial('paymentok');
     }
-    
+    //商品列表
     public function actionProtype()
     {
-    return $this->renderpartial('protype');
+		$this->layout='@app/views/layouts/layout.php';
+    return $this->render('protype');
     }
     
     
     
-    public function actionShopping()
-    {
-    return $this->renderpartial('shopping');
-    }
-    
+    //订单地址
     public function actionShoppingmsg()
     {
-    return $this->renderpartial('shoppingmsg');
+		$this->layout='@app/views/layouts/layout.php';
+    return $this->render('shoppingmsg');
     }
     //购物车
     public function actionShoppingcar()
     {
-    return $this->renderpartial('shoppingcar');
+		$this->layout='@app/views/layouts/layout.php';
+    return $this->render('shoppingcar');
     }
 
 }

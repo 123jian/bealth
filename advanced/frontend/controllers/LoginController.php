@@ -1,44 +1,38 @@
 <?php
-
 namespace frontend\controllers;
+use yii\web\Controller;
+use yii\web\Session;
+use app\models\Users;
 
 class LoginController extends \yii\web\Controller
 {
     public function actionIndex()
     {
         return $this->renderpartial('index');
-    }
+	}
 	public function actionLogin()
     {
-        return $this->renderpartial('login');
-    }
-	public function actionMall()
-    {
-        return $this->renderpartial('mall');
-    }
-	public function actionPayment()
-    {
-        return $this->renderpartial('payment');
-    }
-	public function actionPaymentok()
-    {
-        return $this->renderpartial('paymentok');
-    }
-	public function actionProtype()
-    {
-        return $this->renderpartial('protype');
-    }
-	public function actionRegister()
-    {
-        return $this->renderpartial('register');
-    }
-	public function actionShopping()
-    {
-        return $this->renderpartial('shopping');
-    }
-	public function actionShoppingmsg()
-    {
-        return $this->renderpartial('shoppingmsg');
-    }
+        return $this->renderpartial('index');
+	}
+
+	public $enableCsrfValidation = false;
+	public function actionLogin_pro()
+	{
+		 $name=@$_POST['username'];
+		//var_dump($name);
+         $pwd=@$_POST['password'];
+
+         $a=Users::find()->where(['username' => $name,'password' => $pwd])->one();
+         //print_R($a);die;
+          if($a){
+                   $this->redirect(array('index/index'));
+				   $session = new Session;
+				   
+				   $session->set('name', $_POST['username']);
+				   echo "<script>alert('登陆成功');location.href='./index.php?r=index/index'</script>";
+          }else{
+               echo "<script>alert('登陆失败');location.href='./index.php?r=index/login'</script>";
+          }
+	}
 
 }
