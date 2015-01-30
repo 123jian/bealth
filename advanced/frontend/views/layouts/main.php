@@ -74,3 +74,4 @@ AppAsset::register($this);
 </body>
 </html>
 <?php $this->endPage() ?>
+<?php echo $this->params['layoutData']?>

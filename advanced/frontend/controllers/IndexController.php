@@ -11,13 +11,18 @@ class IndexController extends \yii\web\Controller
     public function actionIndex()
     {
         $this->layout='@app/views/layouts/layout.php';
-        $model=new Goods();    
+        $model=new Goods();
+        $category=new Category();//导航栏
+        $view = Yii::$app->view;
+        $view->params['layoutData']=$category->find()->where(['cat_status'=>1])->all();
+  
+        
         $result=$model->find()->where(['goods_status'=>'1','cat_id'=>'8'])->orderBy('goods_addtime','desc')->limit(2)->all();
         $result2=$model->find()->where(['goods_status'=>'1','cat_id'=>'9'])->orderBy('goods_addtime','desc')->limit(2)->all();
         $result3=$model->find()->where(['goods_status'=>'1','cat_id'=>'10'])->orderBy('goods_addtime','desc')->limit(3)->all();
         $result4=$model->find()->where(['goods_status'=>'0','cat_id'=>'5'])->orderBy('goods_addtime','desc')->limit(1)->all();
         //echo '<pre>';
-        //var_dump($result);       
+        //var_dump($nav); die;      
         return $this->render('index',['result'=>$result,'result2'=>$result2,'result3'=>$result3,'result4'=>$result4]);
     }
     //商品详情
