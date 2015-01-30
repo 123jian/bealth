@@ -41,21 +41,31 @@
 <table class="table table-bordered table-hover definewidth m10" >
     <thead>
     <tr>
-        <th>机构编号</th>
-        <th>机构名称</th>
+        <th>商品编号</th>
+        <th>商品名称</th>
+        <th>商品分类</th>
+        <th>商品数量</th>
+        <th>商品价格</th>
+        <th>商品图片</th>
         <th>状态</th>
+        <th>商品描述</th>        
         <th>管理操作</th>
     </tr>
     </thead>
-	     <tr>
-            <td>5</td>
-            <td>管理员</td>
-            <td>1</td>
-            <td>
-                  <a href="edit.html">编辑</a>
-                  
-            </td>
-        </tr></table>
+<?php foreach($result as $val){?>    
+    <tr>
+        <td><?php echo $val['goods_id'];?></td>
+        <td><?php echo $val['goods_name'];?></td>
+        <td><?php echo $val['cat_id'];?></td>
+        <td><?php echo $val['goods_number'];?></td>
+        <td><?php echo $val['goods_price'];?></td>
+        <td><img src="<?php echo 'http://'.$_SERVER['HTTP_HOST'].'/backend/web/'.$val['goods_img'];?>" width="100" height="100"></td>
+        <td><?php echo $val['goods_status'];?></td>
+        <td><?php echo $val['goods_desc'];?></td>
+        <td><a href="index.php?r=goods/edit&id=<?php echo $val['goods_id'];?>">编辑</a>||<a href="index.php?r=goods/del&id=<?php echo $val['goods_id'];?>">删除</a></td>
+    </tr>
+<?php }?>    
+</table>
 <div class="inline pull-right page">
          10122 条记录 1/507 页  <a href='#'>下一页</a>     <span class='current'>1</span><a href='#'>2</a><a href='/chinapost/index.php?m=Label&a=index&p=3'>3</a><a href='#'>4</a><a href='#'>5</a>  <a href='#' >下5页</a> <a href='#' >最后一页</a>    </div>
 </body>
