@@ -15,7 +15,7 @@ class GoodsController extends \yii\web\Controller
         $model=new Goods();
         $result=$model->find();    //返回所有数据
         $pages = new Pagination(['totalCount' =>$result->count(), 'pageSize' => '3']);
-	$arr = $result->offset($pages->offset)->limit($pages->limit)->orderBy('goods_id asc')->all();//'order by fina_id desc'
+	$arr = $result->offset($pages->offset)->limit($pages->limit)->orderBy('goods_id desc')->all();//'order by fina_id desc'
 	//print_r($model);die;
 		
         return $this->renderpartial('goodslist',['result'=>$arr,'pages' => $pages]);
