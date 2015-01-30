@@ -89,9 +89,10 @@ $this->registerJsFile('@web/public/ueditor/lang/zh-cn/zh-cn.js');
         <td class="tableleft">商品分类</td>
         <td>
             <select name="category">
-                <option value="1" selected>多肽保健</option>
-                <option value="2">多肽美容</option>
-                <option value="3">多肽食品</option>
+                <option value="1" selected>--请选择--</option>
+<?php foreach($result as $val){?>                 
+                <option value="<?php echo $val['cat_id']?>"><?php echo $val['cat_name']?></option>
+<?php }?> 
             </select>
         </td>
     </tr>

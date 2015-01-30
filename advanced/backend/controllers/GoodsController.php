@@ -1,6 +1,7 @@
 <?php
 namespace backend\controllers;
 use app\models\Goods;
+use app\models\Category;
 
 class GoodsController extends \yii\web\Controller
 {
@@ -37,8 +38,10 @@ class GoodsController extends \yii\web\Controller
     //添加商品页面
     public function actionAddgoods()
     {	
-        //echo $_SERVER['HTTP_HOST'];      
-        return $this->renderpartial('addgoods');
+        //echo $_SERVER['HTTP_HOST'];
+        $model=new Category();
+        $result=$model->find()->all();    //返回所有数据
+        return $this->renderpartial('addgoods',['result'=>$result]);
     }
     //处理--添加商品
     public function actionAdds()
