@@ -43,7 +43,7 @@ class GoodsController extends \yii\web\Controller
 		//print_r($pin);die;
 		return $this->renderPartial('mall',['cate'=>$c,'pin'=>$pin,'data1'=>$data1,'datar'=>$datar,'data'=>$data,]);
     }
-<<<<<<< HEAD
+
     //购物车
     public function actionShopcar()
     {
@@ -93,10 +93,7 @@ class GoodsController extends \yii\web\Controller
         return $this->render('shopcarlist',['result'=>$result]);
     }
     
-    
-    
-    
-=======
+
 	//评论
 	public function actionPinglun()
 	{
@@ -120,5 +117,5 @@ class GoodsController extends \yii\web\Controller
     		exit(json_encode(0));
     	}/**/
 	}
->>>>>>> c9c4b36c3c650abcdbcc3358156b98a0214bfd5b
+
 }
