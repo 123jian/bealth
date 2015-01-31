@@ -128,8 +128,8 @@
 								<img src="<?php echo 'http://'.$_SERVER['HTTP_HOST'].'/backend/web/'.$data['goods_img'];?>" width="325" height="325">
 								
 								
-								</div>
-<input type='hidden' id='img' value='<?php echo $data['goods_img']?>'>                                
+								</div>                                
+
                                 <div class="imgList">
                                   <!-- 图片轮播效果 -->
                                   <div class="picScroll">
@@ -163,6 +163,7 @@
                                 <div class="price_wrap clearfix">
                                 	<span class="price">￥<?php echo $data['goods_price']?></span>
  <input type='hidden' id='price' value='<?php echo $data['goods_price']?>'>
+ 
 
                                     <!--<div class="price_msg">
                                     	<p><span class="discount">4.1折</span>为您节省￥410.00</p>
@@ -181,7 +182,11 @@
                                 <div class="num_wrap clearfix">
                                 	<label class="fl">选数量：</label>
                                     <a href="javascript:void(0);" onclick="jian()">-</a>
+<<<<<<< HEAD
                                     <input class="txt" type="text" value="1" id='number' onblur="bl()"/>
+=======
+                                <input class="txt" type="text" value="1" id='number'/>
+>>>>>>> 6204b9c80c8c1853b62a08bf4701c02377b5030b
                                     <a href="javascript:void(0);"  onclick="add()">+</a>
                                 </div>
                                 <div>
@@ -191,6 +196,7 @@
                             </div>
                         </div>
                         <!--END-->
+<<<<<<< HEAD
 						<script type="text/javascript">
 						<!--
 							function add(){
@@ -219,10 +225,35 @@
 										alert("库存不足")
 								}
 							}
+=======
+<script type="text/javascript" src="./jq.js"></script>
+<script type="text/javascript">
+<!--
+function add(){
+var m=$("#number").val();
+
+var num= ++m;
+if(num<= <?php echo $data['goods_number']?> ){
+                $("#number").val(num);
+}else{
+        alert("库存不足")
+}
+}
+function jian(){
+var m=$("#number").val();
+if(m>1){
+        var num= --m;
+
+        $("#number").val(num);
+}else{
+        alert("数量不得小于1")
+}
+}
+>>>>>>> 6204b9c80c8c1853b62a08bf4701c02377b5030b
 
 
-						//-->
-						</script>
+//-->
+</script>
 						
 
 
@@ -396,13 +427,14 @@
                                    <div style="display:none" id="pin">
                                         <span class="reviewTitle">发表评论：</span>
                                         <p class="review_msg">
-                                            <input type="hidden" name="uname" id="uid" value="<?php
-											if(!empty(@$session->get('name'))){
-												echo @$session->get('name');
-											}else{
-												echo "游客";
-											}
-											 ?>">
+                                            
+<input type="hidden" name="uname" id="uid" value="
+<?php if(!empty(@$session->get('name'))){
+    echo @$session->get('name');
+}else{
+    echo "游客";
+}?>"/>
+
                                             <input type="hidden" name="gid" id="gid" value="<?php echo @$data['goods_id'];?>">
                                             <textarea rows="4px" cols="50px" id="lun" name="lun">欢迎您来评论！</textarea>
                                             <br><input type="button"  class="carIcon" value="评论" onclick="tijiao()">
@@ -533,17 +565,14 @@ function shopcar(gid){
     var number=$('#number').val();
     var gname=$('#gname').val();
     var price=$('#price').val();
-    var img=$('#img').val();
-    //alert(gname);
-    //alert(price);
-    if(number==''){
+    if(number<1){
         alert('请输入购买数量');
         return false;
     }
     $.ajax({
         type:"get",
         url:"index.php?r=goods/shopcar",
-        data:{'gid':gid,'number':number,'gname':gname,'price':price,'img':img},
+        data:{'gid':gid,'number':number,'gname':gname,'price':price},
         cache:false,
         dataType:"json",
         success: function(msg){

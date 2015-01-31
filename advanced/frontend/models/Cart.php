@@ -12,7 +12,7 @@ use Yii;
  * @property integer $goods_id
  * @property string $goods_name
  * @property integer $goods_price
- * @property integer $goods_number
+ * @property integer $cart_number
  * @property integer $status
  * @property integer $addtime
  */
@@ -32,8 +32,8 @@ class Cart extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['uid', 'goods_id', 'goods_name', 'goods_price', 'goods_number', 'status', 'addtime'], 'required'],
-            [['uid', 'goods_id', 'goods_price', 'goods_number', 'status', 'addtime'], 'integer'],
+            [['uid', 'goods_id', 'goods_name', 'goods_price', 'cart_number', 'status', 'addtime'], 'required'],
+            [['uid', 'goods_id', 'goods_price', 'cart_number', 'status', 'addtime'], 'integer'],
             [['goods_name'], 'string', 'max' => 255]
         ];
     }
@@ -49,7 +49,7 @@ class Cart extends \yii\db\ActiveRecord
             'goods_id' => 'Goods ID',
             'goods_name' => 'Goods Name',
             'goods_price' => 'Goods Price',
-            'goods_number' => 'Goods Number',
+            'cart_number' => 'Cart Number',
             'status' => 'Status',
             'addtime' => 'Addtime',
         ];

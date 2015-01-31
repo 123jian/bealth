@@ -60,7 +60,7 @@ document.write('<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" cod
                         <div class="price">
                         	<a class="btn" href="./index.php?r=goods/index&gid=<?php echo $val4['goods_id']?>">去看看</a>
                         	<span class="nowPrice">￥<?php echo $val4['goods_price'];?></span>
-                            <span class="oldPrice">￥340</span>
+                            <span class="oldPrice">￥<?php echo $val4['goods_price']+100;?></span>
                         </div>
                         <div class="appraise_wrap clearfix">
                         	<span class="fr"><span class="num">1276</span>人已经购买</span>
@@ -128,7 +128,7 @@ document.write('<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" cod
                                         <div class="price">
                                             <a class="btn" href="./index.php?r=goods/index&gid=<?php echo $val3['goods_id']?>">去看看</a>
                                             <span class="nowPrice">￥<?php echo $val3['goods_price'];?></span>
-                                            <span class="oldPrice">￥340</span>
+                                            <span class="oldPrice">￥<?php echo $val3['goods_price']+100;?></span>
                                         </div>
                                         <div class="appraise_wrap clearfix">
                                             <span class="fr"><span class="num">1276</span>人已经购买</span>
@@ -238,7 +238,7 @@ document.write('<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" cod
                             <div class="pro_introduce clearfix">
                                 <div class="price fr">
                                     ￥<span class="newPrice"><?php echo $val['goods_price'];?></span>
-                                    <span class="oldPrice">￥300</span>
+                                    <span class="oldPrice">￥<?php echo $val['goods_price']+100;?></span>
                                 </div>
                                 <div class="pro_con fl">
                                     <a href="./index.php?r=goods/index&gid=<?php echo $val['goods_id']?>" class="proName"><?php echo $val['goods_name'];?></a>
@@ -272,7 +272,7 @@ document.write('<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" cod
                             <div class="pro_introduce clearfix">
                                 <div class="price fr">
                                     ￥<span class="newPrice"><?php echo $val2['goods_price'];?></span>
-                                    <span class="oldPrice">￥300</span>
+                                    <span class="oldPrice">￥<?php echo $val2['goods_price']+100;?></span>
                                 </div>
                                 <div class="pro_con fl">
                                     <a href="./index.php?r=goods/index&gid=<?php echo $val2['goods_id']?>" class="proName"><?php echo $val2['goods_name'];?></a>
