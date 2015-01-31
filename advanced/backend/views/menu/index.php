@@ -1,132 +1,68 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title></title>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="./css/bootstrap.css" />
-    <link rel="stylesheet" type="text/css" href="./css/bootstrap-responsive.css" />
-    <link rel="stylesheet" type="text/css" href="./css/style.css" />
-    <script type="text/javascript" src="./Js/jquery.js"></script>
-    <script type="text/javascript" src="./Js/jquery.sorted.js"></script>
-    <script type="text/javascript" src="./Js/bootstrap.js"></script>
-    <script type="text/javascript" src="./Js/ckform.js"></script>
-    <script type="text/javascript" src="./Js/common.js"></script>
+<canvas id="myChart" width="800" height="300"></canvas>
+<div id="container" style="min-width:800px;height:400px"></div>
 
-    <style type="text/css">
-        body {
-            padding-bottom: 40px;
-        }
-        .sidebar-nav {
-            padding: 9px 0;
-        }
-
-        @media (max-width: 980px) {
-            /* Enable use of floated navbar text */
-            .navbar-text.pull-right {
-                float: none;
-                padding-left: 5px;
-                padding-right: 5px;
-            }
-        }
-
-
-    </style>
-</head>
-<body>
-<form class="form-inline definewidth m20" action="index.html" method="get">
-    菜单名称：
-    <input type="text" name="menuname" id="menuname"class="abc input-default" placeholder="" value="">&nbsp;&nbsp; 
-    <button type="submit" class="btn btn-primary">查询</button>&nbsp;&nbsp; <button type="button" class="btn btn-success" id="addnew">新增菜单</button>
-</form>
-<table class="table table-bordered table-hover definewidth m10">
-    <thead>
-    <tr>
-        <th>菜单标题</th>
-        <th>GROUP</th>
-        <th>MODEL</th>
-        <th>ACTION</th>
-        <th>状态</th>
-        <th>管理操作</th>
-    </tr>
-    </thead>
-	     <tr>
-            <td colspan="5">系统管理</td>
-            <td><a href="edit.html">编辑</a></td>
-        </tr>
-        <tr>
-                <td>机构管理</td>
-                <td>Admin</td>
-                <td>Merchant</td>
-                <td>index</td>
-                <td>0</td>
-                <td><a href="edit.html">编辑</a></td>
-            </tr><tr>
-                <td>权限管理</td>
-                <td>Admin</td>
-                <td>Node</td>
-                <td>index</td>
-                <td>0</td>
-                <td><a href="edit.html">编辑</a></td>
-            </tr><tr>
-                <td>角色管理</td>
-                <td>Admin</td>
-                <td>Role</td>
-                <td>index</td>
-                <td>0</td>
-                <td><a href="edit.html">编辑</a></td>
-            </tr><tr>
-                <td>用户管理</td>
-                <td>Admin</td>
-                <td>User</td>
-                <td>index</td>
-                <td>0</td>
-                <td><a href="edit.html">编辑</a></td>
-            </tr><tr>
-                <td>菜单管理</td>
-                <td>Admin</td>
-                <td>Menu</td>
-                <td>index</td>
-                <td>0</td>
-                <td><a href="edit.html">编辑</a></td>
-            </tr><tr>
-            <td colspan="5">明信片管理</td>
-            <td><a href="edit.html">编辑</a></td>
-        </tr>
-        <tr>
-                <td>批次管理</td>
-                <td>Admin</td>
-                <td>LabelSet</td>
-                <td>index</td>
-                <td>0</td>
-                <td><a href="edit.html">编辑</a></td>
-            </tr><tr>
-                <td>明信片查询</td>
-                <td>Admin</td>
-                <td>Label</td>
-                <td>index</td>
-                <td>0</td>
-                <td><a href="edit.html">编辑</a></td>
-            </tr><tr>
-                <td>明信片生成</td>
-                <td>Admin</td>
-                <td>Label</td>
-                <td>apply</td>
-                <td>1</td>
-                <td><a href="edit.html">编辑</a></td>
-            </tr></table>
-
-</body>
-</html>
+<script src="./Chart.js-master/Chart.js"></script>
+<script type="text/javascript" src="./Js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="./Js/highcharts.js"></script>
+<script type="text/javascript" src="./Js/exporting.js"></script>
 <script>
-    $(function () {
-        
+var data = {
 
-		$('#addnew').click(function(){
+             labels : [<?php echo $x?>],
+             datasets : [
+                     {
+                             fillColor : "rgba(220,20,220,0.5)",
+                             strokeColor : "rgba(220,20,220,1)",
+                             data : [<?php echo $y?>]
+                     }
+             ]
+     }
+var ctx = document.getElementById("myChart").getContext("2d"); 
+var myNewChart = new Chart(ctx).Bar(data);//new Chart(ctx).PolarArea(data);
+//曲线
+$(function () {
+	    $('#container').highcharts({
+	        title: {
+	            text: '曲线图',
+	            x: -20 //center
+	        },
+	        exporting :{
+	        	url:'export/index.php',
+	        	width:800
+	        },
+	        subtitle: {
+	            text: 'Source: WorldClimate.com',
+	            x: -20
+	        },
+	        xAxis: {
+	            categories: [<?php echo $x?>]
+	        },
+	        yAxis: {
+	            title: {
+	                text: '最近几天 (次)'
+	            },
+	            plotLines: [{
+	                value: 0,
+	                width: 1,
+	                color: '#808080'
+	            }]
+	        },
+	        tooltip: {
+	            valueSuffix: '次'
+	        },
+	        legend: {
+	            layout: 'vertical',
+	            align: 'right',
+	            verticalAlign: 'middle',
+	            borderWidth: 0
+	        },
+	        series: [{
+	            name: 'BBS四大天王',
+	            data: [<?php echo $y?>]
+	        },]
+	    });
+            
+});
+//饼图
 
-				window.location.href="add.html";
-		 });
-
-
-    });
-	
 </script>

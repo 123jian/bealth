@@ -19,9 +19,21 @@ use yii\widgets\LinkPager;
         	<!--顶部登录信息-->
         	<div class="site_wrap">
             	<div class="site_con">
-                	<span>您好，欢迎来到锡盟鑫泰！</span>
-                    <a href="javascript:void(0);">【登录】</a>
-                    <a href="javascript:void(0);">【免费注册】</a>
+                	
+					<?php 
+					use yii\web\Session;
+					$session = new Session;
+					if(empty($session->get('name'))){?>
+					<a href="index.php?r=login/index">【登录】</a>
+                    <a href="index.php?r=register/index">【免费注册】</a>
+					<?php }else{?>
+					<span>您好，欢迎<span style="color:#ff0000"><?php 
+					
+					echo $session->get('name');
+					?></span>来到锡盟鑫泰！</span>
+					<a href="index.php?r=register/loginout">退出</a>
+					<?php }?>
+                    
                 </div>
             </div>
             <!--顶部登录信息END-->
@@ -39,7 +51,7 @@ use yii\widgets\LinkPager;
             	<div class="menu_wrap clearfix">
                 	<div class="addShopping clearfix">
                     	<span>加入购物车</span>
-                        <a href="javascript:void(0);"><span class="arrowIcon"></span></a>
+                        <a href="index.php?r=index/shoppingcar"><span class="arrowIcon"></span></a>
                     </div>
                 	<div class="allType">
                     	<p>全部分类<span class="arrowIcon"></span></p>
@@ -232,7 +244,7 @@ use yii\widgets\LinkPager;
                     </div>
                 	<p>返回顶部</p>
                 </a>
-                <a href="javascript:void(0);">
+                <a href="index.php?r=index/shoppingcar">
                 	<div class="imgWrap">
 
                     	<img class="mt5" src="images/fix_icon_2.png" width="27" height="22" />
