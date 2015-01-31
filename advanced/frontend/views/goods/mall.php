@@ -84,25 +84,7 @@
                 </div>
                 <div class="clearfix">
                 	<div class="sub_left">
-                    	<!--<div class="sl_con">
-                        	<ul class="firstList">
-                            	<li class="current"><a href="javascript:void(0);"><span class="arrowIcon"></span>类型</a>
-                                	<ul class="secList">
-                                    	<li class="current"><a href="javascript:void(0);">补水霜</a></li>
-                                        <li><a href="javascript:void(0);">洁面乳</a></li>
-                                        <li><a href="javascript:void(0);">洁面乳</a></li>
-                                        <li><a href="javascript:void(0);">洁面乳</a></li>
-                                        <li><a href="javascript:void(0);">洁面乳</a></li>
-                                        <li><a href="javascript:void(0);">洁面乳</a></li>
-                                        <li><a href="javascript:void(0);">洁面乳</a></li>
-                                        <li><a href="javascript:void(0);">洁面乳</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="javascript:void(0);"><span class="arrowIcon"></span>功效</a></li>
-                                <li><a href="javascript:void(0);"><span class="arrowIcon"></span>适用人</a></li>
-                            </ul>
-                        </div>
-                        -->
+                    	
                         <div class="sl_con mt10">
                         	<p class="title">热卖产品</p>
                         	<ul class="sl_list">
@@ -192,9 +174,9 @@
                                 </div>
                                 <div class="num_wrap clearfix">
                                 	<label class="fl">选数量：</label>
-                                    <a href="javascript:void(0);">-</a>
+                                    <a href="javascript:void(0);" onclick="jian()">-</a>
                                     <input class="txt" type="text" value="1" id='number'/>
-                                    <a href="javascript:void(0);">+</a>
+                                    <a href="javascript:void(0);"  onclick="add()">+</a>
                                 </div>
                                 <div>
                                 	<a class="buyBtn" onclick="shopcar(<?php echo $data['goods_id'];?>)" href='#'><span class="carIcon"></span>立即抢购</a>
@@ -203,6 +185,38 @@
                             </div>
                         </div>
                         <!--END-->
+						<script type="text/javascript" src="./jq.js"></script>
+						<script type="text/javascript">
+						<!--
+							function add(){
+								var m=$("#number").val();
+
+								var num= ++m;
+								if(num<= <?php echo $data['goods_number']?> ){
+										$("#number").val(num);
+								}else{
+									alert("库存不足")
+								}
+							}
+							function jian(){
+								var m=$("#number").val();
+								if(m>1){
+									var num= --m;
+									
+									$("#number").val(num);
+								}else{
+									alert("数量不得小于1")
+								}
+							}
+
+
+						//-->
+						</script>
+						
+
+
+
+
                         <!---->
                         <div class="safe_wrap clearfix">
                         	<div class="span_wrap">
