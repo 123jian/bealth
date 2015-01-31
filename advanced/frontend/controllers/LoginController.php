@@ -26,10 +26,10 @@ class LoginController extends \yii\web\Controller
          //print_R($a);die;
           if($a){
                    $this->redirect(array('index/index'));
-				   $session = new Session;
-				   
-				   $session->set('name', $_POST['username']);
-				   echo "<script>alert('登陆成功');location.href='./index.php?r=index/index'</script>";
+                        $session = new Session;
+                        $session->set('name', $_POST['username']);
+                        $session->set('uid', $a['uid']);
+			echo "<script>alert('登陆成功');location.href='./index.php?r=index/index'</script>";
           }else{
                echo "<script>alert('登陆失败');location.href='./index.php?r=index/login'</script>";
           }

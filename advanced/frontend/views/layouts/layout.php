@@ -42,13 +42,13 @@ AreaDecorator::begin(['viewFile'=>'@app/views/layouts/layout2.php'])?>
                     </div>
                 	<p>返回顶部</p>
                 </a>
-                <a href="index.php?r=index/shoppingcar">
+                <a href="index.php?r=goods/shopcar">
                 	<div class="imgWrap">
                     	<img class="mt5" src="images/fix_icon_2.png" width="27" height="22" />
                     </div>
                 	<p>购物车</p>
                 </a>
-                <a href="index.php?r=index/shoppingcar">
+                <a href="index.php?r=goods/shopcar">
                 	<div class="imgWrap">
                     	<img class="mt5" src="images/fix_icon_3.png" width="24" height="19" />
                     </div>

@@ -42,6 +42,7 @@ class RegisterController extends \yii\web\Controller
     {
 		$session = new Session;
         $session->remove('name');
+        $session->remove('uid');
 		echo "<script>alert('退出成功');location.href='./index.php?r=index/index'</script>";
     }
 

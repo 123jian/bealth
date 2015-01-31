@@ -129,6 +129,7 @@
                         <div class="detail_wrap clearfix">
                         	<div class="proImg">
                             	<div class="imgWrap"><img src="<?php echo 'http://'.$_SERVER['HTTP_HOST'].'/backend/web/'.$data['goods_img'];?>" width="325" height="325"></div>
+<input type='hidden' id='img' value='<?php echo $data['goods_img']?>'>                                
                                 <div class="imgList">
                                   <!-- 图片轮播效果 -->
                                   <div class="picScroll">
@@ -158,8 +159,11 @@
                             <div class="proIntroduce">
                             	<form>
                             	<p class="proName"><?php echo $data['goods_name']?></p>
+ <input type='hidden' id='gname' value='<?php echo $data['goods_name']?>'>                               
                                 <div class="price_wrap clearfix">
                                 	<span class="price">￥<?php echo $data['goods_price']?></span>
+ <input type='hidden' id='price' value='<?php echo $data['goods_price']?>'>
+
                                     <!--<div class="price_msg">
                                     	<p><span class="discount">4.1折</span>为您节省￥410.00</p>
                                         <p>(市场价：￥698.00)</p>
@@ -177,11 +181,11 @@
                                 <div class="num_wrap clearfix">
                                 	<label class="fl">选数量：</label>
                                     <a href="javascript:void(0);">-</a>
-                                    <input class="txt" type="text" value="1" />
+                                    <input class="txt" type="text" value="1" id='number'/>
                                     <a href="javascript:void(0);">+</a>
                                 </div>
                                 <div>
-                                	<a class="buyBtn" href="#" onclick='shopcar()'><span class="carIcon"></span>立即抢购</a>
+                                	<a class="buyBtn" onclick="shopcar(<?php echo $data['goods_id'];?>)" href='#'><span class="carIcon"></span>立即抢购</a>
                                 </div>
                                 </form>
                             </div>
@@ -409,5 +413,46 @@
 		$(".picScroll").slide({mainCell:".bd ul",effect:"leftLoop",vis:3});
 	}
 </script>
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript">
+//购物车
+function shopcar(gid){
+    //alert($);
+    var number=$('#number').val();
+    var gname=$('#gname').val();
+    var price=$('#price').val();
+    var img=$('#img').val();
+    //alert(gname);
+    //alert(price);
+    if(number==''){
+        alert('请输入购买数量');
+        return false;
+    }
+    $.ajax({
+        type:"get",
+        url:"index.php?r=goods/shopcar",
+        data:{'gid':gid,'number':number,'gname':gname,'price':price,'img':img},
+        cache:false,
+        dataType:"json",
+        success: function(msg){
+                    //alert(msg);
+                    if(msg==0){
+                        alert('请登录');
+                        return false;
+                    }
+                    if(msg==1){
+                        location.href='index.php?r=goods/shopcarlist';
+                    }
+                    if(msg==2){
+                        alert('添加购物车失败');
+                        return false;
+                    }
+                 }
+        
+    });
+}
+</script>
+
 </body>
 </html>
