@@ -140,8 +140,7 @@
                     	<!---->
                         <div class="detail_wrap clearfix">
                         	<div class="proImg">
-                            	<div class="imgWrap"><img src="<?php echo 'http://'.$_SERVER['HTTP_HOST'].'/backend/web/'.$data['goods_img'];?>" width="325" height="325"></div>
-<input type='hidden' id='img' value='<?php echo $data['goods_img']?>'>                                
+                            	<div class="imgWrap"><img src="<?php echo 'http://'.$_SERVER['HTTP_HOST'].'/backend/web/'.$data['goods_img'];?>" width="325" height="325"></div>                                
                                 <div class="imgList">
                                   <!-- 图片轮播效果 -->
                                   <div class="picScroll">
@@ -371,11 +370,11 @@
                                    <div style="display:none" id="pin">
                                         <span class="reviewTitle">发表评论：</span>
                                         <p class="review_msg">
-                                            <input type="hidden" name="uname" id="uid" value="<?php
-											if(!empty(@$session->get('name'))){
-												echo @$session->get('name');
+<input type="hidden" name="uname" id="uid" value="
+    <?php
+    if(!empty(@$session->get('name'))){												echo @$session->get('name');
 											}else{
-												echo "游客";
+                                                                           echo "游客";
 											}
 											 ?>">
                                             <input type="hidden" name="gid" id="gid" value="<?php echo @$data['goods_id'];?>">
@@ -504,17 +503,16 @@ function shopcar(gid){
     var number=$('#number').val();
     var gname=$('#gname').val();
     var price=$('#price').val();
-    var img=$('#img').val();
     //alert(gname);
     //alert(price);
-    if(number==''){
+    if(number<0){
         alert('请输入购买数量');
         return false;
     }
     $.ajax({
         type:"get",
         url:"index.php?r=goods/shopcar",
-        data:{'gid':gid,'number':number,'gname':gname,'price':price,'img':img},
+        data:{'gid':gid,'number':number,'gname':gname,'price':price},
         cache:false,
         dataType:"json",
         success: function(msg){

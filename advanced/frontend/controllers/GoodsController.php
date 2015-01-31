@@ -43,10 +43,11 @@ class GoodsController extends \yii\web\Controller
 		//print_r($pin);die;
 		return $this->renderPartial('mall',['cate'=>$c,'pin'=>$pin,'data1'=>$data1,'datar'=>$datar,'data'=>$data,]);
     }
-<<<<<<< HEAD
+
     //购物车
     public function actionShopcar()
     {
+        //echo 1;die;
         $this->layout='@app/views/layouts/layout.php';
         $category=new Category();//导航栏
         $view = Yii::$app->view;
@@ -61,10 +62,9 @@ class GoodsController extends \yii\web\Controller
         $model=new Cart();      
 	$model->uid = $uid;
         $model->goods_id = $_GET['gid'];
-        $model->goods_number = $_GET['number'];
+        $model->cart_number = $_GET['number'];
         $model->goods_price = $_GET['price'];
         $model->goods_name = $_GET['gname'];
-        $model->goods_img = $_GET['img'];
         $model->status = 0;
         $model->addtime = time();
         $result=$model->insert();
@@ -77,26 +77,55 @@ class GoodsController extends \yii\web\Controller
     //购物车列表
     public function actionShopcarlist()
     {
+        
+        $session = new Session;
+        $uid=$session->get('uid');
+        //echo $uid;die;
+        if(empty($uid)){
+            echo "<script>location.href='index.php?r=login';</script>";die;
+        }
         $this->layout='@app/views/layouts/layout.php';
         $category=new Category();//导航栏
         $view = Yii::$app->view;
         $view->params['layoutData']=$category->find()->where(['cat_status'=>1])->all();
+        //两表联查购物车
+        $Query=new Query();
+        $result=$Query->from(['goods','cart'])->where("goods.goods_id=cart.goods_id and cart.uid='$uid'")->all();
+        $sum=0;
+        foreach($result as $val){
+            $sum+=$val['goods_price'];
+        }
+        $arr['count']=count($result);
+        $arr['sum']=$sum;
+        //两表联查其他用户购买的商品
+        $data=$Query->from(['goods','cart'])->where(!['cart.uid'=>$uid])->orderBy('cart.addtime','desc')->limit(2)->all();
+        // var_dump($data);die;
+        //查询商品表最新商品
+        $Goods=new Goods();
+        $array=$Goods->find()->orderBy('goods_addtime','desc')->limit(5)->all();
+        //var_dump($array);die;       
         
+       return $this->render('shopcarlist',['result'=>$result,'arr'=>$arr,'data'=>$data,'array'=>$array]);
+    }
+    //删除购物车
+    public function actionDelcar()
+    {
+        $gid=$_GET['gid'];
         $model=new Cart();
         $session = new Session;
         $uid=$session->get('uid');
-        if(!$uid){
-            ECHO "<SCRIPT>alert(请登录);</SCRIPT>";
-            return false;
+        $result=$model->deleteAll(['goods_id'=>$gid,'uid'=>$uid]);
+        if($result){
+            echo 1;//删除成功
+        }else{
+            echo 0;//删除失败
         }
-        $result=$model->find()->where(['uid'=>$uid])->all();
-        return $this->render('shopcarlist',['result'=>$result]);
     }
     
     
     
     
-=======
+
 	//评论
 	public function actionPinglun()
 	{
@@ -120,5 +149,5 @@ class GoodsController extends \yii\web\Controller
     		exit(json_encode(0));
     	}/**/
 	}
->>>>>>> c9c4b36c3c650abcdbcc3358156b98a0214bfd5b
+
 }

@@ -52,7 +52,7 @@
             	<div class="menu_wrap clearfix">
                 	<div class="addShopping clearfix">
                     	<span>加入购物车</span>
-                        <a href="index.php?r=goods/shopcar"><span class="arrowIcon"></span></a>
+                        <a href="index.php?r=goods/shopcarlist"><span class="arrowIcon"></span></a>
                     </div>
                 	<div class="allType">
                     	<p>全部分类<span class="arrowIcon"></span></p>
