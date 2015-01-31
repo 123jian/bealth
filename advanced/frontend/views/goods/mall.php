@@ -182,11 +182,7 @@
                                 <div class="num_wrap clearfix">
                                 	<label class="fl">选数量：</label>
                                     <a href="javascript:void(0);" onclick="jian()">-</a>
-<<<<<<< HEAD
                                     <input class="txt" type="text" value="1" id='number' onblur="bl()"/>
-=======
-                                <input class="txt" type="text" value="1" id='number'/>
->>>>>>> 6204b9c80c8c1853b62a08bf4701c02377b5030b
                                     <a href="javascript:void(0);"  onclick="add()">+</a>
                                 </div>
                                 <div>
@@ -196,7 +192,6 @@
                             </div>
                         </div>
                         <!--END-->
-<<<<<<< HEAD
 						<script type="text/javascript">
 						<!--
 							function add(){
@@ -225,35 +220,11 @@
 										alert("库存不足")
 								}
 							}
-=======
-<script type="text/javascript" src="./jq.js"></script>
-<script type="text/javascript">
-<!--
-function add(){
-var m=$("#number").val();
-
-var num= ++m;
-if(num<= <?php echo $data['goods_number']?> ){
-                $("#number").val(num);
-}else{
-        alert("库存不足")
-}
-}
-function jian(){
-var m=$("#number").val();
-if(m>1){
-        var num= --m;
-
-        $("#number").val(num);
-}else{
-        alert("数量不得小于1")
-}
-}
->>>>>>> 6204b9c80c8c1853b62a08bf4701c02377b5030b
 
 
-//-->
-</script>
+
+						//-->
+						</script>
 						
 
 
