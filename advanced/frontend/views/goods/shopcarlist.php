@@ -1,6 +1,4 @@
-<style>
-    tr{vertical-align:middle; text-align:center;}
-</style>
+
     <!-- 内容区域 -->
     <div class="containerWrapper">
     	<div class="container">
@@ -21,6 +19,7 @@
                     	<tr class="title">
                         	<td class="width55"><input class="checkBtn" type="checkbox" />全选</td>
                             <td class="width55">产品</td>
+                            <td class="width55">名称</td>
                             <td class="width55">库存</td>
                             <td class="width55">价格</td>
                             <td class="width55">优惠</td>
@@ -32,8 +31,9 @@
                         	<td><input class="checkBtn" type="checkbox" /></td>
                             <td>
                             	<div class="pro_msg clearfix">
-                                	<div class="imgWrap"><img src="<?php echo 'http://'.$_SERVER['HTTP_HOST'].'/backend/web/'.$val['goods_img'];?>" width='80' height='80'></div>
-                                    <a class="proName" href="javascript:void(0);"><?php echo $val['goods_name'];?></a>
+                                	<div class="imgWrap"><img src="<?php echo 'http://'.$_SERVER['HTTP_HOST'].'/backend/web/'.$val['goods_img'];?>" width='80' height='80'></div></td>
+                                    <td><a class="proName" href="./index.php?r=goods/index&gid=<?php echo $val['goods_id']?>"><?php echo $val['goods_name'];?></a>
+
                                 </div>
                                 <div class="give_wrap">
                                   <p></p>
@@ -52,7 +52,7 @@
                             <td>
                               <div class="num clearfix">
                                 <a href="javascript:void(0);">-</a>
-                                <input type="text" class="txt" value="1" id="number"/>
+                                <input type="text" class="txt" value="<?php echo $val['cart_number'];?>" id="number"/>
                                 <a href="javascript:void(0);">+</a>
                               </div>
                             </td>
@@ -125,7 +125,7 @@
                                 </p>
                                 <p><a class="addCar" onclick="shopcar(<?php echo $v['goods_id'];?>)" href="#">加入购物车</a></p>
                             </li>
- <input type='hidden' id='price' value='<?php echo $v['goods_price'];?>'>
+ <input type='hidden' id='price<?php echo $v['goods_id'];?>' value='<?php echo $v['goods_price'];?>'>
  <input type='hidden' id='gname' value='<?php echo $v['goods_name']?>'>
 <?php }?>                            
 
@@ -181,7 +181,7 @@ function shopcar(gid){
     //alert(gid);
     var number=1;
     var gname=$('#gname').val();
-    var price=$('#price').val();
+    var price=$('#price'+gid).val();
     //alert(gname);
     //alert(price);
     $.ajax({

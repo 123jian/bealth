@@ -31,6 +31,9 @@ use yii\widgets\LinkPager;
                 padding-right: 5px;
             }
         }
+	.page{float:right;}
+	.page li{float:left;}
+	li {list-style-type:none;}
 
     </style>
 </head>

@@ -84,25 +84,7 @@
                 </div>
                 <div class="clearfix">
                 	<div class="sub_left">
-                    	<!--<div class="sl_con">
-                        	<ul class="firstList">
-                            	<li class="current"><a href="javascript:void(0);"><span class="arrowIcon"></span>类型</a>
-                                	<ul class="secList">
-                                    	<li class="current"><a href="javascript:void(0);">补水霜</a></li>
-                                        <li><a href="javascript:void(0);">洁面乳</a></li>
-                                        <li><a href="javascript:void(0);">洁面乳</a></li>
-                                        <li><a href="javascript:void(0);">洁面乳</a></li>
-                                        <li><a href="javascript:void(0);">洁面乳</a></li>
-                                        <li><a href="javascript:void(0);">洁面乳</a></li>
-                                        <li><a href="javascript:void(0);">洁面乳</a></li>
-                                        <li><a href="javascript:void(0);">洁面乳</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="javascript:void(0);"><span class="arrowIcon"></span>功效</a></li>
-                                <li><a href="javascript:void(0);"><span class="arrowIcon"></span>适用人</a></li>
-                            </ul>
-                        </div>
-                        -->
+                    	
                         <div class="sl_con mt10">
                         	<p class="title">热卖产品</p>
                         	<ul class="sl_list">
@@ -135,12 +117,19 @@
                         </div>
                         <!--END-->
                     </div>
+
                     <!-- 右侧 -->
                     <div class="sub_right mb30">
                     	<!---->
                         <div class="detail_wrap clearfix">
                         	<div class="proImg">
-                            	<div class="imgWrap"><img src="<?php echo 'http://'.$_SERVER['HTTP_HOST'].'/backend/web/'.$data['goods_img'];?>" width="325" height="325"></div>                                
+                            	<div class="imgWrap">
+								
+								<img src="<?php echo 'http://'.$_SERVER['HTTP_HOST'].'/backend/web/'.$data['goods_img'];?>" width="325" height="325">
+								
+								
+								</div>                                
+
                                 <div class="imgList">
                                   <!-- 图片轮播效果 -->
                                   <div class="picScroll">
@@ -149,7 +138,7 @@
                                       </div>
                                       <div class="bd">
                                           <ul class="proImgList clearfix">
-										  <?php for($i=0;$i<4;$i++){?>
+										  <?php for($i=0;$i<3;$i++){?>
                                             <li><a href="javascript:void(0);"><img src="<?php echo 'http://'.$_SERVER['HTTP_HOST'].'/backend/web/'.$data['goods_img'];?>" width="87" height="87"></a></li>
                                             <?php }?>
                                           </ul>
@@ -174,6 +163,7 @@
                                 <div class="price_wrap clearfix">
                                 	<span class="price">￥<?php echo $data['goods_price']?></span>
  <input type='hidden' id='price' value='<?php echo $data['goods_price']?>'>
+ 
 
                                     <!--<div class="price_msg">
                                     	<p><span class="discount">4.1折</span>为您节省￥410.00</p>
@@ -191,9 +181,9 @@
                                 </div>
                                 <div class="num_wrap clearfix">
                                 	<label class="fl">选数量：</label>
-                                    <a href="javascript:void(0);">-</a>
-                                    <input class="txt" type="text" value="1" id='number'/>
-                                    <a href="javascript:void(0);">+</a>
+                                    <a href="javascript:void(0);" onclick="jian()">-</a>
+                                <input class="txt" type="text" value="1" id='number'/>
+                                    <a href="javascript:void(0);"  onclick="add()">+</a>
                                 </div>
                                 <div>
                                 	<a class="buyBtn" onclick="shopcar(<?php echo $data['goods_id'];?>)" href='#'><span class="carIcon"></span>立即抢购</a>
@@ -202,6 +192,38 @@
                             </div>
                         </div>
                         <!--END-->
+<script type="text/javascript" src="./jq.js"></script>
+<script type="text/javascript">
+<!--
+function add(){
+var m=$("#number").val();
+
+var num= ++m;
+if(num<= <?php echo $data['goods_number']?> ){
+                $("#number").val(num);
+}else{
+        alert("库存不足")
+}
+}
+function jian(){
+var m=$("#number").val();
+if(m>1){
+        var num= --m;
+
+        $("#number").val(num);
+}else{
+        alert("数量不得小于1")
+}
+}
+
+
+//-->
+</script>
+						
+
+
+
+
                         <!---->
                         <div class="safe_wrap clearfix">
                         	<div class="span_wrap">
@@ -370,20 +392,21 @@
                                    <div style="display:none" id="pin">
                                         <span class="reviewTitle">发表评论：</span>
                                         <p class="review_msg">
+                                            
 <input type="hidden" name="uname" id="uid" value="
-    <?php
-    if(!empty(@$session->get('name'))){												echo @$session->get('name');
-											}else{
-                                                                           echo "游客";
-											}
-											 ?>">
+<?php if(!empty(@$session->get('name'))){
+    echo @$session->get('name');
+}else{
+    echo "游客";
+}?>"/>
+
                                             <input type="hidden" name="gid" id="gid" value="<?php echo @$data['goods_id'];?>">
                                             <textarea rows="4px" cols="50px" id="lun" name="lun">欢迎您来评论！</textarea>
                                             <br><input type="button"  class="carIcon" value="评论" onclick="tijiao()">
                                         </p>
                                     </div>
                                 </div>
-                            </div>
+                            
                             <!-- 商品评价END -->
                             <!-- 咨询与回复 -->
                             <div class="reply_wrap">
@@ -427,7 +450,7 @@
                     </div>
                 	<p>返回顶部</p>
                 </a>
-                <a href="javascript:void(0);">
+                <a href="index.php?r=goods/shopcarlist">
                 	<div class="imgWrap">
 
                     	<img class="mt5" src="images/fix_icon_2.png" width="27" height="22" />
@@ -465,6 +488,10 @@ function tijiao()
         con=$("#lun").val();
         uname=$("#uid").val();
         gid=$("#gid").val();
+		if(uname=='游客'){
+			alert("请登录后在评论！");
+			return false;
+		}
         //alert(con);
         $.ajax({
                 url:"index.php?r=goods/pinglun",
@@ -503,9 +530,7 @@ function shopcar(gid){
     var number=$('#number').val();
     var gname=$('#gname').val();
     var price=$('#price').val();
-    //alert(gname);
-    //alert(price);
-    if(number<0){
+    if(number<1){
         alert('请输入购买数量');
         return false;
     }

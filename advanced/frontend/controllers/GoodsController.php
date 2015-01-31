@@ -47,7 +47,6 @@ class GoodsController extends \yii\web\Controller
     //购物车
     public function actionShopcar()
     {
-        //echo 1;die;
         $this->layout='@app/views/layouts/layout.php';
         $category=new Category();//导航栏
         $view = Yii::$app->view;
@@ -67,7 +66,9 @@ class GoodsController extends \yii\web\Controller
         $model->goods_name = $_GET['gname'];
         $model->status = 0;
         $model->addtime = time();
+        
         $result=$model->insert();
+        echo 1;die;
         if($result){
             echo 1;//加入购物车成功
         }else{
@@ -93,7 +94,7 @@ class GoodsController extends \yii\web\Controller
         $result=$Query->from(['goods','cart'])->where("goods.goods_id=cart.goods_id and cart.uid='$uid'")->all();
         $sum=0;
         foreach($result as $val){
-            $sum+=$val['goods_price'];
+            $sum+=$val['goods_price']*$val['cart_number'];
         }
         $arr['count']=count($result);
         $arr['sum']=$sum;
@@ -122,9 +123,7 @@ class GoodsController extends \yii\web\Controller
         }
     }
     
-    
-    
-    
+
 
 	//评论
 	public function actionPinglun()
