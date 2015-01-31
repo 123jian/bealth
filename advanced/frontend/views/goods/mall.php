@@ -398,7 +398,7 @@
                                         </p>
                                     </div>
                                 </div>
-                            </div>
+                            
                             <!-- 商品评价END -->
                             <!-- 咨询与回复 -->
                             <div class="reply_wrap">
