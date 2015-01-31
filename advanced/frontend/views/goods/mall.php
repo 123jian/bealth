@@ -486,6 +486,10 @@ function tijiao()
         con=$("#lun").val();
         uname=$("#uid").val();
         gid=$("#gid").val();
+		if(uname=='游客'){
+			alert("请登录后在评论！");
+			return false;
+		}
         //alert(con);
         $.ajax({
                 url:"index.php?r=goods/pinglun",
