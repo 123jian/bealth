@@ -58,7 +58,7 @@ document.write('<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" cod
                         	<p><?php echo $val4['goods_desc'];?></p>
                         </div>
                         <div class="price">
-                        	<a class="btn" href="index.php?r=index/mall">去看看</a>
+                        	<a class="btn" href="./index.php?r=goods/index&gid=<?php echo $val4['goods_id']?>">去看看</a>
                         	<span class="nowPrice">￥<?php echo $val4['goods_price'];?></span>
                             <span class="oldPrice">￥340</span>
                         </div>
@@ -126,7 +126,7 @@ document.write('<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" cod
                                             <p><?php echo $val3['goods_desc'];?></p>
                                         </div>
                                         <div class="price">
-                                            <a class="btn" href="javascript:void(0);">去看看</a>
+                                            <a class="btn" href="./index.php?r=goods/index&gid=<?php echo $val3['goods_id']?>">去看看</a>
                                             <span class="nowPrice">￥<?php echo $val3['goods_price'];?></span>
                                             <span class="oldPrice">￥340</span>
                                         </div>
@@ -233,7 +233,7 @@ document.write('<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" cod
 <?php foreach($result as $val){ ?>                            
                     	<li>
                             <div class="pro_img">
-                                <a href="javascript:void(0);"><img src="<?php echo 'http://'.$_SERVER['HTTP_HOST'].'/backend/web/'.$val['goods_img'];?>" width="475" height="385"/></a>
+                                <a href="./index.php?r=goods/index&gid=<?php echo $val['goods_id']?>"><img src="<?php echo 'http://'.$_SERVER['HTTP_HOST'].'/backend/web/'.$val['goods_img'];?>" width="475" height="385"/></a>
                             </div>
                             <div class="pro_introduce clearfix">
                                 <div class="price fr">
@@ -241,7 +241,7 @@ document.write('<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" cod
                                     <span class="oldPrice">￥300</span>
                                 </div>
                                 <div class="pro_con fl">
-                                    <a href="javascript:void(0);" class="proName"><?php echo $val['goods_name'];?></a>
+                                    <a href="./index.php?r=goods/index&gid=<?php echo $val['goods_id']?>" class="proName"><?php echo $val['goods_name'];?></a>
                                     <p><?php echo $val['goods_desc'];?></p>
                                 </div>
                             </div>
@@ -267,7 +267,7 @@ document.write('<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" cod
 <?php foreach($result2 as $val2){ ?>                            
                     	<li>
                             <div class="pro_img">
-                                <a href="javascript:void(0);"><img src="<?php echo 'http://'.$_SERVER['HTTP_HOST'].'/backend/web/'.$val2['goods_img'];?>" /></a>
+                                <a href="./index.php?r=goods/index&gid=<?php echo $val2['goods_id']?>" class="proName""><img src="<?php echo 'http://'.$_SERVER['HTTP_HOST'].'/backend/web/'.$val2['goods_img'];?>" /></a>
                             </div>
                             <div class="pro_introduce clearfix">
                                 <div class="price fr">
@@ -275,7 +275,7 @@ document.write('<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" cod
                                     <span class="oldPrice">￥300</span>
                                 </div>
                                 <div class="pro_con fl">
-                                    <a href="javascript:void(0);" class="proName"><?php echo $val2['goods_name'];?></a>
+                                    <a href="./index.php?r=goods/index&gid=<?php echo $val2['goods_id']?>" class="proName"><?php echo $val2['goods_name'];?></a>
                                     <p><?php echo $val2['goods_desc'];?></p>
                                 </div>
                             </div>
@@ -300,7 +300,7 @@ document.write('<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" cod
 <?php foreach($result3 as $val3){ ?>                            
                     	<li>
                             <div class="pro_img">
-                                 <a href="javascript:void(0);"><img src="<?php echo 'http://'.$_SERVER['HTTP_HOST'].'/backend/web/'.$val3['goods_img'];?>" /></a>
+                                 <a href="./index.php?r=goods/index&gid=<?php echo $val3['goods_id']?>"><img src="<?php echo 'http://'.$_SERVER['HTTP_HOST'].'/backend/web/'.$val3['goods_img'];?>" /></a>
 
                             </div>
                         </li>

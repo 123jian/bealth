@@ -16,9 +16,21 @@
         	<!--顶部登录信息-->
         	<div class="site_wrap">
             	<div class="site_con">
-                	<span>您好，欢迎来到锡盟鑫泰！</span>
-                    <a href="javascript:void(0);">【登录】</a>
-                    <a href="javascript:void(0);">【免费注册】</a>
+                	
+					<?php 
+					use yii\web\Session;
+					$session = new Session;
+					if(empty($session->get('name'))){?>
+					<a href="index.php?r=login/index">【登录】</a>
+                    <a href="index.php?r=register/index">【免费注册】</a>
+					<?php }else{?>
+					<span>您好，欢迎<span style="color:#ff0000"><?php 
+					
+					echo $session->get('name');
+					?></span>来到锡盟鑫泰！</span>
+					<a href="index.php?r=register/loginout">退出</a>
+					<?php }?>
+                    
                 </div>
             </div>
             <!--顶部登录信息END-->
@@ -129,6 +141,7 @@
                         <div class="detail_wrap clearfix">
                         	<div class="proImg">
                             	<div class="imgWrap"><img src="<?php echo 'http://'.$_SERVER['HTTP_HOST'].'/backend/web/'.$data['goods_img'];?>" width="325" height="325"></div>
+<input type='hidden' id='img' value='<?php echo $data['goods_img']?>'>                                
                                 <div class="imgList">
                                   <!-- 图片轮播效果 -->
                                   <div class="picScroll">
@@ -158,8 +171,11 @@
                             <div class="proIntroduce">
                             	<form>
                             	<p class="proName"><?php echo $data['goods_name']?></p>
+ <input type='hidden' id='gname' value='<?php echo $data['goods_name']?>'>                               
                                 <div class="price_wrap clearfix">
                                 	<span class="price">￥<?php echo $data['goods_price']?></span>
+ <input type='hidden' id='price' value='<?php echo $data['goods_price']?>'>
+
                                     <!--<div class="price_msg">
                                     	<p><span class="discount">4.1折</span>为您节省￥410.00</p>
                                         <p>(市场价：￥698.00)</p>
@@ -177,11 +193,11 @@
                                 <div class="num_wrap clearfix">
                                 	<label class="fl">选数量：</label>
                                     <a href="javascript:void(0);">-</a>
-                                    <input class="txt" type="text" value="1" />
+                                    <input class="txt" type="text" value="1" id='number'/>
                                     <a href="javascript:void(0);">+</a>
                                 </div>
                                 <div>
-                                	<a class="buyBtn" href="javascript:void(0);"><span class="carIcon"></span>立即抢购</a>
+                                	<a class="buyBtn" onclick="shopcar(<?php echo $data['goods_id'];?>)" href='#'><span class="carIcon"></span>立即抢购</a>
                                 </div>
                                 </form>
                             </div>
@@ -303,12 +319,15 @@
                             <!-- 商品评价 -->
                             <div class="pro_review">
                                 <p class="title2">商品评价</p>
+								<?php if(!empty($pin)){
+										foreach($pin as $pk=>$pv){
+								?>
                                 <div class="p15">
                                 	<div class="reviewItem clearfix">
                                     	<div class="userMsg">
                                         	<div class="imgWrap"></div>
-                                            <p>123456789</p>
-                                            <p class="level">超级会员</p>
+                                            <p><?php echo $pv['uname']?></p>
+                                            <!--<p class="level">超级会员</p>-->
                                         </div>
                                         <div class="reviewMsg">
                                         	<span class="arrowIcon"></span>
@@ -321,17 +340,48 @@
                                             </div>
                                             <div class="review clearfix">
                                             	<span class="reviewTitle">评&nbsp;&nbsp;&nbsp;&nbsp;价：</span>
-                                                <p class="review_msg">效果好效果好效果好效果好效果好效果好效果好效果好效果好效果好效果好效果好效果好效果好效果好效果好效果好效果好效果好效果好效果好</p>
+                                                <p class="review_msg"><?php echo $pv['content']?></p>
                                             </div>
                                             <div class="review clearfix">
                                             	<span class="reviewTitle">购买日期：</span>
                                                 <p class="review_msg">
                                                 	<a href="javascript:void(0);">回复</a>
                                                     <a href="javascript:void(0);">赞</a>
-                                                	<span>2014-05-28</span>
+                                                	<span>
+													<?php echo date("Y-m-d h:i:s",$pv['com_time'])?>
+													</span>
                                                 </p>
                                             </div>
+											
                                         </div>
+										<div>
+										
+                                        
+                                    </div>
+									</div>
+									
+                                   <!--评论框-->
+								   
+
+                                    </div><?php 
+											}
+										}else{}
+										?>
+									<input type="button" value="发表评论" class="carIcon" onclick="pinglun()">
+                                   <div style="display:none" id="pin">
+                                        <span class="reviewTitle">发表评论：</span>
+                                        <p class="review_msg">
+                                            <input type="hidden" name="uname" id="uid" value="<?php
+											if(!empty(@$session->get('name'))){
+												echo @$session->get('name');
+											}else{
+												echo "游客";
+											}
+											 ?>">
+                                            <input type="hidden" name="gid" id="gid" value="<?php echo @$data['goods_id'];?>">
+                                            <textarea rows="4px" cols="50px" id="lun" name="lun">欢迎您来评论！</textarea>
+                                            <br><input type="button"  class="carIcon" value="评论" onclick="tijiao()">
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -372,7 +422,7 @@
             <!-- 底部区域END -->
             <!--跟随窗口浮动区域-->
             <div class="fixedWrap" id="fixedWrap">
-                <a href="javascript:void(0);">
+                <a href="javascript:scrollTo(0,0);">
                 	<div class="imgWrap">
                     	<img src="images/fix_icon_1.png" width="21" height="27" />
                     </div>
@@ -405,9 +455,86 @@
 </div>
 <script type="text/javascript" src="scripts/common.js"></script>
 <script type="text/javascript">
+function pinglun()
+    {
+        //alert($);
+        $("#pin").slideToggle();
+        //$("#pin").show();
+    }
+function tijiao()
+    {
+        con=$("#lun").val();
+        uname=$("#uid").val();
+        gid=$("#gid").val();
+        //alert(con);
+        $.ajax({
+                url:"index.php?r=goods/pinglun",
+                type:"get",
+                dataType:"json",
+                data:{"content":con,"goods_id":gid,"uname":uname},
+                success:function(msg)
+                {
+					//alert(msg)
+                    if(msg==1)
+                    {
+                        alert("评论成功");
+                        //$("#pin").hide();
+                        history.go(0);
+                    }else
+                    {
+                        alert("评论失败");
+                    }/**/
+                },
+                error:function(msg){
+                    alert("no");
+                }
+            });/**/
+    }
+
 	if($(".proImgList li").size()>3){
 		$(".picScroll").slide({mainCell:".bd ul",effect:"leftLoop",vis:3});
 	}
 </script>
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript">
+//购物车
+function shopcar(gid){
+    //alert($);
+    var number=$('#number').val();
+    var gname=$('#gname').val();
+    var price=$('#price').val();
+    var img=$('#img').val();
+    //alert(gname);
+    //alert(price);
+    if(number==''){
+        alert('请输入购买数量');
+        return false;
+    }
+    $.ajax({
+        type:"get",
+        url:"index.php?r=goods/shopcar",
+        data:{'gid':gid,'number':number,'gname':gname,'price':price,'img':img},
+        cache:false,
+        dataType:"json",
+        success: function(msg){
+                    //alert(msg);
+                    if(msg==0){
+                        alert('请登录');
+                        return false;
+                    }
+                    if(msg==1){
+                        location.href='index.php?r=goods/shopcarlist';
+                    }
+                    if(msg==2){
+                        alert('添加购物车失败');
+                        return false;
+                    }
+                 }
+        
+    });
+}
+</script>
+
 </body>
 </html>
