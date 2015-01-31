@@ -117,12 +117,18 @@
                         </div>
                         <!--END-->
                     </div>
+
                     <!-- 右侧 -->
                     <div class="sub_right mb30">
                     	<!---->
                         <div class="detail_wrap clearfix">
                         	<div class="proImg">
-                            	<div class="imgWrap"><img src="<?php echo 'http://'.$_SERVER['HTTP_HOST'].'/backend/web/'.$data['goods_img'];?>" width="325" height="325"></div>
+                            	<div class="imgWrap">
+								
+								<img src="<?php echo 'http://'.$_SERVER['HTTP_HOST'].'/backend/web/'.$data['goods_img'];?>" width="325" height="325">
+								
+								
+								</div>
 <input type='hidden' id='img' value='<?php echo $data['goods_img']?>'>                                
                                 <div class="imgList">
                                   <!-- 图片轮播效果 -->
@@ -132,7 +138,7 @@
                                       </div>
                                       <div class="bd">
                                           <ul class="proImgList clearfix">
-										  <?php for($i=0;$i<4;$i++){?>
+										  <?php for($i=0;$i<3;$i++){?>
                                             <li><a href="javascript:void(0);"><img src="<?php echo 'http://'.$_SERVER['HTTP_HOST'].'/backend/web/'.$data['goods_img'];?>" width="87" height="87"></a></li>
                                             <?php }?>
                                           </ul>
@@ -442,7 +448,7 @@
                     </div>
                 	<p>返回顶部</p>
                 </a>
-                <a href="javascript:void(0);">
+                <a href="index.php?r=goods/shopcarlist">
                 	<div class="imgWrap">
 
                     	<img class="mt5" src="images/fix_icon_2.png" width="27" height="22" />
