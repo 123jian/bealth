@@ -91,9 +91,6 @@ class IndexController extends \yii\web\Controller
 		$posts = $command->queryAll();
 		echo json_encode($posts);
 
-	$this->layout='@app/views/layouts/layout.php';
-        return $this->render('shoppingmsg');
-
     }
     //购物车
     public function actionShoppingcar()
