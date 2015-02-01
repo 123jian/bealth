@@ -122,6 +122,53 @@ class GoodsController extends \yii\web\Controller
             echo 0;//删除失败
         }
     }
+    //提交订单
+    public function actionDizhi()
+    {
+        $ids=$_GET['ids'];
+        $gid=explode(',',$ids);
+        $model=new Cart();
+        $session = new Session;
+        $uid=$session->get('uid');
+        $arr=['status'=>1];
+        $result=$model->updateall($arr,['goods_id'=>$gid,'uid'=>$uid]);
+        if($result){
+            echo 1;//提交订单成功
+        }else{
+            echo 0;//提交订单失败
+        }
+    }
+    //订单地址
+    public function actionShoppingmsg()
+    {
+        $this->layout='@app/views/layouts/layout.php';
+        $category=new Category();//导航栏
+        $view = Yii::$app->view;
+        $view->params['layoutData']=$category->find()->where(['cat_status'=>1])->all();
+        
+        $connection = \Yii::$app->db;
+        $command = $connection->createCommand("select * from region where parent_id=0");
+        $posts = $command->queryAll();
+        //两表联查购物车表和商品表
+        $Query=new Query();
+        $session = new Session;
+        $uid=$session->get('uid');
+        
+        $result=$Query->from(['goods','cart'])->where("goods.goods_id=cart.goods_id and cart.status=1 and cart.uid='$uid'")->orderBy('cart.addtime','desc')->all();
+        //var_dump($result);die;
+       
+        return $this->render('shoppingmsg',['data'=>$posts,'result'=>$result]);
+    }
+    public function actionRegion()
+    {
+        $connection = \Yii::$app->db;
+        $command = $connection->createCommand("select * from region where parent_id=".$_GET['id']);
+        $posts = $command->queryAll();
+        echo json_encode($posts);
+
+	$this->layout='@app/views/layouts/layout.php';
+        return $this->render('shoppingmsg');
+    }
     
 
 
