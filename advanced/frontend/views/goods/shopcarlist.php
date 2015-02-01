@@ -17,7 +17,7 @@
                 	<form><center>
                 	<table>
                     	<tr class="title">
-                        	<td class="width55"><input class="checkBtn" type="checkbox" />全选</td>
+                        	<td class="width55"><input class="checkBtn" type="checkbox"/>全选</td>
                             <td class="width55">产品</td>
                             <td class="width55">名称</td>
                             <td class="width55">库存</td>
@@ -28,7 +28,7 @@
                         </tr>
 <?php foreach($result as $val){?>                        
                         <tr style="vertical-align:middle; text-align:center;width:10px;">
-                        	<td><input class="checkBtn" type="checkbox" /></td>
+                        	<td><input class="checkBtn" type="checkbox"  id="xuan<?php echo $val['goods_id'];?>" value="<?php echo $val['goods_id'];?>"/></td>
                             <td>
                             	<div class="pro_msg clearfix">
                                 	<div class="imgWrap"><img src="<?php echo 'http://'.$_SERVER['HTTP_HOST'].'/backend/web/'.$val['goods_img'];?>" width='80' height='80'></div></td>
@@ -87,7 +87,7 @@
                   </table>
                   <div class="submit_wrap">
                   	应付总额：<span class="money">￥<?php echo $arr['sum'];?></span>元
-                    <a href="#" onclick="orders()">提交订单</a>
+                    <a href="#" onclick="orders(<?php echo $val['goods_id'];?>)">提交订单</a>
                   </div>
                 </div>
                 <!---->
@@ -163,8 +163,14 @@ function del(gid){
     }
 }
  //提交订单
-function orders(){
+function orders(gid){
     //alert(gid);
+    //$('#chk').attr('checked');
+    var str='';
+    if($("#xuan"+gid).attr("checked",'true')){       
+        str+=$('#xuan'+gid).val()+',';
+    }
+    alert(str);
     var number=$('#number').val();
     if(number<1){
         alert('请输入购买数量');
