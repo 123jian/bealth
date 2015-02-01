@@ -60434,3 +60434,145 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1422789534.63
     'REQUEST_TIME' => 1422789534
 ]
+2015-02-01 12:19:59 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: data' in E:\duotai\advanced\frontend\views\index\shoppingMsg.php:31
+Stack trace:
+#0 E:\duotai\advanced\frontend\views\index\shoppingMsg.php(31): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', 'E:\duotai\advan...', 31, Array)
+#1 E:\duotai\advanced\vendor\yiisoft\yii2\base\View.php(325): require('E:\duotai\advan...')
+#2 E:\duotai\advanced\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('E:\duotai\advan...', Array)
+#3 E:\duotai\advanced\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('E:\duotai\advan...', Array, Object(frontend\controllers\IndexController))
+#4 E:\duotai\advanced\vendor\yiisoft\yii2\base\Controller.php(367): yii\base\View->render('shoppingmsg', Array, Object(frontend\controllers\IndexController))
+#5 E:\duotai\advanced\frontend\controllers\IndexController.php(95): yii\base\Controller->render('shoppingmsg')
+#6 [internal function]: frontend\controllers\IndexController->actionRegion()
+#7 E:\duotai\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#8 E:\duotai\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 E:\duotai\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('region', Array)
+#10 E:\duotai\advanced\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('index/region', Array)
+#11 E:\duotai\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 E:\duotai\advanced\frontend\web\index.php(20): yii\base\Application->run()
+#13 {main}
+2015-02-01 12:19:59 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'index/region'
+    'id' => '1'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'lpsjubfd67ekljuq7i8t4hp8r7'
+    '_csrf' => '7089ee229dc8ab26ea91bfd19fbc115c5d2f4d43bb2721e00a4c2d0f9b6ed341s:32:\"kWaJrggDxkK09UqtFa0eNDHSmRNGHQFS\";'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'E:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'E:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'www.duotai.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2288.6 Safari/537.36'
+    'HTTP_REFERER' => 'http://www.duotai.com/frontend/web/index.php?r=goods/shoppingmsg'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=lpsjubfd67ekljuq7i8t4hp8r7; _csrf=7089ee229dc8ab26ea91bfd19fbc115c5d2f4d43bb2721e00a4c2d0f9b6ed341s%3A32%3A%22kWaJrggDxkK09UqtFa0eNDHSmRNGHQFS%22%3B'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\AMD APP\\bin\\x86;C:\\Program Files\\Common Files\\NetSarang;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\ATI Technologies\\ATI.ACE\\Core-Static;E:\\web\\TortoiseSVN\\bin;E:\\web\\TortoiseGit\\bin;E:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;E:\\web\\JDK\\bin;E:\\web\\NodeJs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at www.duotai.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'www.duotai.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/duotai/advanced'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/duotai/advanced'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'E:/duotai/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '64253'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=index/region&id=1'
+    'REQUEST_URI' => '/frontend/web/index.php?r=index/region&id=1'
+    'SCRIPT_NAME' => '/frontend/web/index.php'
+    'PHP_SELF' => '/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422789599.497
+    'REQUEST_TIME' => 1422789599
+]
+2015-02-01 12:27:49 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: data' in E:\duotai\advanced\frontend\views\index\shoppingMsg.php:31
+Stack trace:
+#0 E:\duotai\advanced\frontend\views\index\shoppingMsg.php(31): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', 'E:\duotai\advan...', 31, Array)
+#1 E:\duotai\advanced\vendor\yiisoft\yii2\base\View.php(325): require('E:\duotai\advan...')
+#2 E:\duotai\advanced\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('E:\duotai\advan...', Array)
+#3 E:\duotai\advanced\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('E:\duotai\advan...', Array, Object(frontend\controllers\IndexController))
+#4 E:\duotai\advanced\vendor\yiisoft\yii2\base\Controller.php(367): yii\base\View->render('shoppingmsg', Array, Object(frontend\controllers\IndexController))
+#5 E:\duotai\advanced\frontend\controllers\IndexController.php(95): yii\base\Controller->render('shoppingmsg')
+#6 [internal function]: frontend\controllers\IndexController->actionRegion()
+#7 E:\duotai\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#8 E:\duotai\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 E:\duotai\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('region', Array)
+#10 E:\duotai\advanced\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('index/region', Array)
+#11 E:\duotai\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 E:\duotai\advanced\frontend\web\index.php(20): yii\base\Application->run()
+#13 {main}
+2015-02-01 12:27:49 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'index/region'
+    'id' => '1'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'lpsjubfd67ekljuq7i8t4hp8r7'
+    '_csrf' => '7089ee229dc8ab26ea91bfd19fbc115c5d2f4d43bb2721e00a4c2d0f9b6ed341s:32:\"kWaJrggDxkK09UqtFa0eNDHSmRNGHQFS\";'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'E:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'E:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'www.duotai.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2288.6 Safari/537.36'
+    'HTTP_REFERER' => 'http://www.duotai.com/frontend/web/index.php?r=goods/shoppingmsg'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=lpsjubfd67ekljuq7i8t4hp8r7; _csrf=7089ee229dc8ab26ea91bfd19fbc115c5d2f4d43bb2721e00a4c2d0f9b6ed341s%3A32%3A%22kWaJrggDxkK09UqtFa0eNDHSmRNGHQFS%22%3B'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\AMD APP\\bin\\x86;C:\\Program Files\\Common Files\\NetSarang;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\ATI Technologies\\ATI.ACE\\Core-Static;E:\\web\\TortoiseSVN\\bin;E:\\web\\TortoiseGit\\bin;E:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;E:\\web\\JDK\\bin;E:\\web\\NodeJs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at www.duotai.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'www.duotai.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/duotai/advanced'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/duotai/advanced'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'E:/duotai/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '64494'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=index/region&id=1'
+    'REQUEST_URI' => '/frontend/web/index.php?r=index/region&id=1'
+    'SCRIPT_NAME' => '/frontend/web/index.php'
+    'PHP_SELF' => '/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422790069.725
+    'REQUEST_TIME' => 1422790069
+]
