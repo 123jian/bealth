@@ -352,7 +352,9 @@
                                 <div class="p15">
                                 	<div class="reviewItem clearfix">
                                     	<div class="userMsg">
-                                        	<div class="imgWrap"></div>
+                                        	<div class="imgWrap">
+												<img src="./0K34a645-1.jpg" width="60" height="60" border="0" alt="">
+											</div>
                                             <p><?php echo $pv['uname']?></p>
                                             <!--<p class="level">超级会员</p>-->
                                         </div>

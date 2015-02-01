@@ -90,25 +90,7 @@ use yii\widgets\LinkPager;
                 </div>
                 <div class="clearfix">
                 	<div class="sub_left">
-                    	<!--<div class="sl_con">
-                        	<ul class="firstList">
-                            	<li class="current"><a href="javascript:void(0);"><span class="arrowIcon"></span>类型</a>
-                                	<ul class="secList">
-                                    	<li class="current"><a href="javascript:void(0);">补水霜</a></li>
-                                        <li><a href="javascript:void(0);">洁面乳</a></li>
-                                        <li><a href="javascript:void(0);">洁面乳</a></li>
-                                        <li><a href="javascript:void(0);">洁面乳</a></li>
-                                        <li><a href="javascript:void(0);">洁面乳</a></li>
-                                        <li><a href="javascript:void(0);">洁面乳</a></li>
-                                        <li><a href="javascript:void(0);">洁面乳</a></li>
-                                        <li><a href="javascript:void(0);">洁面乳</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="javascript:void(0);"><span class="arrowIcon"></span>功效</a></li>
-                                <li><a href="javascript:void(0);"><span class="arrowIcon"></span>适用人</a></li>
-                            </ul>
-                        </div>
-                        -->
+
                         <div class="sl_con mt10">
                         	<p class="title">热卖产品</p>
                         	<ul class="sl_list">
@@ -156,7 +138,9 @@ use yii\widgets\LinkPager;
                                       <?php foreach($datar as $kk=>$vv){?>
                                       <li>
                                           <div class="clearfix">
-                                              <div class="imgWrap"><img src="<?php echo 'http://'.$_SERVER['HTTP_HOST'].'/backend/web/'.$vv['goods_img'];?>" width="145" height="145"></div>
+                                              <div class="imgWrap">
+											  <a href="./index.php?r=goods/index&gid=<?php echo $vv['goods_id']?>">
+											  <img src="<?php echo 'http://'.$_SERVER['HTTP_HOST'].'/backend/web/'.$vv['goods_img'];?>" width="145" height="145"></a></div>
                                               <div class="pro">
                                                   <p class="proName"><?php echo $vv['goods_name']?></p>
                                                   <p class="price">特价：<span class="redSpan">￥<?php echo $vv['goods_price']?></span></p>
@@ -195,7 +179,9 @@ use yii\widgets\LinkPager;
                               	<ul class="clearfix">
 								<?php foreach($data as $k=>$v){?>
                                 	<li>
-                                    	<div class="imgWrap"><img src="<?php echo 'http://'.$_SERVER['HTTP_HOST'].'/backend/web/'.$v['goods_img'];?>" width="232" height="232"></div>
+                                    	<div class="imgWrap">
+										<a href="./index.php?r=goods/index&gid=<?php echo $v['goods_id']?>">
+										<img src="<?php echo 'http://'.$_SERVER['HTTP_HOST'].'/backend/web/'.$v['goods_img'];?>" width="232" height="232"></a></div>
                                         <p class="proName"><a href="./index.php?r=goods/index&gid=<?php echo $v['goods_id']?>"><?php echo $v['goods_name']?></a></p>
                                         <p><span class="appraise">已有120人评价</span>
                                         	<span class="price">￥<?php echo $v['goods_price']?></span>
