@@ -28,7 +28,7 @@
                         </tr>
 <?php foreach($result as $val){?>                        
                         <tr style="vertical-align:middle; text-align:center;width:10px;">
-                        	<td><input class="checkBtn" type="checkbox"  id="xuan<?php echo $val['goods_id'];?>" value="<?php echo $val['goods_id'];?>"/></td>
+                        	<td><input class="checkBtn" type="checkbox"  name="xuan" value="<?php echo $val['goods_id'];?>"/></td>
                             <td>
                             	<div class="pro_msg clearfix">
                                 	<div class="imgWrap"><img src="<?php echo 'http://'.$_SERVER['HTTP_HOST'].'/backend/web/'.$val['goods_img'];?>" width='80' height='80'></div></td>
@@ -87,7 +87,7 @@
                   </table>
                   <div class="submit_wrap">
                   	应付总额：<span class="money">￥<?php echo $arr['sum'];?></span>元
-                    <a href="#" onclick="orders(<?php echo $val['goods_id'];?>)">提交订单</a>
+                    <a href="#" onclick="orders()">提交订单</a>
                   </div>
                 </div>
                 <!---->
@@ -163,19 +163,36 @@ function del(gid){
     }
 }
  //提交订单
-function orders(gid){
-    //alert(gid);
-    //$('#chk').attr('checked');
-    var str='';
-    if($("#xuan"+gid).attr("checked",'true')){       
-        str+=$('#xuan'+gid).val()+',';
-    }
-    alert(str);
+function orders(){
+
+    var id_array=new Array();  
+    $('input[name="xuan"]:checked').each(function(){  
+        id_array.push($(this).val());//向数组中添加元素  
+    });  
+    var ids=id_array.join(',');//将数组元素连接起来以构建一个字符串  
+    //alert(ids);
     var number=$('#number').val();
     if(number<1){
         alert('请输入购买数量');
         return false;
     }
+    $.ajax({
+        type:"get",
+        url:"index.php?r=goods/dizhi",
+        data:{'ids':ids},
+        cache:false,
+        dataType:"json",
+        success: function(msg){
+                    //alert(msg);
+                    if(msg==0){
+                        alert('提交订单失败');
+                        return false;
+                    }
+                    if(msg==1){
+                       location.href='index.php?r=goods/shoppingmsg';
+                    }
+                 }      
+    });
     
 }
 </script> 
