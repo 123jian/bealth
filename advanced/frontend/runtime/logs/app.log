@@ -53402,3 +53402,92 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1422675184.06
     'REQUEST_TIME' => 1422675184
 ]
+2015-02-01 08:47:10 [127.0.0.1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000] [2002] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+' in E:\duotai\advanced\vendor\yiisoft\yii2\db\Connection.php:579
+Stack trace:
+#0 E:\duotai\advanced\vendor\yiisoft\yii2\db\Connection.php(579): PDO->__construct('mysql:host=192....', 'root', '', NULL)
+#1 E:\duotai\advanced\vendor\yiisoft\yii2\db\Connection.php(529): yii\db\Connection->createPdoInstance()
+#2 E:\duotai\advanced\vendor\yiisoft\yii2\db\Connection.php(836): yii\db\Connection->open()
+#3 E:\duotai\advanced\vendor\yiisoft\yii2\db\Connection.php(823): yii\db\Connection->getMasterPdo()
+#4 E:\duotai\advanced\vendor\yiisoft\yii2\db\Command.php(208): yii\db\Connection->getSlavePdo()
+#5 E:\duotai\advanced\vendor\yiisoft\yii2\db\Command.php(813): yii\db\Command->prepare(true)
+#6 E:\duotai\advanced\vendor\yiisoft\yii2\db\Command.php(350): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 E:\duotai\advanced\vendor\yiisoft\yii2\db\Query.php(206): yii\db\Command->queryAll()
+#8 E:\duotai\advanced\vendor\yiisoft\yii2\db\ActiveQuery.php(130): yii\db\Query->all(NULL)
+#9 E:\duotai\advanced\frontend\controllers\IndexController.php(17): yii\db\ActiveQuery->all()
+#10 [internal function]: frontend\controllers\IndexController->actionIndex()
+#11 E:\duotai\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#12 E:\duotai\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#13 E:\duotai\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('', Array)
+#14 E:\duotai\advanced\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('index', Array)
+#15 E:\duotai\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 E:\duotai\advanced\frontend\web\index.php(20): yii\base\Application->run()
+#17 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [2002] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+' in E:\duotai\advanced\vendor\yiisoft\yii2\db\Connection.php:534
+Stack trace:
+#0 E:\duotai\advanced\vendor\yiisoft\yii2\db\Connection.php(836): yii\db\Connection->open()
+#1 E:\duotai\advanced\vendor\yiisoft\yii2\db\Connection.php(823): yii\db\Connection->getMasterPdo()
+#2 E:\duotai\advanced\vendor\yiisoft\yii2\db\Command.php(208): yii\db\Connection->getSlavePdo()
+#3 E:\duotai\advanced\vendor\yiisoft\yii2\db\Command.php(813): yii\db\Command->prepare(true)
+#4 E:\duotai\advanced\vendor\yiisoft\yii2\db\Command.php(350): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 E:\duotai\advanced\vendor\yiisoft\yii2\db\Query.php(206): yii\db\Command->queryAll()
+#6 E:\duotai\advanced\vendor\yiisoft\yii2\db\ActiveQuery.php(130): yii\db\Query->all(NULL)
+#7 E:\duotai\advanced\frontend\controllers\IndexController.php(17): yii\db\ActiveQuery->all()
+#8 [internal function]: frontend\controllers\IndexController->actionIndex()
+#9 E:\duotai\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#10 E:\duotai\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#11 E:\duotai\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('', Array)
+#12 E:\duotai\advanced\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('index', Array)
+#13 E:\duotai\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#14 E:\duotai\advanced\frontend\web\index.php(20): yii\base\Application->run()
+#15 {main}
+Additional Information:
+
+2015-02-01 08:46:49 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'index'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'E:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'E:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'www.duotai.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2288.6 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\AMD APP\\bin\\x86;C:\\Program Files\\Common Files\\NetSarang;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\ATI Technologies\\ATI.ACE\\Core-Static;E:\\web\\TortoiseSVN\\bin;E:\\web\\TortoiseGit\\bin;E:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;E:\\web\\JDK\\bin;E:\\web\\NodeJs\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at www.duotai.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'www.duotai.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/duotai/advanced'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/duotai/advanced'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'E:/duotai/advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '49576'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=index'
+    'REQUEST_URI' => '/frontend/web/index.php?r=index'
+    'SCRIPT_NAME' => '/frontend/web/index.php'
+    'PHP_SELF' => '/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422776809.415
+    'REQUEST_TIME' => 1422776809
+]
