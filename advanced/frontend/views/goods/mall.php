@@ -138,7 +138,7 @@
                                       </div>
                                       <div class="bd">
                                           <ul class="proImgList clearfix">
-										  <?php for($i=0;$i<3;$i++){?>
+										  <?php for($i=0;$i<4;$i++){?>
                                             <li><a href="javascript:void(0);"><img src="<?php echo 'http://'.$_SERVER['HTTP_HOST'].'/backend/web/'.$data['goods_img'];?>" width="87" height="87"></a></li>
                                             <?php }?>
                                           </ul>
@@ -182,7 +182,7 @@
                                 <div class="num_wrap clearfix">
                                 	<label class="fl">选数量：</label>
                                     <a href="javascript:void(0);" onclick="jian()">-</a>
-                                <input class="txt" type="text" value="1" id='number'/>
+                                    <input class="txt" type="text" value="1" id='number' onblur="bl()"/>
                                     <a href="javascript:void(0);"  onclick="add()">+</a>
                                 </div>
                                 <div>
@@ -192,33 +192,39 @@
                             </div>
                         </div>
                         <!--END-->
-<script type="text/javascript" src="./jq.js"></script>
-<script type="text/javascript">
-<!--
-function add(){
-var m=$("#number").val();
+						<script type="text/javascript">
+						<!--
+							function add(){
+								var m=$("#number").val();
 
-var num= ++m;
-if(num<= <?php echo $data['goods_number']?> ){
-                $("#number").val(num);
-}else{
-        alert("库存不足")
-}
-}
-function jian(){
-var m=$("#number").val();
-if(m>1){
-        var num= --m;
+								var num= ++m;
+								if(num<= <?php echo $data['goods_number']?> ){
+										$("#number").val(num);
+								}else{
+									alert("库存不足")
+								}
+							}
+							function jian(){
+								var m=$("#number").val();
+								if(m>1){
+									var num= --m;
+									
+									$("#number").val(num);
+								}else{
+									alert("数量不得小于1")
+								}
+							}
+							function bl(){
+								var m=$("#number").val();
+								if(m> <?php echo $data['goods_number']?> ){
+										alert("库存不足")
+								}
+							}
 
-        $("#number").val(num);
-}else{
-        alert("数量不得小于1")
-}
-}
 
 
-//-->
-</script>
+						//-->
+						</script>
 						
 
 
@@ -406,7 +412,7 @@ if(m>1){
                                         </p>
                                     </div>
                                 </div>
-                            
+                            </div>
                             <!-- 商品评价END -->
                             <!-- 咨询与回复 -->
                             <div class="reply_wrap">
@@ -477,6 +483,11 @@ if(m>1){
 </div>
 <script type="text/javascript" src="scripts/common.js"></script>
 <script type="text/javascript">
+	if($(".proImgList li").size()>3){
+		$(".picScroll").slide({mainCell:".bd ul",effect:"leftLoop",vis:3});
+	}
+</script>
+<script type="text/javascript">
 function pinglun()
     {
         //alert($);
@@ -517,12 +528,7 @@ function tijiao()
             });/**/
     }
 
-	if($(".proImgList li").size()>3){
-		$(".picScroll").slide({mainCell:".bd ul",effect:"leftLoop",vis:3});
-	}
 </script>
-
-<script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript">
 //购物车
 function shopcar(gid){
