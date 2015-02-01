@@ -255,52 +255,44 @@
                         </div>
                         <!--END-->
                         <!---->
+						<?php if($arr){?>
                         <div class="con_wrap">
                         	<div class="title">
                             	<a class="current" href="javascript:void(0);">搭配套餐1</a>
-                                <a href="javascript:void(0);">搭配套餐1</a>
-                                <a href="javascript:void(0);">搭配套餐1</a>
-                                <a href="javascript:void(0);">搭配套餐1</a>
+ 
                             </div>
                             <div class="pro_menu clearfix">
                             	<div class="pros">
                                 	<ul class="clearfix">
+									<?php
+									$i=0;
+									foreach($arr as $vk){
+										$i++;
+										?>
                                     	<li>
-                                        	<div class="imgWrap"></div>
-                                            <p>多肽保健多肽保健多肽保健多肽保健多肽保健</p>
+                                        	<div class="imgWrap">
+											<img src="<?php echo 'http://'.$_SERVER['HTTP_HOST'].'/backend/web/'.$vk['goods_img'];?>" width="128px" height="128px">
+											</div>
+                                            <p><?php echo $vk['goods_name']?></p>
                                         </li>
+										<?php if($i!=count($arr)){?>
                                         <li class="addLi">
                                         	<div class="addIcon"></div>
                                         </li>
-                                        <li>
-                                        	<div class="imgWrap"></div>
-                                            <p>多肽保健多肽保健多肽保健多肽保健多肽保健</p>
-                                        </li>
-                                        <li class="addLi">
-                                        	<div class="addIcon"></div>
-                                        </li>
-                                        <li>
-                                        	<div class="imgWrap"></div>
-                                            <p>多肽保健多肽保健多肽保健多肽保健多肽保健</p>
-                                        </li>
-                                        <li class="addLi">
-                                        	<div class="addIcon"></div>
-                                        </li>
-                                        <li>
-                                        	<div class="imgWrap"></div>
-                                            <p>多肽保健多肽保健多肽保健多肽保健多肽保健</p>
-                                        </li>
+									<?php }}?>
+                                       
                                     </ul>
                                 </div>
                                 <div class="totlePrice">
                                 	<p>购买人气组合</p>
                                     <p class="equal"><span class="equalIcon"></span></p>
-                                    <p>￥988.00</p>
-                                    <p class="oldPrice">￥1900.00</p>
+                                    <p>￥<?php echo $post['xprice']?></p>
+                                    <p class="oldPrice">￥<?php echo $post['yprice']?></p>
                                     <p><a class="buyBtn" href="javascript:void(0);">购买组合</a></p>
                                 </div>
                             </div>
                         </div>
+						<?php } ?>
                         <!--END-->
                         <!---->
                         <div class="con_wrap">

@@ -41,7 +41,19 @@ class GoodsController extends \yii\web\Controller
 		$com=new Comment();
 		$pin=$com->find()->where(['goods_id'=>$gid])->all();
 		//print_r($pin);die;
-		return $this->renderPartial('mall',['cate'=>$c,'pin'=>$pin,'data1'=>$data1,'datar'=>$datar,'data'=>$data,]);
+		
+		$connection = \Yii::$app->db;
+		$command = $connection->createCommand('SELECT * FROM taocan WHERE goods_id='.$gid);
+		$post = $command->queryOne();
+		if($post){
+		$command = $connection->createCommand('SELECT * FROM goods WHERE goods_id in('.$post['taocan_id'].')');
+		$arr = $command->queryAll();
+		}else{
+			$arr=array();
+			$post=array();
+		}
+		//print_r($arr);
+		return $this->renderPartial('mall',['cate'=>$c,'pin'=>$pin,'data1'=>$data1,'datar'=>$datar,'data'=>$data,'arr'=>$arr,"post"=>$post]);
     }
 
     //购物车
