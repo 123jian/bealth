@@ -8,6 +8,9 @@ use yii\base\InvalidParamException;
 use yii\web\BadRequestHttpException;
 use yii\web\Controller;
 
+use yii\caching\MemCache;
+
+
 use yii\filters\AccessControl;
 use app\models\Goods;
 use app\models\Classs;
@@ -18,6 +21,7 @@ use app\models\Comment;
 use yii\db\Query;
 use yii\web\Session;
 use app\models\Cart;
+use app\models\Address;
 
 class GoodsController extends \yii\web\Controller
 {
@@ -68,7 +72,7 @@ class GoodsController extends \yii\web\Controller
         $model->addtime = time();
         
         $result=$model->insert();
-        echo 1;die;
+        //echo 1;die;
         if($result){
             echo 1;//加入购物车成功
         }else{
@@ -156,8 +160,11 @@ class GoodsController extends \yii\web\Controller
         
         $result=$Query->from(['goods','cart'])->where("goods.goods_id=cart.goods_id and cart.status=1 and cart.uid='$uid'")->orderBy('cart.addtime','desc')->all();
         //var_dump($result);die;
+        //查询地址表
+        $model=new Address();
+        $array=$model->find()->where(['uid'=>$uid])->orderBy('aid','desc')->all();
        
-        return $this->render('shoppingmsg',['data'=>$posts,'result'=>$result]);
+        return $this->render('shoppingmsg',['data'=>$posts,'result'=>$result,'array'=>$array]);
     }
     public function actionRegion()
     {
@@ -168,6 +175,65 @@ class GoodsController extends \yii\web\Controller
 
 	$this->layout='@app/views/layouts/layout.php';
         return $this->render('shoppingmsg');
+    }
+    //保存收货地址
+    public function actionAddress()
+    {
+        $session = new Session;
+        $uid=$session->get('uid');
+        
+        $model=new Address();      
+	$model->uid = $uid;
+        $model->name = $_GET['shouhuoren'];
+        $model->country = $_GET['country'];
+        $model->province = $_GET['province'];
+        $model->city = $_GET['city'];
+        $model->county = $_GET['county'];
+        $model->address = $_GET['address'];
+        $model->mobiles = $_GET['mobile'];
+        $model->phones = $_GET['phone'];
+        $model->email = $_GET['email'];
+        
+        $result=$model->insert();
+        if($result){
+            echo 1;//保存收货地址成功
+        }else{
+            echo 0;//保存收货地址失败
+        }      
+    }
+    //支付页面
+    public function actionPayment()
+    {
+        //error_reporting(0);
+        $this->layout='@app/views/layouts/layout.php';
+        $category=new Category();//导航栏
+        $view = Yii::$app->view;
+        $view->params['layoutData']=$category->find()->where(['cat_status'=>1])->all();
+        
+        //两表联查其他用户购买的商品
+        $model=new Cart();
+        $session = new Session;
+        $uid=$session->get('uid');
+        $Query=new Query();
+        $data=$Query->from(['goods','cart'])->where(!['cart.uid'=>$uid])->orderBy('cart.addtime','desc')->limit(2)->all();
+        // var_dump($data);die;
+        //查询商品表最新商品
+        $Goods=new Goods();
+        $array=$Goods->find()->orderBy('goods_addtime','desc')->limit(5)->all();
+        //查询地址表
+        $Address=new Address();
+        $arr=$Address->find()->where(['uid'=>$uid])->orderBy('aid','desc')->all();
+        
+        
+        
+        
+        return $this->render('payment',['data'=>$data,'array'=>$array,'arr'=>$arr]);
+    }
+    
+    //支付完成
+    public function actionPaymentok()
+    {
+        return $this->renderpartial('paymentok');
     }
     
 
