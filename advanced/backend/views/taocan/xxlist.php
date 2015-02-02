@@ -1,6 +1,3 @@
-<?php
-use yii\widgets\LinkPager;
-?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -39,34 +36,32 @@ use yii\widgets\LinkPager;
 </head>
 
 <body>
-
+<form class="form-inline definewidth m20" action="index.php?r=category/sear" method="post">  
+    分类名称：
+    <input type="text" name="cat_name" id="rolename"class="abc input-default" placeholder="" value="">&nbsp;&nbsp;  
+    <button type="submit" class="btn btn-primary">查询</button>&nbsp;&nbsp; <button type="button" class="btn btn-success" id="addnew">新增机构</button>
+</form>
 <table class="table table-bordered table-hover definewidth m10" >
     <thead>
     <tr>
         <th>商品ID</th>
         <th>商品名称</th>
-        <th>套餐商品</th>
-        <th>原价</th>
-		<th>现价</th>
-		<th>折数</th>
+        <th>价格</th>
+        <th>图片</th>
 		<th>操作</th>
     </tr>
     </thead>
 	<?php foreach($data as $k=>$v){?>
 	     <tr>
-            <td><?php echo $v['id']?></td>
+
             <td><?php echo $v['goods_id']?></td>
-            <td><?php echo $v['taocan_id']?></td>
-            <td><?php echo $v['yprice']?></td>
-			<td><?php echo $v['xprice']?></td>
-			<td><?php echo $v['zhe']?></td>
-			<td><a href="index.php?r=taocan/xxlist&tid=<?php echo $v['taocan_id']?>">详情页</a>|<a href="index.php?r=taocan/up&goods_id=<?php echo $v['goods_id']?>&ztid=<?php echo $v['taocan_id']?>&zhe=<?php echo $v['zhe']?>">编辑</a>|<a href="#">删除</a></td>
+            <td><?php echo $v['goods_name']?></td>
+            <td><?php echo $v['goods_price']?></td>
+			<td><img src="<?php echo 'http://'.$_SERVER['HTTP_HOST'].'/backend/web/'.$v['goods_img'];?>" width="50" height="50"></td>
+			<td><a href="#">删除</a>|<a href="index.php/taocan/">编辑</a></td>
         </tr>
 	<?php }?>
 	</table>
-<div class="inline pull-right page">
-        <?= LinkPager::widget(['pagination' => $pages]); ?></div>
-
 </body>
 </html>
 <script>
