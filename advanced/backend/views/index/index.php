@@ -52,7 +52,9 @@
 		  {id:'12',text:'添加商品',href:'index.php?r=goods/addgoods'}]},
 		  {text:'分类管理',items:[{id:'10',text:'分类列表',href:'index.php?r=category/articlelist'},
 		  {id:'13',text:'添加分类',href:'index.php?r=category/addarticle'}]},
-		  {text:'商品评论管理',items:[{id:'11',text:'评论列表',href:'index.php?r=comment/index'}]}]}];
+		  {text:'商品评论管理',items:[{id:'11',text:'评论列表',href:'index.php?r=comment/index'}]},
+		  {text:'商品套餐管理',items:[{id:'14',text:'套餐列表',href:'index.php?r=taocan/index'},{id:'15',text:'添加套餐',href:'index.php?r=taocan/addtaocan'}]}
+	  ]}];
       new PageUtil.MainPage({
         modulesConfig : config
       });

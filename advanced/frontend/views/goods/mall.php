@@ -124,10 +124,35 @@
                         <div class="detail_wrap clearfix">
                         	<div class="proImg">
                             	<div class="imgWrap">
+<script src="jquery.imageLens.js" type="text/javascript"></script>
+<script type="text/javascript" language="javascript">
+	$(function () {
+		$("#img_02").imageLens({ lensSize: 200 });
+	});	
+</script>
+
+<style type="text/css">
+	body { margin: 0px; font-family: "Trebuchet MS", Arial, Sans-Serif; font-size: 14px; }
+	a { color: #0066CC; text-decoration: none; }
+	a:hover { color: #CC0000; text-decoration: underline; }
+</style>
+
+<script type="text/javascript">
+(function(){
+  var bsa = document.createElement('script');
+     bsa.type = 'text/javascript';
+     bsa.async = true;
+     bsa.src = '//s3.buysellads.com/ac/bsa.js';
+  (document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(bsa);
+})();
+</script>
+								<img  id="img_02" src="<?php echo 'http://'.$_SERVER['HTTP_HOST'].'/backend/web/'.$data['goods_img'];?>" width="325" height="325">
 								
-								<img src="<?php echo 'http://'.$_SERVER['HTTP_HOST'].'/backend/web/'.$data['goods_img'];?>" width="325" height="325">
-								
-								
+<script type="text/javascript">var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+
+</script>	<script type="text/javascript">	try{var pageTracker = _gat._getTracker("UA-2030729-5");pageTracker._initData();pageTracker._trackPageview();}catch(ex){}</script>
+
+
 								</div>                                
 
                                 <div class="imgList">
@@ -255,52 +280,44 @@
                         </div>
                         <!--END-->
                         <!---->
+						<?php if($arr){?>
                         <div class="con_wrap">
                         	<div class="title">
                             	<a class="current" href="javascript:void(0);">搭配套餐1</a>
-                                <a href="javascript:void(0);">搭配套餐1</a>
-                                <a href="javascript:void(0);">搭配套餐1</a>
-                                <a href="javascript:void(0);">搭配套餐1</a>
+ 
                             </div>
                             <div class="pro_menu clearfix">
                             	<div class="pros">
                                 	<ul class="clearfix">
+									<?php
+									$i=0;
+									foreach($arr as $vk){
+										$i++;
+										?>
                                     	<li>
-                                        	<div class="imgWrap"></div>
-                                            <p>多肽保健多肽保健多肽保健多肽保健多肽保健</p>
+                                        	<div class="imgWrap">
+											<img src="<?php echo 'http://'.$_SERVER['HTTP_HOST'].'/backend/web/'.$vk['goods_img'];?>" width="128px" height="128px">
+											</div>
+                                            <p><?php echo $vk['goods_name']?></p>
                                         </li>
+										<?php if($i!=count($arr)){?>
                                         <li class="addLi">
                                         	<div class="addIcon"></div>
                                         </li>
-                                        <li>
-                                        	<div class="imgWrap"></div>
-                                            <p>多肽保健多肽保健多肽保健多肽保健多肽保健</p>
-                                        </li>
-                                        <li class="addLi">
-                                        	<div class="addIcon"></div>
-                                        </li>
-                                        <li>
-                                        	<div class="imgWrap"></div>
-                                            <p>多肽保健多肽保健多肽保健多肽保健多肽保健</p>
-                                        </li>
-                                        <li class="addLi">
-                                        	<div class="addIcon"></div>
-                                        </li>
-                                        <li>
-                                        	<div class="imgWrap"></div>
-                                            <p>多肽保健多肽保健多肽保健多肽保健多肽保健</p>
-                                        </li>
+									<?php }}?>
+                                       
                                     </ul>
                                 </div>
                                 <div class="totlePrice">
                                 	<p>购买人气组合</p>
                                     <p class="equal"><span class="equalIcon"></span></p>
-                                    <p>￥988.00</p>
-                                    <p class="oldPrice">￥1900.00</p>
+                                    <p>￥<?php echo $post['xprice']?></p>
+                                    <p class="oldPrice">￥<?php echo $post['yprice']?></p>
                                     <p><a class="buyBtn" href="javascript:void(0);">购买组合</a></p>
                                 </div>
                             </div>
                         </div>
+						<?php } ?>
                         <!--END-->
                         <!---->
                         <div class="con_wrap">
