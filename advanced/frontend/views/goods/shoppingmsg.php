@@ -6,20 +6,39 @@
             <div class="shopping_wrap">
               <div class="title clearfix">
               	<p class="fr">
-                  <a href="javascript:void(0);">我的购物车</a>>
-                  <a class="current" href="javascript:void(0);">填写核对订单信息</a>>
-                  <a href="javascript:void(0);">支付信息</a>>
+                  <a href="javascript:void(0);">我的购物车</a>
+                  <a class="current" href="javascript:void(0);">填写核对订单信息</a>
+                  <a href="javascript:void(0);">支付信息</a>
                   <a href="javascript:void(0);">交易成功</a>
                 </p>
                 <span class="fl">填写核对订单信息</span>
               </div>
               <div class="shopping_panel">
               	<div class="title">收货人信息<a href="javascript:void(0);">保存收货人信息</a></div>
-                <form class="newAddress">
-                	<div class="title"><input type="radio" />使用新地址</div>
+            
+<?php if(!empty(@$array)){ foreach($array as $val){?>                
+<div class="shopping_panel">                
+
+ <form class="newAddress">
+	<span><input type="radio" name="new" value="<?php echo $val['aid'];?>"/></span>
+        <span>收货人:<?php echo $val['name'];?></span><br>
+	&nbsp;&nbsp;&nbsp;&nbsp;<span><?php echo $val['country'];?></span>
+	&nbsp;&nbsp;&nbsp;&nbsp;<span><?php echo $val['province'];?></span>省
+	&nbsp;&nbsp;&nbsp;&nbsp;<span><?php echo $val['city'];?></span>市
+	&nbsp;&nbsp;&nbsp;&nbsp;<span><?php echo $val['county'];?></span><br>
+	&nbsp;&nbsp;&nbsp;&nbsp;<span>手机号码:<?php echo $val['mobiles'];?></span>
+        &nbsp;&nbsp;&nbsp;&nbsp;<span>电话:<?php echo $val['phones'];?></span><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;<span>详细地址:<?php echo $val['address'];?></span><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;<span>邮箱:<?php echo $val['email'];?></span>
+
+
+</div>
+<?php }}?>                
+               
+                	<div class="title"><input type="radio" name="new"/>使用新地址</div>
                     <div class="frmItem">
                     	<label class="lbl"><span class="redSpan2">*</span>收货人：</label>
-                        <input class="txt" type="text" />
+                        <input class="txt" type="text" id="shouhuoren"/>
                     </div>
                     <div class="frmItem">
                     	<label class="lbl"><span class="redSpan2">*</span>所在地区：</label>
@@ -96,22 +115,22 @@ function getregion(obj){
                     </div>
                     <div class="frmItem">
                     	<label class="lbl"><span class="redSpan2">*</span>详细地址：</label>
-                        <input class="txt width290" type="text" />
+                        <input class="txt width290" type="text"  id="address"/>
                     </div>
                     <div class="frmItem">
                     	<label class="lbl"><span class="redSpan2">*</span>手机号码：</label>
-                        <input class="txt" type="text" />
+                        <input class="txt" type="text"  id="mobile"/>
                         <span>或</span>
                         <label class="lbl">固定电话：</label>
-                        <input class="txt" type="text" />
+                        <input class="txt" type="text"  id="phone"/>
                     </div>
                     <div class="frmItem">
                     	<label class="lbl">邮箱：</label>
-                        <input class="txt" type="text" />
+                        <input class="txt" type="text"  id="email"/>
                         <label>用来接受订单提醒邮件，便于您及时了解订单详情</label>
                     </div>
                     <div class="btnWrapper">
-                    	<a class="btn" href="javascript:void(0);">保存收货人地址</a>
+                    	<a class="btn" onclick="dizhi()" href="#">保存收货人地址</a>
                     </div>
                 </form>
                 <div class="menuList">
@@ -149,10 +168,68 @@ function getregion(obj){
  
                     </table>
                     <div class="btnWrapper">
-                    	<a href="index.php?r=index/payment">立即提交</a>
+                    	<a href="index.php?r=goods/payment">立即提交</a>
                     </div>
                 </div>
               </div>
             </div>
             <!--内容区域-->
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript">
+//购物车
+function dizhi(){
+    //alert($("#province option:selected").text());
+    //return false;
+    if($('#shouhuoren').val()==''){
+        alert('请填写收货人');
+        return false;
+    }
+    if($("#country option:selected").text()=='选择国家'){
+        alert('请选择国家');
+        return false;
+    }
+    if($("#province option:selected").text()=='请选择省'){
+        alert('请选择省');
+        return false;
+    }
+    if($("#city option:selected").text()=='请选择市'){
+        alert('选择市');
+        return false;
+    }
+    if($("#desc option:selected").text()=='请选择县'){
+        alert('请选择县/区');
+        return false;
+    }
+    if($('#address').val()==''){
+        alert('请填写详细地址');
+        return false;
+    }
+    if($('#mobile').val()==''){
+        alert('请填写手机号码');
+        return false;
+    }
+
+    $.ajax({
+        type:"get",
+        url:"index.php?r=goods/address",
+        data:{'shouhuoren':$('#shouhuoren').val(),'country':$("#country option:selected").text(),'province':$("#province option:selected").text(),'city':$("#city option:selected").text(),'county':$("#desc option:selected").text(),'address':$('#address').val(),'mobile':$('#mobile').val(),'phone':$('#phone').val(),'email':$('#email').val()},
+        cache:false,
+        dataType:"json",
+        success: function(msg){
+                    //alert(msg);
+                    if(msg==0){
+                        alert('保存收货地址失败');
+                        return false;
+                    }
+                    if(msg==1){
+                        location.href='index.php?r=goods/shoppingmsg';
+                    }                   
+                 }
+        
+    });
+    
+    
+    
+}
+</script>            
             

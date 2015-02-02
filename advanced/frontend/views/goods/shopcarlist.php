@@ -27,7 +27,7 @@
                             <td class="width55">操作</td>
                         </tr>
 <?php foreach($result as $val){?>                        
-                        <tr style="vertical-align:middle; text-align:center;width:10px;">
+                        <tr style="vertical-align:middle; text-align:center;width:10px;" id="tr<?php echo $val['goods_id']?>">
                         	<td><input class="checkBtn" type="checkbox"  name="xuan" value="<?php echo $val['goods_id'];?>"/></td>
                             <td>
                             	<div class="pro_msg clearfix">
@@ -51,11 +51,47 @@
                             </td>
                             <td>
                               <div class="num clearfix">
-                                <a href="javascript:void(0);">-</a>
-                                <input type="text" class="txt" value="<?php echo $val['cart_number'];?>" id="number"/>
-                                <a href="javascript:void(0);">+</a>
+                                <a href="javascript:void(0);" onclick="jian()">-</a>
+                                <input type="text" class="txt" value="<?php echo $val['cart_number'];?>"  id='number' onblur="bl()"/>
+                                <a href="javascript:void(0);" onclick="add()">+</a>
                               </div>
                             </td>
+                            
+<script type="text/javascript">
+						<!--
+							function add(){
+								var m=$("#number").val();
+
+								var num= ++m;
+								if(num<= <?php echo $val['goods_number']?> ){
+										$("#number").val(num);
+								}else{
+									alert("库存不足")
+								}
+							}
+							function jian(){
+								var m=$("#number").val();
+								if(m>1){
+									var num= --m;
+									
+									$("#number").val(num);
+								}else{
+									alert("数量不得小于1")
+								}
+							}
+							function bl(){
+								var m=$("#number").val();
+								if(m> <?php echo $val['goods_number']?> ){
+										alert("库存不足")
+								}
+							}
+
+
+
+						//-->
+						</script>                            
+                            
+                            
                             <td><a class="deleteBtn" href="#" onclick="del(<?php echo $val['goods_id'];?>)">删除</a></td>
                         </tr>
 <?php }?>                        
@@ -155,7 +191,7 @@ function del(gid){
                             return false;
                         }
                         if(msg==1){
-                            history.go(0);
+                            $('#tr'+gid).remove();
                         }
                      }
 
@@ -169,7 +205,11 @@ function orders(){
     $('input[name="xuan"]:checked').each(function(){  
         id_array.push($(this).val());//向数组中添加元素  
     });  
-    var ids=id_array.join(',');//将数组元素连接起来以构建一个字符串  
+    var ids=id_array.join(',');//将数组元素连接起来以构建一个字符串 
+    if(ids==''){
+        alert('请选择商品');
+        return false;
+    } 
     //alert(ids);
     var number=$('#number').val();
     if(number<1){
@@ -231,3 +271,5 @@ function shopcar(gid){
     });
 }
 </script>
+						
+	
