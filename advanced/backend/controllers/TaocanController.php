@@ -76,6 +76,50 @@ class TaocanController extends \yii\web\Controller
 		//var_dump($tc->Attributes);
 		//return $this->renderPartial('addtaocan',['gdata' => $gdata]);
     }
+	//套餐详情页
+	public function actionXxlist(){
+		//print_r($_GET);
+		$goods_id=$_GET['tid'];
+		$goo=new Query();
+		$data=$goo->select('goods_id,goods_name,goods_price,goods_img')->from('goods')->where('goods_id in '.'('.$goods_id.')')->all();
+		//print_r($data);
+		return $this->renderPartial('xxlist',['data' => $data]);
+	}
+	//编辑页面
+	public function actionUp(){
+		//print_r($_GET);
+		$goo=new Query();
+		$gdata=$goo->select('goods_id,goods_name')->from('goods')->all();
+		//print_r($gdata);
+		//return $this->renderPartial('addtaocan',['gdata' => $gdata]);
+		return $this->renderPartial('uptaocan',['gdata' => $gdata,'arr'=>$_GET]);
+	}
+	//修改
+	public function actionUppro(){
+		print_r($_POST);
+
+		$goods_id=implode(",",$_POST['taocan_id']);
+		//echo $goods_id;
+		$goo=new Query();
+		$price=$goo->select('goods_price')->from('goods')->where('goods_id in '.'('.$goods_id.')')->all();
+		$yprice=0;
+		for($i=0;$i<count($price);$i++){
+			$yprice=$yprice+$price[$i]['goods_price'];
+		}
+		$xprice=$yprice*$_POST['zhe'];
+		//echo $xprice;die;
+		//print_r($price);
+		$gid=$_POST['goods_id'];
+		$zhe=$_POST['zhe'];
+
+		$model=new Taocan();
+		$update=$model->updateall(['goods_id'=>$gid,'taocan_id'=>$goods_id,'yprice'=>$yprice,'xprice'=>$xprice,'zhe'=>$zhe],["goods_id"=>$gid]);
+		if($update){
+			$this->redirect('index.php?r=taocan/index');
+		}else{
+			echo "<script>alert('添加失败');</script>";
+		}
+	}
 
 	
 }

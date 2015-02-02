@@ -39,11 +39,7 @@ use yii\widgets\LinkPager;
 </head>
 
 <body>
-<form class="form-inline definewidth m20" action="index.php?r=category/sear" method="post">  
-    分类名称：
-    <input type="text" name="cat_name" id="rolename"class="abc input-default" placeholder="" value="">&nbsp;&nbsp;  
-    <button type="submit" class="btn btn-primary">查询</button>&nbsp;&nbsp; <button type="button" class="btn btn-success" id="addnew">新增机构</button>
-</form>
+
 <table class="table table-bordered table-hover definewidth m10" >
     <thead>
     <tr>
@@ -64,7 +60,7 @@ use yii\widgets\LinkPager;
             <td><?php echo $v['yprice']?></td>
 			<td><?php echo $v['xprice']?></td>
 			<td><?php echo $v['zhe']?></td>
-			<td><a href="#">删除</a>|<a href="index.php/taocan/">编辑</a></td>
+			<td><a href="index.php?r=taocan/xxlist&tid=<?php echo $v['taocan_id']?>">详情页</a>|<a href="index.php?r=taocan/up&goods_id=<?php echo $v['goods_id']?>&ztid=<?php echo $v['taocan_id']?>&zhe=<?php echo $v['zhe']?>">编辑</a>|<a href="#">删除</a></td>
         </tr>
 	<?php }?>
 	</table>
