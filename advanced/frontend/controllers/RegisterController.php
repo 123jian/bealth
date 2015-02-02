@@ -27,6 +27,10 @@ class RegisterController extends \yii\web\Controller
 				$data['money']=0;
 				$connection->createCommand()->insert("users",$data)->execute();
 				$session = new Session;
+				
+				$command = $connection->createCommand('SELECT * FROM users order by uid desc limit 1');
+				$post = $command->queryOne();
+				$session->set('uid', $post['uid']);
                 $session->set('name', $_POST['name']);
 				echo "<script>alert('恭喜您注册成功！！');location.href='./index.php?r=index/index'</script>";
 			}else{
