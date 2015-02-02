@@ -124,10 +124,35 @@
                         <div class="detail_wrap clearfix">
                         	<div class="proImg">
                             	<div class="imgWrap">
+<script src="jquery.imageLens.js" type="text/javascript"></script>
+<script type="text/javascript" language="javascript">
+	$(function () {
+		$("#img_02").imageLens({ lensSize: 200 });
+	});	
+</script>
+
+<style type="text/css">
+	body { margin: 0px; font-family: "Trebuchet MS", Arial, Sans-Serif; font-size: 14px; }
+	a { color: #0066CC; text-decoration: none; }
+	a:hover { color: #CC0000; text-decoration: underline; }
+</style>
+
+<script type="text/javascript">
+(function(){
+  var bsa = document.createElement('script');
+     bsa.type = 'text/javascript';
+     bsa.async = true;
+     bsa.src = '//s3.buysellads.com/ac/bsa.js';
+  (document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(bsa);
+})();
+</script>
+								<img  id="img_02" src="<?php echo 'http://'.$_SERVER['HTTP_HOST'].'/backend/web/'.$data['goods_img'];?>" width="325" height="325">
 								
-								<img src="<?php echo 'http://'.$_SERVER['HTTP_HOST'].'/backend/web/'.$data['goods_img'];?>" width="325" height="325">
-								
-								
+<script type="text/javascript">var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+
+</script>	<script type="text/javascript">	try{var pageTracker = _gat._getTracker("UA-2030729-5");pageTracker._initData();pageTracker._trackPageview();}catch(ex){}</script>
+
+
 								</div>                                
 
                                 <div class="imgList">
